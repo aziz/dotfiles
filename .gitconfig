@@ -1,0 +1,25 @@
+[user]
+	name = 
+	email = 
+[alias]
+	co = checkout
+  unstage = reset HEAD	
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative  
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
+	resolve = !git ls-files --unmerged | cut -c51- | sort -u | xargs git add
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	editor = mate -w
+[apply]
+	whitespace = nowarn
+[format]
+	pretty = %C(yellow)%h%Creset %s
+[push]
+	default = tracking	
+[github]
+	user = 
+	token = 
