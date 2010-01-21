@@ -23,6 +23,9 @@ if [ -f /etc/bash_completion ]; then
  . /etc/bash_completion 
 fi
 
+# my rake
+alias rake='rake --rakelibdir ~/.rake/'
+
 # misc
 alias reload='. ~/.profile'
 alias cls="clear"
