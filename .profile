@@ -14,7 +14,7 @@ function lego {
 
 #   showing current git branch and status
 export PS1='\[\033[1;33m\]\w\[\033[0m\]$(parse_git_branch)$ '
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/usr/local/mongodb/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/usr/local/mongodb/bin:/Developer/android-sdk-mac_86:/Developer/android-sdk-mac_86/tools:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export EDITOR="mate -w"
 export RDOCOPT="--inline-source --format=html --template=hanna"
@@ -46,7 +46,7 @@ extract () {
 }
 
 #find top 10 commands to make an alias
-# history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -n | tail | sort -nr  
+# history | awk '{ print $2 }' | sort | uniq -c |sort -rn | head
 
 # my rake
 alias rake='rake --rakelibdir ~/.rake/'
@@ -55,6 +55,7 @@ alias rake='rake --rakelibdir ~/.rake/'
 alias reload='. ~/.profile && . ~/.bashrc'
 alias cls="clear"
 alias c="clear"
+alias ..='cd ..'
 alias e="mate"
 
 #rails
@@ -65,9 +66,15 @@ alias sg="script/generate"
 #git
 alias gg="git status"
 alias gc="git commit"
+alias hh="git push heroku master"
+alias latexmk='latexmk -pdf -pvc' 
 
 #personal
 alias wip="cd ~/wip/"
+
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
 
 
 # export PS1="\w$ "
