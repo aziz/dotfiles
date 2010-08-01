@@ -1,0 +1,18 @@
+==My ideal Unix environment
+
+inspired and borrowed form ryan bates, ryan tomayko, and mislav dotfile repos
+
+- vim
+- ack
+- bash
+- cap
+- gem
+- ruby
+- git
+- nano
+- rails
+- rake
+- screen
+- zsh
+
+with some little tools that could be helpful here and there.

@@ -1,0 +1,47 @@
+[user]
+  name  = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
+  email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+[alias]
+  co = checkout
+  unstage = reset HEAD
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
+  resolve = !git ls-files --unmerged | cut -c51- | sort -u | xargs git add
+[core]
+  excludesfile = <%= ENV['HOME'] %>/.gitignore
+  editor = mate -w
+  autocrlf = input
+  whitespace = space-before-tab, trailing-space
+[apply]
+  whitespace = nowarn
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%cr)%Creset
+[github]
+  user  = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
+  token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
+[push]
+  default = tracking
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "status"]
+  added = green
+  changed = red
+  untracked = yellow
+[color "diff"]
+    meta = blue bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+

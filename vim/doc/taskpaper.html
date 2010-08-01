@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+    "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+<html xmlns:svg='http://www.w3.org/2000/svg' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head><meta content='application/xhtml+xml;charset=utf-8' http-equiv='Content-type' /><title></title></head>
+<body>
+<p><em>taskpaper</em> TaskPaper file-type plugin and syntax file</p>
+
+<p>David O&#8217;Callaghan <a href='mailto:david.ocallaghan@cs.tcd.ie'>&#100;&#097;&#118;&#105;&#100;&#046;&#111;&#099;&#097;&#108;&#108;&#097;&#103;&#104;&#097;&#110;&#064;&#099;&#115;&#046;&#116;&#099;&#100;&#046;&#105;&#101;</a></p>
+
+<p>10th December 2007</p>
+
+<h1 id='introduction'>Introduction</h1>
+
+<p>From the TaskPaper website (<a href='http://hogbaysoftware.com/projects/taskpaper'>http://hogbaysoftware.com/projects/taskpaper</a>):</p>
+
+<blockquote>
+<p>&#8220;TaskPaper is a simple to-do list application that helps you stay organized. Unlike competing applications, TaskPaper is based on plain text files which offer you paper-like simplicity and ease of use.&#8221;</p>
+</blockquote>
+
+<p>TaskPaper is a to-do list application for Mac OS X based on the &#8220;Getting Things Done&#8221; approach of David Allen (<a href='http://www.davidco.com/'>http://www.davidco.com/</a>). It supports the GTD notions of projects, tasks and contexts.</p>
+
+<p>This package contains a syntax file and a file-type plugin for the simple format used by the TaskPaper application. It is intended for Mac users who want to edit their TaskPaper lists in Vim from time to time (for example, in a SSH session, or on a non-Mac system) and for anyone who is looking for a simple to-do list format.</p>
+
+<h1 id='installation'>Installation</h1>
+
+<p>It should be safe to simply unpack the package into your .vim directory. It contains the following files:</p>
+
+<pre><code>doc/taskpaper.txt
+doc/example.taskpaper
+doc/taskpaper_licence.txt
+ftplugin/taskpaper.vim
+syntax/taskpaper.vim
+ftdetect/taskpaper.vim</code></pre>
+
+<p>To access this help file from within Vim you must first update your help tags:</p>
+
+<pre><code>:helptags ~/.vim/doc</code></pre>
+
+<p>The path may need to be modified depending on where you install to. Once you have done this you can access the help with this command:</p>
+
+<pre><code>:help taskpaper</code></pre>
+
+<h1 id='syntax'>Syntax</h1>
+
+<p>The syntax file highlights project headings and task contexts (tags), and &#8220;greys out&#8221; completed tasks.</p>
+
+<p>A project heading is a piece of text ending in a colon. Projects can be folded using the &#8220;syntax&#8221; foldmethod.</p>
+
+<p>A task is a line beginning with a hyphen &#8216;-&#8217; and can have zero or more context tags.</p>
+
+<p>A context tag has the form &#8220;@tag&#8221;.</p>
+
+<h1 id='filetype_plugin'>File-type Plugin</h1>
+
+<p>The file-type plugin tries to make editing TaskPaper files in Vim more comfortable.</p>
+
+<p>Vim can complete context names after the &#8217;@&#8217; using the keyword completion commands (e.g. Ctrl-X Ctrl-N).</p>
+
+<p>The plugin defines some new mappings:</p>
+
+<pre><code>\td     Mark task as done
+\tc     Show all tasks with context under cursor
+\tp     Fold all projects
+\ta     Show all projects and tasks</code></pre>
+
+<p>Note: if <code>&lt;LocalLeader&gt;</code> has been changed then its value should be used instead of <code>\</code> in the mappings.</p>
+
+<p>Marking a task as done will add the &#8220;@done&#8221; context tag to the end of the task, and it will be greyed out by the syntax file.</p>
+
+<p>To show all tasks with a particular context tag, move the cursor over the desired context tag (e.g. using movement or search commands) and then use the <code>\tc</code> command. This will fold all the irrelevant tasks leaving only the tasks in the current context visible.</p>
+
+<p>To fold all projects leaving only the headings visible use the <code>\tp</code> command. Standard fold commands can be used to open (<code>zo</code>) and close (<code>zc</code>) individual projects.</p>
+
+<p>To show all projects and tasks use the <code>\ta</code> command. This disables folding so that the entire file is expanded.</p>
+
+<h1 id='filetype_detection'>File-type Detection</h1>
+
+<p>This package also contains a script to automatically use the TaskPaper file type for all files with the &#8220;.taskpaper&#8221; extension.</p>
+
+<h1 id='licence'>Licence</h1>
+
+<p>Copyright (C) 2007 by David O&#8217;Callaghan <a href='mailto:david.ocallaghan@cs.tcd.ie'>&#100;&#097;&#118;&#105;&#100;&#046;&#111;&#099;&#097;&#108;&#108;&#097;&#103;&#104;&#097;&#110;&#064;&#099;&#115;&#046;&#116;&#099;&#100;&#046;&#105;&#101;</a></p>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.</p>
+
+<h1 id='acknowledgements'>Acknowledgements</h1>
+
+<p>The initial version of the ToggleDone() function was based on SwitchBox() from the VimOutliner Checkboxes script written by Noel Henson (available from <a href='http://www.vimoutliner.org'>http://www.vimoutliner.org</a>).</p>
+
+<p>Context folding expression was based on a snippet from Vim Tip 282 (<a href='http://vim.sourceforge.net/tips/tip.php?tip_id=282'>http://vim.sourceforge.net/tips/tip.php?tip_id=282</a>).</p>
+
+<p>Thanks are due to a number of contributors who have supplied suggestions or patches to improve TaskPaper.vim:</p>
+
+<ul>
+<li>
+<p>Alexander Wodniok - hint to allow this file to be used as a help file</p>
+</li>
+
+<li>
+<p>Ben Armstron</p>
+
+<ul>
+<li>various fixes that make the scripts more robust</li>
+
+<li>fix to show only complete tag matches</li>
+
+<li>include <code>_</code> in contexts</li>
+</ul>
+</li>
+
+<li>
+<p>Huahai Yang - fixed handling of indented tasks</p>
+</li>
+</ul>
+
+<h1 id='contact'>Contact</h1>
+
+<p>The author of these Vim scripts is David O&#8217;Callaghan <a href='mailto:david.ocallaghan@cs.tcd.ie'>&#100;&#097;&#118;&#105;&#100;&#046;&#111;&#099;&#097;&#108;&#108;&#097;&#103;&#104;&#097;&#110;&#064;&#099;&#115;&#046;&#116;&#099;&#100;&#046;&#105;&#101;</a>.</p>
+
+<p>For all information regarding the TaskPaper application itself please visit <a href='http://hogbaysoftware.com/projects/taskpaper/'>http://hogbaysoftware.com/projects/taskpaper/</a>.</p>
+<div class='maruku_signature'><hr /><span style='font-size: small; font-style: italic'>Created by <a href='http://maruku.rubyforge.org' title='Maruku: a Markdown-superset interpreter for Ruby'>Maruku</a> at 18:14 on Monday, December 10th, 2007.</span></div></body></html>

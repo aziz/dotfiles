@@ -1,0 +1,17 @@
+--type-add
+ruby=.haml,.builder,.rake
+--type-add
+css=.sass
+--type-set
+markdown=.markdown,.md,.mdown
+--type-set
+actionscript=.as
+--type-set
+cucumber=.feature
+--ruby
+--css
+--js
+--markdown
+--actionscript
+--objc
+--ignore-dir=.idea

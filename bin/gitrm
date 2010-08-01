@@ -1,0 +1,5 @@
+#!/bin/bash
+# Stage deleted files for git
+
+
+for x in `git status | grep deleted | awk '{print $3}'`; do git rm $x; done

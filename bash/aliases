@@ -1,0 +1,90 @@
+# linux
+#alias mate='gedit'
+#alias e='gedit'
+#alias open='gnome-open'
+
+# cd
+alias ..='cd ..'
+function -() { cd -; }
+
+# ls
+alias ls="ls -F --color=auto"
+alias l="ls -lAh --color=auto"
+alias ll="ls -l --color=auto"
+alias la='ls -A --color=auto'
+
+# clear
+alias c='clear'
+alias cls='clear'
+
+# grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# git
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status -s'
+alias gg='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+
+# ruby
+function gemmate {
+  GEMDIR=`gem env gemdir`/gems
+  mate $GEMDIR/`ls $GEMDIR | grep $1 | sort | tail -1`
+}
+
+# rake
+alias rake='rake --rakelibdir ~/.rake/'
+
+# rails
+function sc {
+  if [ -e script/rails ]; then
+    rails console
+  else
+    script/console --debugger
+  fi
+}
+function ss {
+  if [ -e script/rails ]; then
+    rails server
+  else
+    script/server --debugger
+  fi
+}
+function sg {
+  if [ -e script/rails ]; then
+    rails generate
+  else
+    script/generate
+  fi
+}
+alias rt='rake test'
+alias rtu='rake test:units'
+alias rtf='rake test:functionals'
+alias rti='rake test:integration'
+alias a='autotest -rails'
+alias tlog='tail -f log/development.log'
+alias migrate='rake db:migrate db:test:clone'
+alias rst='touch tmp/restart.txt'
+
+# texmate
+alias tm="mate app/ config/ db/ lib/ public/ spec/ test/"
+alias e="mate"
+
+
+# commands starting with % for pasting from web
+alias %=' '
+
+# misc
+alias reload='. ~/.bashrc'
+alias w='which'
+function top10() {
+  history | awk '{ print $2 }' | sort | uniq -c |sort -rn | head;
+}
