@@ -8,10 +8,10 @@ alias ..='cd ..'
 function -() { cd -; }
 
 # ls
-alias ls="ls -F --color=auto"
-alias l="ls -lAh --color=auto"
-alias ll="ls -l --color=auto"
-alias la='ls -A --color=auto'
+alias ls="ls -FG"
+alias l="ls -lAhG"
+alias ll="ls -lG"
+alias la='ls -AG'
 
 # clear
 alias c='clear'

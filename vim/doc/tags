@@ -464,6 +464,7 @@ tComment-Key-Bindings	tComment.txt	/*tComment-Key-Bindings*
 tComment-Usage	tComment.txt	/*tComment-Usage*
 tComment-commands	tComment.txt	/*tComment-commands*
 tComment.txt	tComment.txt	/*tComment.txt*
+taskpaper	taskpaper.txt	/*taskpaper*
 vs	surround.txt	/*vs*
 yS	surround.txt	/*yS*
 ySS	surround.txt	/*ySS*
