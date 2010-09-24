@@ -1,8 +1,3 @@
-# linux
-#alias mate='gedit'
-#alias e='gedit'
-#alias open='gnome-open'
-
 # cd
 alias ..='cd ..'
 function -() { cd -; }
@@ -74,10 +69,19 @@ alias tlog='tail -f log/development.log'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
-# texmate
+# Editors
 alias tm="mate app/ config/ db/ lib/ public/ spec/ test/"
 alias e="mate"
+alias gvim='/Applications/MacVim.app/Contents/MacOS/vim -g'
 
+# linux
+#alias mate='gedit'
+#alias e='gedit'
+#alias open='gnome-open'
+
+# linux server
+#alias mate='vim'
+#alias e='nano'
 
 # commands starting with % for pasting from web
 alias %=' '
@@ -85,6 +89,7 @@ alias %=' '
 # misc
 alias reload='. ~/.bashrc'
 alias w='which'
+alias tree='tree -CA'
 function top10() {
   history | awk '{ print $2 }' | sort | uniq -c |sort -rn | head;
 }

@@ -4,7 +4,6 @@ require 'irb/ext/save-history'
 
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
-
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 %w[rubygems looksee/shortcuts wirble].each do |gem|
@@ -33,11 +32,7 @@ class Object
   end
   
   # print documentation
-  #
-  #   ri 'Array#pop'
-  #   Array.ri
-  #   Array.ri :pop
-  #   arr.ri :pop
+  # ri 'Array#pop' or Array.ri or Array.ri :pop or arr.ri :pop
   def ri(method = nil)
     unless method && method =~ /^[A-Z]/ # if class isn't specified
       klass = self.kind_of?(Class) ? name : self.class.name
@@ -62,6 +57,11 @@ end
 def paste
   `pbpaste`
 end
+
+def clear
+  system 'clear'
+end
+alias c clear
 
 # reload this .irbrc
 def IRB.reload

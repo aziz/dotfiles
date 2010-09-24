@@ -55,3 +55,6 @@ puniq () {
     echo "$1" |tr : '\n' |nl |sort -u -k 2,2 |sort -n |
     cut -f 2- |tr '\n' : |sed -e 's/:$//' -e 's/^://'
 }
+
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
