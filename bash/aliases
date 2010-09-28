@@ -18,7 +18,6 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # git
-alias git='git-achievements'
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff'

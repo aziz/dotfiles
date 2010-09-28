@@ -4,7 +4,6 @@
 # put ~/.bin on PATH if you have it
 test -d "$HOME/.bin" &&
 PATH="$HOME/.bin:$PATH"
-export PATH="$PATH:~/.git-achievements"
 
 # --------------------------------------------------------------------
 # PATH MANIPULATION FUNCTIONS
