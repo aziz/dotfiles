@@ -2,6 +2,7 @@
 <title>Allen Bargi's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Apprentice Historian (Level 1)</title><description>Investigate the commit log using git log.</description></item>
 <item><title>Apprentice Socialite (Level 1)</title><description>pushed a branch to a remote repository using git push</description></item>
 <item><title>Let there be light</title><description>Commit without a parent.</description></item>
 <item><title>Apprentice Author (Level 1)</title><description>Made 2^Level commits using git commit.</description></item>
