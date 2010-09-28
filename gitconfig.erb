@@ -43,5 +43,12 @@
     frag = magenta bold
     old = red bold
     new = green bold
-
+[achievement]
+  upload = true
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 
