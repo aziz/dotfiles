@@ -3,7 +3,8 @@
 
 # put ~/.bin on PATH if you have it
 test -d "$HOME/.bin" &&
-PATH="$HOME/.bin:$PATH"
+PATH="$HOME/.bin:/usr/local/share/npm/bin:$PATH"
+CVS_RSH=ssh
 
 # --------------------------------------------------------------------
 # PATH MANIPULATION FUNCTIONS
