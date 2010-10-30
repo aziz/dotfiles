@@ -72,7 +72,6 @@ alias rst='touch tmp/restart.txt'
 # Editors
 alias tm="mate app/ config/ db/ lib/ public/ spec/ test/"
 alias e="mate"
-alias gvim='/Applications/MacVim.app/Contents/MacOS/vim -g'
 
 # linux
 #alias mate='gedit'
@@ -83,11 +82,8 @@ alias gvim='/Applications/MacVim.app/Contents/MacOS/vim -g'
 #alias mate='vim'
 #alias e='nano'
 
-# commands starting with % for pasting from web
-alias %=' '
-
 # misc
-alias reload='. ~/.bashrc'
+alias reload='source ~/.bashrc && echo "bashrc reloaded"'
 alias w='which'
 alias tree='tree -CA'
 function top10() {
