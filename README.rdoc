@@ -1,18 +1,20 @@
 ==My ideal Unix environment
 
-inspired and borrowed form ryan bates, ryan tomayko, and mislav dotfile repos
+Inspired and borrowed form ryan bates, ryan tomayko, and mislav dotfile repos.
+Containg congiuration files for
 
 - vim
 - ack
 - bash
-- cap
-- gem
+- capistrano
+- rubygems
 - ruby
 - git
 - nano
 - rails
-- rake
+- custom global rake tasks
 - screen
+- tmux
 - zsh
 
-with some little tools that could be helpful here and there.
+With some little tools that could be helpful here and there.

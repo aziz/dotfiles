@@ -1,10 +1,6 @@
 #export PATH="some_path:$PATH"
 #export MANPATH="some_path:$MANPATH"
-
-# put ~/.bin on PATH if you have it
-test -d "$HOME/.bin" &&
-PATH="$HOME/.bin:/usr/local/share/npm/bin:$PATH"
-CVS_RSH=ssh
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$PATH"
 
 # --------------------------------------------------------------------
 # PATH MANIPULATION FUNCTIONS
@@ -58,4 +54,5 @@ puniq () {
 }
 
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+# This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  
