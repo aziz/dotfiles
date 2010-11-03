@@ -73,6 +73,10 @@ alias rst='touch tmp/restart.txt'
 alias tm="mate app/ config/ db/ lib/ public/ spec/ test/"
 alias e="mate"
 
+# Terminitor
+alias tts = "terminitor start"
+alias tte = "terminitor edit"
+
 # linux
 #alias mate='gedit'
 #alias e='gedit'
@@ -89,3 +93,6 @@ alias tree='tree -CA'
 function top10() {
   history | awk '{ print $2 }' | sort | uniq -c |sort -rn | head;
 }
+
+
+
