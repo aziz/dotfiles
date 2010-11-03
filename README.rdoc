@@ -16,5 +16,19 @@ Containg congiuration files for
 - screen
 - tmux
 - zsh
+- terminitor
 
 With some little tools that could be helpful here and there.
+
+
+==Setup
+rake install
+
+==Dependencies
+- git
+- ruby/rvm
+- tmux/screen
+- vim
+- tree
+- ack
+- gem install terminitor rails capistrano
