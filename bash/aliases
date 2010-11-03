@@ -74,8 +74,8 @@ alias tm="mate app/ config/ db/ lib/ public/ spec/ test/"
 alias e="mate"
 
 # Terminitor
-alias tts = "terminitor start"
-alias tte = "terminitor edit"
+alias tts='terminitor start'
+alias tte='terminitor edit'
 
 # linux
 #alias mate='gedit'

@@ -1,7 +1,7 @@
 export PS1="\w$ "
 export EDITOR="mate -w"
 export GIT_EDITOR="vim"
-export CDPATH=:..:~:~/projects
+export CDPATH=:..:~:~/projects:~/Dropbox:~/Dropbox/projects
 
 CVS_RSH=ssh
 export CVS_RSH
