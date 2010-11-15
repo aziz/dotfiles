@@ -10,6 +10,7 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
   begin
     require gem
   rescue LoadError
+    puts "gem install looksee wirble"
   end
 end
 
