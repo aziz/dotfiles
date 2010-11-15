@@ -77,15 +77,6 @@ alias e="mate"
 alias tts='terminitor start'
 alias tte='terminitor edit'
 
-# linux
-#alias mate='gedit'
-#alias e='gedit'
-#alias open='gnome-open'
-
-# linux server
-#alias mate='vim'
-#alias e='nano'
-
 # misc
 alias reload='source ~/.bashrc && echo "bashrc reloaded"'
 alias w='which'
