@@ -7,7 +7,7 @@ export PLATFORM="$MACHINE-$OS-$OSVERSION"
 
 export PS1="\w$ "
 export CDPATH=:..:~:~/projects:~/Dropbox:~/Dropbox/projects
-export EDITOR="mate -w"
+export EDITOR="vim"
 
 # Version Controls
 export GIT_EDITOR="vim"
