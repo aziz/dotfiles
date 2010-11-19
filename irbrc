@@ -39,7 +39,7 @@ class Object
       klass = self.kind_of?(Class) ? name : self.class.name
       method = [klass, method].compact.join('#')
     end
-    puts `ri '#{method}'`
+    system 'ri', method.to_s
   end
 end
 
