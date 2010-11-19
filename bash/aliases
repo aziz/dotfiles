@@ -1,3 +1,6 @@
+# pressing ctrl+l will trigger ll
+bind -x '"\C-l":"ll"'
+
 # cd
 alias ..='cd ..'
 function -() { cd -; }
