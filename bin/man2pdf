@@ -1,0 +1,18 @@
+#! /bin/bash
+
+if [ $# -eq 1 ] ; then
+    to_pdf=$(which ps2pdf)
+    if [ -z "$to_pdf" ] ; then
+        to_pdf=$(which pstopdf)
+    fi
+
+    name="$1"
+    case "$to_pdf"  in
+        *pstopdf) man -t "$name" | "$to_pdf" -i -o "$fname.pdf" ;;
+        *ps2pdf)  man -t "$name" | "$to_pdf" - "$name.pdf" ;;
+        *)        man -t "$name" > "$fname.ps"
+    esac
+    exit $?
+fi
+echo "Wrong number of parameters"
+exit 1
