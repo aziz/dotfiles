@@ -1,13 +1,13 @@
-source ~/.bash/aliases
-source ~/.bash/completions
-source ~/.bash/paths
-source ~/.bash/config
-source ~/.bash/search
-source ~/.bash/private
-
-if [ "$OS" = "linux" ] ; then
-  source ~/.bash/linux
-fi
+# source ~/.bash/aliases
+# source ~/.bash/completions
+# source ~/.bash/paths
+# source ~/.bash/config
+# source ~/.bash/search
+# source ~/.bash/private
+# 
+# if [ "$OS" = "linux" ] ; then
+#   source ~/.bash/linux
+# fi
 
 # Notes: ----------------------------------------------------------
 # When you start an interactive shell (log in, open terminal or iTerm in OS X,
