@@ -32,3 +32,5 @@ With some little tools that could be helpful here and there.
 - tree
 - ack
 - gem install terminitor rails capistrano capistrano_colors
+
+# ⊕ → ➞ ➡ ➟ ⎨⎬‹›〔  〕• ■ ● ♥ ♡ ✔ ✖ ❐ ❍ ✚ ★ ✱ ✸ ✿ Ξ ❤ ⣿ ⡇ ✜ ❖  ☁
