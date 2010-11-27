@@ -22,10 +22,10 @@
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$PATH"
 
 # Path to the bash it configuration
-export BASH=$HOME/.bash_it
+export BASH=$HOME/.bash
 
 # Lock and Load a custom theme file
-# location /.bash_it/themes/
+# location /.bash/themes/
 export BASH_THEME='aziz'
 
 # Your place for hosting Git repos. I use this for private repos.
