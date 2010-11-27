@@ -1,5 +1,0 @@
-#!/bin/bash
-
-ifconfig | grep -i -E "inet [0-9]+.[0-9]+" | awk '{print $2}'
-echo "External IP:"
-wget http://www.whatismyip.org --quiet -O - | cat && echo
