@@ -1,12 +1,11 @@
-==My ideal Unix environment
+#My ideal Unix environment
 
-Inspired and borrowed form ryan bates, ryan tomayko, and mislav dotfile repos.
-Containg congiuration files for
+Inspired and borrowed form Ryan Bates, Ryan Tomayko, and Mislav dotfile repos. covering:
 
-- vim
 - ack
 - bash
 - capistrano
+- cvs
 - rubygems
 - ruby
 - git
@@ -17,18 +16,19 @@ Containg congiuration files for
 - tmux
 - zsh
 - terminitor
+- vim
 
 With some little tools that could be helpful here and there.
 
 
-==Setup
-rake install
+##Setup
+`rake install`
 
-==Dependencies
+##Dependencies
 - git
 - ruby/rvm
 - tmux/screen
 - vim
 - tree
 - ack
-- gem install terminitor rails capistrano
+- gem install terminitor rails capistrano capistrano_colors
