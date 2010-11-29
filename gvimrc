@@ -2,6 +2,8 @@
 if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
+  " au GUIEnter * set fullscreen
+
 
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<nop>

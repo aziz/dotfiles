@@ -1,9 +1,33 @@
 color ir_black
+if has("gui_running")
+  set guifont=Menlo:h12
+endif
 
+if has("gui_macvim")
+    let macvim_hig_shift_movement = 1
+endif
+
+set noerrorbells
+set visualbell
+set t_vb=
+
+set mouse=a         " enable mouse support in console
+set showmatch       " show matching brackets.
+set showcmd         " shows what you're typing as a command
 set virtualedit=all " easier cursor control
 set guioptions=aAce " no scrollbars
 set incsearch		    " do incremental searching
-inoremap jj <Esc>   " remap jj to escape in insert mode.  You'll never type jj anyway!
+set autoread        " watch for file changes
+set noswapfile      " disable swapfiles
+set nobackup        " disable backups
+
+inoremap jj <Esc>hh   " remap jj to escape in insert mode.  You'll never type jj anyway!
+nmap <Leader>v :tabedit $MYVIMRC<CR>
+nmap <Leader>vl :tabedit $MYVIMRC.local<CR>
+nmap <Leader>gv :tabedit $MYGVIMRC<CR>
+nmap <Leader>s :source $MYVIMRC<CR>
+
+
 
 if has("autocmd")
   " Set File type to 'text' for files ending in .txt
