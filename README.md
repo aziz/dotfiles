@@ -2,18 +2,15 @@
 - icrease font-size in macvim
 - better font for macvim
 
-- merge vim config files. 
 - load nerdtree in terminal vim
-
-
-
+- merge vim config files
 
 # My ideal Unix environment
 
-Inspired and borrowed form Ryan Bates, Ryan Tomayko, and Mislav dotfile repos. covering:
+Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, and Mislav Marohnić dotfile repos. covering:
 
 - ack
-- bash
+- bash (bash-it framework: https://github.com/revans/bash-it)
 - capistrano
 - cvs
 - rubygems
@@ -26,7 +23,7 @@ Inspired and borrowed form Ryan Bates, Ryan Tomayko, and Mislav dotfile repos. c
 - tmux
 - zsh
 - terminitor
-- vim
+- vim (janus from carlhuda: https://github.com/carlhuda/janus)
 
 With some little tools that could be helpful here and there.
 
