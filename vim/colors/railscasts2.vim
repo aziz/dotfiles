@@ -15,7 +15,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "Railscasts2"
+let g:colors_name = "railscasts"
 
 " Colors
 " Brown        #BC9458

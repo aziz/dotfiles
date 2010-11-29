@@ -24,7 +24,7 @@ if exists("syntax_on")
    syntax reset
 endif
 
-let g:colors_name = "Vibrantink"
+let g:colors_name = "vibrantink"
 
 if has("gui_running")
     highlight Normal guifg=White   guibg=Black

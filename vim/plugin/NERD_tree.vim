@@ -39,7 +39,7 @@ set cpo&vim
 "1 if the var is set, 0 otherwise
 function! s:initVariable(var, value)
     if !exists(a:var)
-        exec 'let ' . a:var . ' = ' . "'" . a:value . "'"
+        exec 'let ' . a:var . ' = ' . "'" . substitute(a:value, "'", "''", "g") . "'"
         return 1
     endif
     return 0
@@ -194,6 +194,7 @@ function! s:Bookmark.activate()
         if self.validate()
             let n = s:TreeFileNode.New(self.path)
             call n.open()
+            call s:closeTreeIfQuitOnOpen()
         endif
     endif
 endfunction
@@ -806,15 +807,23 @@ endfunction
 "FUNCTION: TreeFileNode.bookmark(name) {{{3
 "bookmark this node with a:name
 function! s:TreeFileNode.bookmark(name)
+
+    "if a bookmark exists with the same name and the node is cached then save
+    "it so we can update its display string
+    let oldMarkedNode = {}
     try
         let oldMarkedNode = s:Bookmark.GetNodeForName(a:name, 1)
-        call oldMarkedNode.path.cacheDisplayString()
     catch /^NERDTree.BookmarkNotFoundError/
+    catch /^NERDTree.BookmarkedNodeNotFoundError/
     endtry
 
     call s:Bookmark.AddBookmark(a:name, self.path)
     call self.path.cacheDisplayString()
     call s:Bookmark.Write()
+
+    if !empty(oldMarkedNode)
+        call oldMarkedNode.path.cacheDisplayString()
+    endif
 endfunction
 "FUNCTION: TreeFileNode.cacheParent() {{{3
 "initializes self.parent if it isnt already
@@ -2521,7 +2530,7 @@ endfunction
 " FUNCTION: s:findAndRevealPath() {{{2
 function! s:findAndRevealPath()
     try
-        let p = s:Path.New(expand("%"))
+        let p = s:Path.New(expand("%:p"))
     catch /^NERDTree.InvalidArgumentsError/
         call s:echo("no file for the current buffer")
         return
@@ -2812,9 +2821,17 @@ function! s:closeTree()
     endif
 
     if winnr("$") != 1
+        if winnr() == s:getTreeWinNum()
+            wincmd p
+            let bufnr = bufnr("")
+            wincmd p
+        else
+            let bufnr = bufnr("")
+        endif
+
         call s:exec(s:getTreeWinNum() . " wincmd w")
         close
-        call s:exec("wincmd p")
+        call s:exec(bufwinnr(bufnr) . " wincmd w")
     else
         close
     endif

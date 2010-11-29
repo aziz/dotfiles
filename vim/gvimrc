@@ -22,8 +22,7 @@ endif
 set guioptions-=T
 
 " Default gui color scheme
-color railscasts+
-color jellybeans+
+color molokai
 
 " ConqueTerm wrapper
 function StartTerm()

@@ -1,0 +1,3 @@
+set virtualedit=all " easier cursor control
+set guioptions=aAce " no scrollbars
+color ir_black

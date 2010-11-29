@@ -1,4 +1,14 @@
-#My ideal Unix environment
+## TODO
+- icrease font-size in macvim
+- better font for macvim
+
+- merge vim config files. 
+- load nerdtree in terminal vim
+
+
+
+
+# My ideal Unix environment
 
 Inspired and borrowed form Ryan Bates, Ryan Tomayko, and Mislav dotfile repos. covering:
 
