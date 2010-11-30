@@ -11,6 +11,7 @@ set shiftwidth=2
 set expandtab
 set list listchars=tab:\ \ ,trail:·
 
+
 " Searching
 set hlsearch
 set incsearch
@@ -40,7 +41,7 @@ map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 " Remember last location in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal g'\"" | endif
+        \| exe "normal g'\"" | endif
 endif
 
 function s:setupWrapping()

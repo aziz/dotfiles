@@ -4,9 +4,11 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-    let macvim_hig_shift_movement = 1
+  let macvim_hig_shift_movement = 1
 endif
 
+
+let mapleader=","
 set noerrorbells
 set visualbell
 set t_vb=
@@ -38,6 +40,24 @@ endif
 " it will allow you to use :w!! to write to a file using sudo if you forgot to 
 " sudo vim file (it will prompt for sudo password when writing)
 cmap w!! %!sudo tee > /dev/null %
+
+function StripTrailingWhitespace()
+  if !&binary && &filetype != 'diff'
+    normal mz
+    normal Hmy
+    %s/\s\+$//e
+    normal 'yz<CR>
+    normal `z
+  endif
+endfunction
+
+map <Leader>strip :call StripTrailingWhitespace()<CR>
+
+
+
+
+
+
 
 
 " Leader shortcuts for Rails commands
