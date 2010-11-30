@@ -35,6 +35,11 @@ if has("folding")
   set foldtext=strpart(getline(v:foldstart),0,50).'\ ...\ '.substitute(getline(v:foldend),'^[\ #]*','','g').'\ '
 endif
 
+" it will allow you to use :w!! to write to a file using sudo if you forgot to 
+" sudo vim file (it will prompt for sudo password when writing)
+cmap w!! %!sudo tee > /dev/null %
+
+
 " Leader shortcuts for Rails commands
 " map <Leader>m :Rmodel 
 " map <Leader>c :Rcontroller 
