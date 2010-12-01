@@ -16,7 +16,7 @@ set t_vb=
 set mouse=a         " enable mouse support in console
 set showmatch       " show matching brackets.
 set showcmd         " shows what you're typing as a command
-set virtualedit=all " easier cursor control
+" set virtualedit=all " easier cursor control
 set guioptions=aAce " no scrollbars
 set incsearch		    " do incremental searching
 set autoread        " watch for file changes
