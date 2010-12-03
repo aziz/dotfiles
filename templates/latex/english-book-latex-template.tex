@@ -1,0 +1,114 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[letterpaper,12pt,oneside]{book}        % For Screen
+%\documentclass[a4paper,11pt,twoside,openright]{book} % For Print
+
+% == METADATA ============================================================
+\def\ptitle{TITLE}
+\def\pauthor{AUTHOR}
+\def\keywords{lean,agile,software development}
+\def\subject{Research Report}
+\title{\ptitle}
+\author{\pauthor}
+\date{\today}
+
+% == PACKAGES ============================================================
+\usepackage[letterpaper]{geometry}       % Change page margins
+\usepackage[parfill]{parskip}            % Begin paragraphs with an empty line rather than an indent
+\usepackage{fancyhdr}                    % Running Headers and footers
+\usepackage{graphicx}                    % Images loaded externally
+\usepackage[usenames,dvipsnames]{xcolor} % Color setup
+\usepackage[pdftex]{hyperref}            % Making links in PDF
+\usepackage{nomencl}                     % Print list of Acronyms
+\usepackage[english]{babel}              % Hyphenation
+%\usepackage[Lenny]{fncychap}             % Customize Chapter Titles
+%\usepackage[longnamesfirst]{natbib}      % Greatly improved citation commands
+%\usepackage{fontspec,xltxtra,xunicode}   % XETEX fonts
+
+% == SETUP PACKAGES ======================================================
+%-- Hyperref -------------------------------------------------------(fold)
+\hypersetup{
+    bookmarks=true,          % show bookmarks bar?
+    unicode=true,            % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,         % show Acrobat’s toolbar?
+    pdfmenubar=true,         % show Acrobat’s menu?
+    pdffitwindow=false,      % window fit to page when opened
+    pdfstartview={FitH},     % fits the width of the page to the window
+    pdftitle={\ptitle},      % title
+    pdfauthor={\pauthor},    % author
+    pdfsubject={\subject},   % subject of the document
+    pdfcreator={XelaTeX},    % creator of the document
+    pdfproducer={\pauthor},  % producer of the document
+    pdfkeywords={\keywords}, % list of keywords
+    pdfnewwindow=false,      % links in new window
+    colorlinks=true,         % false: boxed links; true: colored links
+    linkcolor=BrickRed,      % color of internal links
+    citecolor=OliveGreen,    % color of links to bibliography
+    filecolor=magenta,       % color of file links
+    urlcolor=BlueViolet      % color of external links
+}
+% -------------------------------------------------------------------(end)
+%-- Fancy Header ---------------------------------------------------(fold)
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}                              % delete current header and footer
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt}        % space for the rule
+\fancypagestyle{plain}{
+  \fancyhead{}                          % get rid of headers on plain pages
+  \renewcommand{\headrulewidth}{0pt}    % and the line
+}
+% -------------------------------------------------------------------(end)
+%-- OTHER ----------------------------------------------------------(fold)
+\makenomenclature
+\renewcommand{\nomname}{List of Acronyms}
+\renewcommand{\bibname}{References}
+%\geometry{top=1.0in,bottom=1.0in,left=1.5in,right=1.0in}
+% TODO: customize chapter headers
+% TODO: improve the citation style using natbib
+
+% \defaultfontfeatures{Mapping=tex-text}
+% \setromanfont[Mapping=tex-text]{Hoefler Text}
+% \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+% \setmonofont[Scale=MatchLowercase]{Andale Mono}
+% \newfontfamily{\A}[Scale=0.9]{Geeza Pro}
+% {\A السلام عليكم}
+
+%--------------------------------------------------------------------(end)
+
+\begin{document}
+% == Front Matter ========================================================
+\frontmatter
+%\include{Cover}
+%\include{Dedication}
+\include{Abstract}
+\include{Acknowledgements}
+\tableofcontents
+% \addcontentsline{toc}{chapter}{Table of Contents}
+% \listoffigures
+% \addcontentsline{toc}{chapter}{List of Figures}
+% \listoftables
+% \addcontentsline{toc}{chapter}{List of Tables}
+%\include{Preface}
+
+% == Main Matter =========================================================
+\mainmatter
+\include{Introduction}
+\include{Methodology}
+\include{Literature-Review}
+%\include{Appendix}
+
+% == Back Matter =========================================================
+\backmatter
+\bibliographystyle{alpha}
+\bibliography{thesis}
+\addcontentsline{toc}{chapter}{\bibname}
+\printnomenclature
+\addcontentsline{toc}{chapter}{\nomname}
+% Index
+\end{document}
