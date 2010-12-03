@@ -8,6 +8,7 @@ syntax on
 set nowrap
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 set expandtab
 set list listchars=tab:\ \ ,trail:·
 
@@ -101,3 +102,7 @@ set modelines=10
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+"Directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup

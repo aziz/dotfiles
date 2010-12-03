@@ -665,6 +665,7 @@ taglist-session	taglist.txt	/*taglist-session*
 taglist-todo	taglist.txt	/*taglist-todo*
 taglist-using	taglist.txt	/*taglist-using*
 taglist.txt	taglist.txt	/*taglist.txt*
+taskpaper	taskpaper.txt	/*taskpaper*
 textile-changelog	textile.txt	/*textile-changelog*
 textile-commands	textile.txt	/*textile-commands*
 textile-credits	textile.txt	/*textile-credits*
