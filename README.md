@@ -20,34 +20,26 @@ Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, and
 
 With some little tools that could be helpful here and there.
 
-
 ##Setup
-`rake install`
+`./install.sh`
 
-##Dependencies
-- git
-- ruby/rvm
-- tmux/screen
-- vim
-- tree
-- ack
+##Post installation process
+- install rvm and rub
+- brew install git ack tree tmux screen vim
 - gem install terminitor rails capistrano capistrano_colors
 
 # → ➞ ➡ ➟ ➜  ‣ ➤  ⬆ ⬅ ⤴ ↓ ↑ ꜜ ꜛ ˿ ː ˑ ꜝ
 # ⊕ • ■ ● ✜ ❖ ❐ ❍ ♥ ♡ ❤ ☯
 # ✔ ✖ ✚ ★ ☆ ✩ ✱ ✸ ✿ ¤ ⍟ ⊹
-# ǁ ǂ ʭ Ξ ⣿ ⡇ ⦀⦂ ⦙⦚ ⧘⧙⧚⧛   
+# ǁ ǂ ʭ Ξ ⣿ ⡇ ⦀⦂ ⦙⦚ ⧘⧙⧚⧛
 # ⪡ ⪢ ⪦⪧ ⫏⫐ ⊲ ⊳ ⫷ ⫸ ❮❯ ‹›⟨⟩⟪⟫ ⦉⦊⦗⦘ ⎨⎬ ❪❫ 〔   〕
-# ⚑ ⚐ ☐ ✆ ✈  ⚠ ⚡ ♪ ♫ ⦨  ⑆ ⑉ ⧎ ⧑ 
+# ⚑ ⚐ ☐ ✆ ✈  ⚠ ⚡ ♪ ♫ ⦨  ⑆ ⑉ ⧎ ⧑
 # ☼ ☀ ☁ ☂
 # ■ □ ▪▫ ▶ ▷▸▹ ► ▻▼▽▾▿◀◁◂◃◄◅ ▬ ▭▮▯○
 #  ▢ ▣ ▦ ◈ ⟐ ⧆ ⧇
-# ⊕ ⊝ ⊜ ⊗ ⊙ ⊚ ⦼ ⧀ ⦿ ⧁ ⨂ ⨁ ⨀  ◉ ◌ ◍ 
+# ⊕ ⊝ ⊜ ⊗ ⊙ ⊚ ⦼ ⧀ ⦿ ⧁ ⨂ ⨁ ⨀  ◉ ◌ ◍
 # 〓 █████ ▇▇▇▆▅▅▄▃▂▁▀▗▖▘▙▚▛▜ ◹ ◺ ◸ ◿
-# ⌘ ⌥  ⌦  ⌫ ↵ ↩ ⇧ 
-
-
-
+# ⌘ ⌥  ⌦  ⌫ ↵ ↩ ⇧
 
 
 

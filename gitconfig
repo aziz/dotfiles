@@ -1,6 +1,6 @@
 [user]
-  name  = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
-  email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+  name  = ${name}
+  email = ${email}
 [alias]
   co = checkout
   unstage = reset HEAD
@@ -9,7 +9,7 @@
   conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
   resolve = !git ls-files --unmerged | cut -c51- | sort -u | xargs git add
 [core]
-  excludesfile = <%= ENV['HOME'] %>/.gitignore
+  excludesfile = ~/.gitignore
   editor = mate -w
   autocrlf = input
   whitespace = space-before-tab, trailing-space
@@ -18,8 +18,8 @@
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%cr)%Creset
 [github]
-  user  = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
-  token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
+  user  = ${gh_username}
+  token = ${gh_token}
 [push]
   default = tracking
 [branch]
