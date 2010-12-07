@@ -38,9 +38,6 @@ export GIT_EDITOR='vim'
 # Set the path nginx
 export NGINX_PATH='/opt/nginx'
 
-# Set the ref directory
-export REF_DIR="$HOME/.ref/"
-
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
