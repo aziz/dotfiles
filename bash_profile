@@ -18,6 +18,9 @@
 # Load RVM, if you are using it
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
+# Load Tmuxinator, if you are using it
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
 # Add rvm gems and nginx to the path
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$PATH"
 
