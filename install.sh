@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "      _       _    __ _ _             "
 echo "     | |     | |  / _(_) |            "
@@ -11,13 +11,14 @@ echo
 echo "Installing dotfiles into user's home directory"
 echo
 
+backup_dir=".backup_old_dot_files"
+
 for name in *; do
 
   target="$HOME/.$name"
-  backup_dir=".backup_old_dot_files"
 
   if [[ $name != 'install.sh' && $name != 'README.md' && $name != 'gitconfig' ]]; then
-    
+
     if [ -e $target ]; then
       if [ ! -L $target ]; then
         echo "backing up .$name in $HOME/$backup_dir/ directory"
