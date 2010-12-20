@@ -1,13 +1,23 @@
 #!/usr/bin/ruby
 
+# better table view for activerecord objects with hirb
 begin
-  require 'hirb' # sudo gem install cldwalker-hirb --source http://gems.github.com
+  require 'hirb' 
   Hirb.enable
 rescue LoadError
+  puts "*** hirb disabled ***"  
+  puts "gem install hirb"
 end
 
 def change_log(stream)
-  ActiveRecord::Base.logger = Logger.new(stream)
+  # send Rails logs to console
+  # 2.X
+  if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
+    require 'logger'
+    Object.const_set 'RAILS_DEFAULT_LOGGER', Logger.new(stream)
+  end
+  # 3.X
+  ActiveRecord::Base.logger = Logger.new(stream) if defined? Rails::Console
   ActiveRecord::Base.clear_active_connections!
 end
 
@@ -22,3 +32,11 @@ end
 def sql(query)
   ActiveRecord::Base.connection.select_all(query)
 end
+
+# includes Rails routes helpers
+def rails_routes
+  include ActionController::UrlWriter
+  default_url_options[:host] = 'example.com'
+end
+
+

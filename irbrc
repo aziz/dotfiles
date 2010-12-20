@@ -1,23 +1,45 @@
 #!/usr/bin/ruby
 require 'irb/completion'
 require 'irb/ext/save-history'
+require 'rubygems'
 
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
-%w[rubygems looksee/shortcuts wirble].each do |gem|
-  begin
-    require gem
-  rescue LoadError
-    puts "gem install looksee wirble"
-  end
+# Wirble for colorful IRB
+begin
+  require 'wirble'
+  Wirble.init
+  Wirble.colorize
+rescue LoadError
+  puts "*** wirble disabled ***"
+  puts "gem install wirble"
 end
 
-Wirble.init
-Wirble.colorize
+begin
+  require 'ap'
+  IRB::Irb.class_eval do
+    def output_value
+      ap @context.last_value
+    end
+  end
+rescue LoadError
+  puts "*** awesome_print disabled ***"
+  puts "gem install awesome_print"
+  require 'pp'
+end
+
+begin
+  require 'looksee/shortcuts'
+rescue LoadError
+  puts "*** looksee disabled ***"
+  puts "gem install looksee"
+end
+
 
 class Object
+  
   # list methods which aren't in superclass
   def local_methods(obj = self)
     (obj.methods - obj.class.superclass.instance_methods).sort
@@ -41,6 +63,17 @@ class Object
     end
     system 'ri', method.to_s
   end
+
+end
+
+# quick benchmarking
+# based on rue's irbrc => http://pastie.org/179534
+def bm(repetitions=100, &block)
+  require 'benchmark'
+  Benchmark.bmbm do |b|
+    b.report {repetitions.times &block}
+  end
+  nil
 end
 
 def copy(str)
@@ -68,6 +101,5 @@ alias c clear
 def IRB.reload
   load __FILE__
 end
-
 
 load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']

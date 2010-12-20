@@ -15,31 +15,17 @@ Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, and
 - screen
 - tmux
 - zsh
-- terminitor
+- tmuxinator
 - vim (janus from carlhuda: https://github.com/carlhuda/janus)
+- ssh
 
-With some little tools that could be helpful here and there.
 
-##Setup
+With some little tools and templates that could be helpful here and there.
+
+## Setup
 `./install.sh`
 
-##Post installation process
-- install rvm and rub
-- brew install git ack tree tmux screen vim
-- gem install terminitor rails capistrano capistrano_colors
-
-# → ➞ ➡ ➟ ➜  ‣ ➤  ⬆ ⬅ ⤴ ↓ ↑ ꜜ ꜛ ˿ ː ˑ ꜝ
-# ⊕ • ■ ● ✜ ❖ ❐ ❍ ♥ ♡ ❤ ☯
-# ✔ ✖ ✚ ★ ☆ ✩ ✱ ✸ ✿ ¤ ⍟ ⊹
-# ǁ ǂ ʭ Ξ ⣿ ⡇ ⦀⦂ ⦙⦚ ⧘⧙⧚⧛
-# ⪡ ⪢ ⪦⪧ ⫏⫐ ⊲ ⊳ ⫷ ⫸ ❮❯ ‹›⟨⟩⟪⟫ ⦉⦊⦗⦘ ⎨⎬ ❪❫ 〔   〕
-# ⚑ ⚐ ☐ ✆ ✈  ⚠ ⚡ ♪ ♫ ⦨  ⑆ ⑉ ⧎ ⧑
-# ☼ ☀ ☁ ☂
-# ■ □ ▪▫ ▶ ▷▸▹ ► ▻▼▽▾▿◀◁◂◃◄◅ ▬ ▭▮▯○
-#  ▢ ▣ ▦ ◈ ⟐ ⧆ ⧇
-# ⊕ ⊝ ⊜ ⊗ ⊙ ⊚ ⦼ ⧀ ⦿ ⧁ ⨂ ⨁ ⨀  ◉ ◌ ◍
-# 〓 █████ ▇▇▇▆▅▅▄▃▂▁▀▗▖▘▙▚▛▜ ◹ ◺ ◸ ◿
-# ⌘ ⌥  ⌦  ⌫ ↵ ↩ ⇧
-
-
-
+## Requirements
+- install rvm then rubies
+- `brew install git ack tree tmux screen vim`
+- `gem  install tmuxinator rails capistrano capistrano_colors looksee wirble hirb awesome_print yui-compressor`
