@@ -1,14 +1,5 @@
 #!/usr/bin/ruby
 
-# better table view for activerecord objects with hirb
-begin
-  require 'hirb' 
-  Hirb.enable
-rescue LoadError
-  puts "*** hirb disabled ***"  
-  puts "gem install hirb"
-end
-
 def change_log(stream)
   # send Rails logs to console
   # 2.X

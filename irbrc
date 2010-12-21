@@ -17,13 +17,18 @@ rescue LoadError
   puts "gem install wirble"
 end
 
+# better table view for activerecord objects with hirb
+begin
+  require 'hirb' 
+  Hirb.enable
+  extend Hirb::Console
+rescue LoadError
+  puts "*** hirb disabled ***"  
+  puts "gem install hirb"
+end
+
 begin
   require 'ap'
-  IRB::Irb.class_eval do
-    def output_value
-      ap @context.last_value
-    end
-  end
 rescue LoadError
   puts "*** awesome_print disabled ***"
   puts "gem install awesome_print"
