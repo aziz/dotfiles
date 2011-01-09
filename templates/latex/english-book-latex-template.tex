@@ -3,7 +3,7 @@
 \documentclass[letterpaper,12pt,oneside]{book}        % For Screen
 %\documentclass[a4paper,11pt,twoside,openright]{book} % For Print
 
-% == METADATA ============================================================
+% == METADATA ============================================================(fold)
 \def\ptitle{TITLE}
 \def\pauthor{AUTHOR}
 \def\keywords{lean,agile,software development}
@@ -11,22 +11,32 @@
 \title{\ptitle}
 \author{\pauthor}
 \date{\today}
+% (end)
 
-% == PACKAGES ============================================================
+% == PACKAGES ============================================================(fold)
 \usepackage[letterpaper]{geometry}       % Change page margins
 \usepackage[parfill]{parskip}            % Begin paragraphs with an empty line rather than an indent
 \usepackage{fancyhdr}                    % Running Headers and footers
 \usepackage{graphicx}                    % Images loaded externally
 \usepackage[usenames,dvipsnames]{xcolor} % Color setup
-\usepackage[pdftex]{hyperref}            % Making links in PDF
+\usepackage{hyperref}                    % Making links in PDF
 \usepackage{nomencl}                     % Print list of Acronyms
 \usepackage[english]{babel}              % Hyphenation
 %\usepackage[Lenny]{fncychap}             % Customize Chapter Titles
 %\usepackage[longnamesfirst]{natbib}      % Greatly improved citation commands
+%\usepackage{booktabs}                    % Publication quality tables
+%\usepackage{framed}                      % Create framed, shaded, or differently highlighted regions
+%\usepackage{caption}                     % Better captions
 %\usepackage{fontspec,xltxtra,xunicode}   % XETEX fonts
 
-% == SETUP PACKAGES ======================================================
-%-- Hyperref -------------------------------------------------------(fold)
+% TODO: customize chapter headers {fncychap}
+% TODO: improve the citation style {natbib}
+% TODO: configure caption,frame,booktabs
+% (end)
+
+% == SETUP PACKAGES ======================================================(fold)
+
+%-- Hyperref -------------------------------------------------------
 \hypersetup{
     bookmarks=true,          % show bookmarks bar?
     unicode=true,            % non-Latin characters in Acrobat’s bookmarks
@@ -47,8 +57,8 @@
     filecolor=magenta,       % color of file links
     urlcolor=BlueViolet      % color of external links
 }
-% -------------------------------------------------------------------(end)
-%-- Fancy Header ---------------------------------------------------(fold)
+
+%-- Fancy Header ---------------------------------------------------
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
@@ -63,52 +73,59 @@
   \fancyhead{}                          % get rid of headers on plain pages
   \renewcommand{\headrulewidth}{0pt}    % and the line
 }
-% -------------------------------------------------------------------(end)
-%-- OTHER ----------------------------------------------------------(fold)
+
+%-- OTHER ----------------------------------------------------------
 \makenomenclature
 \renewcommand{\nomname}{List of Acronyms}
 \renewcommand{\bibname}{References}
 %\geometry{top=1.0in,bottom=1.0in,left=1.5in,right=1.0in}
-% TODO: customize chapter headers
-% TODO: improve the citation style using natbib
-
 % \defaultfontfeatures{Mapping=tex-text}
 % \setromanfont[Mapping=tex-text]{Hoefler Text}
 % \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
 % \setmonofont[Scale=MatchLowercase]{Andale Mono}
 % \newfontfamily{\A}[Scale=0.9]{Geeza Pro}
-% {\A السلام عليكم}
+% {\A سلام}
 
-%--------------------------------------------------------------------(end)
+% (end)
 
 \begin{document}
-% == Front Matter ========================================================
+
+% == Front Matter ========================================================(fold)
 \frontmatter
-%\include{Cover}
-%\include{Dedication}
+
+\include{Cover}
+\include{Dedication}
 \include{Abstract}
 \include{Acknowledgements}
 \tableofcontents
-% \addcontentsline{toc}{chapter}{Table of Contents}
-% \listoffigures
-% \addcontentsline{toc}{chapter}{List of Figures}
-% \listoftables
-% \addcontentsline{toc}{chapter}{List of Tables}
-%\include{Preface}
+\addcontentsline{toc}{chapter}{Table of Contents}
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\include{Preface}
 
-% == Main Matter =========================================================
+% (end)
+
+% == Main Matter =========================================================(fold)
 \mainmatter
+
 \include{Introduction}
 \include{Methodology}
 \include{Literature-Review}
-%\include{Appendix}
+\include{Appendix}
 
-% == Back Matter =========================================================
+% (end)
+
+% == Back Matter =========================================================(fold)
 \backmatter
+
 \bibliographystyle{alpha}
 \bibliography{thesis}
 \addcontentsline{toc}{chapter}{\bibname}
 \printnomenclature
 \addcontentsline{toc}{chapter}{\nomname}
-% Index
+
+% (end)
+
 \end{document}
