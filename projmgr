@@ -39,3 +39,9 @@ rdialog:
   path: ~/Dropbox/github/rdialog
   type: git
   url: git@github.com:aziz/rdialog.git
+
+virastar:
+  name: virastar
+  path: ~/Dropbox/github/virastar
+  type: git
+  url: git@github.com:aziz/virastar.git
