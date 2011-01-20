@@ -1,5 +1,3 @@
-#!/usr/bin/ruby
-
 def change_log(stream)
   # send Rails logs to console
   # 2.X
@@ -29,5 +27,3 @@ def rails_routes
   include ActionController::UrlWriter
   default_url_options[:host] = 'example.com'
 end
-
-

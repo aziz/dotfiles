@@ -1,4 +1,3 @@
-#!/usr/bin/ruby
 require 'irb/completion'
 require 'irb/ext/save-history'
 require 'rubygems'
@@ -19,11 +18,11 @@ end
 
 # better table view for activerecord objects with hirb
 begin
-  require 'hirb' 
+  require 'hirb'
   Hirb.enable
   extend Hirb::Console
 rescue LoadError
-  puts "*** hirb disabled ***"  
+  puts "*** hirb disabled ***"
   puts "gem install hirb"
 end
 
@@ -44,7 +43,7 @@ end
 
 
 class Object
-  
+
   # list methods which aren't in superclass
   def local_methods(obj = self)
     (obj.methods - obj.class.superclass.instance_methods).sort
@@ -58,7 +57,7 @@ class Object
       puts pattern % meths
     end
   end
-  
+
   # print documentation
   # ri 'Array#pop' or Array.ri or Array.ri :pop or arr.ri :pop
   def ri(method = nil)
