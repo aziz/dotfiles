@@ -45,3 +45,9 @@ virastar:
   path: ~/Dropbox/github/virastar
   type: git
   url: git@github.com:aziz/virastar.git
+  
+virastar-app:
+  name: virastar-app
+  path: ~/Dropbox/github/virastar-app
+  type: git
+  url: git@github.com:aziz/virastar-app.git
