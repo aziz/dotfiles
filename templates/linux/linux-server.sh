@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get -y install curl && curl https://github.com/joshfng/railsready/raw/master/railsready.sh >> railsready.sh && chmod a+x railsready.sh && ./railsready.sh
+sudo wget --no-check-certificate https://github.com/joshfng/railsready/raw/master/railsready.sh && bash railsready.sh
 
 # TODO: 
 # 1. dotfiles
