@@ -1,2 +1,6 @@
-0,30	*	*	*	*	/usr/local/bin/brew update >> ~/.cron/logs/brew_update.log 2>&1
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin
+
+# Update homebrew every 30 minues
+0,30	*	*	*	*	date >> ~/.cron/logs/brew_update.log && brew update >> ~/.cron/logs/brew_update.log 2>&1
+
 
