@@ -1,6 +1,9 @@
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin
 
-# Update homebrew every 30 minues
-0,30	*	*	*	*	date >> ~/.cron/logs/brew_update.log && brew update >> ~/.cron/logs/brew_update.log 2>&1
+# Update homebrew every 6 hours
+0	*/6	*	*	*	date >> ~/.cron/logs/brew_update.log && brew update >> ~/.cron/logs/brew_update.log 2>&1
+
+# Update boplots DB every 15 minues
+1,16,31,46	*	*	*	*	cd /Users/allen/Dropbox/projects/boplots && /Users/allen/.rvm/gems/ruby-1.8.7-p330/bin/rails runner "r=Robot.new;r.get_flats" >> ~/.cron/logs/robot.log 2>&1
 
 

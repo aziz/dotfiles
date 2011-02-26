@@ -2,8 +2,6 @@ rm2trash is broken for linux
 https://github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
 https://github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.darwin
 
-update janus, bash
-
 dropbox
 prepare_linux.shell
 prepare_mac.shell
