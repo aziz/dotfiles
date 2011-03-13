@@ -35,7 +35,7 @@ rescue LoadError
 end
 
 begin
-  require 'looksee/shortcuts'
+  require 'looksee'
 rescue LoadError
   puts "*** looksee disabled ***"
   puts "gem install looksee"
