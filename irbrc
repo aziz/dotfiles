@@ -49,15 +49,6 @@ class Object
     (obj.methods - obj.class.superclass.instance_methods).sort
   end
 
-  def ls(obj=self)
-    width = `stty size 2>/dev/null`.split(/\s+/, 2).last.to_i
-    width = 80 if width == 0
-    local_methods(obj).each_slice(3) do |meths|
-      pattern = "%-#{width / 3}s" * meths.length
-      puts pattern % meths
-    end
-  end
-
   # print documentation
   # ri 'Array#pop' or Array.ri or Array.ri :pop or arr.ri :pop
   def ri(method = nil)
