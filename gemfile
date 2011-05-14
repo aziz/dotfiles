@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 # GEMS for Development Productivity:
 gem 'rails'
-gem 'sinatra'
+#gem 'sinatra'
 gem 'rails_templater'
 
 # Deployment
@@ -14,7 +14,7 @@ gem 'yui-compressor'
 # Testing
 gem 'rspec'
 gem 'rspec-rails'
-gem 'cucumber'
+#gem 'cucumber'
 
 # Monitoring
 gem 'rails_best_practices'

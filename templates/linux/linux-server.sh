@@ -2,6 +2,22 @@
 
 sudo wget --no-check-certificate https://github.com/joshfng/railsready/raw/master/railsready.sh && bash railsready.sh
 
+sudo apt-get install sqlite3 libsqlite3-dev 
+sudo apt-get install git curl vim
+rvm use 1.9.2 --default
+
+git clone git://github.com/aziz/dotfiles.git
+cd dotfiles/bash/ && git clone git://github.com/aziz/bash-it.git .
+cd .. && ./install.sh
+source ~/.bashrc
+
+# install mysql
+
+
+# add solarized to repo
+# add run permission to linux-server.sh
+
+
 # TODO: 
 # 1. dotfiles
 # 2. dotfiles requirements
