@@ -11,11 +11,8 @@ cd dotfiles/bash/ && git clone git://github.com/aziz/bash-it.git .
 cd .. && ./install.sh
 source ~/.bashrc
 
-# install mysql
-
-
-# add solarized to repo
-# add run permission to linux-server.sh
+## install mysql
+# add solarized to repo (update janus)
 
 
 # TODO: 

@@ -4,6 +4,6 @@ PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin
 0	*/6	*	*	*	date >> ~/.cron/logs/brew_update.log && brew update >> ~/.cron/logs/brew_update.log 2>&1
 
 # Update boplots DB every 5 minues
-1,6,11,16,21,26,31,36,41,46,51,56	*	*	*	*	/Users/allen/Dropbox/projects/boplots/lib/robot >> ~/.cron/logs/robot.log 2>&1
+#1,6,11,16,21,26,31,36,41,46,51,56	*	*	*	*	/Users/allen/Dropbox/projects/boplots/lib/robot >> ~/.cron/logs/robot.log 2>&1
 
 
