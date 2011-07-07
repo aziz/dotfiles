@@ -65,5 +65,8 @@ export IRC_CLIENT='irssi'
 
 export TODO="t"
 
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US"
+
 # Load Bash It
 source $BASH/bash_it.sh
