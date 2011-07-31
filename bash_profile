@@ -19,6 +19,10 @@
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 export CC=gcc-4.2
 
+# Node 
+export NODE_PATH="/usr/local/lib/node_modules"
+
+
 # Load Tmuxinator, if you are using it
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
