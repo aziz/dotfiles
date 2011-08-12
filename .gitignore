@@ -1,3 +1,4 @@
 ssh/*
 tmuxinator/*
 vim/.netrwhist
+cron/logs

@@ -34,4 +34,4 @@ With some little tools and templates that could be helpful here and there.
 ## Requirements
 - install rvm then rubies
 - `brew install git ack tree tmux screen vim`
-- `gem  install tmuxinator rails capistrano capistrano_colors looksee wirble hirb awesome_print yui-compressor`
+- `gem  install tmuxinator rails capistrano capistrano_colors looksee wirble hirb awesome_print yui-compressor bundle-outdated`
