@@ -18,6 +18,22 @@ that we have given careful thought to the experience of using MacVIM
 with the tools in question. If you run into an issue using it, please
 report an issue to the issue tracker.
 
+## Pre-requisites
+
+Janus is built primarily for [MacVim](http://code.google.com/p/macvim/) on OSX.
+Download it [here](https://github.com/b4winckler/macvim/downloads).
+
+Alternatively, you can use Janus with the bundled console `vim` installation on
+OSX (via Terminal), or with any other `vim` or `gvim` installation.
+
+Linux users can install `gvim` for an experience identical to MacVim.
+On Debian/Ubuntu, simply `apt-get install vim-gnome`. For remote
+servers, install console vim with `apt-get install vim-nox`.
+
+On a fresh Ubuntu install you also have to install the packages `rake` and `ruby-dev`
+before running the install script and `exuberant-ctags` for ctags
+support.
+
 ## Installation
 
 0. `for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old;
@@ -28,7 +44,32 @@ report an issue to the issue tracker.
 
 or
 
-  `curl https://github.com/carlhuda/janus/raw/master/bootstrap.sh -o - | sh`
+  `curl https://raw.github.com/carlhuda/janus/master/bootstrap.sh -o - | sh`
+
+## Customization
+
+Create `~/.vimrc.local` and `~/.gvimrc.local` for any local
+customizations.
+
+For example, to override the default color schemes:
+
+    echo color desert  > ~/.vimrc.local
+    echo color molokai > ~/.gvimrc.local
+
+If you want to add additional Vim plugins you can do so by adding a
+`~/.janus.rake` like so:
+
+    vim_plugin_task "zencoding", "git://github.com/mattn/zencoding-vim.git"
+    vim_plugin_task "minibufexpl", "git://github.com/fholgado/minibufexpl.vim.git"
+
+If you do not wish to use one of the plugins Janus provides out of the
+box you can have it skipped using the `skip_vim_plugin` method in
+`~/.janus.rake`:
+
+    skip_vim_plugin "color-sampler"
+
+**Note**: Skipping the plugin will only apply to installation. It won't
+remove configurations or mappings Janus might have added for it.
 
 ## Updating to the latest version
 
@@ -39,10 +80,17 @@ again inside your `~/.vim` directory.
 
 Here's some tips if you've never used VIM before:
 
-## Tutorial
+## Tutorials
 
 * Type `vimtutor` into a shell to go through a brief interactive
   tutorial inside VIM.
+* Read the slides at [VIM: Walking Without Crutches](http://walking-without-crutches.heroku.com/#1).
+* Watch the screencasts at [vimcasts.org](http://vimcasts.org/)
+* Watch Derek Wyatt's energetic tutorial videos at [his site](http://www.derekwyatt.org/vim/vim-tutorial-videos/)
+* Read wycats' perspective on learning vim at
+  [Everyone who tried to convince me to use vim was wrong](http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/)
+* Read this and other answers to a question about vim at StackOverflow:
+  [Your problem with Vim is that you don't grok vi](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 ## Modes
 
@@ -57,6 +105,7 @@ Here's some tips if you've never used VIM before:
 * Use `:q` to exit vim
 * Certain commands are prefixed with a `<Leader>` key, which maps to `\`
   by default. Use `let mapleader = ","` to change this.
+* Keyboard [cheat sheet](http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png).
 
 # Features
 
@@ -162,7 +211,7 @@ There's a lot more; check it out at `:help surround`
 ## NERDCommenter
 
 NERDCommenter allows you to wrangle your code comments, regardless of
-filetype. View `help :NERDCommenter` for all the details.
+filetype. View `:help NERDCommenter` for all the details.
 
 **Customizations**: Janus binds command-/ (`<D-/>`) to toggle comments.
 
@@ -199,19 +248,31 @@ hunks in the file.
 Use `:Gdiff` on an open file to see what changes have been made to that
 file
 
+## Gist-vim
+
+Nice [gist integration](https://github.com/mattn/gist-vim) by mattn.
+Requires exporting your `GITHUB_TOKEN` and `GITHUB_USER` as environment
+variables or setup your [GitHub token config](http://help.github.com/git-email-settings/).
+
+Try `:Gist`, `:Gist -p` and visual blocks.
+
 ## ZoomWin
 
 When working with split windows, ZoomWin lets you zoom into a window and
 out again using `Ctrl-W o`
 
-**Customizations**: Janus binds `<Leader>z` to `:ZoomWin`
+**Customizations**: Janus binds `<Leader><Leader>` to `:ZoomWin`
 
-## Markdown Preview
+## Hammer
 
-Markdown preview takes the current buffer, converts the Markdown to
-HTML, and opens it in your default browser.
+Hammer takes the current buffer, tries to convert it to HTML, and opens
+it in your default browser. Hammer is enabled for Markdown files, but
+has support for much more.
 
 **Customizations**: Janus binds `<Leader>p` to this plugin.
+
+**Tip**: Check out [Hammer's README](https://github.com/robgleeson/hammer.vim#readme)
+to see the requirements for previewing other file formats.
 
 ## Additional Syntaxes
 
@@ -219,11 +280,12 @@ Janus ships with a few additional syntaxes:
 
 * Markdown (bound to \*.markdown, \*.md, and \*.mk)
 * Mustache (bound to \*.mustache)
+* Arduino  (bound to \*.pde)
 * Haml (bound to \*.haml)
 * Sass (bound to \*.sass)
 * SCSS (bound to \*.scss)
 * An improved JavaScript syntax (bound to \*.js)
-* Map Gemfile, Rakefile and Thorfile to Ruby
+* Map Gemfile, Rakefile, Vagrantfile and Thorfile to Ruby
 * Git commits (set your `EDITOR` to `mvim -f`)
 
 ## Color schemes
@@ -247,8 +309,5 @@ Janus also has a few customized versions of popular themes:
 * jellybeans+
 * molokai
 * railscasts+
+* vwilight
 
-To permanently set a color scheme, update your local vimrc files:
-
-    echo color desert > ~/.vimrc.local
-    echo color jellybeans+ > ~/.gvimrc.local

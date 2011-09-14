@@ -19,7 +19,7 @@
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 export CC=gcc-4.2
 
-# Node 
+# Node
 export NODE_PATH="/usr/local/lib/node_modules"
 
 
@@ -70,8 +70,11 @@ export IRC_CLIENT='irssi'
 
 export TODO="t"
 
+# Setting for the new UTF-8 terminal support in Lion
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US"
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Load Bash It
 source $BASH/bash_it.sh
