@@ -47,5 +47,8 @@
   prompt = false
 [diff]
   tool = Kaleidoscope
+[push]
+  # Push current branch even if you've never pushed it before
+  default = current
 [difftool "Kaleidoscope"]
   cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
