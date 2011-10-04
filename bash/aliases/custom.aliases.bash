@@ -10,6 +10,7 @@ alias fast_terminal='sudo rm -rf /private/var/log/asl/*.asl'
 
 # CVS
 alias cup='cvs update -A'
+alias cvs_diff='cvs diff -bup "$@" | colordiff | less -R'
 
 # Qwandry gem for opening libraries in Editor
 alias qwe='qw -e mate'
