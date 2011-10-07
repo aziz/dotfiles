@@ -34,4 +34,11 @@ alias apache_stop="sudo apachectl -k graceful-stop"
 alias cron_install="crontab -r;crontab ~/.cron/cron_jobs"
 
 # npm
+alias npmg="npm_g"
+alias npmgo="npm_g outdated"
 alias coffee-watch="coffee -r coffeescript-growl -w"
+
+# homebrew 
+alias bro="brew outdated"
+
+
