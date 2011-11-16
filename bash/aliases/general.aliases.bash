@@ -50,6 +50,7 @@ alias tree='tree -CA'
 # Directory
 alias	md='mkdir -p'
 alias	rd=rmdir
+alias	rmd='rm -Rf'
 alias d='dirs -v'
 
 function aliases-help() {
