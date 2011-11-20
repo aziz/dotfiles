@@ -11,6 +11,12 @@ function myip {
   echo "Your public IP is: ${bold_green} $res ${normal}"
 }
 
+function gen_pass {
+  echo "${bold_purple}Generating a ${1} characters long password${normal} =>"
+  res=$(openssl rand -base64 ${1} | head -c ${1})
+  echo "${bold_green}$res${normal}"
+}
+
 function mkcd(){
 	mkdir -p "$*"
 	cd "$*"
