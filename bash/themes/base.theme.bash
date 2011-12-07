@@ -82,3 +82,13 @@ function rvm_version_prompt {
     echo -e "$RVM_THEME_PROMPT_PREFIX$rvm$RVM_THEME_PROMPT_SUFFIX"
   fi
 }
+
+
+function rvmrc_version_prompt {
+  if [ -f .rvmrc ]; then
+    if which rvm &> /dev/null; then
+      rvm=$(rvm tools identifier) || return
+      echo -e "$RVM_THEME_PROMPT_PREFIX$rvm$RVM_THEME_PROMPT_SUFFIX"
+    fi
+  fi
+}
