@@ -78,3 +78,6 @@ export LC_ALL=en_US.UTF-8
 
 # Load Bash It
 source $BASH/bash_it.sh
+
+source "`brew --prefix grc`/etc/grc.bashrc"
+
