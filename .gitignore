@@ -5,3 +5,4 @@ cron/logs
 githubwatcher/db.yaml
 githubwatcher/log/githubwatcher.log
 githubwatcher/tmp/githubwatcher.pid
+.DS_Store

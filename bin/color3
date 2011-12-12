@@ -23,7 +23,6 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-function colors() { 
 echo
 echo Table for 16-color terminal escape sequences.
 echo Replace ESC with \\033 in bash.
@@ -47,5 +46,3 @@ done
  
 echo
 echo
-
-}

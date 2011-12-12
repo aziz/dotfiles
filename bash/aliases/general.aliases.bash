@@ -17,6 +17,12 @@ then
 	alias ls="ls --color=always"
 fi
 
+which gshuf &> /dev/null
+if [ $? -eq 1 ]
+then
+  alias shuf=gshuf
+fi
+
 alias c='clear'
 alias k='clear'
 alias cls='clear'
@@ -44,8 +50,12 @@ alias -- -="cd -"       # Go back
 alias h='history'
 
 # Tree
-alias treee="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias tree='tree -CA'
+if [ ! -x "$(which tree)" ]
+then
+  alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+else 
+  alias tree='tree -CA'
+fi
 
 # Directory
 alias	md='mkdir -p'

@@ -12,13 +12,10 @@ alias ra='rails application'
 alias rd='rails destroy'
 
 alias ss='script/server'
-alias ts="thin start"     # thin server
 alias sc='script/console'
-alias restartapp='touch tmp/restart.txt'
+alias ts="thin start"     # thin server
 alias restart='touch tmp/restart.txt'  # restart passenger
 alias devlog='tail -f log/development.log'
-alias taild='tail -f log/development.log' # tail dev log
-alias migrate='rake db:migrate db:test:clone'
 
 # rake
 alias rake='rake --rakelibdir ~/.rake/'
@@ -33,14 +30,6 @@ alias rdbr='rake db:rollback'
 
 # rubygems
 alias gemo='gem outdated'
-alias bout="bundle-outdated"
-
-# bundler
-alias b="bundle"
-alias bi="b install --path vendor"
-alias bu="b update"
-alias be="b exec"
-alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 
 # powe and powder
 alias pr="powder restart"
