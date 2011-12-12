@@ -35,3 +35,16 @@ function dock-switch() {
         echo "sorry. you're currently not using os x"
     fi
 }
+
+
+function spotlight_hide() {
+  sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+  killall SystemUIServer
+}
+
+function spotlight_show() {
+  sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+  killall SystemUIServer
+}
+
+
