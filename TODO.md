@@ -1,3 +1,6 @@
+https://github.com/baskerville/iTerm-2-Color-Themes
+
+
 rm2trash is broken for linux
 https://github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
 https://github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.darwin
