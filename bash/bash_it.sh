@@ -38,14 +38,6 @@ do
   source $config_file
 done 
 
-# Custom
-CUSTOM="${BASH}/custom/*.bash"
-for config_file in $CUSTOM
-do
-  source $config_file
-done
-
-
 unset config_file
 if [[ $PROMPT ]]; then
     export PS1=$PROMPT
