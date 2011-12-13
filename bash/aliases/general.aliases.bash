@@ -54,7 +54,7 @@ if [ ! -x "$(which tree)" ]
 then
   alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 else 
-  alias tree='tree -CA'
+  alias tree="tree -CAFa -I 'CVS|*.*.package|.svn|.git' --dirsfirst"
 fi
 
 # Directory
