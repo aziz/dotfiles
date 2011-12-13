@@ -17,13 +17,14 @@ function gen_pass {
   echo "${bold_green}$res${normal}"
 }
 
-function mkcd(){
-	mkdir -p "$*"
-	cd "$*"
+function mkcd {
+  mkdir -p "$*"
+  cd "$*"
 }
 
+function hex { printf "%X\n" $*; }
 
-function man2pdf() {
+function man2pdf {
   if [ $# -eq 1 ] ; then
       to_pdf=$(which ps2pdf)
       if [ -z "$to_pdf" ] ; then
@@ -43,7 +44,7 @@ function man2pdf() {
 }
 
 # View man documentation in Preview
-pman () {
+pman() {
    man -t "${1}" | open -f -a $PREVIEW
 }
 
@@ -57,19 +58,18 @@ pri() {
 }
 
 quiet() {
-	$* &> /dev/null &
+  $* &> /dev/null &
 }
 
 banish-cookies() {
-	rm -r ~/.macromedia ~/.adobe
-	ln -s /dev/null ~/.adobe
-	ln -s /dev/null ~/.macromedia
+  rm -r ~/.macromedia ~/.adobe
+  ln -s /dev/null ~/.adobe
+  ln -s /dev/null ~/.macromedia
 }
 
 # disk usage per directory
 # in Mac OS X and Linux
-usage ()
-{
+usage () {
     if [ $(uname) = "Darwin" ]; then
         if [ -n $1 ]; then
             du -hd $1
@@ -88,18 +88,18 @@ usage ()
 
 # One thing todo
 function t() {
-	 if [[ "$*" == "" ]] ; then
-		 cat ~/.t
-	 else
-		 echo "$*" > ~/.t
-	 fi
+   if [[ "$*" == "" ]] ; then
+     cat ~/.t
+   else
+     echo "$*" > ~/.t
+   fi
 }
 
 # List all plugins and functions defined by bash-it
 function plugins-help() {
-    
+
     echo "bash-it Plugins Help-Message"
-    echo 
+    echo
 
     set | grep "()" \
     | sed -e "/^_/d" | grep -v "BASH_ARGC=()" \
