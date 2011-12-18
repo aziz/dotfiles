@@ -1,16 +1,14 @@
 --type-add=ruby=.haml,.builder,.rake
 --type-add=html=.html.erb,.html.haml
---type-add=css=.sass,.less
---type-add=js=.js.erb
+--type-add=css=.sass,.less,.scss
+--type-add=js=.js.erb,.coffee
 --type-set=markdown=.markdown,.md,.mdown
---type-set=actionscript=.as
 --type-set=cucumber=.feature
 --ignore-dir=vendor
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=doc
 --ignore-dir=coverage
---ignore-dir=.idea
 --sort-files
 --color
 --follow
@@ -19,7 +17,5 @@
 --css
 --js
 --markdown
---actionscript
---objc
 
 
