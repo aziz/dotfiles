@@ -2,19 +2,22 @@
 
 # For generic functions.
 
-function ips {
-  ifconfig | grep "inet " | awk '{ print $2 }'
-}
-
-function myip {
-  res=$(curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+')
-  echo "Your public IP is: ${bold_green} $res ${normal}"
-}
-
 function gen_pass {
   echo "${bold_purple}Generating a ${1} characters long password${normal} =>"
   res=$(openssl rand -base64 ${1} | head -c ${1})
   echo "${bold_green}$res${normal}"
+}
+
+# Returns the first command that exists, or exit status 1.
+# EDITOR=`first_of "mate -w" "nano -w" vi`
+first_of() {
+  if [ -n "$1" ]; then
+    local arg=$1
+    shift
+    command -v $arg >> /dev/null && echo $arg || first_of "$@"
+  else
+    exit 1
+  fi
 }
 
 function mkcd {

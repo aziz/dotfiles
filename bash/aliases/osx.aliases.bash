@@ -2,10 +2,14 @@
 
 alias desktop_hide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias desktop_show="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-alias spotlight_hide="sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer" 
+alias spotlight_hide="sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer"
 alias spotlight_show="sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer"
 alias mac_hide="chflags hidden"
 alias mac_show="chflags nohidden"
+alias openports='sudo lsof -iTCP -sTCP:LISTEN -P'
+
+# Recursively delete `.DS_Store` files
+alias ds_store_cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Desktop Programs
 alias preview="open -a '$PREVIEW'"

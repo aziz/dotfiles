@@ -10,6 +10,9 @@ alias la='ls -AF'       # Compact view, show hidden
 alias ll='ls -al'
 alias l='ls -a'
 alias l1='ls -1'
+alias recent='ls -lAt | head'
+alias old='ls -lAt | tail'
+
 alias w='which'
 
 if [ $(uname) = "Linux" ]
@@ -53,12 +56,13 @@ alias h='history'
 if [ ! -x "$(which tree)" ]
 then
   alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-else 
+else
   alias tree="tree -CAFa -I 'CVS|*.*.package|.svn|.git' --dirsfirst"
 fi
 
 # Directory
 alias	md='mkdir -p'
+alias mkdir='mkdir -p'
 alias	rd=rmdir
 alias	rmd='rm -Rf'
 alias d='dirs -v'
@@ -84,5 +88,5 @@ function aliases-help() {
   echo "  piano  = pianobar"
   echo "  q      = exit"
   echo "  irc    = $IRC_CLIENT"
-  echo 
+  echo
 }

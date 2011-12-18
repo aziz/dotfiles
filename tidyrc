@@ -1,0 +1,27 @@
+quiet: yes
+show-errors: 6
+show-warnings: yes
+
+char-encoding: utf8
+
+add-xml-space: yes
+tidy-mark: no
+output-encoding: utf8
+add-xml-decl: no
+escape-cdata: no
+
+wrap: 0
+wrap-php: no
+indent: auto
+indent-spaces: 2
+indent-cdata: yes
+
+# Strip Microsoft-specific HTML and output spaces rather than their non-breaking spaces:
+fix-backslash: yes
+fix-uri: yes
+drop-proprietary-attributes: no
+drop-font-tags: yes
+drop-empty-paras: yes
+replace-color: yes
+
+join-styles: yes
