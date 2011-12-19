@@ -4,7 +4,7 @@
 # brew install unrar
 # brew install p7zip
 
-function extract() {
+extract() {
 if [ -f $1 ] ; then
      case $1 in
          *.tar.bz2)   tar xvjf $1   ;;

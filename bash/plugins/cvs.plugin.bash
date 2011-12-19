@@ -1,10 +1,10 @@
 #!/bin/bash
 
-function cvs_rm() {
+cvs_rm() {
   rm $*
   cvs rm $*
 }
 
-function cvs_diff() {
+cvs_diff() {
   cvs diff -bup $* | colordiff | less -R
 }

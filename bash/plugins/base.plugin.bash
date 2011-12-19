@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# For generic functions.
+# Generic functions:
 
-function gen_pass {
+gen_pass() {
   echo "${bold_purple}Generating a ${1} characters long password${normal} =>"
   res=$(openssl rand -base64 ${1} | head -c ${1})
   echo "${bold_green}$res${normal}"
@@ -20,14 +20,14 @@ first_of() {
   fi
 }
 
-function mkcd {
+mkcd() {
   mkdir -p "$*"
   cd "$*"
 }
 
-function hex { printf "%X\n" $*; }
+hex() { printf "%X\n" $*; }
 
-function man2pdf {
+man2pdf() {
   if [ $# -eq 1 ] ; then
       to_pdf=$(which ps2pdf)
       if [ -z "$to_pdf" ] ; then
@@ -51,7 +51,6 @@ pman() {
    man -t "${1}" | open -f -a $PREVIEW
 }
 
-
 pcurl() {
   curl "${1}" | open -f -a $PREVIEW
 }
@@ -70,9 +69,8 @@ banish-cookies() {
   ln -s /dev/null ~/.macromedia
 }
 
-# disk usage per directory
-# in Mac OS X and Linux
-usage () {
+# disk usage per directory, in Mac OS X and Linux
+usage() {
     if [ $(uname) = "Darwin" ]; then
         if [ -n $1 ]; then
             du -hd $1
@@ -89,17 +87,16 @@ usage () {
     fi
 }
 
-# One thing todo
-function t() {
-   if [[ "$*" == "" ]] ; then
-     cat ~/.t
-   else
-     echo "$*" > ~/.t
-   fi
+# back up file with timestamp, useful for administrators and configs
+buf() {
+    filename=$1
+    filetime=$(date +%Y%m%d_%H%M%S)
+    cp ${filename} ${filename}_${filetime}
 }
 
+
 # List all plugins and functions defined by bash-it
-function plugins-help() {
+plugins-help() {
 
     echo "bash-it Plugins Help-Message"
     echo
@@ -114,12 +111,4 @@ function plugins-help() {
     | grep -v "BASH_CMDS=()" \
     | grep -v "BASH_ALIASES=()" \
     | grep -v "COMPREPLY=()" | sed -e "s/()//"
-}
-
-# back up file with timestamp
-# useful for administrators and configs
-buf () {
-    filename=$1
-    filetime=$(date +%Y%m%d_%H%M%S)
-    cp ${filename} ${filename}_${filetime}
 }
