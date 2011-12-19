@@ -2,7 +2,7 @@
 
 # Generic functions:
 
-gen_pass() {
+genpass() {
   echo "${bold_purple}Generating a ${1} characters long password${normal} =>"
   res=$(openssl rand -base64 ${1} | head -c ${1})
   echo "${bold_green}$res${normal}"
@@ -25,7 +25,9 @@ mkcd() {
   cd "$*"
 }
 
-hex() { printf "%X\n" $*; }
+hex() {
+  printf "%X\n" $*;
+}
 
 man2pdf() {
   if [ $# -eq 1 ] ; then

@@ -10,37 +10,38 @@ alias reload='source ~/.bash_profile && echo "bash_profile reloaded"'
 source "${BASH}/themes/colors.theme.bash"
 source "${BASH}/themes/base.theme.bash"
 
-# Library
+# Load Library
 LIB="${BASH}/lib/*.bash"
 for config_file in $LIB
 do
   source $config_file
 done
 
-# Tab Completion
+# Load Tab Completion
 COMPLETION="${BASH}/completion/*.bash"
 for config_file in $COMPLETION
 do
   source $config_file
 done
 
-# Plugins
+# Load Plugins
 PLUGINS="${BASH}/plugins/*.bash"
 for config_file in $PLUGINS
 do
   source $config_file
 done
 
-# Aliases
+# Load Aliases
 FUNCTIONS="${BASH}/aliases/*.bash"
 for config_file in $FUNCTIONS
 do
   source $config_file
-done 
+done
 
 unset config_file
+
 if [[ $PROMPT ]]; then
-    export PS1=$PROMPT
+  export PS1=$PROMPT
 fi
 
 # Adding Support for other OSes
@@ -48,20 +49,8 @@ PREVIEW="less"
 [ -s /usr/bin/gloobus-preview ] && PREVIEW="gloobus-preview"
 [ -s /Applications/Apple/Preview.app ] && PREVIEW="/Applications/Apple/Preview.app"
 
-if [[ $PROMPT ]]; then
-    export PS1=$PROMPT
-fi
-
-# Adding Support for other OSes
-PREVIEW="less"
-[ -s /usr/bin/gloobus-preview ] && PREVIEW="gloobus-preview"
-[ -s /Applications/Apple/Preview.app ] && PREVIEW="/Applications/Apple/Preview.app"
-
-
-#
 # Custom Help
-
-function bash-it() {
+bash-it() {
   echo "Welcome to Bash It!"
   echo
   echo "Here is a list of commands you can use to get help screens for specific pieces of Bash it:"

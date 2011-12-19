@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# TODO: convert to functions with parameters
 alias desktop_hide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias desktop_show="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias spotlight_hide="sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer"

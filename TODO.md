@@ -1,4 +1,5 @@
 - https://github.com/ginatrapani/todo.txt-cli
+- hcht configuration
 - growl notify the result of brew update
 - rm2trash is broken for linux
 - https://github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
