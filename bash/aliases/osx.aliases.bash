@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# fix_slow_terminal
+alias fast_terminal='sudo rm -rf /private/var/log/asl/*.asl'
+
 # Desktop Programs
 alias preview="open -a '$PREVIEW'"
 alias xcode="open -a '/Developer/Applications/Xcode.app'"

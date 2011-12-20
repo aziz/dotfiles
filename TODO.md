@@ -1,4 +1,10 @@
+- merge bash/aliases and bash/plugin into topic related files/folders
+- things that add functionality or configure an already installed app should be called plugins.
+- plugins can have aliases/functions/exports/completions
+- others should be stored as pure bash scripts called ???
 - https://github.com/ginatrapani/todo.txt-cli
+- https://github.com/holman/dotfiles/
+- update bash-it
 - hcht configuration
 - growl notify the result of brew update
 - rm2trash is broken for linux
@@ -23,7 +29,7 @@ chflags nohidden ~/Library
 
 ---------------------------------
 
-# ✔ ✖ ✘ ?????? ✚ ??????
+# ✔ ✖ ✘ ✚ 𐄂
 # → ➞ ➜ ➤ ⬆ ⬇ ⬅  ▷▸▹  ► ◀ ▲ ▼ ‣ ›
 # ★ ☆ ✩ ✱ ✸ ✿ ✦ ✜  ◈ ⟐
 # ⚑ ⚐ ✆ ✈  ⚠ ⚡ ♪ ♫ ⑆ ⑉

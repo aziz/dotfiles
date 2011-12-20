@@ -5,9 +5,6 @@ alias ct3='cd ~/calltracks/rails3'
 alias tmuxu='tmux -u'
 alias fixtmux='while true ; do killall -SIGWINCH tmux ; sleep 5 ; done'
 
-# fix_slow_terminal
-alias fast_terminal='sudo rm -rf /private/var/log/asl/*.asl'
-
 # CVS
 alias cup='cvs update -A'
 

@@ -52,7 +52,7 @@ export JEKYLL_FORMATTING="markdown"
 export IRC_CLIENT='irssi'
 
 # Set this to the command you use for todo.txt-cli
-export TODO="t"
+export TODO="todo"
 
 # Setting for the new UTF-8 terminal support in Lion
 export LANG="en_US.UTF-8"

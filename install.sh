@@ -17,7 +17,7 @@ for name in *; do
 
   target="$HOME/.$name"
 
-  if [[ $name != 'install.sh' && $name != 'README.md' && $name != 'gitconfig' && $name != 'TODO' ]]; then
+  if [[ $name != 'install.sh' && $name != 'README.md' && $name != 'gitconfig' && $name != 'TODO.md' ]]; then
 
     if [ -e $target ]; then
       if [ ! -L $target ]; then

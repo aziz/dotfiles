@@ -35,7 +35,7 @@ function git_info() {
 
         # print all remotes and thier details
         for remote in $(git remote show); do
-            echo $remote:  
+            echo $remote:
             git remote show $remote
             echo
         done
@@ -49,14 +49,13 @@ function git_info() {
         fi
 
         # print at least 5 last log entries
-        echo 
+        echo
         echo "log:"
         git log -5 --oneline
-        echo 
+        echo
 
     else
         echo "you're currently not in a git repository"
-
     fi
 }
 
