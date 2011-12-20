@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function nginx_reload() {
+nginx_reload () {
   FILE="${NGINX_PATH}/logs/nginx.pid"
   if [ -e $FILE ]; then
     echo "Reloading NGINX..."
@@ -12,7 +12,7 @@ function nginx_reload() {
   fi
 }
 
-function nginx_stop() {
+nginx_stop () {
   FILE="${NGINX_PATH}/logs/nginx.pid"
   if [ -e $FILE ]; then
     echo "Stopping NGINX..."
@@ -24,7 +24,7 @@ function nginx_stop() {
   fi
 }
 
-function nginx_start() {
+nginx_start () {
   FILE="${NGINX_PATH}/sbin/nginx"
   if [ -e $FILE ]; then
     echo "Starting NGINX..."
@@ -34,7 +34,7 @@ function nginx_start() {
   fi
 }
 
-function nginx_restart() {
+nginx_restart () {
   FILE="${NGINX_PATH}/logs/nginx.pid"
   if [ -e $FILE ]; then
     echo "Stopping NGINX..."

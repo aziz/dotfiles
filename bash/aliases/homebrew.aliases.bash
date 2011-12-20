@@ -10,7 +10,7 @@ alias brsr="brew search"
 alias brinf="brew info"
 alias brdr="brew doctor"
 
-function brew-help() {
+brew-help () {
   echo "Homebrew Alias Usage"
   echo
   echo "brup  = brew update && brew upgrade"

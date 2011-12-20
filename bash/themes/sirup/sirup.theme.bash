@@ -1,7 +1,7 @@
 # For unstaged(*) and staged(+) values next to branch name in __git_ps1
 GIT_PS1_SHOWDIRTYSTATE="enabled"
 
-function rvm_version_prompt {
+rvm_version_prompt () {
   local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
 
   [ "$gemset" != "" ] && gemset="@$gemset"

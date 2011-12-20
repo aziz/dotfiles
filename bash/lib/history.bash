@@ -15,7 +15,7 @@ export HISTSIZE=5000
 
 export AUTOFEATURE=true autotest
 
-function rh {
+rh () {
   history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 }
 

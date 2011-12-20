@@ -34,7 +34,7 @@ alias gemo='gem outdated'
 # powe and powder
 alias pr="powder restart"
 
-function rails-help() {
+rails-help () {
   echo "Rails Aliases Usage"
   echo
   echo "  r           = rails"

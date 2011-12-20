@@ -1,32 +1,32 @@
 #!/bin/bash
 
 # Usage: new-github topfunky tidy_table
-function new_github() {
+new_github () {
   git remote add origin git@github.com:$1/$2.git
   git push -u origin master
 }
 
-function git_remote {
+git_remote () {
   echo "Running: git remote add origin ${GIT_HOSTING}:$1.git"
   git remote add origin $GIT_HOSTING:$1.git
 }
 
-function git_first_push {
+git_first_push () {
   echo "Running: git push origin master:refs/heads/master"
   git push origin master:refs/heads/master
 }
 
-function git_remove_missing_files() {
+git_remove_missing_files () {
   git ls-files -d -z | xargs -0 git update-index --remove
 }
 
 # Adds files to git's exclude file (same as .gitignore)
-function local-ignore() {
+local-ignore () {
   echo "$1" >> .git/info/exclude
 }
 
 # get a quick overview for your git repo
-function git_info() {
+git_info () {
     if [ -n "$(git symbolic-ref HEAD 2> /dev/null)" ]; then
         # print informations
         echo "git repo overview"
@@ -60,6 +60,6 @@ function git_info() {
 }
 
 # Stage deleted files for git
-function gitrm() {
+gitrm () {
   for x in `git status | grep deleted | awk '{print $3}'`; do git rm $x; done
 }

@@ -1,16 +1,16 @@
 #!/bin/bash
 
-function ips {
+ips () {
   ifconfig | grep "inet " | awk '{ print $2 }'
 }
 
-function myip {
+myip () {
   res=$(curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+')
   echo "Your public IP is: ${bold_green} $res ${normal}"
 }
 
 # check to see if a domain is registered or not
-function isreg {
+isreg () {
   dig soa $1 | grep -q ^$1 && echo "${bold_red}Sorry! it's already registered.${normal}" || echo "${bold_green}No, You can go and register it for yourself :) ${normal}"
 }
 

@@ -43,7 +43,7 @@ esac
 
 
 
-function git-help() {
+git-help () {
   echo "Git Custom Aliases Usage"
   echo
   echo "  gcl	  = git clone"

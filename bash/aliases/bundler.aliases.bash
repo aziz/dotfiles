@@ -10,7 +10,7 @@ alias bu="bundle update"
 alias bp="bundle package"
 alias bout="bundle-outdated"
 
-function bundler-help() {
+bundler-help () {
   echo "Bundler Aliases Usage"
   echo
   echo "  be          = bundle exec"

@@ -19,7 +19,7 @@ SCM_NONE_CHAR='○'
 RVM_THEME_PROMPT_PREFIX=' |'
 RVM_THEME_PROMPT_SUFFIX='|'
 
-function scm {
+scm () {
   if [[ -d .git ]]; then SCM=$GIT
   elif [[ -d .hg ]]; then SCM=$HG
   elif [[ -d .svn ]]; then SCM=$SVN
@@ -27,7 +27,7 @@ function scm {
   fi
 }
 
-function scm_char {
+scm_char () {
   if [[ -z $SCM ]]; then scm; fi
   [[ $SCM == $GIT ]] && echo $SCM_GIT_CHAR && return
   [[ $SCM == $HG ]] && echo $SCM_HG_CHAR && return
@@ -35,7 +35,7 @@ function scm_char {
   echo $SCM_NONE_CHAR
 }
 
-function scm_prompt_info {
+scm_prompt_info () {
   if [[ -z $SCM ]]; then scm; fi
   [[ $SCM == $GIT ]] && git_prompt_info && return
   [[ $SCM == $HG ]] && hg_prompt_info && return
@@ -44,12 +44,12 @@ function scm_prompt_info {
 
 # Stolen from Steve Losh
 # left in for backwards-compatibility
-function prompt_char {
+prompt_char () {
     char=$(scm_char);
     echo -e "$char"
 }
 
-function git_prompt_info {
+git_prompt_info () {
   if [[ -n $(git status -s 2> /dev/null |grep -v ^# |grep -v "working directory clean") ]]; then
       state=${GIT_THEME_PROMPT_DIRTY:-$SCM_THEME_PROMPT_DIRTY}
   else
@@ -62,7 +62,7 @@ function git_prompt_info {
   echo -e "$prefix${ref#refs/heads/}$state$suffix"
 }
 
-function svn_prompt_info {
+svn_prompt_info () {
   if [[ -n $(svn status 2> /dev/null) ]]; then
       state=${SVN_THEME_PROMPT_DIRTY:-$SCM_THEME_PROMPT_DIRTY}
   else
@@ -76,15 +76,14 @@ function svn_prompt_info {
   echo -e "$prefix$ref$state$suffix"
 }
 
-function rvm_version_prompt {
+rvm_version_prompt () {
   if which rvm &> /dev/null; then
     rvm=$(rvm tools identifier) || return
     echo -e "$RVM_THEME_PROMPT_PREFIX$rvm$RVM_THEME_PROMPT_SUFFIX"
   fi
 }
 
-
-function rvmrc_version_prompt {
+rvmrc_version_prompt () {
   if [ -f .rvmrc ]; then
     if which rvm &> /dev/null; then
       rvm=$(rvm tools identifier) || return

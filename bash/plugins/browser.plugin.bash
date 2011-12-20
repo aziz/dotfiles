@@ -6,7 +6,7 @@
 # $ echo "<h1>hi mom!</h1>" | browser
 # $ ron -5 man/rip.5.ron | browser
 
-function browser() {
+browser () {
     if [ -t 0 ]; then
         if [ -n "$1" ]; then
             open $1
@@ -24,6 +24,6 @@ usage
     else
         f="/tmp/browser.$RANDOM.html"
         cat /dev/stdin > $f
-        open $f 
+        open $f
     fi
 }

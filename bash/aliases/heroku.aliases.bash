@@ -32,7 +32,7 @@ alias hca='heroku config:add'
 alias hcr='heroku config:remove'
 alias hcc='heroku config:clear'
 
-function heroku-help() {
+heroku-help () {
   echo "Heroku Aliases Usage"
   echo
   echo "  h           = heroku"

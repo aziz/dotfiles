@@ -13,7 +13,7 @@ alias openports='sudo lsof -iTCP -sTCP:LISTEN -P'
 alias ds_store_cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Switches your os x dock between 2d and 3d
-function dock-switch() {
+dock-switch () {
 
     if [ $(uname) = "Darwin" ]; then
 

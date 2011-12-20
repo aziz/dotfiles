@@ -67,7 +67,7 @@ alias	rd=rmdir
 alias	rmd='rm -Rf'
 alias d='dirs -v'
 
-function aliases-help() {
+aliases-help () {
   echo "Generic Alias Usage"
   echo
   echo "  sl     = ls"
