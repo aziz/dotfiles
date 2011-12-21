@@ -25,8 +25,12 @@ set editing-mode emacs
 # reload file
 "\C-x\C-r": re-read-init-file
 
-C-n: history-search-forward
-C-p: history-search-backward
+#C-n: history-search-forward
+#C-p: history-search-backward
+
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
 
 $if mode=emacs
 

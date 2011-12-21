@@ -27,6 +27,14 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+#pbcopy and pbpaste aliases for GNU/Linux
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
+#readline
+while IFS= read -r line; do
+echo "$line"
+done < somefile.txt
 
 ---------------------------------
 
