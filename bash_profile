@@ -1,19 +1,22 @@
 #!/bin/bash
 
-# Notes: ----------------------------------------------------------
-# When you start an interactive shell (log in, open terminal or iTerm in OS X,
-# or create a new tab in iTerm) the following files are read and run, in this order:
-# profile
-# bashrc
-# .bash_profile
-# .bashrc (only because this file is run (sourced) in .bash_profile)
+# Notes: ---------------------------------------------------------------------------
 #
-# When an interactive shell, that is not a login shell, is started
-# (when you run "bash" from inside a shell, or when you start a shell in
-# xwindows [xterm/gnome-terminal/etc] ) the following files are read and executed,
-# in this order:
-# bashrc
-# .bashrc
+#   When you start an interactive shell (log in, open terminal or iTerm in OS X,
+#   create a new tab in iTerm) the following files are read and run, in this order:
+#     * profile
+#     * bashrc
+#     * .bash_profile
+#     * .bashrc (only because this file is run (sourced) in .bash_profile)
+#
+#   When an interactive shell, that is not a login shell, is started
+#   (when you run "bash" from inside a shell, or when you start a shell in
+#   xwindows [xterm/gnome-terminal/etc] ) the following files are read and executed,
+#   in this order:
+#     * bashrc
+#     * .bashrc
+#
+# ----------------------------------------------------------------------------------
 
 
 # Node
@@ -63,14 +66,11 @@ export LC_ALL=en_US.UTF-8
 # Fixing gcc in lion
 export CC=gcc-4.2
 
-# Load Bash It
-source $BASH/bash_it.sh
-
 # Loading grc (colouriser for beautifying logfiles or output of commands)
 source "`brew --prefix grc`/etc/grc.bashrc"
 
-# Load Tmuxinator, if you are using it
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+# Load Bash It
+source $BASH/bash_it.sh
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
