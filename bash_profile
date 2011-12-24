@@ -72,9 +72,6 @@ source "`brew --prefix grc`/etc/grc.bashrc"
 # Load Tmuxinator, if you are using it
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-# Load RVM, if you are using it
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
