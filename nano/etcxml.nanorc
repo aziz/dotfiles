@@ -1,6 +1,6 @@
 ##############################################################################
 #
-# Syntax highlighting for XML files
+# Syntax highlighting for XML files (/etc/fonts/*)
 #
 # Author:  Josef 'Jupp' Schugt, jupp(a)rubyforge.org
 # License: GPL 2  or later
@@ -9,7 +9,16 @@
 #
 ##############################################################################
 
-syntax "ml" ".*\.([jrs]?html?|xml|sgml?|lhtml|opml|kdevelop|vcproj|glade|xsd|plist|gcs|dtd|dcl)$" "catalog$" "docbook$"
+syntax "etcxml" "/etc/fonts/(\.|/|)" "/etc/xdg/(\.|/|)"
+color white "^.+$"
+color green  start="<" end=">"
+color cyan   "<[^> ]+"
+color cyan   ">"
+color yellow start="<!DOCTYPE" end="[/]?>"
+color yellow start="<!--" end="-->"
+color red    "&[^;]*;"
+
+syntax "etcxml2" "gentoorc$"
 color white "^.+$"
 color green  start="<" end=">"
 color cyan   "<[^> ]+"

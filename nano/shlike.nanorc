@@ -1,6 +1,6 @@
 ## Here is an example for Bourne shell scripts.
 ##
-syntax "sh" "\.sh$"
+syntax "shlike" "\.(m4|sub|guess)$" "missing$" "configure\.ac$" "config\.(charset|rpath|status)$" "configure$"
 icolor brightgreen "^[0-9A-Z_]+\(\)"
 color green "\<(case|do|done|elif|else|esac|exit|fi|for|function|if|in|local|read|return|select|shift|then|time|until|while)\>"
 color green "(\{|\}|\(|\)|\;|\]|\[|`|\\|\$|<|>|!|=|&|\|)"
@@ -10,4 +10,3 @@ color brightblue "\<(cat|cd|chmod|chown|cp|echo|env|export|grep|install|let|ln|m
 icolor brightred "\$\{?[0-9A-Z_!@#$*?-]+\}?"
 color cyan "(^|[[:space:]])#.*$"
 color brightyellow ""(\\.|[^"])*"" "'(\\.|[^'])*'"
-color ,green "[[:space:]]+$"
