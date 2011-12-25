@@ -96,7 +96,6 @@ buf() {
     cp ${filename} ${filename}_${filetime}
 }
 
-
 # List all plugins and functions defined by bash-it
 plugins-help() {
 

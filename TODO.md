@@ -1,3 +1,11 @@
+- different prompt on server \u@\h in green with cloud icon
+- fix usage in mac
+- grc should load in mac with brew
+- find equivalent of brew commands
+- vim: Cannot find color scheme solarized
+- bash_completion in linux
+- hg repo info bug
+
 - clean up bash-it.bash and bash_profile, merge all exports and sources
 - merge bash/aliases and bash/plugin into topic related files/folders
 - things that add functionality or configure an already installed app should be called plugins.
@@ -13,6 +21,12 @@
 - dropbox linking
 - prepare_linux.shell
 - prepare_mac.shell
+
+local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
+local SSH2_IP=`echo $SSH2_CLIENT | awk '{ print $1 }'`
+if [ $SSH2_IP ] || [ $SSH_IP ] ; then
+  local SSH_FLAG="@\h"
+fi
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -49,7 +63,6 @@ done < somefile.txt
 # ⊕ ⊝ ⊜ ⊗ ⊙ ⊚ ⦼ ⧀ ⦿ ⧁ ⨂ ⨁ ⨀ ○  ◉ ◌ ◍ • ●
 # 〓 █  ▇▇▇▆▅▅▄▃▂▁▀▗▖▘▙▚▛▜ ◹ ◺ ◸ ◿
 
-
 plugins
 |--- exports
 |--- aliases
@@ -60,12 +73,3 @@ themes
 tools
 
 bin (other langs useful scripts)
-
-
-
-
-
-
-
-
-

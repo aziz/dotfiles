@@ -66,9 +66,6 @@ export LC_ALL=en_US.UTF-8
 # Fixing gcc in lion
 export CC=gcc-4.2
 
-# Loading grc (colouriser for beautifying logfiles or output of commands)
-source "`brew --prefix grc`/etc/grc.bashrc"
-
 # Load Bash It
 source $BASH/bash_it.sh
 
