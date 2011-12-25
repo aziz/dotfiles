@@ -1,5 +1,5 @@
 set background=dark
-color solarized
+color grb256
 if has("gui_running")
   set guifont=Menlo:h12
 endif

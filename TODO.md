@@ -1,10 +1,11 @@
+- aliases for apt-get and apt-cache search on linux
 - different prompt on server \u@\h in green with cloud icon
 - fix usage in mac
 - grc should load in mac with brew
 - find equivalent of brew commands
-- vim: Cannot find color scheme solarized
 - bash_completion in linux
 - hg repo info bug
+- vim: clean up colors
 
 - clean up bash-it.bash and bash_profile, merge all exports and sources
 - merge bash/aliases and bash/plugin into topic related files/folders

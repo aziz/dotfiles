@@ -3,26 +3,26 @@ set background=light
 
 hi clear
 if exists("syntax_on")
-    syntax reset
+  syntax reset
 endif
 
 let colors_name = "pyte"
 
 if version >= 700
-    hi CursorLine guibg=#f6f6f6
-    hi CursorColumn guibg=#eaeaea
-    hi MatchParen guifg=white guibg=#80a090 gui=bold
+  hi CursorLine guibg=#f6f6f6
+  hi CursorColumn guibg=#eaeaea
+  hi MatchParen guifg=white guibg=#80a090 gui=bold
 
-    "Tabpages
-    hi TabLine guifg=black guibg=#b0b8c0 gui=italic
-    hi TabLineFill guifg=#9098a0
-    hi TabLineSel guifg=black guibg=#f0f0f0 gui=italic,bold
+  "Tabpages
+  hi TabLine guifg=black guibg=#b0b8c0 gui=italic
+  hi TabLineFill guifg=#9098a0
+  hi TabLineSel guifg=black guibg=#f0f0f0 gui=italic,bold
 
-    "P-Menu (auto-completion)
-    hi Pmenu guifg=white guibg=#808080
-    "PmenuSel
-    "PmenuSbar
-    "PmenuThumb
+  "P-Menu (auto-completion)
+  hi Pmenu guifg=white guibg=#808080
+  "PmenuSel
+  "PmenuSbar
+  "PmenuThumb
 endif
 "
 " Html-Titles
