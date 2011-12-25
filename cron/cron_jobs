@@ -22,6 +22,12 @@ PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin
 # Update homebrew every 6 hours
 0	*/6	*	*	*	date >> ~/.cron/logs/brew_update.log && brew update >> ~/.cron/logs/brew_update.log 2>&1
 
+# Growl notify outdated home-brews, ruby gems, npm packages everyday at 3:20PM
+20 15 * * * brew outdated | growlnotify -s -t "Outdated Homebrews"
+20 15 * * * rvm use 1.9.3 && gem outdated | growlnotify -s -t "Outdated Ruby Gems"
+20 15 * * * npm outdated -g 2>/dev/null | growlnotify -s -t "Outdated Node packages"
+
+
 # Update boplots DB every 5 minues
 #1,6,11,16,21,26,31,36,41,46,51,56	*	*	*	*	/Users/allen/Dropbox/projects/boplots/lib/robot >> ~/.cron/logs/robot.log 2>&1
 
