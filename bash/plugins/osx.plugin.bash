@@ -12,6 +12,13 @@ alias openports='sudo lsof -iTCP -sTCP:LISTEN -P'
 # Recursively delete `.DS_Store` files
 alias ds_store_cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
+# Disable press-and-hold for keys in favor of key repeat
+alias press_and_hold_disable="defaults write -g ApplePressAndHoldEnabled -bool false"
+alias press_and_hold_enable="defaults write -g ApplePressAndHoldEnabled -bool true"
+
+# Always open everything in Finder's list view. This is important.
+alias finder_always_use_list_view="defaults write com.apple.Finder FXPreferredViewStyle Nlsv"
+
 # Switches your os x dock between 2d and 3d
 dock-switch () {
 

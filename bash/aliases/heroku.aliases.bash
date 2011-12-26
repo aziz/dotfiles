@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # heroku
-alias h='heroku'
 alias hl='heroku list'
 alias hi='heroku info'
 alias ho='heroku open'
@@ -31,6 +30,8 @@ alias hc='heroku config'
 alias hca='heroku config:add'
 alias hcr='heroku config:remove'
 alias hcc='heroku config:clear'
+
+alias hh="git push heroku master"
 
 heroku-help () {
   echo "Heroku Aliases Usage"

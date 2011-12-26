@@ -1,6 +1,6 @@
 - aliases for apt-get and apt-cache search on linux
 - different prompt on server \u@\h in green with cloud icon
-- fix usage in mac
+- fix usage function in mac
 - grc should load in mac with brew
 - find equivalent of brew commands
 - bash_completion in linux
@@ -27,38 +27,19 @@ if [ $SSH2_IP ] || [ $SSH_IP ] ; then
   local SSH_FLAG="@\h"
 fi
 
-# Disable press-and-hold for keys in favor of key repeat
-defaults write -g ApplePressAndHoldEnabled -bool false
-
-# Use AirDrop over every interface. srsly this should be a default.
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
-
-# Always open everything in Finder's list view. This is important.
-defaults write com.apple.Finder FXPreferredViewStyle Nlsv
-
-# Show the ~/Library folder
-chflags nohidden ~/Library
-
-#pbcopy and pbpaste aliases for GNU/Linux
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-
-#readline
-while IFS= read -r line; do
-echo "$line"
-done < somefile.txt
-
 ---------------------------------
-
-# ✔ ✖ ✘ ✚ 𐄂
-# → ➞ ➜ ➤ ⬆ ⬇ ⬅  ▷▸▹  ► ◀ ▲ ▼ ‣ ›
-# ★ ☆ ✩ ✱ ✸ ✿ ✦ ✜  ◈ ⟐
+signle letter aliases available:
+IJMNOPTY
+---------------------------------
+# ✔ ✖ ✘ ✚ 𐄂 ✕
+# → ➞ ➔ ➜ ➤ ⬆ ⬇ ⬅  ▷▽▸▹  ► ◀ ▲ ▼  ▾ ‣
+# ★ ☆ ✩ ✱ ✸ ❉ ✿ ✦ ✜ ✪ ◈ ⟐
 # ⚑ ⚐ ✆ ✈  ⚠ ⚡ ♪ ♫ ⑆ ⑉
-# ☼ ☀ ☁ ☂ ⚓ ☛ ♻ ❤ ☯ ☗ ♞ ⏰ ♛
-# ⌘ ⌥  ⌦  ⌫ ↵ ↩ ⇧ ⎋ ⏎ ⎈
+# ☼ ☀ ☁ ☂ ⚓ ☛ ♻ ❤ ☯ ☗ ♞ ⏰ ♛ ♚ ☎ ♨
+# ⌘ ⌥  ⌦ ⌫ ↵ ↩ ⇧  ⎋ ⏎ ⎈
 # ▢ ▣ ▦ ⧆ ⧇ ■■▪ □▫ ☐
-# ǁ ǂ ʭ Ξ ⣿ ⡇ ⦀⦂ ⦙⦚ ⧘⧙⧚⧛
-# ⪡ ⪢ ⪦⪧ ⫏⫐ ⊲ ⊳ ⫷ ⫸ ❮❯ ‹›⟨⟩⟪⟫ ⦉⦊ ⦗⦘ ⎨⎬❪❫〔 〕
+# ǁ ǂ ʭ Ξ ⣿ ⡇ ⦀⦂ ⦙⦚ ⧘⧙⧚⧛ ≡
+# ⪡ ⪢ ⪦⪧ ⫏⫐ ⊲ ⊳ ⫷ ⫸ ❮❯ ‹› ⟨⟩ ⟪⟫ ⦉⦊ ⦗⦘ ⎨⎬ ❪❫〔 〕
 # ⊕ ⊝ ⊜ ⊗ ⊙ ⊚ ⦼ ⧀ ⦿ ⧁ ⨂ ⨁ ⨀ ○  ◉ ◌ ◍ • ●
 # 〓 █  ▇▇▇▆▅▅▄▃▂▁▀▗▖▘▙▚▛▜ ◹ ◺ ◸ ◿
 
@@ -70,5 +51,4 @@ plugins
 
 themes
 tools
-
 bin (other langs useful scripts)

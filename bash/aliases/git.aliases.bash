@@ -36,12 +36,7 @@ case $OSTYPE in
   darwin*)
     alias gdd='git diff | mate'
     ;;
-  darwin*)
-    alias gdd='git diff'
-    ;;
 esac
-
-
 
 git-help () {
   echo "Git Custom Aliases Usage"

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Your place for hosting Git repos. I use this for private repos.
+export GIT_HOSTING='git@git.domain.com'
+
 # Usage: new-github topfunky tidy_table
 new_github () {
   git remote add origin git@github.com:$1/$2.git

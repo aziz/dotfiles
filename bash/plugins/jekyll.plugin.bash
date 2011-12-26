@@ -1,5 +1,38 @@
 #!/bin/bash
 
+# Change this to the path of your local jekyll root to use the jekyll aliases
+export JEKYLL_LOCAL_ROOT="$HOME/Sites/jekyllsite"
+
+# And change this to the remote server and root
+export JEKYLL_REMOTE_ROOT="user@server:/path/to/jekyll/root"
+
+# And, for the last of the jekyll variables, this is the formatting you use, eg: markdown,
+# textile, etc. Basically whatever you use as the extension for posts, without the preceding dot
+export JEKYLL_FORMATTING="markdown"
+
+# Open the root of your site in your vim or builtin cd to it
+if [[ $EDITOR = "vim" ]]
+then alias newentry="builtin cd $JEKYLL_LOCAL_ROOT && $EDITOR ."
+else alias newentry="builtin cd $JEKYLL_LOCAL_ROOT"
+fi
+
+# Open the _posts/ directory for making a new blog post (seperate from above alias because not everyone uses jekyll for a blog)
+# if [ $editor = "vim" ]
+# then
+# 	alias newpost="builtin cd $jekyll_local_root/_posts && $editor ."
+# else
+# 	alias newpost="builtin cd $jekyll_local_root"
+# fi
+
+# Build and locally serve the site
+alias testsite="builtin cd $JEKYLL_LOCAL_ROOT && jekyll --server --auto"
+
+# Build but don't locally serve the site
+alias buildsite="builtin cd $JEKYLL_LOCAL_ROOT && rm -rf _site/ && jekyll"
+
+# Rsync the site to the remote server
+alias deploysite="builtin cd $JEKYLL_LOCAL_ROOT && rsync -rz _site/ $JEKYLL_REMOTE_ROOT"
+
 editpost() {
 	builtin cd "$JEKYLL_LOCAL_ROOT/_posts"
 
@@ -12,11 +45,11 @@ editpost() {
 		DATE=`echo $POST | grep -oE "[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}"`
 		TITLE=`cat $POST | grep -oE "title: (.+)"`
 		TITLE=`echo $TITLE | sed 's/title: //'`
-		echo "$COUNTER) 	$DATE	$TITLE" >> "$TMPFILE"	
+		echo "$COUNTER) 	$DATE	$TITLE" >> "$TMPFILE"
 		POSTS[$COUNTER]=$POST
 		COUNTER=`expr $COUNTER + 1`
 	done
-	less $TMPFILE	
+	less $TMPFILE
 	read -p "Number of post to edit: " POST_TO_EDIT
 	if [ -z "$EDITOR" ]
 	then
@@ -36,15 +69,15 @@ newpost() {
 
 	FNAME_DATE=$(date "+%Y-%m-%d")
 
-	# If the user is using markdown formatting, let them choose what type of post they want. Sort of like Tumblr. 
+	# If the user is using markdown formatting, let them choose what type of post they want. Sort of like Tumblr.
 
 	OPTIONS="Text Quote Image Audio Video Link"
-	
+
 	if [ $JEKYLL_FORMATTING = "markdown" -o $JEKYLL_FORMATTING = "textile" ]
 	then
 		select OPTION in $OPTIONS
 		do
-			if [[ $OPTION = "Text" ]] 
+			if [[ $OPTION = "Text" ]]
 			then
 				POST_TYPE="Text"
 				break
@@ -55,7 +88,7 @@ newpost() {
 				POST_TYPE="Quote"
 				break
 			fi
-		
+
 			if [[ $OPTION = "Image" ]]
 			then
 				POST_TYPE="Image"
@@ -154,7 +187,7 @@ newpost() {
 		then
 			echo "<html><video src=\"/path/to/video\" controls=\"controls\"></video></html>" >> $FNAME
 		fi
-	
+
 		if [[ $POST_TYPE = "Link" ]]
 		then
 			echo "[link][1]" >> $FNAME

@@ -1,9 +1,6 @@
 #!/bin/bash
+
 # Initialize Bash It
-
-# Reload Library
-alias reload='source ~/.bash_profile && echo "bash_profile reloaded"'
-
 # Load the framework
 
 # Load colors first so they can be use in base theme
@@ -40,6 +37,7 @@ done
 
 unset config_file
 
+# Set the prompt
 if [[ $PROMPT ]]; then
   export PS1=$PROMPT
 fi
@@ -47,18 +45,4 @@ fi
 # Adding Support for other OSes
 PREVIEW="less"
 [ -s /usr/bin/gloobus-preview ] && PREVIEW="gloobus-preview"
-[ -s /Applications/Apple/Preview.app ] && PREVIEW="/Applications/Apple/Preview.app"
-
-# Custom Help
-bash-it() {
-  echo "Welcome to Bash It!"
-  echo
-  echo "Here is a list of commands you can use to get help screens for specific pieces of Bash it:"
-  echo
-  echo "  rails-help                  This will list out all the aliases you can use with rails."
-  echo "  git-help                    This will list out all the aliases you can use with git."
-  echo "  todo-help                   This will list out all the aliases you can use with todo.txt-cli"
-  echo "  aliases-help                Generic list of aliases."
-  echo "  plugins-help                This will list out all the plugins and functions you can use with bash-it"
-  echo
-}
+[ -s /Applications/Preview.app ] && PREVIEW="/Applications/Apple/Preview.app"

@@ -27,5 +27,5 @@ fi
 
 # Load the theme
 if [[ $BASH_THEME ]]; then
-    source "$BASH/themes/$BASH_THEME/$BASH_THEME.theme.bash"
+    source "$BASH/themes/$BASH_THEME.theme.bash"
 fi
