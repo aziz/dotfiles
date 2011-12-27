@@ -49,6 +49,15 @@ export LC_ALL=en_US.UTF-8
 # Fixing gcc in lion
 export CC=gcc-4.2
 
+export CVS_RSH="ssh"
+export CDPATH=:..:~:~/projects:~/Dropbox:~/Dropbox/projects
+
+# Identify OS and Machine
+export OS=`uname -s | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
+export OSVERSION=`uname -r`; OSVERSION=`expr "$OSVERSION" : '[^0-9]*\([0-9]*\.[0-9]*\)'`
+export MACHINE=`uname -m | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
+export PLATFORM="$MACHINE-$OS-$OSVERSION"
+
 # Load Bash It
 source $BASH/bash_it.sh
 
