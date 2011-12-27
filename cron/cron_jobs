@@ -17,7 +17,7 @@
 # @hourly execution once an hour, "0 * * * *"
 
 
-PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin:~/.rvm/bin
 
 # Update homebrew every 6 hours
 0	*/6	*	*	*	date >> ~/.cron/logs/brew_update.log && brew update >> ~/.cron/logs/brew_update.log 2>&1
