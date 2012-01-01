@@ -24,7 +24,7 @@ PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin:~/.rvm/
 
 # Growl notify outdated home-brews, ruby gems, npm packages everyday at 3:20PM
 20 15 * * * brew outdated | growlnotify -s -t "Outdated Homebrews"
-20 15 * * * rvm use 1.9.3 && gem outdated | growlnotify -s -t "Outdated Ruby Gems"
+20 15 * * * /Users/allen/.rvm/rubies/ruby-1.9.3-p0/bin/gem outdated | growlnotify -s -t "Outdated Ruby Gems"
 20 15 * * * npm outdated -g 2>/dev/null | awk '{print $1}' | growlnotify -s -t "Outdated Node packages"
 
 

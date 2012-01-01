@@ -1,21 +1,21 @@
 #!/bin/bash
 
-SCM_THEME_PROMPT_DIRTY=" ${bold_red}✖"
+SCM_THEME_PROMPT_DIRTY=" ${bold_red}✘"
 SCM_THEME_PROMPT_CLEAN=" ${bold_green}✔"
 SCM_THEME_PROMPT_PREFIX=" "
 SCM_THEME_PROMPT_SUFFIX=" "
 SCM_NONE_CHAR=""
 
-GIT_THEME_PROMPT_DIRTY=" ${bold_red}✖"
+GIT_THEME_PROMPT_DIRTY=" ${bold_red}✘"
 GIT_THEME_PROMPT_CLEAN=" ${bold_green}✔"
 GIT_THEME_PROMPT_PREFIX=""
 GIT_THEME_PROMPT_SUFFIX=""
 
-RVM_THEME_PROMPT_PREFIX="${red}✦ "
+RVM_THEME_PROMPT_PREFIX="${bold_red}✦ "
 RVM_THEME_PROMPT_SUFFIX=" ${reset_color}"
 
 RESET="\[\017\]"
-ERROR="${red}⚠ Error \n${normal}"
+ERROR="${bold_red}⚠ Error \n${normal}"
 EXIT_STATUS="if [ \$? = 0 ]; then echo \"\"; else echo \"${ERROR}\"; fi"
 
 rvmrc_version_prompt () {
