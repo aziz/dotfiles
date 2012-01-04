@@ -16,7 +16,7 @@ Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, and
 - rvm and ruby
 - on OSX:
 
-    `brew install git ack tree tmux screen vim grc unrar p7zip`
+    `brew install git ack tree tmux screen vim grc unrar p7zip rmtrash`
 
 - on Linux:
 

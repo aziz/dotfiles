@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Fast editing for dotfiles and notes
+alias en="z notes && s ."
+alias ed="z dot && s ."
+
 # CT
 alias ct='cd ~/calltracks/calltracks-cvs/clientui/rails && 186'
 alias ct3='cd ~/calltracks/rails3'

@@ -1,3 +1,7 @@
+
+- https://github.com/cowboy/dotfiles
+- add taskrc
+
 - aliases for apt-get and apt-cache search on linux
 - different prompt on server \u@\h in green with cloud icon
 - fix usage function in mac
@@ -9,7 +13,7 @@
 - others should be stored as pure bash scripts called ???
 - hcht configuration
 - https://github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
-- https://github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.darwin
+- https://github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.darwin (brew install rmtrash also works)
 - dropbox linking
 - prepare_linux.shell
 - prepare_mac.shell
@@ -35,7 +39,7 @@ fi
 
 ---------------------------------
 signle letter aliases available:
-IJMNOPTY
+IJMNOPY
 ---------------------------------
 # ✔ ✖ ✘ ✚ 𐄂 ✕
 # → ➞ ➔ ➜ ➤ ⬆ ⬇ ⬅  ▷▽▸▹  ► ◀ ▲ ▼  ▾ ‣
