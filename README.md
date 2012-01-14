@@ -13,13 +13,7 @@ Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, and
 `./install.sh`
 
 ## Requirements
-- rvm and ruby
-- on OSX:
-
-    `brew install git ack tree tmux screen vim grc unrar p7zip rmtrash`
-
-- on Linux:
-
-    `sudo apt-get install ctags git-core ack tmux screen grc p7zip`
-
+- `rvm and ruby`
+- `git ack curl tree tmux screen vim grc unrar p7zip rmtrash ctags task unrar wget`
+- `htop mc colordiff colortail ffmpeg imagemagick`
 - `gem  install tmuxinator rails capistrano capistrano_colors looksee wirble hirb awesome_print yui-compressor bundle-outdated`

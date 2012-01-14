@@ -7,7 +7,6 @@ SCM_THEME_PROMPT_SUFFIX=" "
 SCM_NONE_CHAR=""
 RVM_THEME_PROMPT_PREFIX="${bold_red}✦ "
 RVM_THEME_PROMPT_SUFFIX=" ${reset_color}"
-RESET="\[\017\]"
 ERROR="${bold_red}⚠ Error \n${normal}"
 EXIT_STATUS="if [ \$? = 0 ]; then echo \"\"; else echo \"${ERROR}\"; fi"
 
@@ -20,4 +19,4 @@ rvmrc_version_prompt () {
   fi
 }
 
-PROMPT="\[${RESET}\]\`${EXIT_STATUS}\`\[${bold_yellow}\]\w \[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]→ "
+PROMPT="\`${EXIT_STATUS}\`\[${bold_yellow}\]\w \[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]→ "
