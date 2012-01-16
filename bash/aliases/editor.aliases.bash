@@ -3,8 +3,12 @@
 alias edit="$EDITOR"
 
 # Textmate
-if [[ -x `which mate` ]]; then
-  alias e='mate'
+alias e="mate"
+
+# Textmate in Linux fallsback to default editor
+if [ $(uname) = "Linux" ]
+then
+  alias e="$EDITOR"
 fi
 
 # Sublime Text 2
@@ -16,8 +20,6 @@ then
   alias s="/usr/bin/sublime-text-2"
 fi
 
-
 # Vim
-alias mvim='mvim --remote-tab'
 alias v='vim'
 alias vi='vim'

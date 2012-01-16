@@ -35,6 +35,9 @@
 >   # add rmtrash to delete to trash
     brew rmtrash
 
+>    # Extract audio from Flash video (*.flv) as mp3 file
+     ffmpeg -i video.flv -vn -ar 44100 -ac 2 -ab 192k -f mp3 audio.mp3
+
 local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
 local SSH2_IP=`echo $SSH2_CLIENT | awk '{ print $1 }'`
 if [ $SSH2_IP ] || [ $SSH_IP ] ; then

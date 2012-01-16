@@ -1,5 +1,6 @@
 ssh/*
 vim/.netrwhist
+vim/backup/.netrwhist~
 vim/tmp
 vim/.VimballRecord
 cron/logs

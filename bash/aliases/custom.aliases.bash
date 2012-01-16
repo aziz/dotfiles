@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Fast editing for dotfiles and notes
-alias en="z notes && s ."
-alias ed="z dot && s ."
+alias edn="z notes && s ."
+alias edd="z dotfiles && s ."
+alias eds="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User && s ."
 
 # CT
 alias ct='cd ~/calltracks/calltracks-cvs/clientui/rails && 186'
@@ -22,8 +23,8 @@ alias apache_stop="sudo apachectl -k graceful-stop"
 alias cron_install="crontab -r;crontab ~/.cron/cron_jobs"
 
 # npm
-alias npmg="npm_g"
-alias npmgo="npm_g outdated"
+alias npmg="npm -g"
+alias npmgo="npm -g outdated"
 
 # cofeescript
 alias coffee_watch="coffee -r coffeescript-growl -w"
