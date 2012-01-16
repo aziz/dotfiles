@@ -6,6 +6,7 @@
 - github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
 
 # LINUX (WIP):
+- f does not work
 - pman does not work
 - browser does not work
 - seq on linux should not override original command (rename it to my_seq and alias it on mac)
