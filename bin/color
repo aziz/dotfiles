@@ -1,4 +1,4 @@
-#! /usr/bin/env ruby
+#!/usr/bin/env ruby
 
 # encoding: UTF-8
 
@@ -19,7 +19,7 @@ c.each do |a|
       print "\033[38;5;%sm%s %03s\033[m" % [(color+(i*6)).to_s, "x".force_encoding("UTF-8"),"#{(color+(i*6))%256}"]
     end
     puts
-    
+
   end
 end
 puts

@@ -15,6 +15,8 @@
 #   * z -t foo  # goes to most recently accessed dir matching foo
 #   * z -l foo  # list all dirs matching foo (by frecency)
 
+alias j="z"
+
 z() {
  local datafile="$HOME/.z"
  if [ "$1" = "--add" ]; then

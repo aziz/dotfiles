@@ -1,4 +1,6 @@
 
+- IMP: do not set TERM to xterm-256color permanently 
+
 # BUGS
 - https://github.com/cowboy/dotfiles
 - fix usage function in mac

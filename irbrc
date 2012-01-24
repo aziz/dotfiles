@@ -17,14 +17,14 @@ rescue LoadError
 end
 
 # better table view for activerecord objects with hirb
-begin
-  require 'hirb'
-  Hirb.enable
-  extend Hirb::Console
-rescue LoadError
-  puts "*** hirb disabled ***"
-  puts "gem install hirb"
-end
+# begin
+#   require 'hirb'
+#   Hirb.enable
+#   extend Hirb::Console
+# rescue LoadError
+#   puts "*** hirb disabled ***"
+#   puts "gem install hirb"
+# end
 
 begin
   require 'ap'

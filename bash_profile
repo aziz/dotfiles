@@ -50,7 +50,7 @@ export LC_ALL=en_US.UTF-8
 export CC=gcc-4.2
 
 export CVS_RSH="ssh"
-export CDPATH=:..:~:~/projects:~/Dropbox:~/Dropbox/projects
+#export CDPATH=:..:~:~/projects:~/Dropbox:~/Dropbox/projects
 
 # Identify OS and Machine
 export OS=`uname -s | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
@@ -63,3 +63,4 @@ source $BASH/bash_it.sh
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
+[[ -s "/Users/allen/.rvm/scripts/rvm" ]] && source "/Users/allen/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

@@ -6,8 +6,8 @@ alias edd="z dotfiles && s ."
 alias eds="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User && s ."
 
 # CT
-alias ct='cd ~/calltracks/calltracks-cvs/clientui/rails && 186'
-alias ct3='cd ~/calltracks/rails3'
+alias ct='cd ~/calltracks/calltracks-cvs/clientui/rails'
+alias ctw='cd ~/calltracks/website-app'
 
 # CVS
 alias cup='cvs update -A'
