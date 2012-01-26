@@ -63,4 +63,3 @@ source $BASH/bash_it.sh
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
-[[ -s "/Users/allen/.rvm/scripts/rvm" ]] && source "/Users/allen/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
