@@ -11,7 +11,7 @@ export HISTCONTROL="ignoredups"
 export HISTCONTROL=erasedups
 
 # resize history size
-export HISTSIZE=5000
+export HISTSIZE=500000
 
 export AUTOFEATURE=true autotest
 
