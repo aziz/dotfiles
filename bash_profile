@@ -19,7 +19,7 @@
 # ----------------------------------------------------------------------------------
 
 # Add rvm gems and nginx to the path
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$HOME/.rvm/bin:$PATH"
 
 # Node
 export NODE_PATH="/usr/local/lib/node_modules"
