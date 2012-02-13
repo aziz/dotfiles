@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Set the path nginx
+export NGINX_PATH='/usr/local/sbin/nginx'
+
 nginx_reload () {
   FILE="${NGINX_PATH}/logs/nginx.pid"
   if [ -e $FILE ]; then

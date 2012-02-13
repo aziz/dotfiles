@@ -24,9 +24,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:
 # Node
 export NODE_PATH="/usr/local/lib/node_modules"
 
-# Set the path nginx
-export NGINX_PATH='/usr/local/sbin/nginx'
-
 # Path to the bash it configuration
 export BASH=$HOME/.bash
 

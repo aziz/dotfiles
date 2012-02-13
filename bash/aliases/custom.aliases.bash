@@ -18,6 +18,7 @@ alias qwe='qw -e mate'
 # Apache
 alias apache_restart="sudo apachectl -k graceful"
 alias apache_stop="sudo apachectl -k graceful-stop"
+alias apache_start="sudo apachectl -k start"
 
 # crontab
 alias cron_install="crontab -r;crontab ~/.cron/cron_jobs"
