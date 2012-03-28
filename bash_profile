@@ -32,7 +32,8 @@ export BASH_THEME='mine'
 
 # Set my editor and git editor
 export EDITOR="vim"
-export GIT_EDITOR='vim'
+export GIT_EDITOR="vim"
+export GEM_EDITOR="subl"
 
 # Change this to your console based IRC client of choice.
 export IRC_CLIENT='irssi'
@@ -44,7 +45,7 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Fixing gcc in lion
-export CC=gcc-4.2
+export CC=/usr/bin/gcc  #gcc-4.2
 
 export CVS_RSH="ssh"
 #export CDPATH=:..:~:~/projects:~/Dropbox:~/Dropbox/projects
@@ -60,3 +61,5 @@ source $BASH/bash_it.sh
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
