@@ -24,3 +24,6 @@ else
      echo "'$1' is not a valid file"
 fi
 }
+
+# I never remember tar options!
+alias targz="tar -cvzf"
