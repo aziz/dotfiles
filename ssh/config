@@ -28,3 +28,6 @@ Host kaizen
 Host tigstads
   HostName 173.203.195.23
   User aziz
+
+Host *.byburt.com
+  user burt
