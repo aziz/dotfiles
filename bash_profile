@@ -63,3 +63,7 @@ source $BASH/bash_it.sh
 unset MAILCHECK
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
+if [ "x`ps ax |grep [s]sh-agent`” == “x” ]; then ssh-agent; fi
+

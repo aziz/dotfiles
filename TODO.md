@@ -18,6 +18,7 @@
 - load grc under linux
 
 # VIM
+- https://github.com/zaiste/vimified
 - use vundle or pathogen
 - https://github.com/mutewinter/dot_vim
 - vim: clean up colors

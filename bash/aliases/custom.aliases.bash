@@ -29,3 +29,12 @@ alias npmgo="npm -g outdated"
 
 # cofeescript
 alias coffee_watch="coffee -r coffeescript-growl -w"
+
+# BURT
+function git_current_branch() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo ${ref#refs/heads/}
+}
+
+alias burt_staging='git push -f origin $(git_current_branch):staging && cap staging deploy'
+alias burt_prod='git push -f origin $(git_current_branch):production && cap production deploy'
