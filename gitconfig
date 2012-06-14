@@ -11,6 +11,7 @@
 [core]
   excludesfile = ~/.gitignore
   editor = mate -w
+  mergeoptions = --no-ff
   autocrlf = input
   whitespace = space-before-tab, trailing-space
 [apply]
