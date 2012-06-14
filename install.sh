@@ -43,8 +43,7 @@ function generate_gitconfig() {
   read -p "Your Name: " name
   read -p "Your Email: " email
   read -p "Github Username: " gh_username
-  read -p "Github API Token: " gh_token
-  cat gitconfig | sed 's/${name}/'"$name"'/' | sed 's/${email}/'"$email"'/' | sed 's/${gh_username}/'"$gh_username"'/' | sed 's/${gh_token}/'"$gh_token"'/' > "$HOME/.gitconfig"
+  cat gitconfig | sed 's/${name}/'"$name"'/' | sed 's/${email}/'"$email"'/' | sed 's/${gh_username}/'"$gh_username"'/' > "$HOME/.gitconfig"
 }
 
 function backup_gitconfig() {

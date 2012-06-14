@@ -20,7 +20,6 @@
   pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 [github]
   user  = ${gh_username}
-  token = ${gh_token}
 [push]
   default = tracking
 [branch]
