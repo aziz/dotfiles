@@ -38,3 +38,4 @@ function git_current_branch() {
 
 alias burt_staging='git push -f origin $(git_current_branch):staging && cap staging deploy'
 alias burt_prod='git push -f origin $(git_current_branch):production && cap production deploy'
+alias burt_accept='git push -f origin $(git_current_branch):accept && cap accept deploy'

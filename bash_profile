@@ -67,3 +67,13 @@ unset MAILCHECK
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
 if [ "x`ps ax |grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add ~/.ssh/id_rsa; fi
 
+
+# FIX ME...add it to completion folder
+# {{{
+# Node Completion - Auto-generated, do not touch.
+shopt -s progcomp
+for f in $(command ls ~/.node-completion); do
+  f="$HOME/.node-completion/$f"
+  test -f "$f" && . "$f"
+done
+# }}}
