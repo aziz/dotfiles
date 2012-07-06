@@ -52,3 +52,5 @@
   default = current
 [difftool "Kaleidoscope"]
   cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[help]
+  autocorrect = 1
