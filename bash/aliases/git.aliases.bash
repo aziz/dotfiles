@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # Aliases
+alias g='git'
 alias gcl='git clone'
 alias ga='git add'
 alias gall='git add .'
-alias g='git'
-alias get='git'
 alias gst='git status'
 alias gs='git status'
 alias gss='git status -s'
@@ -19,6 +18,7 @@ alias push='git push'
 alias gpo='git push origin'
 alias gdv='git diff -w "$@" | vim -R -'
 alias gd='git diff'
+alias gdd='git diff --cached'
 alias gdt='git difftool'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
@@ -31,14 +31,6 @@ alias gexport='git archive --format zip --output'
 alias gdel='git branch -D'
 alias gmu='git fetch origin -v; git fetch upstream -v; git merge upstream/master'
 
-case $OSTYPE in
-  linux*)
-    alias gdd='git diff | vim -R -'
-    ;;
-  darwin*)
-    alias gdd='git diff | mate'
-    ;;
-esac
 
 git-help () {
   echo "Git Custom Aliases Usage"
