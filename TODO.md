@@ -1,12 +1,14 @@
+# TODO: 
+- OSX for hackers  https://gist.github.com/2260182
 - https://github.com/xiongchiamiov/terminal-screensaver
 - compile npmrc on install just like gitconfig
-- IMP: do not set TERM to xterm-256color permanently 
+- https://github.com/cowboy/dotfiles
+- github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
 
 # BUGS
-- https://github.com/cowboy/dotfiles
+- do not set TERM to xterm-256color permanently 
 - fix usage function in mac
 - hcht configuration
-- github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
 
 # LINUX (WIP):
 - f does not work
@@ -29,7 +31,7 @@
 - dropbox linking
 - merge bash/aliases and bash/plugin into topic related files/folders. things that add functionality or configure an already installed app should be called plugins. plugins can have aliases/functions/exports/completions/help. Others should be stored as pure bash scripts called something else!
 
-# AUTO INSTALL UTLS
+# AUTO INSTALL UTILS
 ## prepare_linux.shell:
 >    # to fix a warning in running chrome and sublime from console
     sudo apt-get install gtk2-engines-pixbuf
