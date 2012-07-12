@@ -1,56 +1,54 @@
 [user]
   name  = ${name}
   email = ${email}
-[alias]
-  co = checkout
-  unstage = reset HEAD
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-  lol = log --pretty=oneline --abbrev-commit --graph --decorate
-  conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
-  resolve = !git ls-files --unmerged | cut -c51- | sort -u | xargs git add
-[core]
-  excludesfile = ~/.gitignore
-  editor = mate -w
-  mergeoptions = --no-ff
-  autocrlf = input
-  whitespace = space-before-tab, trailing-space
-[apply]
-  whitespace = nowarn
-[format]
-  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 [github]
   user  = ${gh_username}
+[alias]
+  co        = checkout
+  unstage   = reset HEAD
+  lg        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lol       = log --pretty=oneline --abbrev-commit --graph --decorate
+  conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
+  resolve   = !git ls-files --unmerged | cut -c51- | sort -u | xargs git add
+[core]
+  excludesfile = ~/.gitignore
+  editor       = subl -w
+  autocrlf     = input
+  whitespace   = space-before-tab, trailing-space
+[help]
+  autocorrect = 1
+[apply]
+  whitespace = nowarn
 [push]
-  default = tracking
+  # Push current branch even if you've never pushed it before
+  default = current
 [branch]
-  autosetupmerge = true
+  autosetupmerge  = true
   autosetuprebase = always
+  mergeoptions    = --no-ff
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 [color]
-  diff = auto
+  diff   = auto
   status = auto
   branch = auto
-  ui = auto
+  ui     = auto
 [color "branch"]
   current = yellow reverse
-  local = yellow
+  local  = yellow
   remote = green
 [color "status"]
-  added = green
-  changed = red
+  added     = green
+  changed   = red
   untracked = yellow
 [color "diff"]
   meta = blue bold
   frag = magenta bold
-  old = red bold
-  new = green bold
+  old  = red bold
+  new  = green bold
 [difftool]
   prompt = false
-[diff]
-  tool = Kaleidoscope
-[push]
-  # Push current branch even if you've never pushed it before
-  default = current
 [difftool "Kaleidoscope"]
   cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[help]
-  autocorrect = 1
+[diff]
+  tool = Kaleidoscope
