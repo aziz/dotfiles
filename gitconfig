@@ -20,7 +20,6 @@
 [apply]
   whitespace = nowarn
 [push]
-  # Push current branch even if you've never pushed it before
   default = current
 [branch]
   autosetupmerge  = true
@@ -35,8 +34,8 @@
   ui     = auto
 [color "branch"]
   current = yellow reverse
-  local  = yellow
-  remote = green
+  local   = yellow
+  remote  = green
 [color "status"]
   added     = green
   changed   = red
