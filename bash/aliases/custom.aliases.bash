@@ -5,6 +5,9 @@ alias edn="z notes && s ."
 alias edd="z dotfiles && s ."
 alias eds="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User && s ."
 
+# SVG
+alias svglint="python ~/.bin/scour/scour.py"
+
 # CT
 alias ct='cd ~/calltracks/calltracks-cvs/clientui/rails'
 alias ctw='cd ~/calltracks/website-app'
