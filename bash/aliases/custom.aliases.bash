@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias update_all="brew update && brew outdated && npm -g outdated && npm -g update && rvm get latest"
+
 # Fast editing for dotfiles and notes
 alias edn="z notes && s ."
 alias edd="z dotfiles && s ."
