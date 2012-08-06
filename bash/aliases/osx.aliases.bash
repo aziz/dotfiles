@@ -13,7 +13,3 @@ alias chromium="open -a chromium"
 alias f='open -a Finder '
 alias ql='qlmanage -p'
 alias textedit='open -a TextEdit'
-
-if [ -s /usr/bin/firefox ] ; then
-  unalias firefox
-fi

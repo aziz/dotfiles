@@ -10,9 +10,8 @@ alias eds="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User && s
 # SVG
 alias svglint="python ~/.bin/scour/scour.py"
 
-# CT
-alias ct='cd ~/calltracks/calltracks-cvs/clientui/rails'
-alias ctw='cd ~/calltracks/website-app'
+# Terminal Notifier for Notification Center in Mac OSX Mountain Lion
+alias notify="~/.bin/terminal-notifier.app/Contents/MacOS/terminal-notifier"
 
 # CVS
 alias cup='cvs update -A'
