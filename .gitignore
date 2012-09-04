@@ -1,5 +1,4 @@
 ssh/*
-!ssh/config
 vim/.netrwhist
 vim/backup/.netrwhist~
 vim/tmp

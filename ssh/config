@@ -6,20 +6,6 @@ Compression yes
 IdentitiesOnly yes
 ForwardAgent yes
 
-Host ct3
-  HostName rails3.calltracks.com
-  User root
-  ServerAliveInterval 30
-  ServerAliveCountMax 120
-
-Host ctmaster
-  HostName master.calltracks.com
-  User allen
-
-Host cttrunk
-  HostName trunk.calltracks.com
-  User root
-
 Host kaizen
   HostName 50.56.101.14
   User allen
