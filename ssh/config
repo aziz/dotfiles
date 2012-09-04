@@ -1,0 +1,19 @@
+# Do not kill connection if route is down temporarily.
+TCPKeepAlive no
+ServerAliveInterval 30
+ServerAliveCountMax 120
+Compression yes
+IdentitiesOnly yes
+ForwardAgent yes
+
+Host kaizen
+  HostName 50.56.101.14
+  User allen
+  Port 4212
+
+Host tigstads
+  HostName 173.203.195.23
+  User aziz
+
+Host *.byburt.com
+  user burt
