@@ -1,4 +1,5 @@
 ssh/*
+!ssh/.gitkeep
 vim/.netrwhist
 vim/backup/.netrwhist~
 vim/tmp
