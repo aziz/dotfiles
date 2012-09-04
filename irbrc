@@ -34,12 +34,12 @@ rescue LoadError
   require 'pp'
 end
 
-begin
-  require 'looksee'
-rescue LoadError
-  puts "*** looksee disabled ***"
-  puts "gem install looksee"
-end
+# begin
+#   require 'looksee'
+# rescue LoadError
+#   puts "*** looksee disabled ***"
+#   puts "gem install looksee"
+# end
 
 
 class Object
