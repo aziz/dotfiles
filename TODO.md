@@ -1,4 +1,5 @@
 # TODO: 
+- http://vim.spf13.com/#install
 - OSX for hackers:
   - https://gist.github.com/2260182
   - https://github.com/mathiasbynens/dotfiles/blob/master/.osx
