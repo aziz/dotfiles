@@ -7,7 +7,6 @@ alias be="bundle exec"
 alias bl="bundle list"
 alias bu="bundle update"
 alias bp="bundle package"
-alias bout="bundle-outdated"
 alias binit="bi && bp && echo 'vendor/ruby' >> .gitignore"
 
 bundler-help () {
@@ -19,7 +18,6 @@ bundler-help () {
   echo " bl    = bundle list"
   echo " bu    = bundle update"
   echo " bp    = bundle package"
-  echo " bout  = bundle-outdated"
   echo " binit = bi && bp && echo 'vendor/ruby' >> .gitignore"
   echo
 }
