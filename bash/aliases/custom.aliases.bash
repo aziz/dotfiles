@@ -3,6 +3,8 @@
 alias chrome_remote_debugging='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --remote-debugging-port=9222'
 alias update_all="brew update && brew outdated && npm -g outdated && npm -g update && rvm get latest"
 
+alias jless="/usr/local/bin/lessc"
+
 # Fast editing for dotfiles and notes
 alias edn="z notes && s ."
 alias edd="z dotfiles && s ."
