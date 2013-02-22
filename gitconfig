@@ -6,6 +6,7 @@
 [alias]
   co        = checkout
   unstage   = reset HEAD
+  undo      = reset --soft HEAD^
   lg        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lol       = log --pretty=oneline --abbrev-commit --graph --decorate
   conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
