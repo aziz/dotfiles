@@ -7,7 +7,7 @@ SCM_THEME_PROMPT_SUFFIX=" "
 SCM_NONE_CHAR=""
 RVM_THEME_PROMPT_PREFIX="${bold_red}✦ "
 RVM_THEME_PROMPT_SUFFIX=" ${reset_color}"
-ERROR="${bold_red}⚠ Error \n${normal}"
+ERROR="${bold_red}❌  Error \n${normal}"
 EXIT_STATUS="if [ \$? = 0 ]; then echo \"\"; else echo \"${ERROR}\"; fi"
 
 rvmrc_version_prompt () {

@@ -16,6 +16,14 @@ rescue LoadError
   puts "gem install wirble"
 end
 
+begin
+  require 'ap'
+rescue LoadError
+  puts "*** awesome_print disabled ***"
+  puts "gem install awesome_print"
+  require 'pp'
+end
+
 # better table view for activerecord objects with hirb
 # begin
 #   require 'hirb'
@@ -26,21 +34,12 @@ end
 #   puts "gem install hirb"
 # end
 
-begin
-  require 'ap'
-rescue LoadError
-  puts "*** awesome_print disabled ***"
-  puts "gem install awesome_print"
-  require 'pp'
-end
-
 # begin
 #   require 'looksee'
 # rescue LoadError
 #   puts "*** looksee disabled ***"
 #   puts "gem install looksee"
 # end
-
 
 class Object
 
@@ -66,7 +65,7 @@ end
 def bm(repetitions=100, &block)
   require 'benchmark'
   Benchmark.bmbm do |b|
-    b.report {repetitions.times &block}
+    b.report { repetitions.times &block }
   end
   nil
 end
