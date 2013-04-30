@@ -32,11 +32,11 @@ export BASH_THEME='mine'
 
 # Set my editor and git editor
 export EDITOR="vim"
-export GIT_EDITOR="vim"
 export GEM_EDITOR="subl"
+# export GIT_EDITOR="vim"
 
 # Change this to your console based IRC client of choice.
-export IRC_CLIENT='irssi'
+# export IRC_CLIENT='irssi'
 
 # Setting for the new UTF-8 terminal support in Lion
 export LANG="en_US.UTF-8"
@@ -65,7 +65,7 @@ unset MAILCHECK
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
-if [ "x`ps ax |grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add ~/.ssh/id_rsa; fi
+if [ "x`ps ax |grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add; fi
 
 
 # FIX ME...add it to completion folder
