@@ -56,6 +56,9 @@ export OSVERSION=`uname -r`; OSVERSION=`expr "$OSVERSION" : '[^0-9]*\([0-9]*\.[0
 export MACHINE=`uname -m | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
 export PLATFORM="$MACHINE-$OS-$OSVERSION"
 
+# Set iTerm tab/window name to the current directory
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+
 # Load Bash It
 source $BASH/bash_it.sh
 
