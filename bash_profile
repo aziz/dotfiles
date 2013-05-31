@@ -18,8 +18,10 @@
 #
 # ----------------------------------------------------------------------------------
 
+export GOPATH=$HOME/go
+
 # Add rvm gems and nginx to the path
-export PATH="/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$HOME/.rvm/bin:$HOME/.deliver/bin:$PATH"
+export PATH="/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$HOME/.rvm/bin:$HOME/.deliver/bin:$GOPATH/bin:$PATH"
 
 # Node
 export NODE_PATH="/usr/local/lib/node_modules"
