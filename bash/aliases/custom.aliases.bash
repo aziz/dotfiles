@@ -13,6 +13,9 @@ alias eds="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User && s
 # Server in python
 alias server="python -m SimpleHTTPServer 8888"
 
+# Server in ruby
+alias serverr="ruby -run -e httpd . -p5000"
+
 # SVG
 alias svglint="python ~/.bin/scour/scour.py"
 
