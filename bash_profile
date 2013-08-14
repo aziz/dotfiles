@@ -34,7 +34,7 @@ export BASH_THEME='mine'
 
 # Set my editor and git editor
 export EDITOR="vim"
-export GEM_EDITOR="subl"
+export GEM_EDITOR="subl3"
 # export GIT_EDITOR="vim"
 
 # Change this to your console based IRC client of choice.

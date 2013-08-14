@@ -16,7 +16,7 @@
   amend     = commit --amend
 [core]
   excludesfile = ~/.gitignore
-  editor       = subl -wn
+  editor       = subl3 -wn
   autocrlf     = input
   whitespace   = space-before-tab, trailing-space
 [help]
