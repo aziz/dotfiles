@@ -11,10 +11,11 @@ ERROR="${bold_red}❌  Error \n${normal}"
 EXIT_STATUS="if [ \$? = 0 ]; then echo \"\"; else echo \"${ERROR}\"; fi"
 
 rvmrc_version_prompt () {
-  if [ -f .rvmrc ]; then
+  if [ -f .rvmrc ] || [ -f .ruby\-version ] ; then
     if which rvm &> /dev/null; then
       rvm=$(rvm tools identifier) || return
-      echo -e "$RVM_THEME_PROMPT_PREFIX$rvm$RVM_THEME_PROMPT_SUFFIX"
+      clean=${rvm//ruby-/}
+      echo -e "$RVM_THEME_PROMPT_PREFIX$clean$RVM_THEME_PROMPT_SUFFIX"
     fi
   fi
 }

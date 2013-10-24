@@ -1,5 +1,4 @@
 # TODO: 
-- update rvm ruby version decetor to work with the new version of rvm
 - http://vim.spf13.com/#install
 - OSX for hackers:
   - https://gist.github.com/2260182

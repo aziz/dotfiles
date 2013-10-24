@@ -21,7 +21,7 @@
 export GOPATH=$HOME/go
 
 # Add rvm gems and nginx to the path
-export PATH="/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$HOME/.rvm/bin:$HOME/.deliver/bin:$GOPATH/bin:$PATH"
+export PATH="/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$HOME/.rvm/bin:$HOME/.deliver/bin:$GOPATH/bin:$PATH"
 
 # Node
 export NODE_PATH="/usr/local/lib/node_modules"
@@ -71,14 +71,3 @@ unset MAILCHECK
 
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
 if [ "x`ps ax |grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add; fi
-
-
-# FIX ME...add it to completion folder
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
