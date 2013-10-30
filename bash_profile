@@ -18,24 +18,25 @@
 #
 # ----------------------------------------------------------------------------------
 
-export GOPATH=$HOME/go
-
-# Add rvm gems and nginx to the path
-export PATH="/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/bin:/usr/local/sbin:$HOME/.bin:/usr/local/share/npm/bin:$HOME/.rvm/bin:$HOME/.deliver/bin:$GOPATH/bin:$PATH"
+export PATH="/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.bin:$HOME/.rvm/bin:$GOPATH/bin:$PATH"
 
 # Node
 export NODE_PATH="/usr/local/lib/node_modules"
+
+# Go
+export GOPATH=$HOME/go
+
+# Set my editor and git editor
+export EDITOR="vim"
+export GEM_EDITOR="subl3"
+export BUNDLER_EDITOR="subl3"
+# export GIT_EDITOR="vim"
 
 # Path to the bash it configuration
 export BASH=$HOME/.bash
 
 # Lock and Load a custom theme file from /.bash/themes/
 export BASH_THEME='mine'
-
-# Set my editor and git editor
-export EDITOR="vim"
-export GEM_EDITOR="subl3"
-# export GIT_EDITOR="vim"
 
 # Change this to your console based IRC client of choice.
 # export IRC_CLIENT='irssi'
