@@ -11,13 +11,8 @@ then
   alias e="$EDITOR"
 fi
 
-# Sublime Text 2
-alias s="subl"
-
-# Sublime Text 3
-alias sss="subl3"
-alias st3="subl3"
-
+# Sublime Text
+alias s="subl3"
 
 # Sublime in Linux
 if [ $(uname) = "Linux" ]
