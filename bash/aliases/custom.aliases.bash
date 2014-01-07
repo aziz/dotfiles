@@ -57,4 +57,4 @@ alias burt_labs='git push -f origin $(git_current_branch):labs && be cap labs de
 # Clean up
 alias rm='rmtrash'
 alias diff='colordiff'
-alias find='gfind'
+# alias find='gfind'
