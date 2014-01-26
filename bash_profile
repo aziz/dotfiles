@@ -18,7 +18,7 @@
 #
 # ----------------------------------------------------------------------------------
 
-export PATH="/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.bin:$HOME/.rvm/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/.cask/bin:/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.bin:$HOME/.rvm/bin:$GOPATH/bin:$PATH"
 
 # Node
 export NODE_PATH="/usr/local/lib/node_modules"
