@@ -17,6 +17,10 @@
 # @hourly execution once an hour, "0 * * * *"
 
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin:~/.rvm/bin
+LC_CTYPE=en_US.UTF-8
+
+# run chrome web store script everyday at 3PM
+00 15 * * * /Users/allen/.rvm/bin/ruby-2.0.0-p353 /Users/allen/Dropbox/projects/Chrome-webstore-downloader/chrome.rb > /tmp/chrome.html 2>&1 && open /tmp/chrome.html
 
 # Growl notify outdated home-brews, ruby gems, npm packages everyday at 3:20PM
 # 20 15 * * * brew outdated | growlnotify -s -t "Outdated Homebrews"
