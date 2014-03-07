@@ -13,13 +13,16 @@ alias mac_press_and_hold_enable="defaults write -g ApplePressAndHoldEnabled -boo
 alias mac_hide="chflags hidden"
 alias mac_show="chflags nohidden"
 
+alias mac_fast_terminal='sudo rm -rf /private/var/log/asl/*.asl'
+alias mac_fix_open_with_duplicated='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user && killall Finder && echo "Open With has been rebuilt, Finder will relaunch"'
+
 alias mac_openports='sudo lsof -iTCP -sTCP:LISTEN -P'
 
 # Recursively delete `.DS_Store` files
 alias mac_ds_store_cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Always open everything in Finder's list view. This is important.
-alias finder_always_use_list_view="defaults write com.apple.Finder FXPreferredViewStyle Nlsv"
+alias mac_finder_always_use_list_view="defaults write com.apple.Finder FXPreferredViewStyle Nlsv"
 
 # Switches your os x dock between 2d and 3d
 dock-switch() {

@@ -1,5 +1,5 @@
+
 # TODO: 
-- http://vim.spf13.com/#install
 - OSX for hackers:
   - https://gist.github.com/2260182
   - https://github.com/mathiasbynens/dotfiles/blob/master/.osx
@@ -23,6 +23,7 @@
 - load grc under linux
 
 # VIM
+- http://vim.spf13.com/#install
 - https://github.com/zaiste/vimified
 - use vundle or pathogen
 - https://github.com/mutewinter/dot_vim
@@ -36,13 +37,14 @@
 
 # AUTO INSTALL UTILS
 ## prepare_linux.shell:
->    # to fix a warning in running chrome and sublime from console
+
+    # to fix a warning in running chrome and sublime from console
     sudo apt-get install gtk2-engines-pixbuf
->    # to have pbpaste and pbcopy aliases to work
+    # to have pbpaste and pbcopy aliases to work
     sudo apt-get install xclip
 
 ## prepare_mac.shell
->   # add rmtrash to delete to trash
+    # add rmtrash to delete to trash
     brew rmtrash
 
 local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`

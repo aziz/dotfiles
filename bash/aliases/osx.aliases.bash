@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# fix_slow_terminal
-alias fast_terminal='sudo rm -rf /private/var/log/asl/*.asl'
-
-alias fix_open_with_duplicated='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user && killall Finder && echo "Open With has been rebuilt, Finder will relaunch"'
-
 # Desktop Programs
 alias preview="open -a '$PREVIEW'"
 alias xcode="open -a '/Developer/Applications/Xcode.app'"
@@ -17,3 +12,39 @@ alias ql='qlmanage -p'
 alias textedit='open -a TextEdit'
 
 
+# Expand save panel by default
+# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# Expand print panel by default
+# defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+
+# Save to disk (not to iCloud) by default
+# defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Automatically quit printer app once the print jobs complete
+# defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# Disable Notification Center and remove the menu bar icon
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+
+# Disable shadow in screenshots
+# defaults write com.apple.screencapture disable-shadow -bool true
+
+# Enable subpixel font rendering on non-Apple LCDs
+# defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
+# Remove Dropbox’s green checkmark icons in Finder
+# file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
+# [ -e "${file}" ] && mv -f "${file}" "${file}.bak"
+
+# Set the icon size of Dock items to 36 pixels
+# defaults write com.apple.dock tilesize -int 36
+
+# Disable Dashboard
+# defaults write com.apple.dashboard mcx-disabled -bool true
+
+# Reset Launchpad
+# find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
+
+# Add iOS Simulator to Launchpad
+# sudo ln -sf /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
