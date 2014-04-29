@@ -1,11 +1,8 @@
 
 # TODO: 
-- OSX for hackers:
-  - https://gist.github.com/2260182
-  - https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 - https://github.com/xiongchiamiov/terminal-screensaver
-- compile npmrc on install just like gitconfig
 - https://github.com/cowboy/dotfiles
+- compile npmrc on install just like gitconfig
 - github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
 
 # BUGS

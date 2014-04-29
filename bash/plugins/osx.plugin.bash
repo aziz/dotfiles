@@ -24,6 +24,9 @@ alias mac_ds_store_cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # Always open everything in Finder's list view. This is important.
 alias mac_finder_always_use_list_view="defaults write com.apple.Finder FXPreferredViewStyle Nlsv"
 
+alias mac_mac_address_wired="ifconfig en0 | grep ether"
+alias mac_mac_address_wireless="ifconfig en1 | grep ether"
+
 # Switches your os x dock between 2d and 3d
 dock-switch() {
 
