@@ -25,6 +25,7 @@ export NODE_PATH="/usr/local/lib/node_modules"
 
 # Go
 export GOPATH=$HOME/go
+export DOCKER_HOST=tcp://localhost:4243
 
 # Set my editor and git editor
 export EDITOR="vim"
