@@ -8,3 +8,4 @@ cron/logs
 .DS_Store
 githubwatcher
 Icon*
+bash/secrets.sh

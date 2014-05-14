@@ -567,7 +567,7 @@
 	<key>HideTab</key>
 	<true/>
 	<key>HighlightTabLabels</key>
-	<true/>
+	<false/>
 	<key>HotKeyBookmark</key>
 	<string>3FD59DD8-94C6-4467-9AED-9C521A1988A4</string>
 	<key>HotKeyTogglesWindow</key>
@@ -592,14 +592,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 584}</string>
-	<key>NSNavPanelExpandedStateForSaveMode</key>
-	<true/>
+	<string>~/Dropbox/dotfiles/templates/terminal</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -623,25 +617,16 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration Terminal Toolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<integer>0</integer>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>835 77 445 270 0 0 1280 778 </string>
+	<string>1473 855 445 270 -642 800 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>345 181 605 485 0 0 1280 778 </string>
+	<string>311 1148 924 485 -642 800 2560 1418 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>448 487 384 129 0 0 1280 778 </string>
+	<string>751 480 384 129 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 42 1280 736 0 0 1280 778 </string>
+	<string>-589 1488 1280 730 -589 800 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -798,7 +783,7 @@
 			<key>Automatically Log</key>
 			<false/>
 			<key>BM Growl</key>
-			<false/>
+			<true/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1361,7 +1346,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>0.99812602996826172</real>
+			<real>0.90322792530059814</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1370,8 +1355,6 @@
 			<string>/Users/allen</string>
 		</dict>
 	</array>
-	<key>NoSyncNeverRemindPrefsChangesCopy</key>
-	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1420,7 +1403,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/allen/Dropbox/dotfiles/templates/terminal</string>
+	<string>/Users/allen.bargi/Dropbox/dotfiles/templates/terminal</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1436,7 +1419,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-01-14T02:08:28Z</date>
+	<date>2014-05-13T00:17:31Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1444,7 +1427,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowPaneTitles</key>
-	<false/>
+	<true/>
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
@@ -1491,6 +1474,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20131228</string>
+	<string>1.0.0.20140421</string>
 </dict>
 </plist>

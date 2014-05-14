@@ -65,6 +65,7 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 # Load Bash It
 source $BASH/bash_it.sh
+source $BASH/secrets.sh
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
