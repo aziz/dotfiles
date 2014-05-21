@@ -13,8 +13,8 @@ Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, and
 `./install.sh`
 
 ## Requirements
-- `rvm and ruby`
-- `brew install git ack curl tree tmux screen vim grc unrar p7zip rmtrash ctags task unrar wget monit`
-- `brew install htop mc colordiff colortail ffmpeg imagemagick bash-completion bash`
-- `gem  install tmuxinator rails capistrano looksee wirble hirb awesome_print terminal-notifier`
-- `npm install -g tldr`
+- `rvm/pow/heroku/homebrew`
+- `gem install tmuxinator rails capistrano looksee wirble hirb awesome_print terminal-notifier`
+- `npm install -g tldr bower gulp coffee-script coffeelint jshint`
+- `brew install ack ansifilter archey awscli bash boot2docker brew-cask cloog csv-fix curl ffmpeg git git-extras gnupg2 grep imagemagick`
+- `brew install libmpc libyaml midnight-commander mongodb node p7zip postgis python redis rmtrash rsync tidy tmux tree unrar vim`

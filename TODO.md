@@ -1,3 +1,4 @@
+- write shell script to install all brew/npm/gem dependencies
 
 # TODO: 
 - https://github.com/xiongchiamiov/terminal-screensaver

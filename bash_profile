@@ -70,6 +70,8 @@ source $BASH/secrets.sh
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
+complete -C aws_completer aws
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
