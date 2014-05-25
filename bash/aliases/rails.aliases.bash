@@ -18,12 +18,10 @@ alias restart='touch tmp/restart.txt'  # restart passenger
 alias devlog='tail -f log/development.log'
 
 # rake
-alias rake='rake --rakelibdir ~/.rake/'
 alias rt='rake test'
 alias rtu='rake test:units'
 alias rtf='rake test:functionals'
 alias rti='rake test:integration'
-alias a='autotest -rails'
 alias rr='rake routes'
 alias rdbm='rake db:migrate'
 alias rdbr='rake db:rollback'

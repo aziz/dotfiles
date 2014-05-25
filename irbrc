@@ -6,40 +6,12 @@ IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
-# Wirble for colorful IRB
 begin
-  require 'wirble'
-  Wirble.init
-  Wirble.colorize
+  require 'awesome_print'
 rescue LoadError
-  puts "*** wirble disabled ***"
-  puts "gem install wirble"
-end
-
-begin
-  require 'ap'
-rescue LoadError
-  puts "*** awesome_print disabled ***"
-  puts "gem install awesome_print"
+  puts "* awesome_print disabled `gem install awesome_print`"
   require 'pp'
 end
-
-# better table view for activerecord objects with hirb
-# begin
-#   require 'hirb'
-#   Hirb.enable
-#   extend Hirb::Console
-# rescue LoadError
-#   puts "*** hirb disabled ***"
-#   puts "gem install hirb"
-# end
-
-# begin
-#   require 'looksee'
-# rescue LoadError
-#   puts "*** looksee disabled ***"
-#   puts "gem install looksee"
-# end
 
 class Object
 
@@ -65,7 +37,7 @@ end
 def bm(repetitions=100, &block)
   require 'benchmark'
   Benchmark.bmbm do |b|
-    b.report { repetitions.times &block }
+    b.report { repetitions.times(&block) }
   end
   nil
 end

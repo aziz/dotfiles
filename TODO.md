@@ -4,6 +4,7 @@ install
 - ruby/rvm/gems
 - pow
 - heroku
+- automaticalling install mac apps from app-store
 
 - write shell script to install all brew/npm/gem dependencies
 
@@ -13,8 +14,7 @@ install
 - compile npmrc on install just like gitconfig
 - github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
 
-# BUGS
-- do not set TERM to xterm-256color permanently 
+# BUGS 
 - fix usage function in mac
 - hcht configuration
 
@@ -68,7 +68,7 @@ fi
     |- bin (other langs useful scripts)
 
 > signle letter aliases available:    
-> IJMNOPY
+> AIJMNOPY
 
 ______________________________________________
 

@@ -10,11 +10,17 @@ echo "|_| |_|\___/|_| |_| |_|\___|_.__/|_|  \___| \_/\_/  "
 echo "_____________________________________________________"
 echo
 # ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-
-# brew tap new sources
+# brew tap
+#          caskroom/cask
+#          caskroom/fonts
+#          caskroom/versions
+#          homebrew/dupes
+#          homebrew/python
+#          homebrew/science
 # brew update
-# brew install `cat ~/.templates/dependecies/brew`
-# npm install -g `cat ~/.templates/dependecies/npm`
+# xcode-select --install
+# brew install `cat ~/.templates/dependencies/brew`
+# npm install -g `cat ~/.templates/dependencies/npm`
 
 echo "Installing Ruby Version Manager"
 echo " _ ____   ___ __ ___  "
@@ -27,3 +33,16 @@ echo
 # install ruby x
 # use ruby x as default
 # gem install `cat ~/.templates/dependecies/gem`
+
+
+# echo "Installing Apps"
+# brew bundle Caskfile
+# brew cask install `cat ~/.templates/dependencies/apps`
+# brew cask install `cat ~/.templates/dependencies/test`
+# brew cask alfred link
+
+# install fonts with brew cask fonts
+
+# SUBLIME
+# install sublime package manager
+# install sublime_packages
