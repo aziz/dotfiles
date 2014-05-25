@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 echo "      _       _    __ _ _             "
 echo "     | |     | |  / _(_) |            "
 echo "   __| | ___ | |_| |_ _| | ___  ___   "
@@ -8,7 +9,7 @@ echo " | (_| | (_) | |_| | | | |  __/\__ \  "
 echo "(_)__,_|\___/ \__|_| |_|_|\___||___/  "
 echo "______________________________________________"
 echo
-echo "Installing dotfiles into user's home directory"
+echo "Installing dotfiles into your home directory"
 echo
 
 backup_dir=".backup_old_dot_files"

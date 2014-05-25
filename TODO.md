@@ -1,3 +1,10 @@
+install 
+- brew
+- node/npm
+- ruby/rvm/gems
+- pow
+- heroku
+
 - write shell script to install all brew/npm/gem dependencies
 
 # TODO: 
