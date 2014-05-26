@@ -15,7 +15,6 @@
 ✔ webstorm
 
 # Mac App Store
-✘ Dash
 ✘ DoublePane
 ✘ GIFBrewery
 ✘ iPhoto
@@ -27,7 +26,14 @@
 ✘ Xcode
 
 # Not Found
-Adobe Photoshop CC
-Microsoft Office 2011
-Popcorn-Time
-QGIS
+adobe photoshop cc
+microsoft office 2011
+popcorn-time
+qgis
+
+# Candidates
+caskroom/cask/reeder
+caskroom/cask/java
+caskroom/cask/launchcontrol
+caskroom/cask/charles
+caskroom/cask/dnscrypt
