@@ -1,4 +1,13 @@
 
+# Password
+virtualbox
+r
+rstudio
+asepsis
+
+# Installer
+jdownloader
+
 # Paid
 ✔ appfresh
 ✔ bartender
@@ -15,25 +24,28 @@
 ✔ webstorm
 
 # Mac App Store
-✘ DoublePane
-✘ GIFBrewery
-✘ iPhoto
-✘ Mail Notifr
-✘ Microsoft OneNote
-✘ Palua
-✘ Sip
-✘ Twitter
-✘ Xcode
+✘ doublepane
+✘ gifbrewery
+✘ iphoto
+✘ mail notifr
+✘ microsoft onenote
+✘ pagelayers
+✘ palua
+✘ sip
+✘ twitter
+✘ xcode
+
+# Candidates
+reeder
+java
+charles
+dnscrypt
+hopper-disassembler
 
 # Not Found
 adobe photoshop cc
 microsoft office 2011
 popcorn-time
 qgis
+caffeinated
 
-# Candidates
-caskroom/cask/reeder
-caskroom/cask/java
-caskroom/cask/launchcontrol
-caskroom/cask/charles
-caskroom/cask/dnscrypt

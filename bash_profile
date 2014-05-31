@@ -76,3 +76,6 @@ complete -C aws_completer aws
 
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
 if [ "x`ps ax |grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add; fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
