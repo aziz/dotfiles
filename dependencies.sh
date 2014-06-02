@@ -29,13 +29,18 @@ use ruby x as default
 gem install `cat ~/.templates/dependecies/gem`
 
 echo "Installing Apps"
-echo "_______________"
+echo "==============="
 brew cask install `cat ~/.templates/dependencies/apps`
 brew cask alfred link
 
 echo "Installing Fonts"
-echo "________________"
+echo "================"
 brew cask install `cat ~/.templates/dependencies/fonts`
+
+
+echo "Installing Pow Server"
+echo "====================="
+curl get.pow.cx | sh
 
 # SUBLIME
 # install sublime package manager

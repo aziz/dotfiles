@@ -1,12 +1,6 @@
 install 
-- brew
-- node/npm
-- ruby/rvm/gems
 - pow
-- heroku
-- automaticalling install mac apps from app-store
-
-- write shell script to install all brew/npm/gem dependencies
+- automatically install mac apps from app-store??
 
 # TODO: 
 - https://github.com/xiongchiamiov/terminal-screensaver
@@ -85,7 +79,7 @@ ______________________________________________
      〓 █ ▇ ▇ ▇ ▆ ▅ ▅ ▄ ▃ ▂ ▁ ▀▗ ▖ ▘ ▙ ▚ ▛ ▜ ◹ ◺ ◸ ◿
      ➊➋➌➍➎➏➐➑➒➓ ➀➁➂➃➄➅➆➇➈➉ ¹²³⁴⁵⁶⁷⁸⁹⁰ 
      ☰ ䷀ 𝌆 𝍖 𝌮 
-     🂠🂡🃝🃞🃟
+
 
 
 # Best Separators:

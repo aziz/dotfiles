@@ -18,14 +18,14 @@
 #
 # ----------------------------------------------------------------------------------
 
-export PATH="$HOME/.cask/bin:/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.bin:$HOME/.rvm/bin:$GOPATH/bin:$PATH"
-
 # Node
 export NODE_PATH="/usr/local/lib/node_modules"
 
 # Go
 export GOPATH=$HOME/go
 export DOCKER_HOST=tcp://localhost:4243
+
+export PATH="$HOME/.cask/bin:/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.bin:$GOPATH/bin:$HOME/.rvm/bin:$PATH"
 
 # Set my editor and git editor
 export EDITOR="vim"
@@ -70,12 +70,7 @@ source $BASH/secrets.sh
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
-complete -C aws_completer aws
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
 if [ "x`ps ax |grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add; fi
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"

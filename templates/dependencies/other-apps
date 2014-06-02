@@ -35,13 +35,6 @@ jdownloader
 ✘ twitter
 ✘ xcode
 
-# Candidates
-reeder
-java
-charles
-dnscrypt
-hopper-disassembler
-
 # Not Found
 adobe photoshop cc
 microsoft office 2011
@@ -49,3 +42,11 @@ popcorn-time
 qgis
 caffeinated
 
+# Candidates
+reeder
+java
+charles
+dnscrypt
+hopper-disassembler
+tunnelbear
+xquartz
