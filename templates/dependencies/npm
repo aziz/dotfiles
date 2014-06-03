@@ -3,6 +3,7 @@ coffee-script
 coffeelint
 gulp
 jshint
+marked
 tldr
 trash
 write-gooder
