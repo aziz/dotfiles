@@ -4,6 +4,7 @@ awscli
 bash
 boot2docker
 brew-cask
+colordiff
 coreutils
 curl
 dnsmasq

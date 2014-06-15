@@ -11,6 +11,12 @@ alias f='open -a Finder '
 alias ql='qlmanage -p'
 alias textedit='open -a TextEdit'
 
+alias md2rtf='pbpaste | markdown | textutil -stdin -stdout -format html -convert rtf | pbcopy'
+alias md2html='pbpaste | markdown | browser'
+
+# Useful Mac Tools
+## mdfind => Spotlight from command line
+## textutils => convert text to different formats, i.e. txt, rtf, rtfd, html, doc, docx, odt, wordml, or webarchive
 
 # Expand save panel by default
 # defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
