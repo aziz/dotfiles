@@ -32,12 +32,8 @@ alias apache_start="sudo apachectl -k start"
 # crontab
 alias cron_install="crontab -r;crontab ~/.cron/cron_jobs"
 
-# cofeescript
-alias coffee_watch="coffee -r coffeescript-growl -w"
-
 # Clean up
 alias rm='rmtrash'
-alias diff='colordiff'
 # alias find='gfind'
 
 # CVS
