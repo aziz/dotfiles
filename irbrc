@@ -8,6 +8,7 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 begin
   require 'awesome_print'
+  AwesomePrint.irb!
 rescue LoadError
   puts "* awesome_print disabled `gem install awesome_print`"
   require 'pp'
