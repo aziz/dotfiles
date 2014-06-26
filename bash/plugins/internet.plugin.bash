@@ -1,13 +1,15 @@
 #!/bin/bash
 
-ips () {
-  ifconfig | grep "inet " | awk '{ print $2 }'
+myip () {
+  pub=$(curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+')
+  loc=$(ifconfig | grep "inet " | awk '{ print $2 }')
+  echo "public:"
+  echo "${bold_green}$pub${normal}"
+  echo "local:"
+  echo "${bold_green}$loc${normal}"
 }
 
-myip () {
-  res=$(curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+')
-  echo "Your public IP is: ${bold_green} $res ${normal}"
-}
+alias ips="myip"
 
 # check to see if a domain is registered or not
 isreg () {
