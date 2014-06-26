@@ -466,7 +466,7 @@
 	<key>FocusFollowsMouse</key>
 	<false/>
 	<key>FsTabDelay</key>
-	<real>2.054361979166667</real>
+	<real>2.0543620586395264</real>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x9-0x40000</key>
@@ -597,7 +597,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
+	<string>1, 5</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Dropbox/dotfiles/templates/terminal</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -623,14 +623,21 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSUserKeyEquivalents</key>
+	<dict>
+		<key>Open Autocomplete...</key>
+		<string>^ </string>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>821 70 459 270 0 0 1280 778 </string>
+	<string>695 206 459 270 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>325 187 924 485 0 0 1280 778 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>440 498 400 129 0 0 1280 778 </string>
+	<string>448 498 384 129 0 0 1280 778 </string>
+	<key>NSWindow Frame SUUpdateAlertFrame</key>
+	<string>352 301 575 392 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 48 1280 730 0 0 1280 778 </string>
+	<string>0 -662 2560 1440 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -1182,11 +1189,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 13</string>
+			<string>Monaco 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 13</string>
+			<string>Consolas 15</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1348,11 +1355,11 @@
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Use Canonical Parser</key>
-			<false/>
+			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>0.90322792530059814</real>
+			<real>0.97686600685119629</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -2146,11 +2153,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/nightly.xml</string>
+	<string>http://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-05-31T04:46:04Z</date>
+	<date>2014-06-25T10:24:32Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2205,7 +2212,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140530-nightly</string>
+	<string>1.0.0.20140518</string>
 	<key>kPreferenceKeyWindowStyle</key>
 	<integer>1</integer>
 </dict>

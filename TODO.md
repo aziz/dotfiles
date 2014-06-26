@@ -1,25 +1,20 @@
-install 
+# Install 
 - pow
 - automatically install mac apps from app-store??
 
 # TODO: 
-- https://github.com/xiongchiamiov/terminal-screensaver
-- https://github.com/cowboy/dotfiles
+- configure cron on install
+- internet speed test
 - compile npmrc on install just like gitconfig
-- github.com/nesono/nesono-bin/blob/master/bashtils/rm2trash.linux
 
-# BUGS 
-- fix usage function in mac
-- hcht configuration
+- https://github.com/cowboy/dotfiles
 
 # LINUX (WIP):
 - f does not work
 - pman does not work
 - browser does not work
-- seq on linux should not override original command (rename it to my_seq and alias it on mac)
+- seq on linux should not override original command 
 - aliases for apt-get and apt-cache search on linux
-- taskrc location does not work in linux
-- load grc under linux
 
 # VIM
 - http://vim.spf13.com/#install
@@ -42,9 +37,6 @@ install
     # to have pbpaste and pbcopy aliases to work
     sudo apt-get install xclip
 
-## prepare_mac.shell
-    # add rmtrash to delete to trash
-    brew rmtrash
 
 local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
 local SSH2_IP=`echo $SSH2_CLIENT | awk '{ print $1 }'`
