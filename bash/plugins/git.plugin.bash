@@ -62,46 +62,74 @@ git_info () {
     fi
 }
 
-function git_stats {
-# awesome work from https://github.com/esc/git-stats
-# including some modifications
+git_stats () {
+  # awesome work from https://github.com/esc/git-stats
+  # including some modifications
 
-if [ -n "$(git symbolic-ref HEAD 2> /dev/null)" ]; then
-    echo "Number of commits per author:"
-    git --no-pager shortlog -sn --all
-    AUTHORS=$( git shortlog -sn --all | cut -f2 | cut -f1 -d' ')
-    LOGOPTS=""
-    if [ "$1" == '-w' ]; then
-        LOGOPTS="$LOGOPTS -w"
-        shift
-    fi
-    if [ "$1" == '-M' ]; then
-        LOGOPTS="$LOGOPTS -M"
-        shift
-    fi
-    if [ "$1" == '-C' ]; then
-        LOGOPTS="$LOGOPTS -C --find-copies-harder"
-        shift
-    fi
-    for a in $AUTHORS
-    do
-        echo '-------------------'
-        echo "Statistics for: $a"
-        echo -n "Number of files changed: "
-        git log $LOGOPTS --all --numstat --format="%n" --author=$a | cut -f3 | sort -iu | wc -l
-        echo -n "Number of lines added: "
-        git log $LOGOPTS --all --numstat --format="%n" --author=$a | cut -f1 | awk '{s+=$1} END {print s}'
-        echo -n "Number of lines deleted: "
-        git log $LOGOPTS --all --numstat --format="%n" --author=$a | cut -f2 | awk '{s+=$1} END {print s}'
-        echo -n "Number of merges: "
-        git log $LOGOPTS --all --merges --author=$a | grep -c '^commit'
-    done
-else
-    echo "you're currently not in a git repository"
-fi
+  if [ -n "$(git symbolic-ref HEAD 2> /dev/null)" ]; then
+      echo "Number of commits per author:"
+      git --no-pager shortlog -sn --all
+      AUTHORS=$( git shortlog -sn --all | cut -f2 | cut -f1 -d' ')
+      LOGOPTS=""
+      if [ "$1" == '-w' ]; then
+          LOGOPTS="$LOGOPTS -w"
+          shift
+      fi
+      if [ "$1" == '-M' ]; then
+          LOGOPTS="$LOGOPTS -M"
+          shift
+      fi
+      if [ "$1" == '-C' ]; then
+          LOGOPTS="$LOGOPTS -C --find-copies-harder"
+          shift
+      fi
+      for a in $AUTHORS
+      do
+          echo '-------------------'
+          echo "Statistics for: $a"
+          echo -n "Number of files changed: "
+          git log $LOGOPTS --all --numstat --format="%n" --author=$a | cut -f3 | sort -iu | wc -l
+          echo -n "Number of lines added: "
+          git log $LOGOPTS --all --numstat --format="%n" --author=$a | cut -f1 | awk '{s+=$1} END {print s}'
+          echo -n "Number of lines deleted: "
+          git log $LOGOPTS --all --numstat --format="%n" --author=$a | cut -f2 | awk '{s+=$1} END {print s}'
+          echo -n "Number of merges: "
+          git log $LOGOPTS --all --merges --author=$a | grep -c '^commit'
+      done
+  else
+      echo "you're currently not in a git repository"
+  fi
 }
 
 # Stage deleted files for git
 gitrm () {
   for x in $(git status | grep deleted | awk '{print $3}'); do git rm "$x"; done
+}
+
+git_ignore_in_empty_folders () {
+  find . \( -type d -empty \) -and \( -not -regex ./\.git.* \) -exec touch {}/.gitignore \;
+}
+
+git_remove_history () {
+  # Author: David Underhill
+  # Script to permanently delete files/folders from your git repository.  To use
+  # it, cd to your repository's root and then run the script with a list of paths
+  # you want to delete, e.g., git-delete-history path1 path2
+
+  if [ $# -eq 0 ]; then
+      exit 0
+  fi
+
+  # make sure we're at the root of git repo
+  if [ ! -d .git ]; then
+      echo "Error: must run this script from the root of a git repository"
+      exit 1
+  fi
+
+  # remove all paths passed as arguments from the history of the repo
+  files="$@"
+  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch $files" HEAD
+
+  # remove the temporary history git-filter-branch otherwise leaves behind for a long time
+  rm -rf .git/refs/original/ && git reflog expire --all &&  git gc --aggressive --prune
 }
