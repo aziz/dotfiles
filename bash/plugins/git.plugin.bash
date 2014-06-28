@@ -38,8 +38,8 @@ git_info () {
 
         # print all remotes and thier details
         for remote in $(git remote show); do
-            echo $remote:
-            git remote show $remote
+            echo "$remote":
+            git remote show "$remote"
             echo
         done
 
@@ -103,5 +103,5 @@ fi
 
 # Stage deleted files for git
 gitrm () {
-  for x in `git status | grep deleted | awk '{print $3}'`; do git rm $x; done
+  for x in $(git status | grep deleted | awk '{print $3}'); do git rm "$x"; done
 }

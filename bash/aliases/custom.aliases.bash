@@ -33,8 +33,11 @@ alias apache_start="sudo apachectl -k start"
 alias cron_install="crontab -r;crontab ~/.cron/cron_jobs"
 
 # Clean up
-alias rm='rmtrash'
+alias rm="rmtrash"
 # alias find='gfind'
+
+# Vagrant
+alias vg="vagrant"
 
 # CVS
 # alias cup='cvs update -A'

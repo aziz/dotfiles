@@ -9,7 +9,7 @@
 browser () {
     if [ -t 0 ]; then
         if [ -n "$1" ]; then
-            open $1
+            open "$1"
         else
             cat <<usage
 Usage: browser

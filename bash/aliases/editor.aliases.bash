@@ -6,8 +6,7 @@ alias edit="$EDITOR"
 alias e="mate"
 
 # Textmate in Linux fallsback to default editor
-if [ $(uname) = "Linux" ]
-then
+if [ "$(uname)" = "Linux" ]; then
   alias e="$EDITOR"
 fi
 
@@ -15,8 +14,7 @@ fi
 alias s="subl3"
 
 # Sublime in Linux
-if [ $(uname) = "Linux" ]
-then
+if [ "$(uname)" = "Linux" ]; then
   alias s="/usr/bin/sublime-text-2"
 fi
 

@@ -17,6 +17,7 @@ go
 grep
 imagemagick
 jq
+man2html
 midnight-commander
 mongodb
 node
@@ -27,6 +28,7 @@ python
 redis
 rmtrash
 rsync
+shellcheck
 sqlite
 tidy
 tmux

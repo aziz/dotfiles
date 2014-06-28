@@ -36,8 +36,7 @@ alias uuuu='cd ../../../..'
 alias -- -="cd -"       # Go back
 
 # Linux Specific
-if [ $(uname) = "Linux" ]
-then
+if [ "$(uname)" = "Linux" ]; then
 	alias ls="ls --color=always"
   #pbcopy and pbpaste aliases for GNU/Linux
   alias pbcopy='xclip -selection clipboard'

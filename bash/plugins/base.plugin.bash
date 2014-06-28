@@ -30,22 +30,11 @@ hex() {
 }
 
 man2pdf() {
-  if [ $# -eq 1 ] ; then
-      to_pdf=$(which ps2pdf)
-      if [ -z "$to_pdf" ] ; then
-          to_pdf=$(which pstopdf)
-      fi
+  man -t "$1" | pstopdf -i -o "$1.pdf"
+}
 
-      name="$1"
-      case "$to_pdf"  in
-          *pstopdf) man -t "$name" | "$to_pdf" -i -o "$fname.pdf" ;;
-          *ps2pdf)  man -t "$name" | "$to_pdf" - "$name.pdf" ;;
-          *)        man -t "$name" > "$fname.ps"
-      esac
-      exit $?
-  fi
-  echo "Wrong number of parameters"
-  exit 1
+hman() {
+  man "$1" | man2html | browser
 }
 
 # View man documentation in Preview
@@ -73,16 +62,16 @@ banish-cookies() {
 
 # disk usage per directory, in Mac OS X and Linux
 usage() {
-    if [ $(uname) = "Darwin" ]; then
-        if [ -n $1 ]; then
-            du -hd $1
+    if [ "$(uname)" = "Darwin" ]; then
+        if [[ -n $1 ]]; then
+            du -hd "$1"
         else
             du -hd 1
         fi
 
-    elif [ $(uname) = "Linux" ]; then
-        if [ -n $1 ]; then
-            du -h --max-depth=1 $1
+    elif [ "$(uname)" = "Linux" ]; then
+        if [[ -n $1 ]]; then
+            du -h --max-depth=1 "$1"
         else
             du -h --max-depth=1
         fi
