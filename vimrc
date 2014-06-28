@@ -6,13 +6,15 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'   " let Vundle manage Vundle, required
 " utils
+Plugin 'ap/vim-css-color'
 Plugin 'bling/vim-airline'
+Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
-Plugin 'ap/vim-css-color'
-Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'kien/ctrlp.vim'
 " languages
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
@@ -26,19 +28,26 @@ Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 " themes
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'reedes/vim-thematic'
 Plugin 'tomasr/molokai'
+Plugin 'vim-scripts/wombat256.vim'
+Plugin 'vim-scripts/ScrollColors'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-set t_Co=256
 set background=dark
+set t_Co=256
 let g:rehash256 = 1
+"let base16colorspace=256  " Access colors present in 256 colorspace
 
-colorscheme molokai
+colorscheme Tomorrow "Tomorrow molokai
 syntax on
 
 " UI
+set encoding=utf-8
 set number          " show line number
 set autoread        " watch for file changes
 set noswapfile      " disable swapfiles
@@ -83,6 +92,9 @@ inoremap jj <Esc>hh
 " :w!! to write to a file using sudo
 cmap w!! %!sudo tee > /dev/null %
 
+" Source the vimrc file after saving it
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
+
 " Airline -------------------------------------------
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -90,6 +102,7 @@ let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
+let g:airline_theme='powerlineish'
 set laststatus=2
 
 " Include other files
