@@ -1,6 +1,6 @@
 set t_Co=256
 set background=dark
-color grb256
+"color grb256
 if has("gui_running")
   set guifont=Menlo:h12
 endif

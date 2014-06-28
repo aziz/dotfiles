@@ -1,4 +1,5 @@
 set nocompatible
+filetype off
 
 set number
 set ruler
