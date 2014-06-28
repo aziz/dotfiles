@@ -1,7 +1,0 @@
-syntax "ekghistory" "(\.|/|).gg/history"
-icolor cyan start="<" end=">"
-icolor green ",(\\.|[^\"])*,"
-color yellow "chatrecv"
-color cyan "chatsend"
-color brightwhite "[0-9]"
-
