@@ -1,11 +1,4 @@
 ssh/*
 !ssh/.gitkeep
-vim/.netrwhist
-vim/backup/.netrwhist~
-vim/tmp
-vim/.VimballRecord
 cron/logs
-.DS_Store
-githubwatcher
-Icon*
 bash/secrets.sh

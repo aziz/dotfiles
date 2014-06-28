@@ -60,9 +60,6 @@ export OSVERSION=`uname -r`; OSVERSION=`expr "$OSVERSION" : '[^0-9]*\([0-9]*\.[0
 export MACHINE=`uname -m | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
 export PLATFORM="$MACHINE-$OS-$OSVERSION"
 
-# Set iTerm tab/window name to the current directory
-export PROMPT_COMMAND="echo -ne \"\033]0;${PWD##*/}\007\""
-
 # Load Bash It
 source "$BASH"/bash_it.sh
 source "$BASH"/secrets.sh
@@ -70,5 +67,9 @@ source "$BASH"/secrets.sh
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
+# Check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
-if [ "x`ps ax |grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add; fi
+if [ "x`ps ax | grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add; fi

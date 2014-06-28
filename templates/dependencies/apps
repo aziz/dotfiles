@@ -3,7 +3,6 @@ anvil
 atom
 base
 brackets
-cakebrew
 cloud
 cyberduck
 dash
@@ -21,7 +20,6 @@ iterm2-beta
 keka
 launchrocket
 mactex
-mongohub
 nosleep
 onepassword
 robomongo
@@ -29,12 +27,13 @@ sequel-pro
 skitch
 skype
 slack
+spectacle
 sublime-text
 sublime-text-dev
 subtitles
 textmate
 torbrowser
-utorrent-beta
+transmission
 vagrant
 viber
 vlc

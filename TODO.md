@@ -18,19 +18,23 @@ local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
 
 # VUNDLE
 configure
-- powerline/Airline
+- Airline
 - The NERD tree
 - fugitive.vim
+- indentline: disable by default
+
+- CtrlP
+- Syntastic
 
 - neocomplcache
 - snipMate
 - SuperTab
-- Syntastic
 - Indent Guides
 - Align
 - colors: plasticcodewrap
 
 # TODO: 
+- move bash scripts in bin forlder to bash folder as function
 - internet speed test
 - https://github.com/cowboy/dotfiles
 
