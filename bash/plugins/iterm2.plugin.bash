@@ -18,7 +18,7 @@
 #   tab_green
 
 # Set iTerm tab/window name to the current directory
-export PROMPT_COMMAND="echo -ne \"\033]0;${PWD##*/}\007\""
+export ITERM_TAB_TITLE=${PWD##*/}
 
 title_help0()
 {
@@ -40,13 +40,13 @@ then
   title_help0;
 elif [ $# -eq 1 ]
 then
-  export PROMPT_COMMAND="echo -ne '\033]0;'$1'\007'"
+  export ITERM_TAB_TITLE=$1
 elif [ $# -gt 1 ]
 then
   title_help2;
 fi
 }
-alias title='set_iterm_title'
+alias title=set_iterm_title
 
 function titlepwd() {
   set_iterm_title `pwd`

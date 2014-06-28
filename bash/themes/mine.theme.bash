@@ -20,5 +20,22 @@ rvmrc_version_prompt () {
   fi
 }
 
-# \[\033[G\]: goto first col
-PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${bold_yellow}\]\w \[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]\n\[${yellow}\]☰\[${normal}\]\[${reset_color}\]  "
+function prompt_right() {
+  RIGHT_PROMPT="\033[1;32m$USER\033[0m on \033[1;32m$HOSTNAME\033[0m ● $(date +"%T")\033[0m"
+  echo -e "$(echo ${RIGHT_PROMPT})"
+}
+
+function prompt_left() {
+  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w \[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]"
+  echo -e "${LEFT_PROMPT}"
+}
+
+function prompt() {
+  echo -ne '\033]0;'$ITERM_TAB_TITLE'\007'
+  compensate=28
+  PS1=$(printf "%*s\r%s\n\[${yellow}\]𝌆\[${normal}\]\[${reset_color}\]  " "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
+}
+
+PROMPT_COMMAND=prompt
+
+
