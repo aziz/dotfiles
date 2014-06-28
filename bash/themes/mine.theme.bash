@@ -21,4 +21,4 @@ rvmrc_version_prompt () {
 }
 
 # \[\033[G\]: goto first col
-PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${bold_yellow}\]\w \[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]\n→ "
+PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${bold_yellow}\]\w \[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]\n\[${yellow}\]☰\[${normal}\]\[${reset_color}\]  "
