@@ -17,22 +17,18 @@ local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
 ```
 
 # VUNDLE
+configure
 - powerline/Airline
 - The NERD tree
 - fugitive.vim
+
 - neocomplcache
-- rails.vim
 - snipMate
 - SuperTab
 - Syntastic
-- vim-coffee-script
-- vim-javascript
-- vim-less
-- vim-markdown
-- vim-ruby
 - Indent Guides
 - Align
-- colors : plasticcodewrap, molokai
+- colors: plasticcodewrap
 
 # TODO: 
 - internet speed test
