@@ -1,6 +1,7 @@
 # Install 
 - pow
 - automatically install mac apps from app-store??
+- add sublime config to dotfiles and install it on demand
 
 # TODO: 
 - configure cron on install
