@@ -4,7 +4,6 @@ tclock() {
     TZ="$1" date
 }
 
-
 wclock() {
     echo -n "California: ";
     tclock America/Los_Angeles;

@@ -4,6 +4,6 @@ coffeelint
 gulp
 jshint
 marked
+svgo
 tldr
 trash
-write-gooder

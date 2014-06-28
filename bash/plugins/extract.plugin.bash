@@ -4,6 +4,10 @@
 # brew install unrar
 # brew install p7zip
 
+# I never remember tar options!
+alias targz="tar -cvzf"
+
+
 extract() {
 if [ -f "$1" ] ; then
      case $1 in
@@ -24,6 +28,3 @@ else
      echo "'$1' is not a valid file"
 fi
 }
-
-# I never remember tar options!
-alias targz="tar -cvzf"

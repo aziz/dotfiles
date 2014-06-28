@@ -23,9 +23,10 @@ export NODE_PATH="/usr/local/lib/node_modules"
 
 # Go
 export GOPATH=$HOME/go
-export DOCKER_HOST=tcp://localhost:4243
 
 export PATH="$HOME/.cask/bin:/usr/local/heroku/bin:/usr/local/clang/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.bin:$GOPATH/bin:$HOME/.rvm/bin:$PATH"
+
+export DOCKER_HOST=tcp://localhost:4243
 
 # Set my editor and git editor
 export EDITOR="vim"
@@ -51,7 +52,6 @@ export LC_ALL=en_US.UTF-8
 # Fixing gcc in lion
 export CC=/usr/bin/gcc  #gcc-4.2
 
-export CVS_RSH="ssh"
 #export CDPATH=:..:~:~/projects:~/Dropbox:~/Dropbox/projects
 
 # Identify OS and Machine
@@ -61,16 +61,14 @@ export MACHINE=`uname -m | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefgh
 export PLATFORM="$MACHINE-$OS-$OSVERSION"
 
 # Set iTerm tab/window name to the current directory
-export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+export PROMPT_COMMAND="echo -ne \"\033]0;${PWD##*/}\007\""
 
 # Load Bash It
-source $BASH/bash_it.sh
-source $BASH/secrets.sh
+source "$BASH"/bash_it.sh
+source "$BASH"/secrets.sh
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
-
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
 if [ "x`ps ax |grep [s]sh-agent`" == "x" ]; then ssh-agent && ssh-add; fi
