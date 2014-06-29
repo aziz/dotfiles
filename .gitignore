@@ -2,3 +2,4 @@ ssh/*
 !ssh/.gitkeep
 cron/logs
 bash/secrets.sh
+templates/terminal/color-schemes
