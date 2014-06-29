@@ -19,7 +19,6 @@ for name in *; do
   target="$HOME/.$name"
 
   # ignore *.md and *.sh files and some other that need post processing
-  # if [[ $name != 'install.sh' && $name != 'dependencies.sh' && $name != 'README.md' && $name != 'gitconfig' && $name != 'TODO.md' ]]; then
   if [[ ${name: -3} != ".sh" && ${name: -3} != ".md" && $name != 'gitconfig' ]]; then
     # check if file already exists
     if [ -e "$target" ]; then

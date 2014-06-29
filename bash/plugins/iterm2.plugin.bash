@@ -21,6 +21,9 @@
 #   set_iterm_profile Default
 #   set_iterm_profile "My Custom Profile"
 #
+# Open a new tab a run a command
+#   iterm_open_new_tab
+#   iterm_open_new_tab "ls;pwd"
 
 iterm_help_usage() {
   echo "Changes the terminal title"
@@ -41,7 +44,22 @@ iterm_help2() {
   return 1
 }
 
-iterm_tab_title () {
+iterm_open_new_tab() {
+  osascript 2>/dev/null <<EOF
+  tell application "iTerm"
+      make new terminal
+      tell the current terminal
+          activate current session
+          launch session "Default Session"
+          tell the last session
+              write text "$*"
+          end tell
+      end tell
+  end tell
+EOF
+}
+
+__iterm_tab_title () {
   if [ -z "$ITERM_TAB_TITLE" ]; then
     echo -ne '\033]0;'${PWD##*/}'\007'
   else

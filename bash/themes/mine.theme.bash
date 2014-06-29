@@ -31,7 +31,7 @@ prompt_left () {
 }
 
 prompt () {
-  iterm_tab_title
+  __iterm_tab_title
   compensate=28
   PS1=$(printf "%*s\r%s\n\[${yellow}\]𝌆\[${normal}\]\[${reset_color}\]  " "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
 }
