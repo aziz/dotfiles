@@ -17,12 +17,6 @@ alias server="python -m SimpleHTTPServer 8888"
 # Server in ruby
 alias serverr="ruby -run -e httpd . -p5000"
 
-# Terminal Notifier for Notification Center in Mac OSX Mountain Lion
-alias notify="~/.bin/terminal-notifier.app/Contents/MacOS/terminal-notifier"
-
-alias biggest_files="find . -type f -print0 | xargs -0 du -s | sort -n | tail -20 | cut -f2 | xargs -I{} du -sh {}"
-alias biggest_folders="du -hsx * | gsort -rh | head -20"
-
 # Apache
 alias apache_restart="sudo apachectl -k graceful"
 alias apache_stop="sudo apachectl -k graceful-stop"
@@ -33,6 +27,9 @@ alias cron_install="crontab -r;crontab ~/.cron/cron_jobs"
 
 # Clean up
 alias rm="rmtrash"
+alias biggest_files="find . -type f -print0 | xargs -0 du -s | sort -n | tail -20 | cut -f2 | xargs -I{} du -sh {}"
+alias biggest_folders="du -hsx * | gsort -rh | head -20"
+
 # alias find='gfind'
 
 # Vagrant
