@@ -1,11 +1,32 @@
+# TODO: 
+- move bash scripts in bin forlder to bash folder as function
+- internet speed test
+- https://github.com/cowboy/dotfiles
 
-# Install 
-- pow
-- automatically install mac apps from app-store??
-- add sublime config to dotfiles and install it on demand
-- install vim plugins
+# Install Script TODO
+- mac config only on a mac
+- automatically install mac apps from app-store?
+- sublime: add files to dotfiles and install it on demand
+- atom: add files to dotfiles and install it on demand
 - compile npmrc on install just like gitconfig
 - configure cron on install
+
+# Vim: configure 
+- The NERD tree
+- fugitive.vim
+- indentline: disable by default
+- CtrlP
+- Syntastic
+- snipMate
+- SuperTab
+- colors: plasticcodewrap
+
+# LINUX (WIP):
+- f does not work
+- pman does not work
+- browser does not work
+- seq on linux should not override original command 
+- aliases for apt-get and apt-cache search on linux
 - prepare_linux.shell:
 ``` bash
 # to fix a warning in running chrome and sublime from console
@@ -15,35 +36,6 @@ sudo apt-get install xclip
 
 local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
 ```
-
-# VUNDLE
-configure
-- Airline
-- The NERD tree
-- fugitive.vim
-- indentline: disable by default
-
-- CtrlP
-- Syntastic
-
-- neocomplcache
-- snipMate
-- SuperTab
-- Indent Guides
-- Align
-- colors: plasticcodewrap
-
-# TODO: 
-- move bash scripts in bin forlder to bash folder as function
-- internet speed test
-- https://github.com/cowboy/dotfiles
-
-# LINUX (WIP):
-- f does not work
-- pman does not work
-- browser does not work
-- seq on linux should not override original command 
-- aliases for apt-get and apt-cache search on linux
 
 # FEATURE REQUESTS
 - different prompt on server \u@\h in green with cloud icon, override PS1 on server
