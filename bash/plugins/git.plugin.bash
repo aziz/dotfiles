@@ -103,7 +103,7 @@ git_stats () {
 
 # Stage deleted files for git
 gitrm () {
-  for x in $(git status | grep deleted | awk '{print $3}'); do git rm "$x"; done
+  for x in $(git status -s | grep " D" | awk '{print $2}'); do git rm "$x"; done
 }
 
 git_ignore_in_empty_folders () {
