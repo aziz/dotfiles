@@ -66,3 +66,15 @@ if [ -e "$HOME/.gitconfig" ]; then
 else
   generate_gitconfig
 fi
+
+echo "Config: Disabled KeychainIntegration for SSH"
+sudo defaults write /Library/Preferences/org.openbsd.openssh KeychainIntegration -bool NO
+
+echo "Config: Save to disk (not to iCloud) by default"
+sudo defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+echo "Config: Automatically quit printer app once the print jobs complete"
+sudo defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# Faster Terminal init
+sudo rm -rf /private/var/log/asl/*.asl

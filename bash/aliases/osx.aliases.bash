@@ -21,6 +21,9 @@ alias mac-spotlight-show="sudo chmod 755 /System/Library/CoreServices/Search.bun
 alias mac-press-and-hold-disable="defaults write -g ApplePressAndHoldEnabled -bool false"
 alias mac-press-and-hold-enable="defaults write -g ApplePressAndHoldEnabled -bool true"
 
+alias mac-ssh-keychain-integration-disable="sudo defaults write /Library/Preferences/org.openbsd.openssh KeychainIntegration -bool NO"
+alias mac-ssh-keychain-integration-enable="sudo defaults write /Library/Preferences/org.openbsd.openssh KeychainIntegration -bool YES"
+
 alias mac-hide="chflags hidden"
 alias mac-show="chflags nohidden"
 
