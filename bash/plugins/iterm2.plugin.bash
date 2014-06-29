@@ -20,15 +20,13 @@
 # Set iTerm tab/window name to the current directory
 export ITERM_TAB_TITLE=${PWD##*/}
 
-title_help0()
-{
+title_help0() {
 echo "ERROR: No argument provided."
 echo "Usage:"
 echo "  `basename $0` \"title\" to provide a new Terminal title."
 }
 
-title_help2()
-{
+title_help2() {
 echo "ERROR: Too many arguments provided."
 echo "Usage:"
 echo "  `basename $0` \"title\" to provide a new Terminal title."
@@ -47,6 +45,20 @@ then
 fi
 }
 alias title=set_iterm_title
+
+function set_iterm_profile() {
+if [ $# -eq 0 ]
+then
+  title_help0;
+elif [ $# -eq 1 ]
+then
+  echo -e "\033]50;SetProfile=$1\a"
+elif [ $# -gt 1 ]
+then
+  title_help2;
+fi
+}
+
 
 function titlepwd() {
   set_iterm_title `pwd`

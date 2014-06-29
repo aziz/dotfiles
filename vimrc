@@ -41,9 +41,8 @@ filetype plugin indent on    " required
 set background=dark
 set t_Co=256
 let g:rehash256 = 1
-"let base16colorspace=256  " Access colors present in 256 colorspace
 
-colorscheme Tomorrow "Tomorrow molokai
+colorscheme molokai
 syntax on
 
 " UI
