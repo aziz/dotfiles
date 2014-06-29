@@ -1,4 +1,4 @@
 
-function npmls() {
+npmls() {
     npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
 }
