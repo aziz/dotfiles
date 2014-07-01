@@ -13,13 +13,15 @@ alias brdr="brew doctor"
 brew-help () {
   echo "Homebrew Alias Usage"
   echo
-  echo "brup  = brew update && brew upgrade"
-  echo "brout = brew outdated"
-  echo "brin  = brew install"
-  echo "brrm  = brew uninstall"
-  echo "brls  = brew list"
-  echo "brsr  = brew search"
-  echo "brinf = brew info"
-  echo "brdr  = brew doctor"
+  echo "br   = brew"
+  echo "bro  = brew update && brew outdated"
+  echo "brup = brew upgrade && brew cleanup"
+  echo "brc  = brew cask"
+  echo "bri  = brew install"
+  echo "brrm = brew uninstall"
+  echo "brls = brew list"
+  echo "brs  = brew search"
+  echo "brh  = brew home"
+  echo "brdr = brew doctor"
   echo
 }
