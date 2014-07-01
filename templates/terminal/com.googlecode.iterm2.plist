@@ -4634,13 +4634,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>695 206 459 270 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>477 142 924 485 0 0 1280 778 </string>
+	<string>477 142 605 485 0 0 1280 778 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>448 498 384 129 0 0 1280 778 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
 	<string>352 301 575 392 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>281 245 650 498 0 0 1280 778 </string>
+	<string>0 48 1280 730 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -4693,9 +4693,9 @@
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Green Component</key>
-				<real>0.88562947511672974</real>
+				<real>0.75560998916625977</real>
 				<key>Red Component</key>
-				<real>0.78559136390686035</real>
+				<real>0.47132518887519836</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -6887,7 +6887,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-06-29T05:19:57Z</date>
+	<date>2014-06-30T10:49:26Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>

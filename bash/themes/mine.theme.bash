@@ -22,6 +22,7 @@ rvmrc_version_prompt () {
 
 prompt_right () {
   RIGHT_PROMPT="\033[1;32m$USER\033[0m on \033[1;32m$HOSTNAME\033[0m ● $(date +"%T")\033[0m"
+  RIGHT_PROMPT="$(date +"%T")\033[0m"
   echo -e "$(echo ${RIGHT_PROMPT})"
 }
 
@@ -32,10 +33,15 @@ prompt_left () {
 
 prompt () {
   __iterm_tab_title
-  compensate=28
-  PS1=$(printf "%*s\r%s\n\[${yellow}\]𝌆\[${normal}\]\[${reset_color}\]  " "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
+  # left, right
+  # compensate=4
+  # PS1=$(printf "%*s\r%s\n${PS2}" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
+
+  PS_TIME="$(date +"%T")"
+  PS1=""$(prompt_left)"${PS_TIME}\n${PS2}"
 }
 
+PS2="\[${yellow}\]𝌆\[${normal}\]\[${reset_color}\]  "
 PROMPT_COMMAND=prompt
 
 

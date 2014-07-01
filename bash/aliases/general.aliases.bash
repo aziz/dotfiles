@@ -8,7 +8,6 @@ alias reload='source ~/.bash_profile && echo "bash_profile reloaded"'
 
 # List directory contents
 alias sl=ls
-alias ls='ls -G'        # Compact view, show colors
 alias la='ls -AF'       # Compact view, show hidden
 alias ll='ls -alh'
 alias l='ls -a'
@@ -45,7 +44,6 @@ fi
 
 # Clear screen
 alias c='clear'
-alias k='clear'
 alias cls='clear'
 
 alias w='which'
@@ -67,7 +65,6 @@ aliases-help () {
   echo "Generic Alias Usage"
   echo
   echo "  sl     = ls"
-  echo "  ls     = ls -G"
   echo "  la     = ls -AF"
   echo "  ll     = ls -al"
   echo "  l      = ls -a"

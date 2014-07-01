@@ -5,7 +5,8 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;33'
 
 # colored ls
-export LSCOLORS='Gxfxcxdxdxegedabagacad'
+export CLICOLOR=1
+export LSCOLORS='ExFxcxdxCxegedabagacad'
 
 # Less Colors for Man Pages from: http://bit.ly/uYa1mp
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
@@ -23,7 +24,6 @@ if which brew >/dev/null 2>&1; then
     source "`brew --prefix grc`/etc/grc.bashrc"
   fi
 fi
-
 
 # Load the theme
 if [[ $BASH_THEME ]]; then

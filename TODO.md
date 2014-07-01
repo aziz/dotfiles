@@ -1,4 +1,7 @@
 # TODO: 
+```bash
+complete -W "list of all words for an automatic completion" command_to_be_completed
+```
 - move bash scripts in bin forlder to bash folder as function
 - internet speed test
 - https://github.com/cowboy/dotfiles
