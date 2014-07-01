@@ -1,15 +1,14 @@
 # Some aliases for Homebrew
 alias br="brew"
-alias brup="brew update && brew upgrade"
-alias brout="brew outdated"
-alias bro="brew outdated"
-alias brin="brew install"
+alias bro="brew update && brew outdated"
+alias brup="brew upgrade && brew cleanup"
+alias brc="brew cask"
+alias bri="brew install"
 alias brrm="brew uninstall"
 alias brls="brew list"
-alias brsr="brew search"
-alias brinf="brew info"
+alias brs="brew search"
+alias brh="brew home"
 alias brdr="brew doctor"
-alias brc="brew cask"
 
 brew-help () {
   echo "Homebrew Alias Usage"
