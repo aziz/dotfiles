@@ -52,11 +52,6 @@ set timeoutlen=1000 ttimeoutlen=0 " eliminating esc delays
 set shortmess+=I    " no welcome message
 "set ruler
 
-if $TERM_PROGRAM =~ "iTerm"
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"  " Block in normal mode
-endif
-
 " Whitespace stuff
 set nowrap
 set tabstop=2
@@ -112,14 +107,17 @@ let g:airline_theme='powerlineish'
 set laststatus=2
 
 set background=dark
-set term=xterm
 set t_Co=256
-let &t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 let g:rehash256 = 1
 
 colorscheme molokai
 syntax on
+
+if $TERM_PROGRAM =~ "iTerm"
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"  " Block in normal mode
+endif
 
 
 " Include other files

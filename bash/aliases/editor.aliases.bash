@@ -19,5 +19,5 @@ if [ "$(uname)" = "Linux" ]; then
 fi
 
 # Vim
-alias v='vim && iterm_cursor_line'
-alias vi='vim && iterm_cursor_line'
+alias v='vim'
+alias vi='vim'
