@@ -26,6 +26,7 @@ p7zip
 postgis
 postgresql
 python
+ranger
 redis
 rmtrash
 rsync

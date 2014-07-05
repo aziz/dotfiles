@@ -49,13 +49,21 @@ syntax on
 set encoding=utf-8
 set number          " show line number
 set autoread        " watch for file changes
+set autoindent
 set noswapfile      " disable swapfiles
 set nobackup        " disable backups
 set backupdir=~/.vim/backup " Directories for swp files
 set showmatch       " show matching brackets.
 set showcmd         " shows what you're typing as a command
 set wildmenu
+set ttyfast         " faster redraw
+set timeoutlen=1000 ttimeoutlen=0 " eliminating esc delays
 "set ruler
+
+if $TERM_PROGRAM =~ "iTerm"
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"  " Block in normal mode
+endif
 
 " Whitespace stuff
 set nowrap
@@ -69,10 +77,9 @@ set hlsearch        " highlight all matches
 set incsearch       " do incremental searching
 set ignorecase      " ignore case when searching
 set smartcase
-
-"set modelines=1
-set ttyfast         " faster redraw
-set autoindent
+set gdefault
+nnoremap / /\v      " use normal regex for search
+vnoremap / /\v
 
 " Folding
 set foldmethod=indent   " fold based on indent level
@@ -87,6 +94,7 @@ set backspace=indent,eol,start
 
 " remap jj to escape in insert mode.  You'll never type jj anyway!
 inoremap jj <Esc>hh
+" nnoremap ; : " no need to press shift
 
 " :w!! to write to a file using sudo
 cmap w!! %!sudo tee > /dev/null %

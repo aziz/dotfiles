@@ -37,7 +37,7 @@ prompt () {
   # compensate=4
   # PS1=$(printf "%*s\r%s\n${PS2}" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
 
-  PS1=""$(prompt_left)"\@\n${PS2}"
+  PS1=""$(prompt_left)" \@\n${PS2}"
 }
 
 PS2="\[${yellow}\]𝌆\[${normal}\]\[${reset_color}\]  "

@@ -63,9 +63,6 @@ alias mac-mac-address-wireless="ifconfig en1 | grep ether"
 # Disable shadow in screenshots
 # defaults write com.apple.screencapture disable-shadow -bool true
 
-# Enable subpixel font rendering on non-Apple LCDs
-# defaults write NSGlobalDomain AppleFontSmoothing -int 2
-
 # Remove Dropbox’s green checkmark icons in Finder
 # file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
 # [ -e "${file}" ] && mv -f "${file}" "${file}.bak"
@@ -81,3 +78,23 @@ alias mac-mac-address-wireless="ifconfig en1 | grep ether"
 
 # Add iOS Simulator to Launchpad
 # sudo ln -sf /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
+
+### Enable subpixel font rendering on non-Apple LCDs
+
+# To set this to Strong:
+# defaults write NSGlobalDomain AppleFontSmoothing -integer 4
+
+# To set this to Smoother:
+# defaults write NSGlobalDomain AppleFontSmoothing -integer 3
+
+# To set this to Medium:
+# defaults write NSGlobalDomain AppleFontSmoothing -integer 2
+
+# To set this to Minimal:
+# defaults write NSGlobalDomain AppleFontSmoothing -integer 1
+
+# To set this to Disabled:
+# defaults write NSGlobalDomain AppleFontSmoothing -integer 0
+
+# To reset this setting to the default value:
+# defaults delete NSGlobalDomain AppleFontSmoothing

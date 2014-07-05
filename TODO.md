@@ -2,6 +2,22 @@
 ```bash
 complete -W "list of all words for an automatic completion" command_to_be_completed
 ```
+
+* Add 'set editing-mode vi' in your ~/.inputrc to use the vi keybindings 
+  for bash and all readline-enabled applications (python, mysql, etc)
+
+function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
+- function fname() { find . -iname "*$@*"; }
+- function remove_lines_from() { grep -F -x -v -f $2 $1; }
+  removes lines from $1 if they appear in $2
+- Pipe any command over 'column -t' to nicely align the columns
+diff --side-by-side fileA.txt fileB.txt
+pgrep
+'lsof -i' monitors network connections in real time
+'iftop' shows bandwith usage per *connection*
+'nethogs' shows the bandwith usage per *process*
+
+
 - move bash scripts in bin forlder to bash folder as function
 - internet speed test
 - https://github.com/cowboy/dotfiles

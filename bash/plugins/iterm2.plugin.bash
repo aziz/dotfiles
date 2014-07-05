@@ -25,22 +25,22 @@
 #   iterm_open_new_tab
 #   iterm_open_new_tab "ls;pwd"
 
-iterm_help_usage() {
+__iterm_help_usage() {
   echo "Changes the terminal title"
   echo "Usage:"
   echo "    title mytitle"
   echo "    title \"my long title\""
 }
 
-iterm_help0() {
+__iterm_help0() {
   echo "ERROR: No argument provided."
-  iterm_help_usage
+  __iterm_help_usage
   return 1
 }
 
-iterm_help2() {
+__iterm_help2() {
   echo "ERROR: Too many arguments provided."
-  iterm_help_usage
+  __iterm_help_usage
   return 1
 }
 
@@ -71,13 +71,13 @@ __iterm_tab_title () {
 set_iterm_tab_title() {
   if [ $# -eq 0 ]
   then
-    iterm_help0;
+    __iterm_help0;
   elif [ $# -eq 1 ]
   then
     export ITERM_TAB_TITLE=$1
   elif [ $# -gt 1 ]
   then
-    iterm_help2;
+    __iterm_help2;
   fi
 }
 alias title=set_iterm_tab_title
@@ -85,15 +85,18 @@ alias title=set_iterm_tab_title
 set_iterm_profile() {
   if [ $# -eq 0 ]
   then
-    iterm_help0;
+    __iterm_help0;
   elif [ $# -eq 1 ]
   then
     echo -e "\033]50;SetProfile=$1\a"
   elif [ $# -gt 1 ]
   then
-    iterm_help2;
+    __iterm_help2;
   fi
 }
+
+iterm_curser_line()  { echo -e "\033]50;CursorShape=1\a"; }
+iterm_curser_solid() { echo -e "\033]50;CursorShape=0\a"; }
 
 titlepwd() { set_iterm_tab_title "$(pwd)"; }
 
