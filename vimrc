@@ -1,7 +1,7 @@
 set nocompatible              " required
 filetype off                  " required
 
-set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
+set rtp+=$HOME/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'   " let Vundle manage Vundle, required
@@ -36,20 +36,13 @@ Plugin 'vim-scripts/ScrollColors'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-set background=dark
-set t_Co=256
-let g:rehash256 = 1
-
-colorscheme molokai
-syntax on
-
 " UI
 set encoding=utf-8
 set number          " show line number
 set autoread        " watch for file changes
 set autoindent
 set noswapfile      " disable swapfiles
-set nobackup        " disable backups
+"set nobackup        " disable backups
 set backupdir=$HOME/.vim/backup " Directories for swp files
 set showmatch       " show matching brackets.
 set showcmd         " shows what you're typing as a command
@@ -77,7 +70,8 @@ set incsearch       " do incremental searching
 set ignorecase      " ignore case when searching
 set smartcase
 set gdefault
-nnoremap / /\v      " use normal regex for search
+" use normal regex for search
+nnoremap / /\v
 vnoremap / /\v
 
 " Folding
@@ -93,7 +87,11 @@ set backspace=indent,eol,start
 
 " remap jj to escape in insert mode.  You'll never type jj anyway!
 inoremap jj <Esc>hh
-" nnoremap ; : " no need to press shift
+" Removes highlight of your last search
+noremap <C-n> :nohl<CR>
+vnoremap <C-n> :nohl<CR>
+inoremap <C-n> :nohl<CR>
+
 
 " :w!! to write to a file using sudo
 cmap w!! %!sudo tee > /dev/null %
@@ -112,6 +110,17 @@ let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_theme='powerlineish'
 set laststatus=2
+
+set background=dark
+set term=xterm
+set t_Co=256
+let &t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+let g:rehash256 = 1
+
+colorscheme molokai
+syntax on
+
 
 " Include other files
 " if filereadable(expand("~/.vimrc.local"))
