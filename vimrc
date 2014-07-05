@@ -29,10 +29,8 @@ Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 " themes
 Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'reedes/vim-thematic'
 Plugin 'tomasr/molokai'
-Plugin 'vim-scripts/wombat256.vim'
 Plugin 'vim-scripts/ScrollColors'
 
 call vundle#end()            " required
@@ -52,12 +50,13 @@ set autoread        " watch for file changes
 set autoindent
 set noswapfile      " disable swapfiles
 set nobackup        " disable backups
-set backupdir=~/.vim/backup " Directories for swp files
+set backupdir=$HOME/.vim/backup " Directories for swp files
 set showmatch       " show matching brackets.
 set showcmd         " shows what you're typing as a command
 set wildmenu
 set ttyfast         " faster redraw
 set timeoutlen=1000 ttimeoutlen=0 " eliminating esc delays
+set shortmess+=I    " no welcome message
 "set ruler
 
 if $TERM_PROGRAM =~ "iTerm"
@@ -85,7 +84,7 @@ vnoremap / /\v
 set foldmethod=indent   " fold based on indent level
 set foldnestmax=10      " max 10 depth
 set foldenable          " don't fold files by default on open
-nnoremap <space> za
+nnoremap <space> za     " use space to toggle folds
 set foldlevelstart=10   " start with fold level of 1
 
 
@@ -101,8 +100,10 @@ cmap w!! %!sudo tee > /dev/null %
 
 " Source the vimrc file after saving it
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
+" Disable syntax highlight for files larger than 50 MB
+autocmd BufWinEnter * if line2byte(line("$") + 1) > 50000000 | syntax clear | endif
 
-" Airline -------------------------------------------
+" Airline
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_left_sep = ''
