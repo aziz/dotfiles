@@ -95,8 +95,10 @@ set_iterm_profile() {
   fi
 }
 
-iterm_cursor_line()  { echo -e "\033]50;CursorShape=1\a"; }
-iterm_cursor_solid() { echo -e "\033]50;CursorShape=0\a"; }
+iterm_cursor_line()  { echo -ne "\033]50;CursorShape=1\a"; }
+iterm_cursor_solid() { echo -ne "\033]50;CursorShape=0\a"; }
+alias icl=iterm_cursor_line
+alias icb=iterm_cursor_solid
 
 titlepwd() { set_iterm_tab_title "$(pwd)"; }
 
