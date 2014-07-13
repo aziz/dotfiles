@@ -2,5 +2,6 @@ awesome_print
 bundler
 hirb-unicode
 rails
+rubocop
 terminal-notifier
 tmuxinator
