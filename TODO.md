@@ -25,20 +25,22 @@ pgrep
 # Install Script TODO
 - mac config only on a mac
 - automatically install mac apps from app-store?
+- install fonts
 - sublime: add files to dotfiles and install it on demand
 - atom: add files to dotfiles and install it on demand
 - compile npmrc on install just like gitconfig
 - configure cron on install
 
-# Vim: configure 
-- The NERD tree
-- fugitive.vim
-- indentline: disable by default
-- CtrlP
-- Syntastic
+# Vim: 
+- Plugin: gabrielelana/vim-markdown 
+- Plugin: tabular
+- configure: The NERD tree
+- configure: fugitive.vim
+- configure: indentline - disable by default
+- configure: CtrlP
+- configure: Syntastic
+- configure: SuperTab
 - snipMate
-- SuperTab
-- colors: plasticcodewrap
 
 # LINUX (WIP):
 - f does not work
@@ -47,6 +49,7 @@ pgrep
 - seq on linux should not override original command 
 - aliases for apt-get and apt-cache search on linux
 - prepare_linux.shell:
+
 ``` bash
 # to fix a warning in running chrome and sublime from console
 sudo apt-get install gtk2-engines-pixbuf
@@ -60,5 +63,5 @@ local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
 - different prompt on server \u@\h in green with cloud icon, override PS1 on server
 - merge bash/aliases and bash/plugin into topic related files/folders. things that add functionality or configure an already installed app should be called plugins. plugins can have aliases/functions/exports/completions/help. Others should be stored as pure bash scripts called something else!
 
-> signle letter aliases available:    
-> AIJMNOPY
+!!! NOTE "single letter aliases available"
+    A I J M N O P Y

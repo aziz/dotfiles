@@ -10,11 +10,11 @@ echo "|_| |_|\___/|_| |_| |_|\___|_.__/|_|  \___| \_/\_/  "
 echo "_____________________________________________________"
 echo
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew tap $(cat "$HOME"/.templates/dependencies/taps)
+brew tap "$(cat "$HOME"/.templates/dependencies/taps)"
 brew update
 xcode-select --install
-brew install $(cat "$HOME"/.templates/dependencies/brew)
-npm install -g $(cat "$HOME"/.templates/dependencies/npm)
+brew install "$(cat "$HOME"/.templates/dependencies/brew)"
+npm install -g "$(cat "$HOME"/.templates/dependencies/npm)"
 
 echo "Installing Ruby Version Manager"
 echo " _ ____   ___ __ ___  "
@@ -26,16 +26,16 @@ echo
 curl -sSL https://get.rvm.io | bash -s stable
 install ruby x
 use ruby x as default
-gem install $(cat "$HOME"/.templates/dependencies/gem)
+gem install "$(cat "$HOME"/.templates/dependencies/gem)"
 
 echo "Installing Apps"
 echo "==============="
-brew cask install $(cat "$HOME"/.templates/dependencies/apps)
+brew cask install "$(cat "$HOME"/.templates/dependencies/apps)"
 brew cask alfred link
 
 echo "Installing Fonts"
 echo "================"
-brew cask install $(cat "$HOME"/.templates/dependencies/fonts)
+brew cask install "$(cat "$HOME"/.templates/dependencies/fonts)"
 
 
 echo "Installing Pow Server"
