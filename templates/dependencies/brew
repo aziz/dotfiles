@@ -1,4 +1,5 @@
 ack
+ansible
 ansifilter
 awscli
 bash
@@ -7,8 +8,8 @@ brew-cask
 colordiff
 coreutils
 curl
-dnsmasq
 docker
+elasticsearch
 ffmpeg
 git
 git-extras
@@ -21,6 +22,7 @@ man2html
 midnight-commander
 mongodb
 mtr
+mysql
 node
 p7zip
 postgis
