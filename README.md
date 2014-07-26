@@ -5,14 +5,14 @@
      | (_| | (_) | |_| | | | |  __/\__ \
     (_)__,_|\___/ \__|_| |_|_|\___||___/
 
-# My ideal Unix environment
+## My ideal Unix environment
 
 Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, and Mislav Marohnić dotfile repos.
 
-## Setup
+### Setup
 `./install.sh`
 
 
-# Mac OSX Provisioning
-`~/.mac/mac-config.sh`
+## Mac OSX Provisioning
+`~/.mac/mac-config.sh`  
 `~/.mac/mac-install.sh`
