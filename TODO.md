@@ -1,31 +1,6 @@
-# TODO: 
-```bash
-complete -W "list of all words for an automatic completion" command_to_be_completed
-```
-
-* Add 'set editing-mode vi' in your ~/.inputrc to use the vi keybindings 
-  for bash and all readline-enabled applications (python, mysql, etc)
-
-function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
-- function fname() { find . -iname "*$@*"; }
-- function remove_lines_from() { grep -F -x -v -f $2 $1; }
-  removes lines from $1 if they appear in $2
-- Pipe any command over 'column -t' to nicely align the columns
-diff --side-by-side fileA.txt fileB.txt
-pgrep
-'lsof -i' monitors network connections in real time
-'iftop' shows bandwith usage per *connection*
-'nethogs' shows the bandwith usage per *process*
-
-
-- move bash scripts in bin forlder to bash folder as function
-- internet speed test
-- https://github.com/cowboy/dotfiles
-
 # Install Script TODO
-- mac config only on a mac
+- configure mac-address-randomizer to run automatically
 - automatically install mac apps from app-store?
-- install fonts
 - sublime: add files to dotfiles and install it on demand
 - atom: add files to dotfiles and install it on demand
 - compile npmrc on install just like gitconfig
@@ -42,6 +17,21 @@ pgrep
 - configure: SuperTab
 - snipMate
 
+# IDEAS
+
+- pgrep || function psgrep() { ps aux | grep -v grep | grep "$@" -i --color=auto; }
+- function fname() { find . -iname "*$@*"; }
+- function remove_lines_from() { grep -F -x -v -f $2 $1; } # removes lines from $1 if they appear in $2
+- Pipe any command over 'column -t' to nicely align the columns
+- diff --side-by-side fileA.txt fileB.txt
+
+- 'lsof -i' monitors network connections in real time
+- 'iftop' shows bandwith usage per *connection*
+- 'nethogs' shows the bandwith usage per *process*
+
+- internet speed test
+- https://github.com/cowboy/dotfiles
+
 # LINUX (WIP):
 - f does not work
 - pman does not work
@@ -57,6 +47,8 @@ sudo apt-get install gtk2-engines-pixbuf
 sudo apt-get install xclip
 
 local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
+
+complete -W "list of all words for an automatic completion" command_to_be_completed
 ```
 
 # FEATURE REQUESTS
@@ -64,4 +56,4 @@ local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
 - merge bash/aliases and bash/plugin into topic related files/folders. things that add functionality or configure an already installed app should be called plugins. plugins can have aliases/functions/exports/completions/help. Others should be stored as pure bash scripts called something else!
 
 !!! NOTE "single letter aliases available"
-    A I J M N O P Y
+    A D I K M N O P T X Y

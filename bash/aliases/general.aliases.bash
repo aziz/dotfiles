@@ -23,7 +23,7 @@ alias md='mkdir -p'
 alias mkdir='mkdir -p'
 alias rd=rmdir
 alias rmd='rm -Rf'
-alias d='dirs -v'
+# alias d='dirs -v'
 
 # Navigation
 alias ..='cd ..'
