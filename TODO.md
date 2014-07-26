@@ -1,3 +1,7 @@
+# TODO
+- update *-help functions in aliases
+- plugin-help does not work
+
 # Install Script TODO
 - configure mac-address-randomizer to run automatically
 - automatically install mac apps from app-store?

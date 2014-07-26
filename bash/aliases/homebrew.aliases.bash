@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Some aliases for Homebrew
 alias br="brew"
 alias bro="brew update && brew outdated"
