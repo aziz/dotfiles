@@ -70,14 +70,4 @@ else
   generate_gitconfig
 fi
 
-sudo defaults write /Library/Preferences/org.openbsd.openssh KeychainIntegration -bool NO
-echo "Config: Disabled KeychainIntegration for SSH"
 
-sudo defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-echo "Config: Save to disk (not to iCloud) by default"
-
-sudo defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
-echo "Config: Automatically quit printer app once the print jobs complete"
-
-# Faster Terminal init
-sudo rm -rf /private/var/log/asl/*.asl

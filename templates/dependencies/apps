@@ -12,7 +12,7 @@ emacs
 firefox
 firefox-aurora
 gitx-rowanj
-google Chrome
+google-chrome
 google-chrome-canary
 heroku-toolbelt
 imagealpha
@@ -20,7 +20,6 @@ imageoptim
 iterm2-beta
 keka
 launchrocket
-mactex
 nosleep
 onepassword
 r
@@ -36,7 +35,6 @@ sublime-text
 sublime-text-dev
 subtitles
 textmate
-torbrowser
 transmission
 vagrant
 viber

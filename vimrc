@@ -111,7 +111,7 @@ set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 let g:rehash256 = 1
 
-colorscheme molokai
+:silent! colorscheme molokai
 syntax on
 
 if $TERM_PROGRAM =~ "iTerm"
