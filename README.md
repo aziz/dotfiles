@@ -13,6 +13,6 @@ Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, and
 `./install.sh`
 
 
-## Mac OSX Provisioning
+## Mac OSX provisioning
 `~/.mac/mac-config.sh`  
 `~/.mac/mac-install.sh`
