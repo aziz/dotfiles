@@ -1,7 +1,7 @@
-email = allen.bargi@gmail.com
-username = aziz
-init.author.email = allen.bargi@gmail.com
-init.author.name = Allen Bargi
-init.author.url = https://github.com/aziz
+email = ${email}
+username = ${npm_username}
+init.author.email = ${email}
+init.author.name = ${name}
+init.author.url = https://github.com/${gh_username}
 loglevel = warn
 viewer = browser

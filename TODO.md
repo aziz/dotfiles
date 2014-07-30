@@ -4,10 +4,7 @@
 
 # Install Script TODO
 - configure mac-address-randomizer to run automatically
-- automatically install mac apps from app-store?
-- sublime: add files to dotfiles and install it on demand
 - atom: add files to dotfiles and install it on demand
-- compile npmrc on install just like gitconfig
 - configure cron on install
 
 # Vim: 

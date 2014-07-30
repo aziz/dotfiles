@@ -42,7 +42,7 @@ set number          " show line number
 set autoread        " watch for file changes
 set autoindent
 set noswapfile      " disable swapfiles
-"set nobackup        " disable backups
+set nobackup        " disable backups
 set backupdir=$HOME/.vim/backup " Directories for swp files
 set showmatch       " show matching brackets.
 set showcmd         " shows what you're typing as a command

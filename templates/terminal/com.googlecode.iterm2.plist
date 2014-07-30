@@ -4634,13 +4634,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>695 206 459 270 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>477 142 605 485 0 0 1280 778 </string>
+	<string>252 196 924 485 0 0 1280 778 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>448 498 384 129 0 0 1280 778 </string>
+	<string>514 1766 384 129 -574 800 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
 	<string>352 301 575 392 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 48 1280 730 0 0 1280 778 </string>
+	<string>0 67 1074 711 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -4693,9 +4693,9 @@
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Green Component</key>
-				<real>0.75560998916625977</real>
+				<real>0.88562947511672974</real>
 				<key>Red Component</key>
-				<real>0.47132518887519836</real>
+				<real>0.78559136390686035</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -5192,11 +5192,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 14</string>
+			<string>Monaco 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Consolas 15</string>
+			<string>Consolas 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -6887,7 +6887,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-06-30T10:49:26Z</date>
+	<date>2014-07-28T00:13:21Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -6942,7 +6942,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140518</string>
+	<string>1.0.0.20140629</string>
 	<key>kPreferenceKeyWindowStyle</key>
 	<integer>1</integer>
 </dict>
