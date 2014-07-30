@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source "$HOME"/.templates/provisioning/mac.sh
 source "$HOME"/.templates/provisioning/homebrew.sh
 source "$HOME"/.templates/provisioning/ruby.sh
 source "$HOME"/.templates/provisioning/mac-apps.sh
