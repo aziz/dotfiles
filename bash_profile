@@ -18,7 +18,7 @@
 #
 # ----------------------------------------------------------------------------------
 
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.bin:$HOME/go/bin:$HOME/.rvm/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.mac:$HOME/.bin:$HOME/go/bin:$HOME/.rvm/bin:$PATH"
 
 # Set my editor and git editor
 export EDITOR="vim"

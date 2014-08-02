@@ -1,3 +1,26 @@
+getconf DARWIN_USER_TEMP_DIR || echo $TMPDIR  
+getconf DARWIN_USER_CACHE_DIR
+
+# - chrome : save Local Extension Settings
+# - include /var/folders /var/log
+
+# Get rid of all recent files
+# LSSharedFileList
+# FXRecentFolders
+# NSNavLastRootDirectory
+# NSNavLastCurrentDirectory
+# NSNavRecentPlaces
+# ~/Library/Preferences/com.apple.recentitems.plist
+# VLC: ml.xspf
+
+# $HOME/Library/Messages
+# $HOME/Library/Saved Application State
+# $HOME/Library/Application Support/CrashReporter
+
+
+# BACKUP
+$HOME/Library/Keychains
+
 - atom
 - textmate
 
