@@ -50,7 +50,10 @@ export BASH=$HOME/.bash
 
 # Load Bash It
 source "$BASH"/bash_it.sh
-source "$BASH"/secrets.sh
+
+if [[ -e "$HOME/.secrets" ]]; then
+  source "$HOME"/.secrets
+fi
 
 # Don't check mail when opening terminal.
 unset MAILCHECK

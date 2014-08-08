@@ -1,8 +1,17 @@
+
 getconf DARWIN_USER_TEMP_DIR || echo $TMPDIR  
 getconf DARWIN_USER_CACHE_DIR
 
+/Library/Widgets
+/Library/Internet Plug-Ins
+/Library/PrefrencePanes
+/Library/Spotlight
+/Library/QuickLook
+
 # - chrome : save Local Extension Settings
 # - include /var/folders /var/log
+
+# clean sublime backup folder
 
 # Get rid of all recent files
 # LSSharedFileList
