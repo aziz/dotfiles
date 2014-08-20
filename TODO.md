@@ -1,4 +1,5 @@
 # TODO
+https://gist.github.com/swarminglogic/8963507
 - update *-help functions in aliases
 - plugin-help does not work
 

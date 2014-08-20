@@ -1,10 +1,10 @@
 ---
-gem: --no-ri --no-rdoc
-search: --remote
-update_sources: true
-backtrace: false
+:backtrace: false
+:bulk_threshold: 1000
+:sources:
+- https://rubygems.org/
+:update_sources: true
+:verbose: true
+gem: "--no-ri --no-rdoc"
+search: "--remote"
 benchmark: false
-verbose: true
-bulk_threshold: 1000
-sources:
-- http://rubygems.org
