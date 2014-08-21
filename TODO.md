@@ -4,6 +4,7 @@ https://gist.github.com/swarminglogic/8963507
 - plugin-help does not work
 
 # Install Script TODO
+- install credulous
 - configure mac-address-randomizer to run automatically
 - atom: add files to dotfiles and install it on demand
 - configure cron on install
