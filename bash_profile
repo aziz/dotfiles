@@ -51,8 +51,9 @@ export BASH=$HOME/.bash
 # Load Bash It
 source "$BASH"/bash_it.sh
 
-if [[ -e "$HOME/.secrets" ]]; then
-  source "$HOME"/.secrets
+# credulous
+if [ -f $(brew --prefix)/etc/profile.d/credulous.sh ]; then
+  . $(brew --prefix)/etc/profile.d/credulous.sh
 fi
 
 # Don't check mail when opening terminal.

@@ -3,6 +3,7 @@ ansible
 ansifilter
 awscli
 bash
+bash-completion
 boot2docker
 brew-cask
 colordiff
