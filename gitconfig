@@ -14,6 +14,7 @@
   unpushed  = cherry -v
   upstream  = rev-parse --symbolic-full-name --abbrev-ref HEAD@{upstream}
   amend     = commit --amend
+  branch-cleanup = !sh -c 'git branch --merged | grep -v master | xargs git branch -d && git remote prune origin'
 [core]
   excludesfile = ~/.gitignore
   editor       = subl3 -wn
