@@ -21,3 +21,4 @@ fi
 # Vim
 alias v='vim'
 alias vi='vim'
+alias vim_pristine='vim -u NONE'
