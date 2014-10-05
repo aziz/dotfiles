@@ -1,0 +1,18 @@
+alias la='ls -AF'
+alias ll='ls -alh'
+alias w='which'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias u='cd ..'
+alias uu='cd ../..'
+alias uuu='cd ../../..'
+alias uuuu='cd ../../../..'
+alias -- -="cd -"       # Go back
+
+# Clear screen
+alias c='clear'
+alias cls='clear'
+
+

@@ -1,5 +1,8 @@
 # TODO
-https://gist.github.com/swarminglogic/8963507
+- IMP use and configure sshrc
+- https://github.com/dvorka/hstr
+- https://github.com/kcrawford/dockutil
+- https://gist.github.com/swarminglogic/8963507
 - update *-help functions in aliases
 - plugin-help does not work
 
