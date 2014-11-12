@@ -14,8 +14,8 @@ alias textedit='open -a TextEdit'
 # TODO: convert to functions with parameters
 alias mac-desktop-hide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias mac-desktop-show="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-alias mac-spotlight-hide="sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer"
-alias mac-spotlight-show="sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer"
+# alias mac-spotlight-hide="sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer"
+# alias mac-spotlight-show="sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer"
 
 # Disable press-and-hold for keys in favor of key repeat
 alias mac-press-and-hold-disable="defaults write -g ApplePressAndHoldEnabled -bool false"
