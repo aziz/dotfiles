@@ -1,18 +1,33 @@
 # Candidates
-alfred
-slack
-skitch
-dash
-mactex
-torbrowser
-java
+anvil
+appcleaner
+audiobookbinder
 charles
+dash
 dnscrypt
+emacs
+flashlight
 hopper-disassembler
-tunnelbear
-xquartz
+java
+licecap
+macdown
+mactex
+packer
+pg-commander
+robomongo
+rstudio
+sequel-pro
+skitch
+slack
 subtitles
+torbrowser
+tunnelbear
+vimr
+xquartz
+
+# DO NOT AUTO UPDATE
 pgadmin3
+brackets
 
 # Installer
 virtualbox
@@ -21,39 +36,44 @@ seil
 r
 jdownloader
 heroku-toolbelt
-nosleep
 asepsis
 qgis
-emacs
+
 
 # Paid
-✔ appfresh
-✔ bartender
-✔ beamer
-✔ chocolat
-✔ cleanmymac
-✔ daisydisk
-✔ little-snitch
-✔ navicat-premium
-✔ parallels
-✔ rubymine
-✔ totalfinder
-✔ vmware-fusion
-✔ webstorm
+adobe-creative-cloud (installer)
+appfresh
+bartender
+beamer
+chocolat
+cleanmymac
+daisydisk
+debookee
+forklift
+little-snitch
+microsoft-office (installer)
+navicat-premium
+omnigraffle
+parallels
+rubymine
+totalfinder
+vmware-fusion
+webstorm
 
 # Mac App Store
-✘ gifbrewery
-✘ iphoto
-✘ mail notifr
-✘ microsoft onenote
-✘ pagelayers
-✘ palua
-✘ sip
-✘ twitter
-✘ xcode
+gifbrewery
+iphoto
+mail notifr
+microsoft onenote
+valentina studio
+toad
+pagelayers
+palua
+sip
+twitter
+xcode
+katib
 
 # Not Found
-adobe photoshop cc
-microsoft office 2011
 tableau
 popcorn-time
