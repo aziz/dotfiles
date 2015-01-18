@@ -11,7 +11,7 @@ ERROR="${bold_red}🚫 Error \n${normal}"
 EXIT_STATUS="if [ \$? = 0 ]; then echo \"\"; else echo \"${ERROR}\"; fi"
 
 rvmrc_version_prompt () {
-  if [ -f .rvmrc ] || [ -f .ruby\-version ] ; then
+  if [ -f .rvmrc ] || [ -f .ruby\-version ] || [ -f Gemfile ]; then
     if which rvm &> /dev/null; then
       rvm=$(rvm tools identifier) || return
       clean=${rvm//ruby-/}
