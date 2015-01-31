@@ -1,5 +1,13 @@
 #!/bin/bash
 
+gdv () {
+  git diff -w "$@" | vim -R -
+}
+
+gds () {
+  git diff -w "$@" | subl3 -n --command 'toggle_tabs' -
+}
+
 # Your place for hosting Git repos. I use this for private repos.
 export GIT_HOSTING='git@git.domain.com'
 

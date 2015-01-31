@@ -16,7 +16,6 @@ alias gp='git push'
 alias push='git push'
 alias gpp='git pull && git push'
 alias gpo='git push origin'
-alias gdv='git diff -w "$@" | vim -R -'
 alias gd='git diff'
 alias gdd='git diff --cached'
 alias gdw='git diff --color-words'
@@ -49,7 +48,6 @@ git-help () {
   echo "  gup     = git fetch && git rebase"
   echo "  gp      = git push"
   echo "  gd      = git diff | mate"
-  echo "  gdv     = git diff -w \"$@\" | vim -R -"
   echo "  gc      = git commit -v"
   echo "  gca     = git commit -v -a"
   echo "  gb      = git branch"
