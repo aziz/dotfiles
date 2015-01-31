@@ -1,3 +1,23 @@
+# MAC
+
+# Useful Mac Tools
+## SPOTLIGHT
+http://www.thexlab.com/faqs/stopspotlightindex.html
+```
+mdfind    => Spotlight from command line 
+  mdfind -onlyin ~/Desktop query
+  mdfind -live query
+mdimport  => add file or folder (-f) to spotlight index
+mdutil    => A utility for managing Spotlight indices.
+  sudo mdutil -E / => force spotlight to reindex the whole drive
+mdls      => List the metadata attributes of a specific file.
+```
+
+```
+textutils => convert text to different formats, i.e. txt, rtf, rtfd, html, doc, docx, odt, wordml, or webarchive
+```
+
+---
 
 getconf DARWIN_USER_TEMP_DIR || echo $TMPDIR  
 getconf DARWIN_USER_CACHE_DIR

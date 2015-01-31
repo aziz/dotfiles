@@ -41,10 +41,6 @@ alias mac-finder-always-use-list-view="defaults write com.apple.Finder FXPreferr
 alias mac-mac-address-wired="ifconfig en0 | grep ether"
 alias mac-mac-address-wireless="ifconfig en1 | grep ether"
 
-# Useful Mac Tools
-## mdfind => Spotlight from command line
-## textutils => convert text to different formats, i.e. txt, rtf, rtfd, html, doc, docx, odt, wordml, or webarchive
-
 # Expand save panel by default
 # defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
