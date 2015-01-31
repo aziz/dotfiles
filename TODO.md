@@ -1,4 +1,5 @@
 # TODO
+- a file for exporting custom env vars
 - IMP use and configure sshrc
 - https://github.com/dvorka/hstr
 - https://github.com/kcrawford/dockutil
@@ -7,7 +8,6 @@
 - plugin-help does not work
 
 # Install Script TODO
-- install credulous
 - configure mac-address-randomizer to run automatically
 - atom: add files to dotfiles and install it on demand
 - configure cron on install

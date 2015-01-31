@@ -8,23 +8,10 @@ gds () {
   git diff -w "$@" | subl3 -n --command 'toggle_tabs' -
 }
 
-# Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
-
 # Usage: new-github topfunky tidy_table
 new_github () {
   git remote add origin git@github.com:$1/$2.git
   git push -u origin master
-}
-
-git_remote () {
-  echo "Running: git remote add origin ${GIT_HOSTING}:$1.git"
-  git remote add origin $GIT_HOSTING:$1.git
-}
-
-git_first_push () {
-  echo "Running: git push origin master:refs/heads/master"
-  git push origin master:refs/heads/master
 }
 
 git_remove_missing_files () {

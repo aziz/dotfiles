@@ -33,8 +33,9 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Fixing gcc in lion
-export CC=/usr/bin/gcc
+# export CC=/usr/bin/gcc
 export GOPATH=$HOME/go
+export COFFEELINT_CONFIG=$HOME/.coffeelint
 
 # Identify OS and Machine
 export OS=`uname -s | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
@@ -50,11 +51,6 @@ export BASH=$HOME/.bash
 
 # Load Bash It
 source "$BASH"/bash_it.sh
-
-# credulous
-if [ -f $(brew --prefix)/etc/profile.d/credulous.sh ]; then
-  . $(brew --prefix)/etc/profile.d/credulous.sh
-fi
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
