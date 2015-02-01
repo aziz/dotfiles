@@ -1,3 +1,7 @@
+# Emacs:
+- https://github.com/emacs-tw/awesome-emacs
+- https://github.com/fniessen/emacs-leuven-theme
+
 # TODO
 - a file for exporting custom env vars
 - IMP use and configure sshrc

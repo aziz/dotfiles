@@ -32,7 +32,9 @@ prompt_left () {
 }
 
 prompt () {
-  __iterm_tab_title
+  if env | grep -q TERM_PROGRAM; then
+    __iterm_tab_title
+  fi
   # left, right
   # compensate=4
   # PS1=$(printf "%*s\r%s\n${PS2}" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
