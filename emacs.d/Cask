@@ -1,8 +1,9 @@
 (source melpa)
 (source gnu)
 
-(depends-on "auto-complete")
 (depends-on "cask")
+(depends-on "pallet")
+(depends-on "auto-complete")
 (depends-on "coffee-mode")
 (depends-on "dash")
 (depends-on "epl")
@@ -13,7 +14,6 @@
 (depends-on "graphene")
 (depends-on "less-css-mode")
 (depends-on "org")
-(depends-on "pallet")
 (depends-on "popup")
 (depends-on "s")
 (depends-on "smartparens")
