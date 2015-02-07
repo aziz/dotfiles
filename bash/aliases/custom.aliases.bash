@@ -3,6 +3,9 @@
 alias chrome_remote_debugging='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --remote-debugging-port=9222'
 alias jless="/usr/local/bin/lessc"
 
+# Better curl: download a file following redirects, https and ignoring security exceptions
+alias curll="curl -OLks"
+
 # Markdown
 alias md2rtf='pbpaste | markdown | textutil -stdin -stdout -format html -convert rtf | pbcopy'
 alias md2html='pbpaste | markdown | browser'
