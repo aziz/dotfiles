@@ -1,0 +1,39 @@
+require: rubocop-rspec
+
+AllCops:
+  Include:
+    - lib/tasks/*.rake
+    - '**/Rakefile'
+    - '**/config.ru'
+    - '**/Gemfile'
+  Exclude:
+    - 'bin/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'tmp/**/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 15
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyLinesAroundModuleBody:
+  Enabled: false
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Style/AlignParameters:
+  EnforcedStyle: 'with_fixed_indentation'
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
