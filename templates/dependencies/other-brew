@@ -1,6 +1,9 @@
+ansible
 elasticsearch
-gnupg2
 ffmpeg
+gnupg2
 imagemagick
 midnight-commander
 postgis
+ranger
+mtr

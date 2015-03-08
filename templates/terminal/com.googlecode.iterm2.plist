@@ -4557,7 +4557,7 @@
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<false/>
+	<true/>
 	<key>HideTabCloseButton</key>
 	<true/>
 	<key>HideTabNumber</key>
@@ -4593,7 +4593,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 5</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{734, 585}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
@@ -4643,9 +4643,9 @@
 		<string>^ </string>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>695 206 459 270 0 0 1280 778 </string>
+	<string>1094 1239 518 456 -672 800 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>135 195 924 485 0 0 1280 777 </string>
+	<string>106 97 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>416 1766 384 129 -672 800 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
@@ -4653,7 +4653,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>608 800 1280 1417 -672 800 2560 1417 </string>
+	<string>0 42 1280 735 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -4668,20 +4668,20 @@
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.17391304671764374</real>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.17391304671764374</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.17391304671764374</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.14277094602584839</real>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.22244837880134583</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.81373727321624756</real>
+				<real>0.80000001192092896</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -4704,11 +4704,11 @@
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.81176471710205078</real>
 				<key>Green Component</key>
-				<real>0.88562947511672974</real>
+				<real>0.62352937459945679</real>
 				<key>Red Component</key>
-				<real>0.78559136390686035</real>
+				<real>0.44705879688262939</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -4722,11 +4722,11 @@
 			<key>Ansi 14 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.96628433465957642</real>
+				<real>0.88627451658248901</real>
 				<key>Green Component</key>
-				<real>0.99888646602630615</real>
+				<real>0.88627451658248901</real>
 				<key>Red Component</key>
-				<real>0.72434282302856445</real>
+				<real>0.2039216011762619</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -4749,38 +4749,38 @@
 			<key>Ansi 3 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.30435994267463684</real>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.70192974805831909</real>
+				<real>0.62745100259780884</real>
 				<key>Red Component</key>
-				<real>0.85494321584701538</real>
+				<real>0.76862752437591553</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.93912404775619507</real>
+				<real>0.64313727617263794</real>
 				<key>Green Component</key>
-				<real>0.5621262788772583</real>
+				<real>0.39607840776443481</real>
 				<key>Red Component</key>
-				<real>0.07996290922164917</real>
+				<real>0.2039216011762619</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.50190895795822144</real>
+				<real>0.48235291242599487</real>
 				<key>Green Component</key>
-				<real>0.23457303643226624</real>
+				<real>0.31372550129890442</real>
 				<key>Red Component</key>
-				<real>0.41756537556648254</real>
+				<real>0.45882350206375122</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.85663533210754395</real>
+				<real>0.60392159223556519</real>
 				<key>Green Component</key>
-				<real>0.79147583246231079</real>
+				<real>0.59607851505279541</real>
 				<key>Red Component</key>
-				<real>0.10398844629526138</real>
+				<real>0.023529410362243652</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -4794,11 +4794,11 @@
 			<key>Ansi 8 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.46053475141525269</real>
+				<real>0.32549020648002625</real>
 				<key>Green Component</key>
-				<real>0.48317307233810425</real>
+				<real>0.34117650985717773</real>
 				<key>Red Component</key>
-				<real>0.46655794978141785</real>
+				<real>0.33333331346511841</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -4816,11 +4816,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.14745958149433136</real>
+				<real>0.08235294371843338</real>
 				<key>Green Component</key>
-				<real>0.14749403297901154</real>
+				<real>0.066666670143604279</real>
 				<key>Red Component</key>
-				<real>0.14746639132499695</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -5205,11 +5205,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 13</string>
+			<string>SourceCodePro-Regular 15</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Consolas 14</string>
+			<string>SourceCodePro-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -5367,15 +5367,15 @@
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
-			<false/>
-			<key>Use Bright Bold</key>
 			<true/>
+			<key>Use Bright Bold</key>
+			<false/>
 			<key>Use Canonical Parser</key>
 			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>0.97686600685119629</real>
+			<real>1.013619065284729</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -5934,7 +5934,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 13</string>
+			<string>Consolas 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -6900,7 +6900,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-02-03T10:29:23Z</date>
+	<date>2015-03-08T04:00:12Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -6912,7 +6912,7 @@
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.24481920897960663</real>
+	<real>0.10000000149011612</real>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>

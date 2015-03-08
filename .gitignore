@@ -4,3 +4,5 @@ cron/logs
 bash/secrets.sh
 templates/terminal/color-schemes
 templates/licenses
+.sync
+Icon*

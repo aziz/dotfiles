@@ -1,5 +1,4 @@
 ack
-ansible
 ansifilter
 awscli
 bash
@@ -17,13 +16,12 @@ jq
 mackup
 man2html
 mongodb
-mtr
 mysql
 node
 p7zip
 postgresql
 python
-ranger
+python3
 redis
 rmtrash
 rsync

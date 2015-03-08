@@ -1,8 +1,7 @@
 awesome_print
-aws-sdk
 bundler
 hirb-unicode
 rails
 rubocop
-terminal-notifier
+rubocop-rspec
 tmuxinator
