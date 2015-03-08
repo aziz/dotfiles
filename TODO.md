@@ -1,4 +1,4 @@
-mv: rename /Users/allen.bargi/.z.tmp to /Users/allen.bargi/.z: No such file or directory
+- mv: rename /Users/allen.bargi/.z.tmp to /Users/allen.bargi/.z: No such file or directory
 
 # Emacs:
 - https://github.com/emacs-tw/awesome-emacs
