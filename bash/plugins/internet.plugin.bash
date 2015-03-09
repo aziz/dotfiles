@@ -16,6 +16,12 @@ isreg () {
   dig soa $1 | grep -q ^$1 && echo "${bold_red}Sorry! it's already registered.${normal}" || echo "${bold_green}No, You can go and register it for yourself :) ${normal}"
 }
 
+
+geoip () {
+  echo https://freegeoip.net/json/"$1"
+  curl -s https://freegeoip.net/json/"$1" | jq .
+}
+
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias http_dump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""

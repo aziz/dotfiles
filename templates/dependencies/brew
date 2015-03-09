@@ -1,5 +1,6 @@
 ack
 ansifilter
+autojump
 awscli
 bash
 bash-completion
@@ -12,6 +13,7 @@ git
 git-extras
 go
 grep
+hub
 jq
 mackup
 man2html
