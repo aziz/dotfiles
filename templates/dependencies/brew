@@ -4,15 +4,22 @@ autojump
 awscli
 bash
 bash-completion
+binutils
 boot2docker
 brew-cask
 colordiff
 coreutils
 curl
+diffutils
+findutils --with-default-names
 git
 git-extras
+gnu-sed --with-default-names
+gnu-tar --with-default-names
+gnutls --with-default-names
 go
-grep
+grep --with-default-names
+gzip
 hub
 jq
 mackup
@@ -34,4 +41,5 @@ tmux
 tree
 unrar
 vim
+watch
 wget

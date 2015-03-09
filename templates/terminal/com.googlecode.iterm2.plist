@@ -15,7 +15,7 @@
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
 	<key>AutoHideTmuxClientSession</key>
-	<false/>
+	<true/>
 	<key>CheckTestRelease</key>
 	<true/>
 	<key>ClosingHotkeySwitchesSpaces</key>
@@ -4645,7 +4645,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1094 1239 518 456 -672 800 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>106 97 924 485 0 0 1280 777 </string>
+	<string>-185 1110 924 485 -672 800 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>416 1766 384 129 -672 800 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
@@ -4653,7 +4653,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 42 1280 735 0 0 1280 777 </string>
+	<string>-672 800 1280 1417 -672 800 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -6843,7 +6843,7 @@
 	<key>OpenBookmark</key>
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<true/>
 	<key>PassOnControlClick</key>
@@ -6900,7 +6900,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-03-08T04:00:12Z</date>
+	<date>2015-03-08T13:34:21Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
