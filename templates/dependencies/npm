@@ -1,3 +1,4 @@
+babel
 bower
 coffee-script
 coffeelint
@@ -7,3 +8,4 @@ marked
 svgo
 tldr
 trash
+typescript
