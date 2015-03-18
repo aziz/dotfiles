@@ -20,6 +20,14 @@ rvmrc_version_prompt () {
   fi
 }
 
+aws_saml_prompt () {
+  local now=$( date -u +%s )
+  local remain=$(( EXPIRE - now ))
+  if [ -n "$EXPIRETIME" ] && [ $remain -gt 0 ]; then
+    echo -e "${purple}[${AWS_ROLE} $(($remain/60))m]${reset_color} "
+  fi
+}
+
 prompt_right () {
   RIGHT_PROMPT="\033[1;32m$USER\033[0m on \033[1;32m$HOSTNAME\033[0m ● $(date +"%T")\033[0m"
   RIGHT_PROMPT="$(date +"%T")\033[0m"
@@ -27,7 +35,7 @@ prompt_right () {
 }
 
 prompt_left () {
-  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w \[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]"
+  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w \[\$(aws_saml_prompt)\]\[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]"
   echo -e "${LEFT_PROMPT}"
 }
 
