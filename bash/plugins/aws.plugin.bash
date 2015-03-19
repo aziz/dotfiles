@@ -1,12 +1,16 @@
 #!/bin/bash
-# bash functions to autenticate and assume roles in aws federated accounts
+## bash or zsh functions to autenticate and assume roles in aws federated accounts
 # required tools on $PATH - aws, date, curl, jq
-
+#
 # requried environment variables:
-export AWS_CLI=`which aws`
-
+# AWS_CLI=`which aws`
+#
 # optional environment variable, to automatically assume a specific role when calling assume()
-# AWS_ASSUME_ROLE=arn:aws:iam::369407384105:role/cross-account-federated-role
+#AWS_ASSUME_ROLE=arn:aws:iam::369407384105:role/cross-account-federated-role
+
+if [ -z "$AWS_CLI" ]; then
+    AWS_CLI=$( type -P aws )
+fi
 
 aws_saml() {
   credentials
@@ -21,12 +25,21 @@ credentials() {
   fi
 }
 
+remain() {
+  local now=$( date -u +%s )
+  local remain=$(( EXPIRE - now ))
+  if [ $remain -gt 0 ]; then
+    echo $remain
+  fi
+}
+
 check_expired() {
   local now=$( date -u +%s )
   local remain=$(( EXPIRE - now ))
   if [ -n "$EXPIRETIME" ] && [ $remain -lt 0 ]; then
     echo "aws session has expired, unsetting creds and expire"
     aws_logout
+    return 1
   else
     if [ -n "$AWS_DEBUG" ]; then
         echo "$remain seconds remain for credential expiration"
@@ -35,7 +48,42 @@ check_expired() {
 }
 
 authenticate() {
-  if ! saml_auth; then
+  while true;
+  do
+    case "$1" in
+      -u | --user)
+        IDP_USER=$2
+        shift 2
+        ;;
+      -r | --role)
+        AWS_DEFAULT_ROLE=$2
+        shift 2
+        ;;
+      -h | --idp-host)
+        IDP_HOST=$2
+        shift 2
+        ;;
+      --)
+        shift
+        break
+        ;;
+      *)
+        break
+        ;;
+    esac
+  done
+
+  if [ -n "$ZSH_VERSION" ]; then
+    setopt BASH_REMATCH
+    setopt KSH_ARRAYS
+  fi
+
+  if [ -z "$AWS_CLI" ]; then
+    echo "You must set \$AWS_CLI first"
+    return 1
+  fi
+
+  if ! saml_auth $IDP_USER; then
     echo "Cannot authenticate"
     return 1
   fi
@@ -47,8 +95,18 @@ authenticate() {
 
   extract_asserted_roles  $( echo -e "$SAML_RESPONSE" )
 
-  select_saml_role
-  read saml_auth_role
+  if [  -n "${AWS_DEFAULT_ROLE}" ]; then
+    # if AWS_DEFAULT_ROLE is set, automatically select it
+    for ((i=0; i < ${#AWS_ROLES[@]}; i++)); do
+      if [[ ${AWS_ROLES[$i]} =~ ([0-9]+).role\/(.*) ]] && [ ${AWS_DEFAULT_ROLE} = ${BASH_REMATCH[2]} ]; then
+        saml_auth_role=$i
+        echo "assuming $AWS_DEFAULT_ROLE ($i)"
+      fi
+    done
+  else
+    select_saml_role
+    read saml_auth_role
+  fi
 
   if [[ ${AWS_ROLES[$saml_auth_role]} =~ (arn.[^,]*),(arn.*[^\[]) ]]; then
     principal=${BASH_REMATCH[1]}
@@ -61,11 +119,15 @@ authenticate() {
   echo "authenticating for account $principal and role $role"
   if [ -n "$SAML_RESPONSE" ]; then
     assertion=$( echo -e "$SAML_RESPONSE" | base64 )
+    export AWS_ACCESS_KEY_ID="FAKE"
+    export AWS_SECRET_ACCESS_KEY="FAKE"
+    export AWS_DEFAULT_REGION="ap-southeast-2"
     saml_auth_result=$( $AWS_CLI sts assume-role-with-saml \
       --role-arn $role \
       --principal-arn $principal \
       --duration-seconds 3600 \
-      --saml-assertion "$assertion" )
+      --saml-assertion "$assertion" \
+      --output json)
     if [ $? = 0 ]; then
       extract_creds $( echo "$saml_auth_result" )
     else
@@ -76,15 +138,20 @@ authenticate() {
     echo "No SAML response received"
     return 1
   fi
+
+  if [ -n "$ZSH_VERSION" ]; then
+    unsetopt BASH_REMATCH
+    unsetopt KSH_ARRAYS
+  fi
 }
 
 saml_auth() {
-  if ! type -P curl >/dev/null; then
+  if ! type curl >/dev/null 2>&1; then
     echo "You must have either curl installed, and in your \$PATH"
     return 1
   fi
 
-  if ! type -P uuidgen >/dev/null; then
+  if ! type uuidgen >/dev/null 2>&1; then
     echo "You must have uuidgen installed ..."
     return 1
   fi
@@ -93,19 +160,25 @@ saml_auth() {
   local default_user=$USER
   local username=""
   local userid=""
-  if [ -n "$AWS_USER" ]; then
-    default_user=$AWS_USER
-  fi
-  echo -n "Username [$default_user]:  "
-  read username
-  if [ -z $username ]; then
-    userid=$default_user
+  if [ -n "$1" ]; then
+    userid=$1
+    echo "Username: $userid"
   else
-    userid=$username
+    echo -n "Username [$default_user]: "
+    read username
+    if [ -z $username ]; then
+      userid=$default_user
+    else
+      userid=$username
+    fi
   fi
 
   # password = the user's password
-  read -s -p "Password: " userpw
+  if [ -n "$ZSH_VERSION" ]; then
+    read -s "userpw?Password: "
+  else
+    read -s -p "Password: " userpw
+  fi
   echo ""
 
   # idphost = your idp hostname
@@ -113,7 +186,7 @@ saml_auth() {
 
   if [ -n "$IDP_HOST" ]; then
     default_idphost=$IDP_HOST
-    echo "authenticating to \$IDP_HOST: $IDP_HOST"
+    echo "IDP_HOST: $IDP_HOST"
   else
     echo -n "idp host [$default_idphost]: "
     read host
@@ -127,6 +200,14 @@ saml_auth() {
 
   # idpid = your idp entity id
   local idpid="https://$idphost/idp/shibboleth"
+
+
+  # make a quick check curl to the idp endpoint to ensure the cert is trusted.
+  ssl_ok=$(curl -s ${idpid} > /dev/null; echo $?)
+  if [ $ssl_ok != 0 ]; then
+    echo "SSL certificate for ${idpid} is not valid, not proceeding."
+    return $ssl_ok
+  fi
 
   # rpid = a valid SP entityId that is configured for ECP
   local rpid="urn:amazon:webservices"
@@ -146,11 +227,12 @@ saml_auth() {
 
   # Need to base64-encode username and password to cope with special chars
   local auth_str=$( echo -n "${userid}:${userpw}" | base64 )
-  local resp=$( curl -H "Authorization: Basic $auth_str" --write-out %{http_code} --output /tmp/idp-response.xml -k -s -d  "$envelope" "$URL" )
+  unset userpw
+  local resp=$( curl -H "Authorization: Basic $auth_str" --write-out %{http_code} --output /tmp/idp-response.xml -s -d  "$envelope" "$URL" )
 
-  if [ $resp == 200 ]; then
+  if [ $resp -eq 200 ]; then
      echo "SAML login request successful!"
-     [[ "$( cat -t /tmp/idp-response.xml )" =~ .*soap11:Body\>(.*)\<\/soap11:Body ]] && export SAML_RESPONSE=$( echo -e "${BASH_REMATCH[1]}" )
+     [[ "$( cat -t /tmp/idp-response.xml )" =~ soap11:Body\>(.*)\<\/soap11:Body ]] && export SAML_RESPONSE="$( echo -e "${BASH_REMATCH[1]}" )"
      rm /tmp/idp-response.xml
      return 0
   else
@@ -158,7 +240,6 @@ saml_auth() {
     unset SAML_RESPONSE
     return $resp
   fi
-
 }
 
 assume() {
@@ -175,7 +256,9 @@ assume() {
   [[ "$role" =~ ([0-9]+).role\/(.*) ]] && session_name=$session_name-${BASH_REMATCH[2]}
   assume_result=$( $AWS_CLI sts assume-role \
     --role-arn $role \
-    --role-session-name ${session_name:0:32} )
+    --role-session-name ${session_name:0:32} \
+    --output json
+  )
   if [ $?  = 0 ]; then
     extract_creds $assume_result
   else
@@ -185,9 +268,16 @@ assume() {
 }
 
 extract_creds() {
-    local IN=$@
-    local CREDS=$( echo $IN | jq '.Credentials' )
-    local ROLE_ARN=$( echo $IN | jq -r '.AssumedRoleUser.Arn' )
+    local IN=""
+    local CREDS=""
+    if [ -n "$ZSH_VERSION" ]; then
+      local IN=${(j: :)@}
+      local CREDS=${(j: :)$( echo "$IN" | jq '.Credentials' )}
+    else
+      local IN=$@
+      local CREDS=$( echo "$IN" | jq '.Credentials' )
+    fi
+    local ROLE_ARN=$( echo "$IN" | jq -r '.AssumedRoleUser.Arn' )
     if [ -z "$CREDS" ]; then
         echo "No creds provided -- could not extract"
         return 1
@@ -213,7 +303,7 @@ extract_creds() {
         *) echo "Don't know how to handle OS type $UNAME"; return 1 ;;
     esac
 
-    export EXPIRE=$( $date_cmd )
+    export EXPIRE=`eval $date_cmd`
 
     echo "temporary credentials for aws valid until $EXPIRETIME or until this session ends"
 }
@@ -228,8 +318,8 @@ date_prog() {
 
 extract_asserted_roles() {
   AWS_ROLES=()
-  while [[ $1 ]]; do
-    if [[ $1 =~ (arn[^<]*) ]]; then
+  while [ "$1" ]; do
+    if [[ "$1" =~ (arn:aws[^\<]*) ]]; then
         AWS_ROLES+=("${BASH_REMATCH[1]}");
     fi
     shift
@@ -238,7 +328,7 @@ extract_asserted_roles() {
 }
 
 select_saml_role() {
-  for i in "${!AWS_ROLES[@]}"; do
+  for ((i=0; i < ${#AWS_ROLES[@]}; i++)); do
     if [[ ${AWS_ROLES[$i]} =~ ([0-9]+).role\/(.*) ]]; then
         echo -e "$i" "${BASH_REMATCH[2]}"
     else
