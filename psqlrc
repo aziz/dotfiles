@@ -10,14 +10,25 @@
 -- %/ : current database
 -- %~ : like %/ but ~ for default database
 -- %# : '#' if superuser, '>' otherwise
--- %R
--- %x
+-- %R : In prompt1:
+--         = normally
+--         ^ if in single-line mode
+--         ! if the session is disconnected from the database
+--      In prompt2:
+--         the sequence is replaced by -, *, a single quote, a double quote,
+--         or a dollar sign, depending on whether psql expects more input
+--         because the command wasn't terminated yet
+-- %x : Transaction status:
+--           an empty string when not in a transaction block,
+--         * when in a transaction block
+--         ! when in a failed transaction block,
+--         ? when the transaction state is indeterminate (for example, because there is no connection).
 -- %[...%] : terminal control characters
 ------------------------------------------------------------
 
 \set QUIET ON
 
-\set PROMPT1 '%[%033[1;32m%]%M:%> %n@%/%[%033[0m%]% %# '
+\set PROMPT1 '%[%033[1;32m%]%M:%> %n@%/%[%033[0m%]%x%# '
 \set PROMPT2 ''
 
 \set PAGER OFF
@@ -31,7 +42,7 @@
 \timing
 \encoding unicode
 \x auto
-\pset null 'NULL'
+\pset null ∅
 \pset border 2
 \pset linestyle unicode
 
