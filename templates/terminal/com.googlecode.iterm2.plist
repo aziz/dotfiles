@@ -4461,6 +4461,20 @@
 	<real>2.0543620586395264</real>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x5b-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>30</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x5d-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>31</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
@@ -4653,7 +4667,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-672 800 1280 1417 -672 800 2560 1417 </string>
+	<string>-540 800 1280 1417 -540 800 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -6900,7 +6914,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-03-08T13:34:21Z</date>
+	<date>2015-03-18T01:20:50Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>

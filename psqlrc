@@ -96,7 +96,7 @@
 \set queries 'select current_timestamp - query_start as runtime,pid,datname,usename,query from pg_stat_activity where query != \'<IDLE>\' order by 1 desc; '
 
 -- kill transactions that have been "idle in transaction" for more than 10 minutes (9.3)
-\set kill_old_trans 'select count(pg_terminate_backend(pid)) as nb_killed_proc from pg_stat_activity where query = \'<IDLE> in transaction\' and current_timestamp - query_start > \'5 min\';
+\set kill_old_trans 'select count(pg_terminate_backend(pid)) as nb_killed_proc from pg_stat_activity where query = \'<IDLE> in transaction\' and current_timestamp - query_start > \'5 min\'';
 
 -- Development queries:
 
