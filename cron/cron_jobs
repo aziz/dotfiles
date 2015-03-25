@@ -19,9 +19,6 @@
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:~/.bin:~/.rvm/bin
 LC_CTYPE=en_US.UTF-8
 
-# run chrome web store script everyday at 3PM
-# 00 15 * * * /Users/allen/.rvm/bin/ruby-2.0.0-p353 /Users/allen/Dropbox/projects/Chrome-webstore-downloader/chrome.rb > /tmp/chrome.html 2>&1 && open /tmp/chrome.html
-
 # Growl notify outdated home-brews, ruby gems, npm packages everyday at 3:20PM
 # 20 15 * * * brew outdated | growlnotify -s -t "Outdated Homebrews"
 # 20 15 * * * /Users/allen/.rvm/rubies/ruby-1.9.3-p0/bin/gem outdated | growlnotify -s -t "Outdated Ruby Gems"
@@ -29,8 +26,3 @@ LC_CTYPE=en_US.UTF-8
 
 # Update homebrew every 6 hours
 #0	*/6	*	*	*	date >> ~/.cron/logs/brew_update.log && brew update >> ~/.cron/logs/brew_update.log 2>&1
-
-# Update boplots DB every 5 minues
-#1,6,11,16,21,26,31,36,41,46,51,56	*	*	*	*	/Users/allen/Dropbox/projects/boplots/lib/robot >> ~/.cron/logs/robot.log 2>&1
-
-
