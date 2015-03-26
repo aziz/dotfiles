@@ -343,7 +343,7 @@ session() {
 
   if [ -n "$EXPIRE" ]; then
     echo -e "current aws session expires $EXPIRETIME, for account $AWS_ACCOUNT and role $AWS_ROLE"
-fi
+  fi
 }
 
 aws_logout() {

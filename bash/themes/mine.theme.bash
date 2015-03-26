@@ -23,7 +23,7 @@ rvmrc_version_prompt () {
 aws_saml_prompt () {
   local now=$( date -u +%s )
   local remain=$(( EXPIRE - now ))
-  if [ -n "$EXPIRETIME" ] && [ $remain -gt 0 ]; then
+  if [ -n "$AWS_ROLE" ] && [ -n "$EXPIRETIME" ] && [ $remain -gt 0 ]; then
     echo -e "${purple}[${AWS_ROLE} $(($remain/60))m]${reset_color} "
   fi
 }
