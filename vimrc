@@ -15,6 +15,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
 Plugin 'kien/ctrlp.vim'
+Plugin 'gabesoft/vim-ags'
+Plugin 'lilydjwg/colorizer'
 " languages
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
