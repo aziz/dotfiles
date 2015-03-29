@@ -18,8 +18,9 @@
 - atom: add files to dotfiles and install it on demand
 - configure cron on install
 
-# Vim: 
-- Plugin: gabrielelana/vim-markdown 
+# Vim:
+- https://github.com/af/dotfiles/blob/master/vim/vimrc
+- Plugin: gabrielelana/vim-markdown
 - Plugin: tabular
 - configure: The NERD tree
 - configure: fugitive.vim

@@ -27,6 +27,7 @@ mongodb
 mysql
 node
 p7zip
+pgrep
 postgresql
 python
 python3
