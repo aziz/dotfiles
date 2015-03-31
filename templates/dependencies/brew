@@ -21,7 +21,6 @@ grep --with-default-names
 gzip
 hub
 jq
-mackup
 man2html
 mongodb
 mysql
