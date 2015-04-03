@@ -1,7 +1,11 @@
 awesome_print
 bundler
+byebug
 hirb-unicode
+pry
+pry-stack_explorer
 rails
 rubocop
 rubocop-rspec
+sketches
 tmuxinator

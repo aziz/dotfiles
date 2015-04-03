@@ -12,3 +12,6 @@ cat_colorless() {
   cat $1 | sed -r "s/\x1B\[([0-9]{1,3}((;[0-9]{1,3})*)?)?[m|K]//g"
 }
 
+fav_gems_install() {
+  while read in; do gem install "$in"; done < "$HOME"/.templates/dependencies/gem
+}

@@ -13,7 +13,3 @@ source ~/.bashrc
 rvm use ruby-$(cat "$HOME"/.templates/dependencies/ruby-default) --default
 rvm list
 while read in; do gem install "$in"; done < "$HOME"/.templates/dependencies/gem
-
-echo "Installing Pow Server"
-echo "====================="
-curl get.pow.cx | sh
