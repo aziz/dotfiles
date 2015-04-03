@@ -5,7 +5,7 @@ gdv () {
 }
 
 gds () {
-  git diff -w "$@" | subl3 -n --command 'toggle_tabs' -
+  git diff -w "$@" | subl -n --command 'toggle_tabs' -
 }
 
 # Usage: new-github topfunky tidy_table

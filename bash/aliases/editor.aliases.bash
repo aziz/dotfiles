@@ -11,7 +11,7 @@ if [ "$(uname)" = "Linux" ]; then
 fi
 
 # Sublime Text
-alias s="subl3"
+alias s="subl"
 
 # Sublime in Linux
 if [ "$(uname)" = "Linux" ]; then

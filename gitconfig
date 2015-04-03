@@ -17,7 +17,7 @@
   branch-cleanup = !sh -c 'git branch --merged | grep -v master | xargs git branch -d && git remote prune origin'
 [core]
   excludesfile = ~/.gitignore
-  editor       = subl3 -wn
+  editor       = subl -wn
   autocrlf     = input
   whitespace   = space-before-tab, trailing-space
 [help]
