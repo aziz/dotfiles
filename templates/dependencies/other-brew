@@ -4,6 +4,8 @@ ffmpeg
 gnupg2
 imagemagick
 midnight-commander
+mongodb
+mtr
+mysql
 postgis
 ranger
-mtr
