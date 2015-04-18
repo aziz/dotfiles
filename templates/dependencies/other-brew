@@ -3,9 +3,11 @@ elasticsearch
 ffmpeg
 gnupg2
 imagemagick
+jenkins
 midnight-commander
 mongodb
 mtr
 mysql
-postgis
+pgrep
 ranger
+tidy

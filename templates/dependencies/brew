@@ -24,7 +24,7 @@ jq
 man2html
 node
 p7zip
-pgrep
+postgis
 postgresql
 python
 python3
@@ -34,7 +34,6 @@ rsync
 shellcheck
 sqlite
 the_silver_searcher
-tidy
 tmux
 tree
 unrar
