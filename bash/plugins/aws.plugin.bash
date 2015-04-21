@@ -56,7 +56,7 @@ authenticate() {
         shift 2
         ;;
       -r | --role)
-        AWS_DEFAULT_ROLE=$2
+        local selected_role=$2
         shift 2
         ;;
       -h | --idp-host)
@@ -76,6 +76,7 @@ authenticate() {
   if [ -n "$ZSH_VERSION" ]; then
     setopt BASH_REMATCH
     setopt KSH_ARRAYS
+    unsetopt BRACE_CCL
   fi
 
   if [ -z "$AWS_CLI" ]; then
@@ -95,17 +96,21 @@ authenticate() {
 
   extract_asserted_roles  $( echo -e "$SAML_RESPONSE" )
 
-  if [  -n "${AWS_DEFAULT_ROLE}" ]; then
-    # if AWS_DEFAULT_ROLE is set, automatically select it
-    for ((i=0; i < ${#AWS_ROLES[@]}; i++)); do
-      if [[ ${AWS_ROLES[$i]} =~ ([0-9]+).role\/(.*) ]] && [ ${AWS_DEFAULT_ROLE} = ${BASH_REMATCH[2]} ]; then
-        saml_auth_role=$i
-        echo "assuming $AWS_DEFAULT_ROLE ($i)"
-      fi
-    done
-  else
+  if [  -z "${AWS_DEFAULT_ROLE}" -a -z "${selected_role}" ]; then
     select_saml_role
     read saml_auth_role
+  else
+    # Use default role if no role was specified using '-r'
+    if [  -z "${selected_role}" ]; then
+      local selected_role=$AWS_DEFAULT_ROLE
+    fi
+
+    for ((i=0; i < ${#AWS_ROLES[@]}; i++)); do
+      if [[ ${AWS_ROLES[$i]} =~ ([0-9]+).role\/(.*) ]] && [ ${selected_role} = ${BASH_REMATCH[2]} ]; then
+        saml_auth_role=$i
+        echo "assuming $selected_role($i)"
+      fi
+    done
   fi
 
   if [[ ${AWS_ROLES[$saml_auth_role]} =~ (arn.[^,]*),(arn.*[^\[]) ]]; then
@@ -317,13 +322,13 @@ date_prog() {
 }
 
 extract_asserted_roles() {
-  AWS_ROLES=()
-  while [ "$1" ]; do
-    if [[ "$1" =~ (arn:aws[^\<]*) ]]; then
-        AWS_ROLES+=("${BASH_REMATCH[1]}");
-    fi
-    shift
-  done
+  AWS_ROLES=( $(
+    while [ "$1" ]; do
+      if [[ "$1" =~ (arn:aws[^\<]*) ]]; then
+          echo ${BASH_REMATCH[1]}
+      fi
+      shift
+    done | sort -t/ -f -k 3))
   export AWS_ROLES
 }
 
@@ -343,7 +348,7 @@ session() {
 
   if [ -n "$EXPIRE" ]; then
     echo -e "current aws session expires $EXPIRETIME, for account $AWS_ACCOUNT and role $AWS_ROLE"
-  fi
+fi
 }
 
 aws_logout() {
