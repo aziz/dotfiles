@@ -3,6 +3,7 @@ font-droid-arabic-naskh
 font-droid-sans
 font-droid-sans-mono
 font-droid-serif
+font-fira-mono
 font-fira-sans
 font-inconsolata-dz
 font-lato
@@ -13,5 +14,6 @@ font-open-sans-condensed
 font-roboto
 font-roboto-slab
 font-source-code-pro
+font-source-code-pro-for-powerline
 font-source-sans-pro
 font-source-serif-pro
