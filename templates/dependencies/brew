@@ -11,7 +11,7 @@ coreutils
 curl
 diffutils
 distribution
-findutils --with-default-names
+findutils
 git
 git-extras
 gnu-sed --with-default-names
