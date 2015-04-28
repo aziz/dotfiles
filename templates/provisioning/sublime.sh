@@ -3,8 +3,8 @@
 ST_DIR="$HOME/Library/Application Support/Sublime Text 3"
 
 # install license
-mkdir -p "$ST_DIR/Local"
-cp "$HOME/.templates/licenses/License.sublime_license" "$ST_DIR/Local/License.sublime_license"
+# mkdir -p "$ST_DIR/Local"
+# cp "$HOME/.templates/licenses/License.sublime_license" "$ST_DIR/Local/License.sublime_license"
 
 # hides minimap
 echo '{"settings":{"new_window_settings":{"show_minimap": false}}}' >  "$ST_DIR/Local/Session.sublime_session"
