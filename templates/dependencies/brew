@@ -10,6 +10,7 @@ colordiff
 coreutils
 curl
 diffutils
+distribution
 findutils --with-default-names
 git
 git-extras
@@ -29,6 +30,7 @@ postgresql
 python
 python3
 redis
+rename
 rmtrash
 rsync
 shellcheck
