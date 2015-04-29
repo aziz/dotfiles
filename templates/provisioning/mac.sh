@@ -25,5 +25,8 @@ echo "==> Config: Always open everything in Finder's list view"
 sudo defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 echo "==> Config: Expand save panel by default"
 
+sudo defaults write -g ApplePressAndHoldEnabled -bool false
+echo "==> Config: Disabled press and hold"
+
 sudo killall Finder
 sudo killall Dock

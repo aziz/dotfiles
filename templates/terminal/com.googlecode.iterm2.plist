@@ -4659,7 +4659,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1094 1239 518 456 -672 800 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>139 185 924 485 0 0 1280 777 </string>
+	<string>99 1390 924 485 -540 800 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>416 1766 384 129 -672 800 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
@@ -4667,7 +4667,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 43 1280 734 0 0 1280 777 </string>
+	<string>-540 800 1280 1417 -540 800 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -5219,11 +5219,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>SourceCodePro-Regular 15</string>
+			<string>SauceCodePowerline-Regular 15</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 14</string>
+			<string>SauceCodePowerline-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -6914,7 +6914,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-03-27T00:13:00Z</date>
+	<date>2015-04-28T11:19:45Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -10104,7 +10104,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141103</string>
+	<string>2.0.0.20150412</string>
 	<key>kPreferenceKeyWindowStyle</key>
 	<integer>1</integer>
 </dict>
