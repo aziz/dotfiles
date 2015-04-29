@@ -22,9 +22,10 @@ export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.mac:$HOME/.bin:$HOME/go/bin:$
 
 # Set my editor and git editor
 export EDITOR="vim"
+
 export GEM_EDITOR="subl"
 export BUNDLER_EDITOR="subl"
-# export GIT_EDITOR="vim" is now set in gitconfig
+export BUNDLE_JOBS=8
 
 # Setting for the new UTF-8 terminal support in Lion
 export LANG="en_US.UTF-8"
