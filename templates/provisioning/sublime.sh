@@ -6,10 +6,6 @@ if [ "$(uname)" = "Linux" ]; then
   ST_DIR="$HOME/.config/sublime-text-3"
 fi
 
-# install license
-# mkdir -p "$ST_DIR/Local"
-# cp "$HOME/.templates/licenses/License.sublime_license" "$ST_DIR/Local/License.sublime_license"
-
 # hides minimap
 echo '{"settings":{"new_window_settings":{"show_minimap": false}}}' >  "$ST_DIR/Local/Session.sublime_session"
 
@@ -29,3 +25,9 @@ cp -r "$ST_DIR/Packages/User/Theme/Theme - Default" "$ST_DIR/Packages"
 cd "$ST_DIR/Packages" && rm -Rf PlainTasks && git clone git@github.com:aziz/PlainTasks.git
 cd "$ST_DIR/Packages" && rm -Rf PlainNotes && git clone git@github.com:aziz/PlainNotes.git
 cd "$ST_DIR/Packages" && rm -Rf FileBrowser && git clone git@github.com:aziz/SublimeFileBrowser.git FileBrowser
+
+# installing subl cli command
+if [ "$(uname)" = "Darwin" ]; then
+  ST_APP=$(osascript -e 'tell application "System Events" to POSIX path of (file of process "Sublime Text" as alias)')
+  ln -s "$ST_APP/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+fi
