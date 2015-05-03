@@ -49,14 +49,6 @@ alias h='history'
 alias page="$PAGER"
 alias irc="$IRC_CLIENT"
 
-# Tree
-if [ ! -x "$(which tree)" ]
-then
-  alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-else
-  alias tree="tree -CAFa -I 'CVS|*.*.package|.svn|.git' --dirsfirst"
-fi
-
 aliases-help () {
   echo "Generic Alias Usage"
   echo
