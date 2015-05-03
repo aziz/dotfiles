@@ -2,6 +2,10 @@
 
 ST_DIR="$HOME/Library/Application Support/Sublime Text 3"
 
+if [ "$(uname)" = "Linux" ]; then
+  ST_DIR="$HOME/.config/sublime-text-3"
+fi
+
 # install license
 # mkdir -p "$ST_DIR/Local"
 # cp "$HOME/.templates/licenses/License.sublime_license" "$ST_DIR/Local/License.sublime_license"

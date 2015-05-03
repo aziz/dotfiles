@@ -29,7 +29,7 @@ alias apache_start="sudo apachectl -k start"
 alias cron_install="crontab -r;crontab ~/.cron/cron_jobs"
 
 # Clean up
-alias rm="rmtrash"
+alias rm="trash"
 alias biggest_files="find . -type f -print0 | xargs -0 du -s | sort -n | tail -20 | cut -f2 | xargs -I{} du -sh {}"
 alias biggest_folders="du -hsx * | gsort -rh | head -20"
 
