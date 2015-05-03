@@ -1,14 +1,18 @@
+autojump
 awscli
 build-essential
+colordiff
 curl
 docker.io
 git
 git-extras
+golang
 jq
 nodejs
 nodejs-legacy
 npm
 p7zip
+postgis
 postgresql
 postgresql-contrib
 shellcheck
@@ -18,4 +22,3 @@ tmux
 tree
 unrar
 vim
-postgis
