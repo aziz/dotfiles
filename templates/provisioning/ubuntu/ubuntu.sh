@@ -11,10 +11,8 @@ source "$HOME"/.templates/provisioning/ubuntu/fonts.sh
 source "$HOME"/.templates/provisioning/vim.sh
 source "$HOME"/.templates/provisioning/ruby.sh
 source "$HOME"/.templates/provisioning/npm.sh
+source "$HOME"/.templates/provisioning/sublime.sh
 
 if [ "$(uname)" = "Linux" ]; then
   sudo ln -s /usr/local/bin/nodejs /usr/bin/node
 fi
-
-# source "$HOME"/.templates/provisioning/sublime.sh
-# source "$HOME"/.templates/provisioning/mac-apps.sh
