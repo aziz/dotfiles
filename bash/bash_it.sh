@@ -42,4 +42,5 @@ PREVIEW="less"
 [ -s /usr/bin/gloobus-preview ] && PREVIEW="gloobus-preview"
 [ -s /Applications/Preview.app ] && PREVIEW="/Applications/Preview.app"
 
+eval "$(direnv hook bash)"
 [ -s "${BASH}/secrets.sh" ] && source "${BASH}/secrets.sh"
