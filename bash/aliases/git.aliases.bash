@@ -47,7 +47,7 @@ git-help () {
   echo "  gl      = git pull"
   echo "  gup     = git fetch && git rebase"
   echo "  gp      = git push"
-  echo "  gd      = git diff | mate"
+  echo "  gd      = git diff"
   echo "  gc      = git commit -v"
   echo "  gca     = git commit -v -a"
   echo "  gb      = git branch"

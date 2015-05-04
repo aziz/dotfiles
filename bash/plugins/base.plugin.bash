@@ -5,7 +5,7 @@
 genpass() {
   echo "${bold_purple}Generating a ${1} characters long password${normal} =>"
   res=$(openssl rand -base64 ${1} | head -c ${1})
-  echo "${bold_green}$res${normal}"
+  echo "${bold_green}${res}${normal}"
 }
 
 # Returns the first command that exists, or exit status 1.
@@ -26,7 +26,7 @@ mkcd() {
 }
 
 hex() {
-  printf "%X\n" $*;
+  printf "%X\n" "$@";
 }
 
 man2pdf() {
@@ -37,27 +37,12 @@ hman() {
   man "$1" | man2html | browser
 }
 
-# View man documentation in Preview
 pman() {
-   man -t "${1}" | open -f -a $PREVIEW
-}
-
-pcurl() {
-  curl "${1}" | open -f -a $PREVIEW
-}
-
-pri() {
-  ri -T "${1}" | open -f -a $PREVIEW
+  man -t "${1}" | open -f -a "$PREVIEW"
 }
 
 quiet() {
-  $* &> /dev/null &
-}
-
-banish-cookies() {
-  rm -r ~/.macromedia ~/.adobe
-  ln -s /dev/null ~/.adobe
-  ln -s /dev/null ~/.macromedia
+  "$@" &> /dev/null &
 }
 
 # disk usage per directory, in Mac OS X and Linux
@@ -80,25 +65,7 @@ usage() {
 
 # back up file with timestamp, useful for administrators and configs
 buf() {
-    filename=$1
-    filetime=$(date +%Y%m%d_%H%M%S)
-    cp ${filename} ${filename}_${filetime}
-}
-
-# List all plugins and functions defined by bash-it
-plugins-help() {
-
-    echo "bash-it Plugins Help-Message"
-    echo
-
-    set | grep "()" \
-    | sed -e "/^_/d" | grep -v "BASH_ARGC=()" \
-    | sed -e "/^\s/d" | grep -v "BASH_LINENO=()" \
-    | grep -v "BASH_ARGV=()" \
-    | grep -v "BASH_SOURCE=()" \
-    | grep -v "DIRSTACK=()" \
-    | grep -v "GROUPS=()" \
-    | grep -v "BASH_CMDS=()" \
-    | grep -v "BASH_ALIASES=()" \
-    | grep -v "COMPREPLY=()" | sed -e "s/()//"
+  local filename=$1
+  local filetime=$(date +%Y%m%d_%H%M%S)
+  cp "${filename}" "${filename}_${filetime}"
 }
