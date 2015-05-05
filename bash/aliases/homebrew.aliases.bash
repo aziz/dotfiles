@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# Some aliases for Homebrew
 alias br="brew"
 alias bro="brew update && brew outdated"
-alias brup="brew upgrade && brew cleanup"
+alias brup="brew upgrade --all && brew cleanup"
 alias brc="brew cask"
 alias bri="brew install"
 alias brs="brew search"
@@ -15,7 +14,7 @@ brew-help () {
   echo
   echo "br   = brew"
   echo "bro  = brew update && brew outdated"
-  echo "brup = brew upgrade && brew cleanup"
+  echo "brup = brew upgrade --all && brew cleanup"
   echo "brc  = brew cask"
   echo "bri  = brew install"
   echo "brs  = brew search"

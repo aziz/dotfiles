@@ -3,6 +3,7 @@ awscli
 build-essential
 colordiff
 curl
+direnv
 docker.io
 git
 git-extras
