@@ -1,4 +1,3 @@
-
 ;; Prevent the cursor from blinking
 (blink-cursor-mode 0)
 
@@ -14,12 +13,6 @@
 
 ;; Hide toolbar
 (tool-bar-mode 0)
-
-;; Mac Key Mode
-(load-file "~/.emacs.d/vendors/redo+.el")
-(load-file "~/.emacs.d/vendors/mac-key-mode.el")
-(require 'mac-key-mode)
-(mac-key-mode 1)
 
 ;; Custom color scheme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
@@ -71,3 +64,8 @@
 ;; then enter your username
 ;; (setq inhibit-startup-echo-area-message "guerry")
 
+;; Mac Key Mode
+;; (load-file "~/.emacs.d/vendors/redo+.el")
+;; (load-file "~/.emacs.d/vendors/mac-key-mode.el")
+;; (require 'mac-key-mode)
+;; (mac-key-mode 1)
