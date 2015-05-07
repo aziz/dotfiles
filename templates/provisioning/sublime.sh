@@ -29,5 +29,5 @@ cd "$ST_DIR/Packages" && rm -Rf FileBrowser && git clone git@github.com:aziz/Sub
 # installing subl cli command
 if [ "$(uname)" = "Darwin" ]; then
   ST_APP=$(osascript -e 'tell application "System Events" to POSIX path of (file of process "Sublime Text" as alias)')
-  ln -s "$ST_APP/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+  ln -sf "$ST_APP/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 fi

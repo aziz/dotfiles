@@ -1,12 +1,8 @@
-###   Handy Extract Function
-# to use make sure you've installed:
-# brew install unrar
-# brew install p7zip
+#!/bin/bash
 
-# I never remember tar options!
-alias targz="tar -cvzf"
-
-extract () {
+# Handy Extract Function
+# make sure you've installed: brew install unrar p7zip
+extract() {
   if [ -f "$1" ] ; then
     case $1 in
       *.tar.bz2)   tar xvjf "$1"   ;;
@@ -25,4 +21,41 @@ extract () {
   else
       echo "'$1' is not a valid file"
   fi
+}
+
+# Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
+targz() {
+  local tmpFile="${@%/}.tar"
+  tar -cvf "${tmpFile}" --exclude=".DS_Store" "${@}" || return 1
+
+  size=$(
+    stat -f"%z" "${tmpFile}" 2> /dev/null # OS X `stat`
+    stat -c"%s" "${tmpFile}" 2> /dev/null # GNU `stat`
+  )
+
+  local cmd=""
+  if (( size < 52428800 )) && hash zopfli 2> /dev/null; then
+    # the .tar file is smaller than 50 MB and Zopfli is available; use it
+    cmd="zopfli"
+  else
+    if hash pigz 2> /dev/null; then
+      cmd="pigz"
+    else
+      cmd="gzip"
+    fi
+  fi
+
+  echo "Compressing .tar using \`${cmd}\`…"
+  "${cmd}" -v "${tmpFile}" || return 1
+  [ -f "${tmpFile}" ] && rm "${tmpFile}"
+  echo "${tmpFile}.gz created successfully."
+}
+
+# Compare original and gzipped file size
+gz() {
+  local origsize=$(wc -c < "$1")
+  local gzipsize=$(gzip -c "$1" | wc -c)
+  local ratio=$(echo "$gzipsize * 100 / $origsize" | bc -l)
+  printf "orig: %d bytes\n" "$origsize"
+  printf "gzip: %d bytes (%2.2f%%)\n" "$gzipsize" "$ratio"
 }

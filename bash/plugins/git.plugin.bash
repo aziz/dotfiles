@@ -14,6 +14,12 @@ new_github () {
   git push -u origin master
 }
 
+git_track_upstream () {
+  local CURRENT_BRANCH
+  CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  git branch --set-upstream-to="$(git remote | head)"/"$CURRENT_BRANCH" "$CURRENT_BRANCH"
+}
+
 git_remove_missing_files () {
   git ls-files -d -z | xargs -0 git update-index --remove
 }
