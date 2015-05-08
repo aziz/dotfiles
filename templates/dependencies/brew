@@ -2,7 +2,7 @@ ansifilter
 autojump
 awscli
 bash
-bash-completion
+bash-completion2
 binutils
 boot2docker
 brew-cask
@@ -24,6 +24,7 @@ gzip
 hub
 jq
 man2html
+moreutils
 node
 p7zip
 postgis
@@ -41,6 +42,6 @@ the_silver_searcher
 tmux
 tree
 unrar
-vim
+vim --override-system-vi
 watch
-wget
+wget --with-iri

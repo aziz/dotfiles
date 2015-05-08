@@ -2,7 +2,7 @@ ansible
 elasticsearch
 ffmpeg
 gnupg2
-imagemagick
+imagemagick --with-webp
 jenkins
 midnight-commander
 mongodb
@@ -12,3 +12,29 @@ ngrep
 pgrep
 ranger
 tidy
+
+# Install some CTF tools; see https://github.com/ctfs/write-ups.
+aircrack-ng
+bfg
+binutils
+binwalk
+cifer
+dex2jar
+dns2tcp
+fcrackzip
+foremost
+hashpump
+hydra
+john
+knock
+netpbm
+nmap
+pngcheck
+socat
+sqlmap
+tcpflow
+tcpreplay
+tcptrace
+ucspi-tcp
+xpdf
+xz

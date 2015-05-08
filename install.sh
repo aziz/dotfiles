@@ -99,4 +99,3 @@ if [ -e "$HOME/.npmrc" ]; then
 else
   generate_npmrc
 fi
-

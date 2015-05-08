@@ -1,22 +1,22 @@
 #!/usr/bin/env ruby
 
 class Zapper
-  SEARCH_PATHS = "/Users /Library /Applications /opt /var /usr"
+  SEARCH_PATHS = '/Users /Library /Applications /opt /var /usr'
   EXCLUDES     = [
-    "/Library/Dictionaries",
-    "/Library/Caches/Homebrew",
-    "/usr/local/.dscage",
-    "/usr/local/Cellar",
-    "/usr/local/Library",
-    "$HOME/Library/Application Support/Google/Chrome/Default/Extensions",
-    "$HOME/Dropbox",
-    "$HOME/.vim",
-    "$HOME/.npm"
+    '/Library/Dictionaries',
+    '/Library/Caches/Homebrew',
+    '/usr/local/.dscage',
+    '/usr/local/Cellar',
+    '/usr/local/Library',
+    '$HOME/Library/Application Support/Google/Chrome/Default/Extensions',
+    '$HOME/Dropbox',
+    '$HOME/.vim',
+    '$HOME/.npm'
   ]
 
   def initialize(app)
-    ex_cmd = ""
-    EXCLUDES.each { |ex| ex_cmd +="-not -path \"#{ex}/*\" " }
+    ex_cmd = ''
+    EXCLUDES.each { |ex| ex_cmd += "-not -path \"#{ex}/*\" " }
     cmd = "sudo find #{SEARCH_PATHS} #{ex_cmd} -iregex '.*#{app}.*' -prune"
     results = `#{cmd}`
     @res_array = results.split("\n")
@@ -25,27 +25,27 @@ class Zapper
 
   def exclude_or_zap
     @res_array.each_with_index do |res, i|
-      puts "[#{i+1}] #{res}"
+      puts "[#{i + 1}] #{res}"
     end
-    print "==> zap or exclude? [z/e/q] "
+    print '==> zap or exclude? [z/e/q] '
     action = $stdin.gets
     action = action.chomp
     case action
-      when  "z"
-        zap
-      when  "e"
-        exclude
-      when  "q"
-        exit
-      else
-        exclude_or_zap
+    when  'z'
+      zap
+    when  'e'
+      exclude
+    when  'q'
+      exit
+    else
+      exclude_or_zap
     end
   end
 
   def zap
-    puts "==> zapping, are you sure? [y/n]"
+    puts '==> zapping, are you sure? [y/n]'
     action = $stdin.gets
-    if action.chomp == "y"
+    if action.chomp == 'y'
       @res_array.each do |z|
         cmd = "sudo rm -Rf \"#{z}\""
         exec(cmd)
@@ -54,14 +54,14 @@ class Zapper
   end
 
   def exclude
-    puts "==> Exlude [enter indexed separated with ,]"
+    puts '==> Exlude [enter indexed separated with ,]'
     index_list = $stdin.gets
-    index_array=index_list.chomp.split(",").map(&:strip).map(&:to_i)
+    index_array = index_list.chomp.split(',').map(&:strip).map(&:to_i)
     del_arr = []
     index_array.each do |i|
-      del_arr.push @res_array[i-1]
+      del_arr.push @res_array[i - 1]
     end
-    @res_array = @res_array-del_arr
+    @res_array -= del_arr
     exclude_or_zap
   end
 
