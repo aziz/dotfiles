@@ -1,8 +1,3 @@
-[user]
-  name  = ${name}
-  email = ${email}
-[github]
-  user  = ${gh_username}
 [alias]
   co        = checkout
   unstage   = reset HEAD
@@ -15,6 +10,11 @@
   upstream  = rev-parse --symbolic-full-name --abbrev-ref HEAD@{upstream}
   amend     = commit --amend
   branch-cleanup = !sh -c 'git branch --merged | grep -v master | xargs git branch -d && git remote prune origin'
+  # Interactive rebase with the given number of latest commits
+  reb = "!r() { git rebase -i HEAD~$1; }; r"
+  # Remove branches that have already been merged with master
+  # a.k.a. ‘delete merged’
+  dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 [core]
   excludesfile = ~/.gitignore
   editor       = subl -wn
@@ -22,8 +22,10 @@
   whitespace   = space-before-tab, trailing-space
 [help]
   autocorrect = 1
+[merge]
+  log = true
 [apply]
-  whitespace = nowarn
+  whitespace = fix
 [push]
   default = current
 [branch]
@@ -50,9 +52,9 @@
   untracked = yellow
 [color "diff"]
   meta = blue bold reverse
-  frag = magenta bold
-  old  = red bold
-  new  = green bold
+  frag = magenta
+  old  = red
+  new  = green
 [difftool]
   prompt = false
 [difftool "Kaleidoscope"]
