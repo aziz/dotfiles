@@ -9,10 +9,10 @@
 (setq visible-bell t)
 
 ;; Who use the bar to scroll?
-(scroll-bar-mode 0)
+;; (scroll-bar-mode 0)
 
 ;; Hide toolbar
-(tool-bar-mode 0)
+;; (tool-bar-mode 0)
 
 ;; Custom color scheme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")

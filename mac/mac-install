@@ -10,4 +10,5 @@ source "$HOME"/.templates/provisioning/npm.sh
 source "$HOME"/.templates/provisioning/mac-apps.sh
 source "$HOME"/.templates/provisioning/fonts.sh
 source "$HOME"/.templates/provisioning/vim.sh
+source "$HOME"/.templates/provisioning/emacs.sh
 source "$HOME"/.templates/provisioning/sublime.sh
