@@ -12,6 +12,8 @@ ngrep
 pgrep
 ranger
 tidy
+homebrew/completions/packer-completion
+homebrew/binary/packer
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 aircrack-ng

@@ -48,7 +48,7 @@ export PLATFORM="$MACHINE-$OS-$OSVERSION"
 export BASH_THEME='mine'
 
 # Path to the bash it configuration
-export BASH=$HOME/.bash
+export BASH="$HOME/.bash"
 
 # Load Bash It
 source "$BASH"/bash_it.sh

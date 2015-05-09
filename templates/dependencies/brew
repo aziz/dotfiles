@@ -21,11 +21,22 @@ gnutls --with-default-names
 go
 grep --with-default-names
 gzip
+homebrew/completions/boot2docker-completion
+homebrew/completions/bundler-completion
+homebrew/completions/gem-completion
+homebrew/completions/grunt-completion
+homebrew/completions/pip-completion
+homebrew/completions/rails-completion
+homebrew/completions/rake-completion
+homebrew/completions/ruby-completion
+homebrew/completions/tmuxinator-completion
+homebrew/completions/vagrant-completion
 hub
 jq
 man2html
 moreutils
 node
+openssh
 p7zip
 postgis
 postgresql
