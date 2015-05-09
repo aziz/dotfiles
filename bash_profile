@@ -27,11 +27,11 @@ export GEM_EDITOR="subl"
 export BUNDLER_EDITOR="subl"
 export BUNDLE_JOBS=8
 
-# Setting for the new UTF-8 terminal support in Lion
-export LANG="en_US.UTF-8"
-export LANGUAGE="en_US"
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+# Prefer US English and use UTF-8
+export LANG='en_US.UTF-8'
+export LANGUAGE='en_US'
+export LC_CTYPE='en_US.UTF-8'
+export LC_ALL='en_US.UTF-8'
 
 # Fixing gcc in lion
 # export CC=/usr/bin/gcc
@@ -56,6 +56,20 @@ source "$BASH"/bash_it.sh
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
+# Enable some Bash 4 features when possible:
+# * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
+# * Recursive globbing, e.g. `echo **/*.txt`
+for option in autocd globstar; do
+  shopt -s "$option" 2> /dev/null
+done
+
 # Check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
+
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell
+
