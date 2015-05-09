@@ -40,14 +40,12 @@ prompt_left () {
 }
 
 prompt () {
-  if env | grep -q TERM_PROGRAM; then
-    __iterm_tab_title
-  fi
+  [ -n "$TERM_PROGRAM" ] && __iterm_tab_title
+  PS1=""$(prompt_left)"\@\n${PS2}"
+
   # left, right
   # compensate=4
   # PS1=$(printf "%*s\r%s\n${PS2}" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
-
-  PS1=""$(prompt_left)"\@\n${PS2}"
 }
 
 PS2="\[${yellow}\]𝌆\[${normal}\]\[${reset_color}\]  "

@@ -1,10 +1,9 @@
-# --------------------------------------------------------------------
+#!/bin/bash
 # PATH MANIPULATION FUNCTIONS
-# --------------------------------------------------------------------
 
 # Usage: pls [<var>]
 # List path entries of PATH or environment variable <var>.
-pls () { eval echo \$${1:-PATH} |tr : '\n'; }
+pls () { eval echo \$${1:-PATH} | tr : '\n'; }
 
 # Usage: pshift [-n <num>] [<var>]
 # Shift <num> entries off the front of PATH or environment var <var>.
