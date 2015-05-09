@@ -28,6 +28,12 @@ FUNCTIONS="${BASH}/aliases/*.bash"
 for config_file in $FUNCTIONS; do
   source "$config_file"
 done
+
+# Load Privates
+PRIVATES="${BASH}/../private/*.bash"
+for config_file in $PRIVATES; do
+  source "$config_file"
+done
 unset config_file
 
 # Adding Support for other OSes
@@ -36,6 +42,3 @@ PREVIEW="less"
 [ -s /Applications/Preview.app ] && PREVIEW="/Applications/Preview.app"
 
 eval "$(direnv hook bash)"
-
-[ -s "${BASH}/secrets.sh" ] && source "${BASH}/secrets.sh"
-[ -s "${BASH}/extra.sh" ] && source "${BASH}/extra.sh"

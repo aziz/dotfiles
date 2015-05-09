@@ -31,24 +31,3 @@ alias gemo='gem outdated'
 
 # pow and powder
 alias pr="powder restart"
-
-rails-help () {
-  echo "Rails Aliases Usage"
-  echo
-  echo "  r           = rails"
-  echo "  rg          = rails generate"
-  echo "  rs/ss       = rails server"
-  echo "  ts          = thin server"
-  echo "  rc/sc       = rails console"
-  echo "  rn          = rails new"
-  echo "  rd          = rails dbconsole"
-  echo "  rp          = rails plugin"
-  echo "  ra          = rails application"
-  echo "  rd          = rails destroy"
-  echo "  restartapp  = touch tmp/restart.txt"
-  echo "  restart     = touch tmp/restart.txt"
-  echo "  devlog      = tail -f log/development.log"
-  echo "  taild       = tail -f log/development.log"
-  echo
-}
-

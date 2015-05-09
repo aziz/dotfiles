@@ -32,26 +32,3 @@ alias hcr='heroku config:remove'
 alias hcc='heroku config:clear'
 
 alias hh="git push heroku master"
-
-heroku-help () {
-  echo "Heroku Aliases Usage"
-  echo
-  echo "  h           = heroku"
-  echo "  hl          = heroku list"
-  echo "  hi          = heroku info"
-  echo "  ho          = heroku open"
-  echo "  hd          = heroku dynos"
-  echo "  hw          = heroku workers"
-  echo "  hr          = heroku rake"
-  echo "  hcon        = heroku console"
-  echo "  hnew        = heroku create"
-  echo "  hrestart    = heroku restart"
-  echo "  hlog        = heroku logs"
-  echo "  hon         = heroku maintenance:on"
-  echo "  hoff        = heroku maintenance:off"
-  echo "  hc          = heroku config"
-  echo "  hca         = heroku config:add"
-  echo "  hcr         = heroku config:remove"
-  echo "  hcc         = heroku config:clear"
-  echo
-}
