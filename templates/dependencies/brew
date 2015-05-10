@@ -6,6 +6,7 @@ bash-completion2
 binutils
 boot2docker
 brew-cask
+cask
 colordiff
 coreutils
 curl

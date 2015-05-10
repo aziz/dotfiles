@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Reload Library
-alias reload='source ~/.bash_profile && echo "bash_profile reloaded"'
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
 
 # List directory contents
 alias sl=ls
@@ -46,28 +49,4 @@ alias w='which'
 alias q="exit"
 alias h='history'
 
-alias page="$PAGER"
-alias irc="$IRC_CLIENT"
-
-aliases-help () {
-  echo "Generic Alias Usage"
-  echo
-  echo "  sl     = ls"
-  echo "  la     = ls -AF"
-  echo "  ll     = ls -al"
-  echo "  l      = ls -a"
-  echo "  c/k    = clear"
-  echo "  ..     = cd .."
-  echo "  ...    = cd ../.."
-  echo "  -      = cd -"
-  echo "  h      = history"
-  echo "  md     = mkdir -p"
-  echo "  rd     = rmdir"
-  echo "  d      = dirs -v"
-  echo "  editor = $EDITOR"
-  echo "  pager  = $PAGER"
-  echo "  piano  = pianobar"
-  echo "  q      = exit"
-  echo "  irc    = $IRC_CLIENT"
-  echo
-}
+alias grep='/usr/local/bin/grep --color=auto'

@@ -33,8 +33,6 @@ export LANGUAGE='en_US'
 export LC_CTYPE='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
 
-# Fixing gcc in lion
-# export CC=/usr/bin/gcc
 export GOPATH=$HOME/go
 export COFFEELINT_CONFIG=$HOME/.coffeelint
 
