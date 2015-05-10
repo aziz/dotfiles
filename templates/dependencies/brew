@@ -20,6 +20,7 @@ gnu-tar --with-default-names
 go
 grep --with-default-names
 gzip
+heroku-toolbelt
 homebrew/completions/boot2docker-completion
 homebrew/completions/bundler-completion
 homebrew/completions/gem-completion

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+alias d="cd ~/Desktop"
+alias db="cd ~/Dropbox"
+alias dl="cd ~/Downloads"
+
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
@@ -26,6 +30,8 @@ alias lo='ls -l | sed -e 's/--x/1/g' -e 's/-w-/2/g' -e 's/-wx/3/g' -e 's/r--/4/g
 alias recent='ls -lAt | head'
 alias old='ls -lAt | tail'
 
+alias grep='/usr/local/bin/grep --color=auto'
+
 # Directory
 alias md='mkdir -p'
 alias mkdir='mkdir -p'
@@ -42,14 +48,6 @@ alias uuu='cd ../../..'
 alias uuuu='cd ../../../..'
 alias -- -="cd -"       # Go back
 
-# Linux Specific
-if [ "$(uname)" = "Linux" ]; then
-	alias ls="ls --color=always"
-  #pbcopy and pbpaste aliases for GNU/Linux
-  alias pbcopy='xclip -selection clipboard'
-  alias pbpaste='xclip -selection clipboard -o'
-fi
-
 # Clear screen
 alias c='clear'
 alias cls='clear'
@@ -57,5 +55,3 @@ alias cls='clear'
 alias w='which'
 alias q="exit"
 alias h='history'
-
-alias grep='/usr/local/bin/grep --color=auto'

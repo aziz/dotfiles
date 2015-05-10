@@ -10,7 +10,7 @@ shopt -s histappend
 export HISTCONTROL='ignoreboth'
 # resize history size
 export HISTSIZE=500000
-
+export HISTFILESIZE="${HISTSIZE}"
 export AUTOFEATURE=true autotest
 
 rh () {

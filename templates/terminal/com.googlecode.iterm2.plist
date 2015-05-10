@@ -4603,7 +4603,9 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>6</string>
+	<string>3</string>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>3</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 5</string>
 	<key>NSNavLastRootDirectory</key>
@@ -4656,10 +4658,12 @@
 		<key>Open Autocomplete...</key>
 		<string>^ </string>
 	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>466 233 231 329 0 0 1280 777 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1094 1239 518 456 -672 800 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>99 1390 924 485 -540 800 2560 1417 </string>
+	<string>100 1198 924 485 -672 800 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>416 1766 384 129 -672 800 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
@@ -4667,7 +4671,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-540 800 1280 1417 -540 800 2560 1417 </string>
+	<string>608 800 1280 1417 -672 800 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -4830,11 +4834,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.046071358025074005</real>
 				<key>Green Component</key>
-				<real>0.066666670143604279</real>
+				<real>0.041095700114965439</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.0012457739794626832</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -6914,7 +6918,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-28T11:19:45Z</date>
+	<date>2015-05-09T13:59:24Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -10104,7 +10108,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20150412</string>
+	<string>2.1</string>
 	<key>kPreferenceKeyWindowStyle</key>
 	<integer>1</integer>
 </dict>

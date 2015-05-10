@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Rails Commands
 alias r='rails'
 alias rg='rails g'
 alias rs='rails s'
