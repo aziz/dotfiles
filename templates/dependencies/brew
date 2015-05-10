@@ -3,7 +3,6 @@ autojump
 awscli
 bash
 bash-completion2
-binutils
 boot2docker
 brew-cask
 cask
@@ -13,12 +12,11 @@ curl
 diffutils
 direnv
 distribution
-findutils
+findutils --with-default-names
 git
 git-extras
 gnu-sed --with-default-names
 gnu-tar --with-default-names
-gnutls --with-default-names
 go
 grep --with-default-names
 gzip
@@ -35,7 +33,6 @@ homebrew/completions/vagrant-completion
 hub
 jq
 man2html
-moreutils
 node
 openssh
 p7zip
