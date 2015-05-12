@@ -3,12 +3,19 @@
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-source "$HOME"/.templates/provisioning/mac.sh
-source "$HOME"/.templates/provisioning/homebrew.sh
+if pkgutil --pkg-info=com.apple.pkg.CLTools_Executables > /dev/null 2>&1; then
+  echo "==> Mac OSX Command-Line Tools are installed."
+else
+  echo "==> Installing Command-Line Tools"
+  xcode-select --install
+fi
+
+source "$HOME"/.templates/provisioning/mac/osx.sh
+source "$HOME"/.templates/provisioning/mac/homebrew.sh
 source "$HOME"/.templates/provisioning/ruby.sh
 source "$HOME"/.templates/provisioning/npm.sh
-source "$HOME"/.templates/provisioning/mac-apps.sh
-source "$HOME"/.templates/provisioning/fonts.sh
+source "$HOME"/.templates/provisioning/mac/mac-apps.sh
+source "$HOME"/.templates/provisioning/mac/fonts.sh
 source "$HOME"/.templates/provisioning/vim.sh
 source "$HOME"/.templates/provisioning/emacs.sh
 source "$HOME"/.templates/provisioning/sublime.sh
