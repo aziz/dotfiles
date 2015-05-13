@@ -5,7 +5,7 @@ SCM_THEME_PROMPT_CLEAN=" ${bold_green}✔"
 SCM_THEME_PROMPT_PREFIX=" "
 SCM_THEME_PROMPT_SUFFIX=" "
 SCM_NONE_CHAR=""
-RVM_THEME_PROMPT_PREFIX="${bold_red}✦ "
+RVM_THEME_PROMPT_PREFIX="${red}⟐ "
 RVM_THEME_PROMPT_SUFFIX=" ${reset_color}"
 ERROR="${bold_red}❌  Error \n${normal}"
 EXIT_STATUS="if [ \$? = 0 ]; then echo \"\"; else echo \"${ERROR}\"; fi"
@@ -35,7 +35,7 @@ prompt_right () {
 }
 
 prompt_left () {
-  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w \[\$(aws_saml_prompt)\]\[\$(rvmrc_version_prompt)\]\[${blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]\@"
+  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w \[\$(aws_saml_prompt)\]\[\$(rvmrc_version_prompt)\]\[${blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]\[$(date "+%_I:%M:%S %P")\]"
   echo -e "${LEFT_PROMPT}"
 }
 
