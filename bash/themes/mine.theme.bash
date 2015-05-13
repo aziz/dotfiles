@@ -35,20 +35,19 @@ prompt_right () {
 }
 
 prompt_left () {
-  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w \[\$(aws_saml_prompt)\]\[\$(rvmrc_version_prompt)\]\[${bold_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]"
+  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w \[\$(aws_saml_prompt)\]\[\$(rvmrc_version_prompt)\]\[${blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]\@"
   echo -e "${LEFT_PROMPT}"
 }
 
 prompt () {
   [ -n "$TERM_PROGRAM" ] && __iterm_tab_title
-  PS1=""$(prompt_left)"\@\n${PS2}"
-
+  PS2="\[${yellow}\]‣\[${normal}\]\[${reset_color}\] "
+  PS1="$(prompt_left)\n${PS2}"
   # left, right
   # compensate=4
   # PS1=$(printf "%*s\r%s\n${PS2}" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
 }
 
-PS2="\[${yellow}\]𝌆\[${normal}\]\[${reset_color}\]  "
 PROMPT_COMMAND=prompt
 
 

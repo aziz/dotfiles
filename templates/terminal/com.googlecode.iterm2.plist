@@ -4663,7 +4663,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1094 1239 518 456 -672 800 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>100 1198 924 485 -672 800 2560 1417 </string>
+	<string>235 139 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>416 1766 384 129 -672 800 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
@@ -4671,7 +4671,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>608 800 1280 1417 -672 800 2560 1417 </string>
+	<string>36 6 906 768 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>264 55 955 723 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -4849,7 +4849,7 @@
 			<key>Blink Allowed</key>
 			<true/>
 			<key>Blinking Cursor</key>
-			<true/>
+			<false/>
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
@@ -6918,7 +6918,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-09T13:59:24Z</date>
+	<date>2015-05-12T12:59:24Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
