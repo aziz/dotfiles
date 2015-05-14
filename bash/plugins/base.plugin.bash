@@ -29,6 +29,10 @@ quiet() {
   "$@" &> /dev/null &
 }
 
+rh () {
+  history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head -n 20
+}
+
 # Determine size of a file or total size of a directory
 fs() {
   if du -b /dev/null > /dev/null 2>&1; then

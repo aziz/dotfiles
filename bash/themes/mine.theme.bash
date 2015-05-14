@@ -28,12 +28,6 @@ aws_saml_prompt () {
   fi
 }
 
-prompt_right () {
-  RIGHT_PROMPT="\033[1;32m$USER\033[0m on \033[1;32m$HOSTNAME\033[0m ● $(date +"%T")\033[0m"
-  RIGHT_PROMPT="$(date +"%T")\033[0m"
-  echo -e "$(echo ${RIGHT_PROMPT})"
-}
-
 prompt_left () {
   LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w \[\$(aws_saml_prompt)\]\[\$(rvmrc_version_prompt)\]\[${blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${reset_color}\]\[$(date "+%_I:%M:%S %P")\]"
   echo -e "${LEFT_PROMPT}"
@@ -43,9 +37,6 @@ prompt () {
   [ -n "$TERM_PROGRAM" ] && __iterm_tab_title
   PS2="\[${yellow}\]‣\[${normal}\]\[${reset_color}\] "
   PS1="$(prompt_left)\n${PS2}"
-  # left, right
-  # compensate=4
-  # PS1=$(printf "%*s\r%s\n${PS2}" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
 }
 
 PROMPT_COMMAND=prompt

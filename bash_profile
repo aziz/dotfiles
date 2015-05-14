@@ -34,17 +34,17 @@ export LANGUAGE='en_US'
 export LC_CTYPE='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
 
-export GOPATH=$HOME/go
-export COFFEELINT_CONFIG=$HOME/.coffeelint
+# history handling
+export HISTCONTROL='ignoreboth'
+export HISTSIZE=500000
+export HISTFILESIZE="${HISTSIZE}"
+export AUTOFEATURE=true autotest
 
 # Identify OS and Machine
 export OS=`uname -s | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
 export OSVERSION=`uname -r`; OSVERSION=`expr "$OSVERSION" : '[^0-9]*\([0-9]*\.[0-9]*\)'`
 export MACHINE=`uname -m | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
 export PLATFORM="$MACHINE-$OS-$OSVERSION"
-
-# Lock and Load a custom theme file from /.bash/themes/
-export BASH_THEME='mine'
 
 # Path to the bash it configuration
 export BASH="$HOME/.bash"
@@ -71,4 +71,7 @@ shopt -s nocaseglob
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
+
+# append to bash_history if Terminal.app quits
+shopt -s histappend
 
