@@ -1,12 +1,36 @@
 #!/usr/bin/env bash
-#
-#   This file echoes a bunch of color codes to the
-#   terminal to demonstrate what's available.  Each
-#   line is the color code of one forground color,
-#   out of 17 (default + 16 escapes), followed by a
-#   test use of that color on all nine background
-#   colors (default + 8 escapes).
-#
+
+hex2rgb () {
+  hexinput=`echo $1 | tr '[:lower:]' '[:upper:]' | tr -d '#'`
+  a=`echo $hexinput | cut -c-2`
+  b=`echo $hexinput | cut -c3-4`
+  c=`echo $hexinput | cut -c5-6`
+  r=`echo "ibase=16; $a" | bc`
+  g=`echo "ibase=16; $b" | bc`
+  b=`echo "ibase=16; $c" | bc`
+  echo "$r,$g,$b"
+}
+
+rgb2hex () {
+  x=`echo $1 | sed -e 's/,/ /g'`
+  echo `ruby -pae '$_=?#+"%02X"*3%$F' <<< "$x"`
+}
+
+# color 255,58,131
+color () {
+  block="▇▇▇"
+  xterm_color=`python $HOME/.templates/terminal/xterm_color_rgb.py $1`
+  xterm_color_16=`printf '%x\n' $xterm_color`
+  tput_color=`tput setaf $xterm_color`
+  hex_color=`rgb2hex $1`
+  echo -e "COLOR\nRGB     \nHEX   \nXTERM\nXTERM16\n$tput_color$block\n$1\n$hex_color\n$xterm_color\n$xterm_color_16" | paste - - - - -
+}
+
+# color_hex 4EE161
+# color_hex '#4EE161'
+color_hex () {
+  color <<< echo `hex2rgb "$1"`
+}
 
 colors () {
   if [ $# -eq 0 ]; then
