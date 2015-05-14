@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 alias d="cd ~/Desktop"
 alias db="cd ~/Dropbox"

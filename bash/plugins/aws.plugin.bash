@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ## bash or zsh functions to autenticate and assume roles in aws federated accounts
 # required tools on $PATH - aws, date, curl, jq
 #

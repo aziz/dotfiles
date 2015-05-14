@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Starting ssh-agent if it's not already started. fix a problem in MacOS Lion 10.7.x
 if [ "$(uname)" = "Darwin" ]; then

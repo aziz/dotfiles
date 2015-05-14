@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Installing Ruby Version Manager"
 echo " _ ____   ___ __ ___  "

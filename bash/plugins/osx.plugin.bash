@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 mac-who-runs-shit-without-my-command () {
   # loop over all folders and give a list

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Configuring Emacs Packages"
 echo "==========================="

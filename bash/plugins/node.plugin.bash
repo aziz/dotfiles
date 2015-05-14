@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 export NODE_PATH="/usr/local/lib/node_modules"
 export NODE_REPL_HISTORY_FILE="$HOME/.node_history"

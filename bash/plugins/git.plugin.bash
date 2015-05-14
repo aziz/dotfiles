@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 gdv () {
   git diff -w "$@" | vim -R -

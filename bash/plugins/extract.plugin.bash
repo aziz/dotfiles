@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Handy Extract Function
 # make sure you've installed: brew install unrar p7zip

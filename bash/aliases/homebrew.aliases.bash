@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if which brew >/dev/null 2>&1; then
   alias br="brew"

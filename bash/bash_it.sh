@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Load colors first so they can be use in base theme
 source "${BASH}/themes/colors.theme.bash"

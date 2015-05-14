@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 myip () {
   pub=$(curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+')

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 normal=$'\e[00m'
 reset_color=$'\e[39m'

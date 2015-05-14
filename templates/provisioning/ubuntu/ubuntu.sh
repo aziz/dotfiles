@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Adding extra repos..."
 sudo add-apt-repository ppa:webupd8team/sublime-text-3

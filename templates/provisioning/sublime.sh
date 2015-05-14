@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ST_DIR="$HOME/Library/Application Support/Sublime Text 3"
 

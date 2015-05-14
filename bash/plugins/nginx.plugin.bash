@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Set the path nginx
 export NGINX_PATH='/usr/local/sbin/nginx'

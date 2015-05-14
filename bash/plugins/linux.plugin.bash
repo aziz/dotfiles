@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 alias number_of_cores="grep -c ^processor /proc/cpuinfo"
 
