@@ -47,9 +47,11 @@
   local   = yellow
   remote  = green
 [color "status"]
+  header    = white dim
+  branch    = yellow
   added     = green
   changed   = red
-  untracked = yellow
+  untracked = blue
 [color "diff"]
   meta = blue bold reverse
   frag = magenta
