@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-bash_dirs=("lib" "completion" "plugins" "aliases")
-for dir in "${bash_dirs[@]}"; do
+bash_dirs="lib completion plugins aliases"
+for dir in $bash_dirs; do
   LIB="${BASH}/${dir}/*.bash"
   for config_file in $LIB; do
     source "$config_file"

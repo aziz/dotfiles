@@ -14,11 +14,14 @@ mkcd() {
 }
 
 man2pdf() {
-  man -t "$1" | pstopdf -i -o "$1.pdf"
+  man -t "$@" | pstopdf -i -o "$1.pdf"
 }
 
 hman() {
-  man "$1" | man2html | browser
+  f="/tmp/man.$RANDOM.html"
+  cat "$HOME/.templates/terminal/man-html.html" > "$f"
+  man "$@" | man2html -topm 0 -botm 0 -bare -cgiurl "man://\${section}:\${subsection}:\${title}" >> "$f"
+  open "$f"
 }
 
 pman() {
@@ -36,15 +39,15 @@ rh () {
 # Determine size of a file or total size of a directory
 fs() {
   if du -b /dev/null > /dev/null 2>&1; then
-    local arg=-sbh;
+    local arg=-sbh
   else
-    local arg=-sh;
+    local arg=-sh
   fi
   if [[ -n "$@" ]]; then
-    du $arg -- "$@";
+    du $arg -- "$@"
   else
-    du $arg .[^.]* *;
-  fi;
+    du $arg .[^.]* *
+  fi
 }
 
 # back up file with timestamp, useful for administrators and configs
@@ -57,11 +60,11 @@ buf() {
 
 # Start an HTTP server from a directory, optionally specifying the port
 server() {
-  local port="${1:-8000}";
+  local port="${1:-8000}"
   sleep 1 && open "http://localhost:${port}/" &
   # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
   # And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
-  python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
+  python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
 

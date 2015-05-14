@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css" media="all">
+    body { background: #fff; font-size: 17px; margin: 0; max-width: 100ex; padding: 2ex 10ex; text-align: left; }
+    body, code, pre, pre code, tt, kbd, samp { color: #131211; font-family: consolas, menlo, monospace; }
+    h1, h2, h3, h4 { clear: left; color: #030201; font-family: courier; }
+    h1 { font-size: 22px; line-height: 2; }
+    h2 { font-size: 20px; line-height: 1.25; margin: 10px 0 0 0; }
+    h3 { margin: 0 0 0 4ex; }
+    p, pre, ul, ol, dl { margin: 0 0 20px 0; }
+    pre+h2, pre+h3 { margin-top: 20px; }
+    pre code { font-weight: normal; color: #434241; }
+    h2+pre, h3+pre { padding-left: 0; }
+    hr { border: 1px solid #999; height: 0; }
+    code, pre, tt, kbd, samp, h3, h4 { font-size: 17px; line-height: 1.38; }
+    u { text-decoration: underline }
+    code, strong, b { font-weight: bold; color: #131211; }
+    em, var, i { color: #232221; font-style: italic; text-decoration: none; }
+    dt { margin: 0; clear: left; }
+    dd { margin: 0 0 0 9ex; }
+    img { display: block; margin: auto; }
+    a, a:link, a:hover, a code, a pre, a tt, a kbd, a samp { color: #4aa3df; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .man-navigation+pre, .man-navigation+pre b, .man-navigation+pre b a { color: #999; }
+    .man-navigation { background: #eee; border-left: 1px solid #dbdbdb; bottom: 0; left: 113ex; padding: 8ex 0 0 0; position: fixed; text-align: left; top: 0; width: calc(100% - 113ex); overflow-x: scroll; }
+    .man-navigation a, .man-navigation a:hover, .man-navigation a:link, .man-navigation a:visited { display: block; margin: 0; padding: 4px 1ex 4px 4ex; color: #999; text-decoration: none; }
+    .man-navigation a:hover { color: #131211; text-decoration: underline; }
+    h1, h1+hr, address { display: none; }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var frag = document.createDocumentFragment();
+      var nav = document.createElement("div");
+      var headers = document.getElementsByTagName("h2");
+      var headersList = Array.prototype.slice.call(headers);
+      nav.classList.add("man-navigation");
+      frag.appendChild(nav);
+      headersList.forEach(function(item) {
+        var link = document.createElement("a");
+        item.id = item.innerText.replace(/\s/g, "-");
+        link.href = "#" + item.id;
+        link.innerText = item.innerText;
+        nav.appendChild(link);
+      });
+      document.body.insertBefore(frag, document.body.firstChild);
+    });
+  </script>
+</head>
