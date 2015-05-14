@@ -3,7 +3,7 @@
 """
 # Wladimir van der Laan, 2011
 
-from subprocess import call
+import sys
 
 # whole colortable, filled in later
 colortable = None
@@ -114,11 +114,14 @@ def from_rgb(rgb):
 
     return color
 
+colortable = [to_rgb(c) for c in xrange(0, 256)]
+
+if len(sys.argv) == 2:
+    arg = sys.argv[1]
+    color = map(int, arg.split(','))
+    print(from_rgb(color))
 
 # USAGE:
-#
-# colortable = [to_rgb(c) for c in xrange(0, 256)]
-# print(colortable)
 
 # colors= [
 #     [30, 154, 224],
