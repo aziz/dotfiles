@@ -37,12 +37,31 @@ colors () {
 }
 
 colors256 () {
-  x=`tput op`
-  y=`printf %$((3))s`
-  for i in {1..256}; do
-    echo -ne `tput setaf $i;tput setab $i`${y// /=}$x
-    if (($i % 8 == 0)); then
-      echo
-    fi
-  done
+  echo "USAGE: "
+  echo "echo -e \`tput setaf \$((16#CODE));\` SAMPLE TEXT"
+  python "$HOME"/.templates/terminal/xterm_color_chart.py -nr -x 3 -y 2
+}
+
+colors_custom () {
+  block="▇▇ "
+  echo "${custom_blue}${block}\${custom_blue}"
+  echo "${custom_cyan}${block}\${custom_cyan}"
+  echo "${custom_green}${block}\${custom_green}"
+  echo "${custom_orange}${block}\${custom_orange}"
+  echo "${custom_purple}${block}\${custom_purple}"
+  echo "${custom_red}${block}\${custom_red}"
+  echo "${custom_dark_red}${block}\${custom_dark_red}"
+  echo "${custom_violet}${block}\${custom_violet}"
+  echo "${custom_yellow}${block}\${custom_yellow}"
+  echo "${custom_white}${block}\${custom_white}"
+  echo "${custom_gray}${block}\${custom_gray}"
+  echo
+  echo "${black}${block}\${black}"
+  echo "${red}${block}\${red}"
+  echo "${green}${block}\${green}"
+  echo "${yellow}${block}\${yellow}"
+  echo "${blue}${block}\${blue}"
+  echo "${purple}${block}\${purple}"
+  echo "${cyan}${block}\${cyan}"
+  echo "${white}${block}\${white}"
 }

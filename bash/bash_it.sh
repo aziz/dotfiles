@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Load colors first so they can be use in base theme
-source "${BASH}/themes/colors.theme.bash"
-source "${BASH}/themes/base.theme.bash"
-
 # Load Library
 LIB="${BASH}/lib/*.bash"
 for config_file in $LIB
@@ -35,10 +31,3 @@ for config_file in $PRIVATES; do
   source "$config_file"
 done
 unset config_file
-
-# Adding Support for other OSes
-PREVIEW="less"
-[ -s /usr/bin/gloobus-preview ] && PREVIEW="gloobus-preview"
-[ -s /Applications/Preview.app ] && PREVIEW="/Applications/Preview.app"
-
-eval "$(direnv hook bash)"

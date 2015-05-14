@@ -28,11 +28,18 @@ export OSVERSION=`uname -r`; OSVERSION=`expr "$OSVERSION" : '[^0-9]*\([0-9]*\.[0
 export MACHINE=`uname -m | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
 export PLATFORM="$MACHINE-$OS-$OSVERSION"
 
+# Adding Support for other OSes
+PREVIEW="less"
+[ -s /usr/bin/gloobus-preview ] && PREVIEW="gloobus-preview"
+[ -s /Applications/Preview.app ] && PREVIEW="/Applications/Preview.app"
+
 # Path to the bash it configuration
 export BASH="$HOME/.bash"
 
 # Load Bash It
 source "$BASH"/bash_it.sh
+
+eval "$(direnv hook bash)"
 
 # Don't check mail when opening terminal.
 unset MAILCHECK

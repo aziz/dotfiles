@@ -20,10 +20,7 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X'
 
-# Lock and Load a custom theme file from /.bash/themes/
-export BASH_THEME='mine'
-
-# Load the theme
-if [[ $BASH_THEME ]]; then
-  source "$BASH/themes/$BASH_THEME.theme.bash"
-fi
+# Load colors first so they can be use in base theme
+source "$BASH/prompt/colors.theme.bash"
+source "$BASH/prompt/base.theme.bash"
+source "$BASH/prompt/prompt.theme.bash"
