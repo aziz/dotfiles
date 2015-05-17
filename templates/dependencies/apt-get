@@ -2,7 +2,6 @@ autojump
 awscli
 bash-completion
 build-essential
-colordiff
 curl
 direnv
 git

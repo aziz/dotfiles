@@ -17,6 +17,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'kien/ctrlp.vim'
 Plugin 'gabesoft/vim-ags'
 Plugin 'lilydjwg/colorizer'
+Plugin 'chrisbra/vim-diff-enhanced'
 " languages
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
