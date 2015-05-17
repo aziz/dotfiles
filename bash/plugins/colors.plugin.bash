@@ -16,27 +16,46 @@ rgb2hex () {
   echo `ruby -pae '$_=?#+"%02X"*3%$F' <<< "$x"`
 }
 
-# color 255,58,131
 color () {
-  block="▇▇▇"
-  xterm_color=`python $HOME/.templates/terminal/xterm_color_rgb.py $1`
-  xterm_color_16=`printf '%x\n' $xterm_color`
-  tput_color=`tput setaf $xterm_color`
-  hex_color=`rgb2hex $1`
-  echo -e "COLOR\nRGB     \nHEX   \nXTERM\nXTERM16\n$tput_color$block\n$1\n$hex_color\n$xterm_color\n$xterm_color_16" | paste - - - - -
+  if [[ $1 ]]; then
+    block="▇▇▇"
+    xterm_color=`python $HOME/.templates/terminal/xterm_color_rgb.py $1`
+    xterm_color_16=`printf '%x\n' $xterm_color`
+    tput_color=`tput setaf $xterm_color`
+    hex_color=`rgb2hex $1`
+    echo -e "COLOR\nRGB     \nHEX   \nXTERM\nXTERM16\n$tput_color$block\n$1\n$hex_color\n$xterm_color\n$xterm_color_16" | paste - - - - -
+  else
+    echo "missing argument" >&2
+    cat <<usage
+Preview RGB colors in terminal
+Usage:
+  $ color 255,58,131
+  $ color '255,58,131'
+usage
+    return 1
+  fi
 }
 
-# color_hex 4EE161
-# color_hex '#4EE161'
 color_hex () {
-  color <<< echo `hex2rgb "$1"`
+  if [[ $1 ]]; then
+    color <<< echo `hex2rgb "$1"`
+  else
+    echo "missing argument" >&2
+    cat <<usage
+Preview HEX colors in terminal
+Usage:
+  $ color_hex 4EE161
+  $ color_hex '#4EE161'
+usage
+    return 1
+  fi
 }
 
 colors () {
   if [ $# -eq 0 ]; then
-    T='Color' # The test text
+    T='Color'
   else
-    T="$1"   # The test text
+    T="$1"
   fi
 
   padding=2
@@ -49,13 +68,13 @@ colors () {
 
   for FGs in '    m' '   1m' '  30m' '1;30m' '  31m' '1;31m' '  32m' \
              '1;32m' '  33m' '1;33m' '  34m' '1;34m' '  35m' '1;35m' \
-             '  36m' '1;36m' '  37m' '1;37m';
-    do FG=${FGs// /}
+             '  36m' '1;36m' '  37m' '1;37m'; do
+    FG=${FGs// /}
     echo -en " $FGs \033[$FG  $T  "
-    for BG in 40m 41m 42m 43m 44m 45m 46m 47m;
-      do echo -en "$EINS \033[$FG\033[$BG  $T  \033[0m";
+    for BG in 40m 41m 42m 43m 44m 45m 46m 47m; do
+      echo -en "$EINS \033[$FG\033[$BG  $T  \033[0m"
     done
-    echo;
+    echo
   done
   echo
 }

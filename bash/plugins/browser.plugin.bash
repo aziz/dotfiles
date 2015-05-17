@@ -1,11 +1,6 @@
+#!/usr/bin/env bash
+
 # based on https://gist.github.com/318247
-
-# Usage: browser
-# pipe html to a browser
-# e.g.
-# $ echo "<h1>hi mom!</h1>" | browser
-# $ ron -5 man/rip.5.ron | browser
-
 browser () {
     if [ -t 0 ]; then
         if [ -n "$1" ]; then
