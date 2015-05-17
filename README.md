@@ -12,10 +12,9 @@ Install without git
 ```bash
 cd;mkdir dotfiles;cd dotfiles;curl -#L https://github.com/aziz/dotfiles/tarball/master | tar -xzv --strip-components 1; ./install.sh;
 ```
- 
 
 ## Provisioning
-#### Mac OSX 
+#### Mac OSX
 `~/.mac/mac-install.sh`
 
 #### Ubuntu
@@ -23,5 +22,4 @@ cd;mkdir dotfiles;cd dotfiles;curl -#L https://github.com/aziz/dotfiles/tarball/
 
 ---
 ##### Credit
-Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, Mathias Bynens and 
-Mislav Marohnić dotfile repos.
+Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans, Mathias Bynens and Mislav Marohnić dotfile repos.

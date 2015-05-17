@@ -5,16 +5,15 @@ build-essential
 colordiff
 curl
 direnv
-docker.io
 git
 git-extras
 golang
 jq
+ncurses-term
 nodejs
 nodejs-legacy
 npm
 p7zip
-postgis
 postgresql
 postgresql-contrib
 redis-server
@@ -26,3 +25,4 @@ tmux
 tree
 unrar
 vim
+xclip

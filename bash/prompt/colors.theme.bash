@@ -1,24 +1,5 @@
 #!/usr/bin/env bash
 
-if tput setaf 1 &> /dev/null; then
-  tput sgr0 # reset colors
-  custom_reset=$(tput sgr0)
-  custom_bold=$(tput bold)
-  custom_black=$(tput setaf 0)
-
-  custom_blue=$(tput     setaf $((16#21)))
-  custom_cyan=$(tput     setaf $((16#2b)))
-  custom_green=$(tput    setaf $((16#1c)))
-  custom_orange=$(tput   setaf $((16#a6)))
-  custom_purple=$(tput   setaf $((16#a2)))
-  custom_red=$(tput      setaf $((16#7c)))
-  custom_violet=$(tput   setaf $((16#5c)))
-  custom_yellow=$(tput   setaf $((16#d6)))
-  custom_white=$(tput    setaf $((16#ff)))
-  custom_gray=$(tput     setaf $((16#f0)))
-  custom_dark_red=$(tput setaf $((16#34)))
-fi
-
 normal=$'\e[00m'
 reset_color=$'\e[39m'
 
@@ -57,3 +38,22 @@ background_blue=$'\e[44m'
 background_purple=$'\e[45m'
 background_cyan=$'\e[46m'
 background_white=$'\e[47m'
+
+if tput setaf 1 &> /dev/null; then
+  tput sgr0 # reset colors
+  custom_reset=$(tput sgr0) || $reset_color
+  custom_bold=$(tput bold)
+  custom_black=$(tput setaf 0) || $black
+
+  custom_blue=$(tput     setaf $((16#21))) || $blue
+  custom_cyan=$(tput     setaf $((16#2b))) || $cyan
+  custom_green=$(tput    setaf $((16#1c))) || $green
+  custom_orange=$(tput   setaf $((16#a6))) || $yellow
+  custom_purple=$(tput   setaf $((16#a2))) || $purple
+  custom_red=$(tput      setaf $((16#7c))) || $red
+  custom_violet=$(tput   setaf $((16#5c))) || $purple
+  custom_yellow=$(tput   setaf $((16#d6))) || $yellow
+  custom_white=$(tput    setaf $((16#ff))) || $white
+  custom_gray=$(tput     setaf $((16#f0))) || $white
+  custom_dark_red=$(tput setaf $((16#34))) || $red
+fi

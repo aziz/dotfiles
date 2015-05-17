@@ -2,7 +2,6 @@
 
 echo "Adding extra repos..."
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
-sudo add-apt-repository ppa:ubuntugis/ppa
 sudo apt-get update
 
 source "$HOME"/.templates/provisioning/ubuntu/apt-get.sh

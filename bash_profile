@@ -3,6 +3,8 @@
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$HOME/.mac:$HOME/go/bin:$HOME/.rvm/bin:$HOME/.npm-packages/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+export TERM="xterm-256color"
+
 # Set my editor and git editor
 export EDITOR="vim"
 

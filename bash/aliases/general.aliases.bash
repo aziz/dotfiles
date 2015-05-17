@@ -30,8 +30,6 @@ alias lo='ls -l | sed -e 's/--x/1/g' -e 's/-w-/2/g' -e 's/-wx/3/g' -e 's/r--/4/g
 alias recent='ls -lAt | head'
 alias old='ls -lAt | tail'
 
-alias grep='/usr/local/bin/grep --color=auto'
-
 # Directory
 alias md='mkdir -p'
 alias mkdir='mkdir -p'
