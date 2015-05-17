@@ -26,7 +26,6 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 " themes
@@ -89,6 +88,8 @@ noremap <C-n> :nohl<CR>
 vnoremap <C-n> :nohl<CR>
 inoremap <C-n> :nohl<CR>
 
+" force *.md files as markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " :w!! to write to a file using sudo
 cmap w!! %!sudo tee > /dev/null %
@@ -120,7 +121,6 @@ syntax on
 "   let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode
 "   let &t_EI = "\<Esc>]50;CursorShape=0\x7"  " Block in normal mode
 " endif
-
 
 " Include other files
 " if filereadable(expand("~/.vimrc.local"))

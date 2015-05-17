@@ -6,5 +6,6 @@ if [ "$(uname)" = "Linux" ]; then
 
   alias pbcopy='xclip -selection clipboard'
   alias pbpaste='xclip -selection clipboard -o'
-  alias open='xdg-open'
+  alias f="xdg-open >/dev/null 2>&1 "
+  alias open="xdg-open >/dev/null 2>&1 "
 fi
