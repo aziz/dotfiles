@@ -13,7 +13,6 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Yggdroot/indentLine'
 Plugin 'kien/ctrlp.vim'
 Plugin 'gabesoft/vim-ags'
 Plugin 'lilydjwg/colorizer'
@@ -30,9 +29,11 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 " themes
-Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'reedes/vim-thematic'
-Plugin 'tomasr/molokai'
+"Plugin 'chriskempson/vim-tomorrow-theme'
+"Plugin 'chriskempson/base16-vim'
+"Plugin 'tomasr/molokai'
+"Plugin 'reedes/vim-thematic'
+Plugin 'gertjanreynaert/cobalt2-vim-theme'
 Plugin 'vim-scripts/ScrollColors'
 
 call vundle#end()            " required
@@ -110,13 +111,13 @@ let g:airline_right_alt_sep = ''
 let g:airline_theme='powerlineish'
 set laststatus=2
 
-set background=dark
-set t_Co=256
-set fillchars+=stl:\ ,stlnc:\
-let g:rehash256 = 1
+"set background=dark
+"set fillchars+=stl:\ ,stlnc:\
+"let g:rehash256 = 1
 
-:silent! colorscheme molokai
+set t_Co=256
 syntax on
+:silent! colorscheme cobalt2
 
 " if $TERM_PROGRAM =~ "iTerm"
 "   let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode

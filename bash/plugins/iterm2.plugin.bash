@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Usage:
 #   Source this script from your Bash start-up script (eg. ~/.bashrc, ~/.bash_profile).
 #
