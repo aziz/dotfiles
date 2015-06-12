@@ -5,6 +5,7 @@ coffeelint
 gulp
 jshint
 marked
+psi
 svgo
 tldr
 trash

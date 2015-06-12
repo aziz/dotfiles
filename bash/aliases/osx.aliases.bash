@@ -12,9 +12,6 @@ if [ "$(uname)" = "Darwin" ]; then
   # Lock OSX
   alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
-  # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-  alias update='sudo softwareupdate -i -a; brew update; brew outdated; brew upgrade --all; brew cleanup; npm -g outdated --depth=0; npm install npm -g; npm update -g; gem update --system; gem outdated; gem update'
-
   # Empty the Trash on all mounted volumes and the main HDD
   # Also, clear Apple’s System Logs to improve shell startup speed
   alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"

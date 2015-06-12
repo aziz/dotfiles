@@ -29,6 +29,12 @@ Style/EmptyLinesAroundModuleBody:
 Style/EmptyLinesAroundClassBody:
   Enabled: false
 
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
 Style/AlignParameters:
   EnforcedStyle: 'with_fixed_indentation'
 

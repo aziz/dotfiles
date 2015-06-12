@@ -28,6 +28,7 @@
   whitespace = fix
 [push]
   default = current
+  followTags = true
 [branch]
   autosetupmerge  = true
   autosetuprebase = always
