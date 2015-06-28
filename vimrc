@@ -17,6 +17,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'gabesoft/vim-ags'
 Plugin 'lilydjwg/colorizer'
 Plugin 'chrisbra/vim-diff-enhanced'
+Plugin 'mhinz/vim-startify'
 " languages
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
