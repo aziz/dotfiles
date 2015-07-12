@@ -29,7 +29,7 @@ echo "$HOME/Library/Container/*/Library/Logs"
 # # except English.lproj, Base.lproj, en.lproj
 
 echo "==> Locale files"
-macCleanList=`mktemp -t macClean`
+macCleanList=`mktemp -t macCleanXXX`
 echo "searching..."
 sudo find /Users /Applications /opt /Library /System -iregex '.*\.lproj' | \
 perl -wnE 'say for /.+(?<!English)(?<!en)(?<!en_US)(?<!Base)\.lproj/g' > "$macCleanList"
