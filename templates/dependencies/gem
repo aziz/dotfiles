@@ -9,4 +9,5 @@ rails
 rubocop
 rubocop-rspec
 sketches
+sqlint
 tmuxinator
