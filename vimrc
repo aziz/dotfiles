@@ -124,6 +124,11 @@ set t_Co=256
 syntax on
 :silent! colorscheme cobalt2
 
+" Set split separator to Unicode box drawing character
+set fillchars+=vert:│
+" Override color scheme to make split lines gray
+highlight VertSplit ctermbg=NONE guibg=NONE ctermfg=Gray
+
 " if $TERM_PROGRAM =~ "iTerm"
 "   let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode
 "   let &t_EI = "\<Esc>]50;CursorShape=0\x7"  " Block in normal mode
