@@ -15,4 +15,4 @@ echo "==> Tapping extra sources"
 while read in; do brew tap "$in"; done < "$HOME"/.templates/dependencies/taps
 
 echo "==> Pouring homebrew formulas"
-while read in; do brew install "$in"; done < "$HOME"/.templates/dependencies/brew
+while read in; do brew install $in; done < "$HOME"/.templates/dependencies/brew

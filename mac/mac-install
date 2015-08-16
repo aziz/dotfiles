@@ -10,7 +10,6 @@ else
   xcode-select --install
 fi
 
-source "$HOME"/.templates/provisioning/mac/osx.sh
 source "$HOME"/.templates/provisioning/mac/homebrew.sh
 source "$HOME"/.templates/provisioning/ruby.sh
 source "$HOME"/.templates/provisioning/npm.sh
@@ -22,3 +21,5 @@ source "$HOME"/.templates/provisioning/sublime.sh
 
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
+
+source "$HOME"/.templates/provisioning/mac/osx.sh
