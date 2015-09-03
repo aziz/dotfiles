@@ -1,0 +1,46 @@
+#!/usr/bin/env ruby
+
+require 'awesome_print'
+require 'colorize'
+
+LATEST_SHA = "#{Dir.home}/.homebrew-cask-latest-sha".freeze
+CASK_REPO  = '/usr/local/Library/Taps/caskroom/homebrew-cask'.freeze
+
+Dir.chdir CASK_REPO
+
+if File.exist?(LATEST_SHA)
+  old_sha = File.read(LATEST_SHA).strip
+else
+  old_sha = `git log | head -20 | /usr/bin/tail -r | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
+end
+
+latest_sha = `git log --no-color | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
+File.open(LATEST_SHA, 'w') { |file| file.write(latest_sha) }
+
+changes = `git diff --stat #{old_sha} | grep Casks`.split("\n")
+apps    = []
+updated = []
+added   = []
+removed = []
+
+changes.each { |c| apps << c.scan(%r{^\s+Casks/(.+)\.rb\s+\|\s+\d+\s([+-]+)$}).first }
+apps.each do |a|
+  if a.last.split('').all? { |x| x == '-' }
+    removed << a.first.colorize(:light_blue)
+  else
+    h = `cat Casks/#{a.first}.rb | grep -E '^\s+homepage'`
+    homepage = h.empty? ? '' : h.scan(/^\s+homepage\s+["'](.+)["']\s*$/).first.first
+    if a.last.split('').all? { |x| x == '+' }
+      added << a.first.colorize(:light_blue) + " [#{homepage.colorize(:light_green)}]"
+    else
+      updated << a.first.colorize(:light_blue) + " [#{homepage.colorize(:light_green)}]"
+    end
+  end
+end
+
+puts '🔮  UPDATED CASKS'.colorize(:magenta)
+puts "#{'UPDATED'.colorize(:light_magenta)}\n#{updated.join("\n")}" unless updated.empty?
+puts "#{'ADDED'.colorize(:light_magenta)}\n#{added.join("\n")}" unless added.empty?
+puts "#{'REMOVED'.colorize(:light_magenta)}\n#{removed.join("\n")}" unless removed.empty?
+puts "OLD SHA: #{old_sha.colorize(:light_magenta)}"
+puts "NEW SHA: #{latest_sha.colorize(:light_magenta)}"
