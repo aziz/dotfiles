@@ -35,6 +35,7 @@ jq
 man2html
 node
 openssh
+openssl
 p7zip
 postgis
 postgresql
