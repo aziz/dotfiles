@@ -2,3 +2,7 @@ ssh
 private
 .sync
 Icon*
+atom/.apm
+atom/.node-gyp
+atom/compile-cache
+atom/packages
