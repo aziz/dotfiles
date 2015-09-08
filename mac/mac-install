@@ -22,4 +22,5 @@ source "$HOME"/.templates/provisioning/sublime.sh
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
 
+source "$HOME"/.templates/provisioning/mac/security.sh
 source "$HOME"/.templates/provisioning/mac/osx.sh
