@@ -1,6 +1,20 @@
 #!/usr/bin/env bash
 
 # Generic functions:
+outdated() {
+  printf "$background_green  App Store   %$(($(tput cols)-15))s$normal"
+  softwareupdate -l
+  printf "$background_green Homebrew      %$(($(tput cols)-15))s$normal"
+  brew update && brew outdated
+  printf "$background_green Cask apps     %$(($(tput cols)-15))s$normal"
+  cask_report
+  printf "$background_green npm Packages  %$(($(tput cols)-15))s$normal"
+  npm -g outdated --depth=0
+  printf "$background_green Ruby Gems     %$(($(tput cols)-15))s$normal"
+  gem outdated
+  printf "$background_green Atom Packages %$(($(tput cols)-15))s$normal"
+  apm outdated
+}
 
 genpass() {
   echo "${bold_purple}Generating a ${1} characters long password${normal} =>"
