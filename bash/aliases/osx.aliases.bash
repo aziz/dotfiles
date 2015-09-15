@@ -6,6 +6,7 @@ if [ "$(uname)" = "Darwin" ]; then
   alias firefox="open -a firefox"
   alias chrome="open -a google\ chrome"
   alias gx="gitx --commit"
+  alias gu="gitup commit"
   alias f="open -a Finder "
   alias ql="qlmanage -p"
 
