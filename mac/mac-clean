@@ -31,7 +31,7 @@ echo "$HOME/Library/Container/*/Library/Logs"
 echo "==> Locale files"
 macCleanList=`mktemp -t macCleanXXX`
 echo "searching..."
-sudo find /Users /Applications /opt /Library /System -iregex '.*\.lproj' | \
+sudo find /Users /opt /Library -iregex '.*\.lproj' | \
 perl -wnE 'say for /.+(?<!English)(?<!en)(?<!en_US)(?<!Base)\.lproj/g' > "$macCleanList"
 echo "found `cat $macCleanList | wc -l`"
 echo "deleting..."
@@ -190,6 +190,7 @@ Yu Gothic Medium.otf
 Yu Mincho Demibold.otf
 Yu Mincho Medium.otf
 Yuanti.ttc
+YuMincho.ttc
 YuppySC-Regular.otf
 YuppyTC-Regular.otf
 ヒラギノ丸ゴ Pro W4.otf
@@ -200,6 +201,7 @@ YuppyTC-Regular.otf
 ヒラギノ角ゴ Pro W6.otf
 ヒラギノ角ゴ Std W8.otf
 ヒラギノ角ゴ StdN W8.otf
+ヒラギノ丸ゴ ProN W4.ttc
 儷宋 Pro.ttf
 儷黑 Pro.ttf
 华文仿宋.ttf
@@ -219,10 +221,14 @@ list=$(cat <<EOF2
 Diccionario General de la Lengua Española Vox.dictionary
 Duden Dictionary Data Set I.dictionary
 Dutch.dictionary
+French - English.dictionary
+German - English.dictionary
+Hindi.dictionary
 Italian.dictionary
 Korean - English.dictionary
 Korean.dictionary
 Multidictionnaire de la langue française.dictionary
+Norwegian.dictionary
 Portuguese.dictionary
 Russian.dictionary
 Sanseido Super Daijirin.dictionary
