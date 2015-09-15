@@ -37,7 +37,6 @@ node
 openssh
 openssl
 p7zip
-postgis
 postgresql
 python
 python3
