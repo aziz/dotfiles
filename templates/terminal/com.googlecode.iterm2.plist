@@ -4608,18 +4608,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSColorPanelMode</key>
-	<string>6</string>
-	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 5</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dropbox/ARCHIVE/Photos</string>
+	<string>~/Dropbox/dotfiles/templates/terminal</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{734, 585}</string>
-	<key>NSNavPanelExpandedStateForSaveMode</key>
-	<true/>
+	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -4645,45 +4637,17 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration Terminal Toolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<integer>0</integer>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSUserKeyEquivalents</key>
-	<dict>
-		<key>Open Autocomplete...</key>
-		<string>^ </string>
-	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>466 233 231 329 0 0 1280 777 </string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>-699 1066 518 322 -1280 800 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>311 240 599 519 0 0 1280 777 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>440 495 400 129 0 0 1280 777 </string>
-	<key>NSWindow Frame SUUpdateAlertFrame</key>
-	<string>352 301 575 392 0 0 1280 778 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>80 193 592 584 0 0 1280 777 </string>
-	<key>NSWindow Frame com.apple.typography_panel_CodeNewRoman</key>
-	<string>344 457 260 156 0 0 1280 777 </string>
+	<string>269 313 606 456 0 0 1280 777 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>330 299 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>226 1142 1280 741 -540 800 2560 1417 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>264 55 955 723 0 0 1280 778 </string>
+	<string>0 800 960 1057 0 800 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -6888,17 +6852,31 @@
 		</dict>
 	</array>
 	<key>NoSyncLastTipTime</key>
-	<real>460222234.355488</real>
-	<key>NoSyncNeverRemindPrefsChangesCopy</key>
-	<true/>
+	<real>463955192.900837</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
-	<key>NoSyncTimeOfLastPromo</key>
-	<real>453255340.976605</real>
-	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>460120379.85568798</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -6947,7 +6925,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/allen.bargi/Dropbox/dotfiles/templates/terminal</string>
+	<string>/Users/allen/Dropbox/dotfiles/templates/terminal</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -6961,11 +6939,13 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml</string>
+	<string>http://iterm2.com/appcasts/testing3.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-08-03T02:43:21Z</date>
+	<date>2015-09-15T12:17:34Z</date>
+	<key>SUSendProfileInfo</key>
+	<false/>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>Secure Input</key>
@@ -6975,7 +6955,7 @@
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowPaneTitles</key>
-	<false/>
+	<true/>
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
@@ -6998,8 +6978,6 @@
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1414739456</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -10156,7 +10134,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20150626</string>
+	<string>2.9.20150830</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>kPreferenceKeyWindowStyle</key>
