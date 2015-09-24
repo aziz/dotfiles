@@ -3,7 +3,16 @@
     userId: "5d214adc-6c27-375a-826d-e8103ac144c6"
   welcome:
     showOnStartup: false
-  core: {}
+  core:
+    disabledPackages: [
+      "table-editor"
+      "markdown-deluxe"
+    ]
   editor:
+    fontSize: 17
+    fontFamily: "consolas"
     invisibles: {}
   react: {}
+"source.gfm":
+  editor:
+    softWrap: true
