@@ -8,6 +8,8 @@ outdated() {
   brew update && brew outdated
   printf "$background_green Cask apps     %$(($(tput cols)-15))s$normal"
   cask_report
+  printf "$background_green Fonts         %$(($(tput cols)-15))s$normal"
+  cask_font_report
   printf "$background_green npm Packages  %$(($(tput cols)-15))s$normal"
   npm -g outdated --depth=0
   printf "$background_green Ruby Gems     %$(($(tput cols)-15))s$normal"
