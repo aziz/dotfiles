@@ -7,12 +7,30 @@
     disabledPackages: [
       "table-editor"
       "markdown-deluxe"
+      "line-ending-selector"
     ]
   editor:
     fontSize: 17
     fontFamily: "consolas"
     invisibles: {}
   react: {}
+  Zen:
+    fullscreen: false
+  "atom-beautify":
+    analytics: false
+  "file-icons":
+    coloured: false
+  linter:
+    statusIconPosition: "Right"
+    underlineIssues: false
+    showErrorTabProject: false
+    statusIconScope: "File"
+  pigments:
+    groupPaletteColors: "by file"
+    sortPaletteColors: "by color"
+  tablr: {}
+  term3:
+    fontSize: "15"
 "source.gfm":
   editor:
     softWrap: true
