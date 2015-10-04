@@ -8,6 +8,8 @@
       "table-editor"
       "markdown-deluxe"
       "line-ending-selector"
+      "vim-mode"
+      "linter-rubocop"
     ]
     themes: [
       "one-dark-ui"
@@ -17,6 +19,8 @@
     fontSize: 17
     fontFamily: "consolas"
     invisibles: {}
+    lineHeight: 1.4
+    showIndentGuide: true
   react: {}
   Zen:
     fullscreen: false
