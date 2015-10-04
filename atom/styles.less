@@ -1,13 +1,38 @@
-// Thicker cursor
-atom-text-editor::shadow .cursor {
-  border-left-width: 2px;
+// Editor ==============================
+atom-text-editor::shadow {
+  .cursor {
+    border-left-width: 2px;
+  }
+
+  .gutter {
+    .foldable .icon-right {
+      visibility: visible;
+    }
+
+    .folded .icon-right {
+      opacity: 1;
+      color: white;
+    }
+  }
 }
 
-.tab-bar .tab::before {
-  background-color: transparent;
+.tab-bar {
+  .tab::before, .tab .title {
+    background-color: transparent;
+  }
 }
 
+background-tips .background-message .message {
+  font-weight: 300;
+}
 
+// LINTER ==============================
+linter-bottom-tab, linter-bottom-tab.active {
+  border: 0 !important;
+  background: transparent !important;
+}
+
+// TERM3 ==============================
 .term3 {
   background-color: rgb(0, 9, 12);
 
@@ -18,4 +43,10 @@ atom-text-editor::shadow .cursor {
 
 .tab-bar .tab.active[data-type="TermView"] {
   background-color: rgb(0, 9, 12);
+
+  .title { background: transparent; }
+
+  &::after {
+    border-bottom-color: transparent;
+  }
 }

@@ -10,6 +10,11 @@
       "line-ending-selector"
       "vim-mode"
       "linter-rubocop"
+      "atom-typescript"
+      "preview-inline"
+      "markdown-preview-plus"
+      "react"
+      "remember-file-positions"
     ]
     themes: [
       "one-dark-ui"
@@ -21,6 +26,7 @@
     invisibles: {}
     lineHeight: 1.4
     showIndentGuide: true
+    scrollPastEnd: true
   react: {}
   Zen:
     fullscreen: false
@@ -39,6 +45,8 @@
   tablr: {}
   term3:
     fontSize: "15"
+  "tree-view":
+    showOnRightSide: true
 "source.gfm":
   editor:
     softWrap: true
