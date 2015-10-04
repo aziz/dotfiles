@@ -9,6 +9,10 @@
       "markdown-deluxe"
       "line-ending-selector"
     ]
+    themes: [
+      "one-dark-ui"
+      "plastic-code-wrap-syntax"
+    ]
   editor:
     fontSize: 17
     fontFamily: "consolas"
