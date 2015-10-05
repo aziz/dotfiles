@@ -5,7 +5,7 @@ clean-css
 coffee-script
 coffeelint
 csslint
-gulp
+gulp-cli
 html-minifier
 js-beautify
 jshint

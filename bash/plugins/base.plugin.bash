@@ -16,6 +16,7 @@ outdated() {
   gem outdated
   printf "$background_green Atom Packages %$(($(tput cols)-15))s$normal"
   apm outdated
+  atom_save_packages
 }
 
 genpass() {

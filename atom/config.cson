@@ -13,8 +13,6 @@
       "atom-typescript"
       "preview-inline"
       "markdown-preview-plus"
-      "react"
-      "remember-file-positions"
     ]
     themes: [
       "one-dark-ui"
@@ -23,7 +21,6 @@
   editor:
     fontSize: 17
     fontFamily: "consolas"
-    invisibles: {}
     lineHeight: 1.4
     showIndentGuide: true
     scrollPastEnd: true
@@ -42,11 +39,8 @@
   pigments:
     groupPaletteColors: "by file"
     sortPaletteColors: "by color"
-  tablr: {}
   term3:
     fontSize: "15"
-  "tree-view":
-    showOnRightSide: true
 "source.gfm":
   editor:
     softWrap: true
