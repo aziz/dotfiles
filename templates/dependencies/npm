@@ -5,6 +5,8 @@ clean-css
 coffee-script
 coffeelint
 csslint
+eslint
+eslint-plugin-react
 gulp-cli
 html-minifier
 js-beautify
