@@ -24,6 +24,7 @@
     lineHeight: 1.4
     showIndentGuide: true
     scrollPastEnd: true
+    invisibles: {}
   react: {}
   Zen:
     fullscreen: false
