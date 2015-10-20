@@ -22,6 +22,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-expand-region'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'sjl/vitality.vim'
 " languages
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
@@ -116,6 +117,11 @@ let g:airline_right_alt_sep = ''
 let g:airline_theme='powerlineish'
 set laststatus=2
 
+let g:NERDTreeWinPos = "left"
+autocmd BufWinEnter * NERDTreeMirror
+" NERDTree, Use F3 for toggle NERDTree
+nmap <silent> <F3> :NERDTreeToggle<CR>
+
 "set background=dark
 "set fillchars+=stl:\ ,stlnc:\
 "let g:rehash256 = 1
@@ -128,11 +134,6 @@ syntax on
 set fillchars+=vert:│
 " Override color scheme to make split lines gray
 highlight VertSplit ctermbg=NONE guibg=NONE ctermfg=Gray
-
-" if $TERM_PROGRAM =~ "iTerm"
-"   let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode
-"   let &t_EI = "\<Esc>]50;CursorShape=0\x7"  " Block in normal mode
-" endif
 
 " Include other files
 " if filereadable(expand("~/.vimrc.local"))

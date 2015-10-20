@@ -2,7 +2,7 @@ aligner@0.17.0
 angularjs@0.3.3
 atom-beautify@0.28.14
 atom-jasmine@0.6.0
-atom-typescript@7.4.2
+atom-typescript@7.4.3
 caniuse@0.5.5
 coffee-compile@0.19.2
 color-picker@2.0.13
