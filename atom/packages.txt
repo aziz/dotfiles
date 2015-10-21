@@ -2,13 +2,13 @@ aligner@0.17.0
 angularjs@0.3.3
 atom-beautify@0.28.14
 atom-jasmine@0.6.0
-atom-typescript@7.4.4
+atom-typescript@7.5.0
 caniuse@0.5.5
 coffee-compile@0.19.2
 color-picker@2.0.13
 file-icons@1.6.11
 fold-comments@0.5.0
-git-blame@0.4.6
+git-blame@0.4.7
 git-control@0.4.0
 git-log@0.4.1
 lines@0.13.1
@@ -31,7 +31,7 @@ ruby-test@0.9.16
 show-in-system@0.4.0
 svg-preview@0.6.1
 table-editor@0.1.1
-tablr@0.5.1
+tablr@0.6.0
 tasks@2.4.0
 term3@0.19.0
 vim-mode@0.61.0
