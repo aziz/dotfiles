@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+alias apmup='apm update -c false && atom_save_packages'
+
 atom_save_packages() {
   apm list --installed --bare | grep -v .bin | grep -v '^$' | sort --ignore-case > "$HOME"/.atom/packages.txt
 }
