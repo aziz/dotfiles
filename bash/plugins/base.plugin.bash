@@ -2,8 +2,6 @@
 
 # Generic functions:
 outdated() {
-  printf "$background_green  App Store   %$(($(tput cols)-15))s$normal"
-  softwareupdate -l
   printf "$background_green Homebrew      %$(($(tput cols)-15))s$normal"
   brew update && brew outdated
   printf "$background_green Cask apps     %$(($(tput cols)-15))s$normal"
@@ -15,6 +13,8 @@ outdated() {
   printf "$background_green Atom Packages %$(($(tput cols)-15))s$normal"
   apm outdated
   atom_save_packages
+  printf "$background_green  App Store   %$(($(tput cols)-15))s$normal"
+  softwareupdate -l
 }
 
 genpass() {
