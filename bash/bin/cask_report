@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# Dependencies: tail, head, grep, cat, git, ansifilter
 
 require 'awesome_print'
 require 'colorize'
@@ -17,23 +18,29 @@ def report(type)
   else
     old_sha = `git log | head -20 | /usr/bin/tail -r | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
   end
-  latest_sha = `git log --no-color | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
+  latest_sha = `git log | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
   File.open(latest_sha_file, 'w') { |file| file.write(latest_sha) }
 
   installed_casks = `brew cask ls`.split("\n")
-  changes = `git diff --stat #{old_sha} | grep Casks`.split("\n")
-  apps = changes.map { |c| c.scan(%r{^\s+Casks/(.+)\.rb\s+\|\s+\d+\s([+-]+)$}).first }
+  changes = `git diff --name-status #{old_sha} | grep Casks/ | ansifilter`.split("\n")
+  apps = changes.map do |c|
+    status, path = c.split("\t")
+    app = path.scan(%r{^Casks/(.+)\.rb$}).first.first
+    { status: status, name: app }
+  end
 
   apps.each do |a|
-    if a.last.split('').all? { |x| x == '-' }
-      removed << a.first.colorize(:light_blue)
+    if a[:status] == 'D'
+      removed << a[:name].colorize(:light_blue)
     else
-      h = `cat Casks/#{a.first}.rb | grep -E '^\s+homepage'`
+      h = `cat Casks/#{a[:name]}.rb | grep -E '^\s+homepage'`
       homepage = h.empty? ? '' : h.scan(/^\s+homepage\s+["'](.+)["']\s*$/).first.first
-      if a.last.split('').all? { |x| x == '+' }
-        added << a.first.colorize(:light_blue) + " [#{homepage.colorize(:light_green)}]"
+      if a[:status] == 'A'
+        added << a[:name].colorize(:light_blue) + " [#{homepage.colorize(:light_green)}]"
+      elsif a[:status] == 'M'
+        updated << a[:name].colorize(:light_blue) + "#{'✨' if installed_casks.include?(a[:name])}" + " [#{homepage.colorize(:light_green)}]"
       else
-        updated << a.first.colorize(:light_blue) + "#{'✨' if installed_casks.include?(a.first)}" + " [#{homepage.colorize(:light_green)}]"
+        fail ArgumentError "Unkown Status"
       end
     end
   end
