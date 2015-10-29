@@ -38,14 +38,23 @@ def report(type)
       if a[:status] == 'A'
         added << a[:name].colorize(:light_blue) + " [#{homepage.colorize(:light_green)}]"
       elsif a[:status] == 'M'
-        updated << a[:name].colorize(:light_blue) + "#{'✨' if installed_casks.include?(a[:name])}" + " [#{homepage.colorize(:light_green)}]"
+        version_diff = `git diff 9ec26ad Casks/#{a[:name]}.rb | grep -E '^[+-]\s+version'`
+        if version_diff.size > 0
+          last_version, current_version = version_diff.split("\n")
+          last_version.gsub!(/^[-]  version '(.+)'$/, '\1')
+          current_version.gsub!(/^[+]  version '(.+)'$/, '\1')
+        end
+        updated << a[:name].colorize(:light_blue) + \
+          "#{'✨' if installed_casks.include?(a[:name])}" + \
+          " [#{homepage.colorize(:light_green)}]" + \
+          "#{ " #{last_version} #{"<".colorize(:yellow)} #{current_version}" if version_diff.size > 0}"
       else
         fail ArgumentError "Unkown Status"
       end
     end
   end
 
-  puts "🔮  #{type.upcase}".colorize(:magenta)
+  puts "\n🔮  #{type.upcase}".colorize(:magenta)
   puts "#{'UPDATED'.colorize(:light_magenta)}\n#{updated.join("\n")}" unless updated.empty?
   puts "#{'ADDED'.colorize(:light_magenta)}\n#{added.join("\n")}" unless added.empty?
   puts "#{'REMOVED'.colorize(:light_magenta)}\n#{removed.join("\n")}" unless removed.empty?
