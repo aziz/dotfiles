@@ -1,8 +1,8 @@
 aligner@0.17.1
 angularjs@0.3.3
-atom-beautify@0.28.15
+atom-beautify@0.28.16
 atom-jasmine@0.6.0
-atom-typescript@7.6.3
+atom-typescript@7.6.5
 caniuse@0.5.5
 coffee-compile@0.19.2
 color-picker@2.0.13
@@ -14,7 +14,7 @@ git-log@0.4.1
 lines@0.13.1
 linter-rubocop@0.4.4
 linter-shellcheck@1.0.2
-linter@1.9.1
+linter@1.10.0
 markdown-deluxe@1.0.0
 markdown-format@2.5.1
 markdown-lists@0.0.2
@@ -26,7 +26,7 @@ pigments@0.18.1
 plastic-code-wrap-syntax@0.1.2
 preview-inline@0.5.1
 react@0.12.10
-remember-file-positions@0.1.6
+remember-file-positions@0.2.0
 ruby-test@0.9.16
 show-in-system@0.4.0
 svg-preview@0.6.1

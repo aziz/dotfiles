@@ -13,6 +13,7 @@
       "atom-typescript"
       "preview-inline"
       "markdown-preview-plus"
+      "org"
     ]
     themes: [
       "one-dark-ui"
