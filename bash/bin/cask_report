@@ -21,7 +21,6 @@ def report(type)
     old_sha = `git log | head -20 | /usr/bin/tail -r | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
   end
   latest_sha = `git log | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
-  File.open(latest_sha_file, 'w') { |file| file.write(latest_sha) }
 
   installed_casks = `brew cask ls`.split("\n")
   changes = `git diff --name-status #{old_sha} | grep Casks/ | ansifilter`.split("\n")
@@ -43,8 +42,8 @@ def report(type)
         version_diff = `git diff #{old_sha} Casks/#{a[:name]}.rb | grep -E '^[+-]\s+version'`
         if version_diff.size > 0
           last_version, current_version = version_diff.split("\n")
-          last_version.gsub!(version_regex, '\1')
-          current_version.gsub!(version_regex, '\1')
+          last_version.gsub!(version_regex, '\1') if last_version
+          current_version.gsub!(version_regex, '\1') if current_version
         end
         updated << [
           a[:name].colorize(:light_blue),
@@ -61,6 +60,7 @@ def report(type)
   puts "#{'ADDED'.colorize(:light_magenta)}\n#{added.join("\n")}" unless added.empty?
   puts "#{'REMOVED'.colorize(:light_magenta)}\n#{removed.join("\n")}" unless removed.empty?
   puts "Old SHA: #{old_sha}  New SHA: #{latest_sha}"
+  File.open(latest_sha_file, 'w') { |file| file.write(latest_sha) }
 end
 
 report('cask')
