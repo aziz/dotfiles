@@ -1,3 +1,8 @@
+[user]
+  name  = ${name}
+  email = ${email}
+[github]
+  user  = ${github_username}
 [alias]
   co        = checkout
   unstage   = reset HEAD
