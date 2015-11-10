@@ -1,6 +1,6 @@
 aligner@0.17.1
 angularjs@0.3.3
-atom-beautify@0.28.16
+atom-beautify@0.28.17
 atom-jasmine@0.6.0
 atom-typescript@7.7.2
 caniuse@0.5.5
