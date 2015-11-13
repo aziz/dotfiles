@@ -8,10 +8,10 @@ coffeelint
 csslint
 eslint
 eslint-plugin-react
+eslint-config-airbnb
 gulp-cli
 html-minifier
 js-beautify
-jshint
 marked
 psi
 sass-lint
