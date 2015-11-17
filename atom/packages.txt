@@ -1,8 +1,8 @@
 aligner@0.17.1
 angularjs@0.3.3
-atom-beautify@0.28.17
-atom-jasmine@0.6.0
-atom-typescript@7.9.0
+atom-beautify@0.28.18
+atom-jasmine@0.8.1
+atom-typescript@7.11.0
 caniuse@0.5.5
 coffee-compile@0.19.2
 color-picker@2.0.13
@@ -14,7 +14,7 @@ git-log@0.4.1
 lines@0.13.1
 linter-rubocop@0.4.4
 linter-shellcheck@1.0.2
-linter@1.11.1
+linter@1.11.2
 markdown-deluxe@1.0.0
 markdown-format@2.5.1
 markdown-lists@0.0.2
@@ -31,8 +31,8 @@ ruby-test@0.9.16
 show-in-system@0.4.0
 svg-preview@0.6.1
 table-editor@0.1.1
-tablr@0.6.4
-tasks@2.5.1
+tablr@0.7.0
+tasks@2.6.0
 term3@0.19.2
 vim-mode@0.63.0
 Zen@0.16.3
