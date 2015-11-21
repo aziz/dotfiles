@@ -18,6 +18,7 @@ source "$HOME"/.templates/provisioning/mac/fonts.sh
 source "$HOME"/.templates/provisioning/vim.sh
 source "$HOME"/.templates/provisioning/emacs.sh
 source "$HOME"/.templates/provisioning/sublime.sh
+source "$HOME"/.templates/provisioning/atom.sh
 
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
