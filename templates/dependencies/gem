@@ -5,10 +5,8 @@ colorize
 hirb-unicode
 mdl
 pry
-pry-stack_explorer
 rails
 rubocop
 rubocop-rspec
-sketches
 sqlint
 tmuxinator

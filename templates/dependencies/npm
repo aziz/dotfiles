@@ -1,16 +1,13 @@
 alex
 babel
 babel-eslint
-bower
-clean-css
 coffee-script
 coffeelint
 csslint
 eslint
-eslint-plugin-react
 eslint-config-airbnb
+eslint-plugin-react
 gulp-cli
-html-minifier
 js-beautify
 marked
 psi
@@ -21,5 +18,3 @@ svgo
 tldr
 trash
 typescript
-uglify-js
-uglifycss
