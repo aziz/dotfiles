@@ -14,12 +14,9 @@
     "node": true
   },
   "ecmaFeatures": {
-    "jsx": true,
     "modules": true,
     "classes": true,
     "experimentalObjectRestSpread": true
   },
-  "plugins": [
-    "react"
-  ]
+  "plugins": []
 }
