@@ -24,13 +24,14 @@ def report(type)
 
   installed_casks = `brew cask ls`.split("\n")
   changes = `git diff --name-status #{old_sha} | grep Casks/ | ansifilter`.split("\n")
+
   apps = changes.map do |c|
     status, path = c.split("\t")
-    app = path.scan(%r{^Casks/(.+)\.rb$}).first.first
-    { status: status, name: app }
+    app = path.scan(%r{^Casks/(.+)\.rb$})
+    { status: status, name: app[0][0] } unless app.empty?
   end
 
-  apps.each do |a|
+  apps.compact.each do |a|
     if a[:status] == 'D'
       removed << a[:name].colorize(:light_blue)
     else
