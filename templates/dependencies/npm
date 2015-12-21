@@ -1,5 +1,6 @@
 alex
 babel
+babel-cli
 babel-eslint
 coffee-script
 coffeelint
