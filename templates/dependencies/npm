@@ -1,13 +1,11 @@
 alex
 babel
-babel-cli
 babel-eslint
 coffee-script
 coffeelint
 csslint
 eslint
 eslint-config-airbnb
-eslint-plugin-react
 gulp-cli
 js-beautify
 marked
