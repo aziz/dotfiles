@@ -9,6 +9,7 @@ eslint-config-airbnb
 gulp-cli
 js-beautify
 marked
+node-inspector
 psi
 sass-lint
 speed-test
