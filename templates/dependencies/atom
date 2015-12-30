@@ -10,6 +10,7 @@ file-icons
 fold-comments
 git-control
 git-log
+git-time-machine
 lines
 linter-rubocop
 linter-shellcheck
