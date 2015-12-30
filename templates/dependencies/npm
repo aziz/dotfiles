@@ -8,6 +8,7 @@ eslint
 eslint-config-airbnb
 gulp-cli
 js-beautify
+lebab
 marked
 node-inspector
 psi
