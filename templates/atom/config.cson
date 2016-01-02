@@ -14,6 +14,16 @@
       "preview-inline"
       "markdown-preview-plus"
       "org"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-java"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-toml"
+      "metrics"
+      "welcome"
     ]
     themes: [
       "one-dark-ui"
@@ -38,11 +48,15 @@
     underlineIssues: false
     showErrorTabProject: false
     statusIconScope: "File"
+    lintOnFly: false
+    showErrorPanel: false
   pigments:
     groupPaletteColors: "by file"
     sortPaletteColors: "by color"
   term3:
     fontSize: "15"
+  "linter-shellcheck":
+    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
 "source.gfm":
   editor:
     softWrap: true
