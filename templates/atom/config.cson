@@ -1,8 +1,8 @@
 "*":
-  "exception-reporting":
-    userId: "5d214adc-6c27-375a-826d-e8103ac144c6"
-  welcome:
-    showOnStartup: false
+  Zen:
+    fullscreen: false
+  "atom-beautify":
+    analytics: false
   core:
     disabledPackages: [
       "table-editor"
@@ -30,33 +30,31 @@
       "plastic-code-wrap-syntax"
     ]
   editor:
-    fontSize: 17
     fontFamily: "consolas"
-    lineHeight: 1.4
-    showIndentGuide: true
-    scrollPastEnd: true
+    fontSize: 17
     invisibles: {}
-  react: {}
-  Zen:
-    fullscreen: false
-  "atom-beautify":
-    analytics: false
+    lineHeight: 1.4
+    scrollPastEnd: true
+    showIndentGuide: true
   "file-icons":
     coloured: false
   linter:
-    statusIconPosition: "Right"
-    underlineIssues: false
-    showErrorTabProject: false
-    statusIconScope: "File"
     lintOnFly: false
     showErrorPanel: false
+    showErrorTabProject: false
+    statusIconPosition: "Right"
+    statusIconScope: "File"
+    underlineIssues: false
+  "linter-shellcheck":
+    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   pigments:
     groupPaletteColors: "by file"
     sortPaletteColors: "by color"
+  react: {}
   term3:
     fontSize: "15"
-  "linter-shellcheck":
-    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  welcome:
+    showOnStartup: false
 "source.gfm":
   editor:
     softWrap: true
