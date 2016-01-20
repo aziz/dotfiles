@@ -36,6 +36,8 @@
     lineHeight: 1.4
     scrollPastEnd: true
     showIndentGuide: true
+  "exception-reporting":
+    userId: "2d6c2006-7313-acf9-88a6-4aea52243814"
   "file-icons":
     coloured: false
   linter:
