@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export NODE_PATH="/usr/local/lib/node_modules"
+export NODE_PATH="$HOME/.npm-packages/lib/node_modules"
 export NODE_REPL_HISTORY="$HOME/.node_history"
 export NODE_REPL_HISTORY_SIZE='32768'
 

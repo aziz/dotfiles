@@ -1,5 +1,4 @@
 alex
-babel
 babel-cli
 babel-eslint
 coffee-script
@@ -23,3 +22,4 @@ svgo
 tldr
 trash
 typescript
+yo
