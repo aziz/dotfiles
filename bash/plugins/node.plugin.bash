@@ -9,6 +9,10 @@ alias npmgo="npm -g outdated"
 alias npmgo0='npm -g outdated --depth=0'
 alias npmo0='npm outdated --depth=0'
 
+alias ni="npm install"
+alias nis="npm install --save"
+alias nisd="npm install --save-dev"
+
 npmls() {
   npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
 }
