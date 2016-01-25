@@ -11,6 +11,7 @@ fold-comments
 git-control
 git-log
 git-time-machine
+language-svg
 lines
 linter-rubocop
 linter-shellcheck
@@ -29,6 +30,8 @@ react
 remember-file-positions
 ruby-test
 show-in-system
+svg-preview
+svgo
 table-editor
 tablr
 tasks
