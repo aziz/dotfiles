@@ -8,10 +8,14 @@ coffee-compile
 color-picker
 file-icons
 fold-comments
+git-blame
 git-control
 git-log
+git-projects
 git-time-machine
+js-hyperclick
 language-svg
+line-jumper
 lines
 linter-rubocop
 linter-shellcheck
@@ -22,6 +26,7 @@ markdown-lists
 markdown-preview-plus
 markdown-table-formatter
 merge-conflicts
+native-ui
 org
 pigments
 plastic-code-wrap-syntax
@@ -32,9 +37,11 @@ ruby-test
 show-in-system
 svg-preview
 svgo
+synced-sidebar
 table-editor
 tablr
 tasks
 term3
+tool-bar
 vim-mode
 Zen
