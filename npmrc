@@ -5,4 +5,5 @@ init.author.name=${name}
 init.author.url=https://github.com/${github_username}
 loglevel=warn
 viewer=browser
+progress=false
 prefix=/Users/allen/.npm-packages
