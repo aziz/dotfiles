@@ -3,6 +3,7 @@ angularjs
 atom-beautify
 atom-jasmine
 atom-typescript
+atom-wallaby
 caniuse
 coffee-compile
 color-picker
