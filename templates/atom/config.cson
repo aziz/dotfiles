@@ -53,8 +53,12 @@
     groupPaletteColors: "by file"
     sortPaletteColors: "by color"
   react: {}
+  welcome:
+    showOnStartup: false
   term3:
     fontSize: "15"
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
 "source.gfm":
