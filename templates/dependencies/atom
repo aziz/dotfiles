@@ -5,6 +5,7 @@ atom-jasmine
 atom-typescript
 atom-wallaby
 caniuse
+clean-context-menu
 coffee-compile
 color-picker
 file-icons
@@ -36,7 +37,6 @@ preview-inline
 react
 remember-file-positions
 ruby-test
-scope-inspector
 show-in-system
 svg-preview
 svgo
