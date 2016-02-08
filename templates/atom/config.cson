@@ -4,6 +4,7 @@
   "atom-beautify":
     analytics: false
   core:
+    audioBeep: false
     disabledPackages: [
       "table-editor"
       "markdown-deluxe"
