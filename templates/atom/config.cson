@@ -34,8 +34,10 @@
     fontSize: 17
     invisibles: {}
     lineHeight: 1.4
+    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
+    tabType: "soft"
   "exception-reporting":
     userId: "2d6c2006-7313-acf9-88a6-4aea52243814"
   "file-icons":
@@ -55,6 +57,8 @@
   react: {}
   term3:
     fontSize: "15"
+  "tool-bar":
+    visible: false
   "tree-view":
     hideIgnoredNames: true
   welcome:
