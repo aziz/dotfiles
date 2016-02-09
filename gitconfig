@@ -25,6 +25,7 @@
   editor       = subl -wn
   autocrlf     = input
   whitespace   = space-before-tab, trailing-space
+  pager        = diff-highlight | diff-so-fancy | less -r
 [help]
   autocorrect = 1
 [merge]
@@ -49,7 +50,7 @@
   interactive = auto
   ui     = auto
 [color "branch"]
-  current = yellow reverse
+  current = "yellow reverse"
   local   = yellow
   remote  = green
 [color "status"]
@@ -59,10 +60,17 @@
   changed   = red
   untracked = blue
 [color "diff"]
-  meta = blue bold reverse
-  frag = magenta
-  old  = red
-  new  = green
+  meta         = yellow
+  commit       = green
+  frag         = magenta
+  old          = red
+  new          = green
+  whitespace   = "red reverse"
+[color "diff-highlight"]
+  oldNormal    = red
+  oldHighlight = "red 52"
+  newNormal    = green
+  newHighlight = "green 22"
 [difftool]
   prompt = false
 [difftool "Kaleidoscope"]

@@ -5,6 +5,7 @@ coffee-script
 coffeelint
 csslint
 depcheck
+diff-so-fancy
 eslint
 eslint-config-airbnb
 eslint-plugin-react
