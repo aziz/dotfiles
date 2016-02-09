@@ -18,11 +18,7 @@ user_info="$user_info_dir/user.info.yml"
 
 for name in *; do
 
-  if [[ $name = "coffeelint.json" ]]; then
-    target="$HOME/$name"
-  else
-    target="$HOME/.$name"
-  fi
+  target="$HOME/.$name"
 
   # ignore *.md and *.sh files
   if [[ ${name: -3} != ".sh" && ${name: -3} != ".md"  && $name != 'gitconfig' && $name != 'npmrc' ]]; then
