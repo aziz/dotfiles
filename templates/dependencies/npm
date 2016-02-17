@@ -1,4 +1,3 @@
-alex
 babel-cli
 babel-eslint
 coffee-script
@@ -15,10 +14,12 @@ lebab
 marked
 node-gyp
 node-inspector
+postcss
 psi
 sass-lint
 speed-test
 spoof
+stylelint
 svgo
 tldr
 trash
