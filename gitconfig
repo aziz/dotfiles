@@ -25,7 +25,6 @@
   editor       = subl -wn
   autocrlf     = input
   whitespace   = space-before-tab, trailing-space
-  pager        = diff-highlight | diff-so-fancy | less -r
 [help]
   autocorrect = 1
 [merge]
@@ -60,12 +59,12 @@
   changed   = red
   untracked = blue
 [color "diff"]
-  meta         = yellow
-  commit       = green
-  frag         = magenta
-  old          = red
-  new          = green
-  whitespace   = "red reverse"
+  meta        = yellow
+  commit      = green
+  frag        = magenta
+  old         = red
+  new         = green
+  whitespace  = "red reverse"
 [color "diff-highlight"]
   oldNormal    = red
   oldHighlight = "red 52"
@@ -81,3 +80,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
