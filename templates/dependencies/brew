@@ -4,23 +4,22 @@ awscli
 bash
 bash-completion
 boot2docker
-brew-cask
 cask
+cloc
 coreutils
 curl
-diffutils
 direnv
 distribution
 findutils --with-default-names
+flow
 git
 git-extras
 gnu-sed --with-default-names
 gnu-tar --with-default-names
 go
-grep --with-default-names
-gzip
 heroku-toolbelt
 homebrew/completions/boot2docker-completion
+homebrew/completions/brew-cask-completion
 homebrew/completions/bundler-completion
 homebrew/completions/gem-completion
 homebrew/completions/grunt-completion
@@ -30,11 +29,17 @@ homebrew/completions/rake-completion
 homebrew/completions/ruby-completion
 homebrew/completions/tmuxinator-completion
 homebrew/completions/vagrant-completion
+homebrew/dupes/diffutils
+homebrew/dupes/grep --with-default-names
+homebrew/dupes/gzip
+homebrew/dupes/openssh
+homebrew/dupes/rsync
 hub
 jq
 man2html
+mongodb
 node
-openssh
+nvm
 openssl
 p7zip
 postgresql
@@ -43,7 +48,6 @@ python3
 redis
 rename
 rmtrash
-rsync
 shellcheck
 sqlite
 ssh-copy-id
@@ -53,4 +57,5 @@ tree
 unrar
 vim --override-system-vi
 watch
+watchman
 wget --with-iri
