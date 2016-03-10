@@ -6,11 +6,12 @@ csslint
 depcheck
 diff-so-fancy
 eslint
-eslint_d
 eslint-config-airbnb
 eslint-plugin-react
+eslint_d
 gulp-cli
 js-beautify
+jscs
 lebab
 marked
 node-gyp
