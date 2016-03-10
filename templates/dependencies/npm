@@ -6,6 +6,7 @@ csslint
 depcheck
 diff-so-fancy
 eslint
+eslint_d
 eslint-config-airbnb
 eslint-plugin-react
 gulp-cli
