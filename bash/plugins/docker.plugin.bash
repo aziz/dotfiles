@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 if [ "$(uname)" = "Darwin" ]; then
-  eval "$(docker-machine env default)"
+  if [ "$(docker ps 2> /dev/null)" ]; then
+    eval "$(docker-machine env default)"
+  fi
 fi
 
 # Kill all running containers.
