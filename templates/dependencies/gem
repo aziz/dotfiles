@@ -8,6 +8,5 @@ mdl
 pry
 rails
 rubocop
-rubocop-rspec
 sqlint
 tmuxinator
