@@ -4,6 +4,7 @@ atom-beautify
 atom-jasmine
 atom-typescript
 atom-wallaby
+atom-wine-syntax
 caniuse
 clean-context-menu
 coffee-compile

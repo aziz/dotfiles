@@ -4647,9 +4647,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 313 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>290 161 700 575 0 0 1280 777 </string>
+	<string>290 222 700 493 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1920 800 960 1057 -1920 800 1920 1057 </string>
+	<string>0 800 1280 1417 -1280 800 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4_selection</key>
@@ -6772,6 +6772,8 @@
 			<true/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Silence Bell</key>
 			<true/>
 			<key>Smart Cursor Color</key>
@@ -7008,7 +7010,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-01-14T01:29:36Z</date>
+	<date>2016-03-17T22:44:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -10199,7 +10201,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160113</string>
+	<string>2.9.20160313</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
