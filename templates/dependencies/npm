@@ -16,6 +16,7 @@ lebab
 marked
 node-gyp
 node-inspector
+node-sass
 postcss
 psi
 sass-lint
@@ -25,6 +26,6 @@ stylelint
 svgo
 tldr
 trash
-tsd
 typescript
+typings
 yo
