@@ -29,6 +29,8 @@
       "coffee-compile"
       "textual-velocity"
       "atom-wallaby"
+      "js-hyperclick"
+      "term3"
     ]
     themes: [
       "one-dark-ui"
