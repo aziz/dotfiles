@@ -48,5 +48,6 @@ tasks
 term3
 textual-velocity
 tool-bar
+tree-view-autoresize
 vim-mode
 Zen

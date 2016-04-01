@@ -25,6 +25,10 @@
       "language-toml"
       "metrics"
       "welcome"
+      "tool-bar"
+      "coffee-compile"
+      "textual-velocity"
+      "atom-wallaby"
     ]
     themes: [
       "one-dark-ui"
