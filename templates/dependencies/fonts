@@ -1,8 +1,4 @@
-font-droid-arabic-kufi
-font-droid-arabic-naskh
-font-droid-sans
 font-droid-sans-mono
-font-droid-serif
 font-fira-mono
 font-fira-sans
 font-gandom
@@ -10,8 +6,12 @@ font-hack
 font-inconsolata-dz
 font-input
 font-kawkab-mono
+font-lalezar
 font-merriweather
 font-merriweather-sans
+font-nika
+font-noto-arabic-naskh
+font-noto-naskh-arabic
 font-open-sans
 font-open-sans-condensed
 font-parastoo
