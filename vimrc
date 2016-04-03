@@ -8,6 +8,7 @@ Plugin 'gmarik/Vundle.vim'   " let Vundle manage Vundle, required
 " utils
 Plugin 'ap/vim-css-color'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'chrisbra/vim-diff-enhanced'
 Plugin 'ervandew/supertab'
