@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Loading iTerm shell integrations
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
 # Usage:
 #   Source this script from your Bash start-up script (eg. ~/.bashrc, ~/.bash_profile).
 #
