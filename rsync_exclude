@@ -1,0 +1,10 @@
+.svn
+nbproject
+*.swp
+build
+dist
+.git
+.DS_Store
+.idea
+.sass-cache
+node_modules/
