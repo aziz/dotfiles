@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ "$(uname)" = "Darwin" ]; then
-  if [ "$(docker ps 2> /dev/null)" ]; then
+  if [ "$(docker-machine 2> /dev/null)" ]; then
     eval "$(docker-machine env default)"
   fi
 fi

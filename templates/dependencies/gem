@@ -8,5 +8,6 @@ mdl
 pry
 rails
 rubocop
+scss_lint
 sqlint
 tmuxinator
