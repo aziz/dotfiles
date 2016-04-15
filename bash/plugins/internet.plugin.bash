@@ -69,3 +69,12 @@ getcertnames() {
     return 1;
   fi;
 }
+
+weather() {
+  if [ -z "${1}" ]; then
+    echo "ERROR: No city specified.";
+    echo "USAGE: weather city";
+    return 1;
+  fi;
+  curl http://wttr.in/${1}
+}
