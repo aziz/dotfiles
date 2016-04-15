@@ -2,7 +2,10 @@
 
 if [ "$(uname)" = "Darwin" ]; then
   if [ "$(docker-machine 2> /dev/null)" ]; then
-    eval "$(docker-machine env default)"
+    if [ "$(docker-machine status)" = "Running" ]; then
+      echo "configuring docker machine"
+      eval "$(docker-machine env default)"
+    fi
   fi
 fi
 
