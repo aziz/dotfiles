@@ -2,39 +2,83 @@
   Zen:
     fullscreen: false
   "atom-beautify":
-    analytics: false
+    general:
+      _analyticsUserId: "c420f183-e8a7-4273-889d-49bb4829c627"
+      analytics: false
   core:
     audioBeep: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "table-editor"
       "markdown-deluxe"
-      "line-ending-selector"
       "vim-mode"
       "linter-rubocop"
       "atom-typescript"
       "preview-inline"
       "markdown-preview-plus"
       "org"
-      "language-c"
-      "language-clojure"
-      "language-csharp"
-      "language-java"
-      "language-objective-c"
-      "language-perl"
-      "language-php"
-      "language-toml"
       "metrics"
       "welcome"
-      "tool-bar"
       "coffee-compile"
       "textual-velocity"
       "atom-wallaby"
       "js-hyperclick"
       "term3"
-    ]
-    themes: [
-      "one-dark-ui"
-      "plastic-code-wrap-syntax"
+      "tree-view-autoresize"
+      "markdown-format"
+      "aligner"
+      "angularjs"
+      "atom-beautify"
+      "atom-jasmine"
+      "caniuse"
+      "clean-context-menu"
+      "color-picker"
+      "fold-comments"
+      "git-blame"
+      "git-control"
+      "git-log"
+      "git-projects"
+      "git-time-machine"
+      "tasks"
+      "tablr"
+      "synced-sidebar"
+      "svgo"
+      "svg-preview"
+      "sort-lines"
+      "show-in-system"
+      "ruby-test"
+      "remember-file-positions"
+      "pigments"
+      "react"
+      "Zen"
+      "haskell-grammar"
+      "highlight-selected"
+      "language-ini"
+      "language-javascript-jsx"
+      "language-ocaml"
+      "language-svg"
+      "language-thrift"
+      "line-jumper"
+      "merge-conflicts"
+      "markdown-table-formatter"
+      "linter-shellcheck"
+      "linter"
+      "lines"
+      "markdown-lists"
+      "tool-bar"
+      "exception-reporting"
+      "tree-view"
     ]
   editor:
     fontFamily: "consolas"
@@ -49,6 +93,8 @@
     userId: "2d6c2006-7313-acf9-88a6-4aea52243814"
   "file-icons":
     coloured: false
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
   linter:
     lintOnFly: false
     showErrorPanel: false
@@ -58,6 +104,29 @@
     underlineIssues: false
   "linter-shellcheck":
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-blame-provider-hg": {}
+    "nuclide-diff-view":
+      toolbarVisible: true
+    "nuclide-distraction-free-mode": {}
+    "nuclide-file-tree":
+      revealFileOnSwitch: true
+    "nuclide-home":
+      showHome: false
+    use:
+      "nuclide-adb-logcat": false
+      "nuclide-arcanist": false
+      "nuclide-blame-provider-hg": false
+      "nuclide-clang-atom": false
+      "nuclide-debugger-hhvm": false
+      "nuclide-debugger-lldb-client": false
+      "nuclide-hack": false
+      "nuclide-hack-symbol-provider": false
+      "nuclide-hg-repository": false
+      "nuclide-hhvm-toolbar": false
+      "nuclide-language-hack": false
+      "nuclide-ocaml": false
   pigments:
     groupPaletteColors: "by file"
     sortPaletteColors: "by color"
@@ -65,11 +134,24 @@
   term3:
     fontSize: "15"
   "tool-bar":
+    position: "Bottom"
     visible: false
   "tree-view":
     hideIgnoredNames: true
   welcome:
     showOnStartup: false
+".ansi.text":
+  editor:
+    preferredLineLength: 100
+".hack.html.text":
+  editor:
+    preferredLineLength: 100
+".hackfragment.source":
+  editor:
+    preferredLineLength: 100
+".hg-commit.text":
+  editor:
+    preferredLineLength: 100
 "source.gfm":
   editor:
     softWrap: true
