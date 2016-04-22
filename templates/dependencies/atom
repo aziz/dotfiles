@@ -1,3 +1,4 @@
+advanced-open-file
 aligner
 angularjs
 atom-beautify
@@ -16,11 +17,17 @@ git-control
 git-log
 git-projects
 git-time-machine
+haskell-grammar
+highlight-selected
 js-hyperclick
+language-babel
+language-ini
 language-javascript-jsx
 language-svg
+language-thrift
 line-jumper
 lines
+linter-eslint
 linter-rubocop
 linter-shellcheck
 linter
@@ -31,6 +38,7 @@ markdown-preview-plus
 markdown-table-formatter
 merge-conflicts
 native-ui
+nuclide
 pigments
 plastic-code-wrap-syntax
 preview-inline
@@ -38,6 +46,7 @@ react
 remember-file-positions
 ruby-test
 show-in-system
+sort-lines
 svg-preview
 svgo
 synced-sidebar

@@ -60,12 +60,9 @@
       "ruby-test"
       "remember-file-positions"
       "pigments"
-      "react"
       "Zen"
       "haskell-grammar"
       "highlight-selected"
-      "language-ini"
-      "language-javascript-jsx"
       "language-ocaml"
       "language-svg"
       "language-thrift"
@@ -73,12 +70,11 @@
       "merge-conflicts"
       "markdown-table-formatter"
       "linter-shellcheck"
-      "linter"
       "lines"
       "markdown-lists"
       "tool-bar"
       "exception-reporting"
-      "tree-view"
+      "nuclide"
     ]
   editor:
     fontFamily: "consolas"
@@ -99,9 +95,11 @@
     lintOnFly: false
     showErrorPanel: false
     showErrorTabProject: false
-    statusIconPosition: "Right"
     statusIconScope: "File"
-    underlineIssues: false
+  "linter-eslint":
+    eslintrcPath: "/Users/allen/.eslintrc"
+    globalNodePath: "/Users/allen/.npm-packages"
+    useGlobalEslint: true
   "linter-shellcheck":
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   nuclide:
