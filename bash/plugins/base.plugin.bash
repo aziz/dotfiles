@@ -2,25 +2,29 @@
 
 # Generic functions:
 outdated() {
-  printf "$background_green Homebrew      %$(($(tput cols)-15))s$normal"
+  printf "\n${background_purple} Homebrew      %$(($(tput cols)-15))s${normal}"
   brew update && brew outdated
-  printf "$background_green Cask apps     %$(($(tput cols)-15))s$normal"
+  printf "\n${background_purple} Cask apps     %$(($(tput cols)-15))s${normal}"
   cask_report
-  printf "$background_green npm Packages  %$(($(tput cols)-15))s$normal"
+  printf "\n${background_purple} npm Packages  %$(($(tput cols)-15))s${normal}"
   npm -g outdated --depth=0
-  printf "$background_green Ruby Gems     %$(($(tput cols)-15))s$normal"
+  printf "\n${background_purple} Ruby Gems     %$(($(tput cols)-15))s${normal}"
   gem outdated
-  printf "$background_green Atom Packages %$(($(tput cols)-15))s$normal"
+  printf "\n${background_purple} Atom Packages %$(($(tput cols)-15))s${normal}"
   apm outdated
   atom_save_packages
-  printf "$background_green  App Store   %$(($(tput cols)-15))s$normal"
+  printf "\n${background_purple}  App Store   %$(($(tput cols)-15))s${normal}"
   softwareupdate -l
 }
 
 genpass() {
-  echo "${bold_purple}Generating a ${1} characters long password${normal} =>"
-  res=$(openssl rand -base64 ${1} | head -c ${1})
-  echo "${bold_green}${res}${normal}"
+  if [ -n "$1" ]; then
+    echo "${bold_purple}Generating a ${1} characters long password${normal} =>"
+    res=$(openssl rand -base64 ${1} | head -c ${1})
+    echo "${bold_green}${res}${normal}"
+  else
+    echo "USAGE genpass password_length"
+  fi
 }
 
 mkcd() {
