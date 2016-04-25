@@ -23,8 +23,9 @@
 [core]
   excludesfile = ~/.gitignore
   editor       = subl -wn
-  autocrlf     = true
   whitespace   = space-before-tab, trailing-space, cr-at-eol
+  trustctime   = false
+  precomposeunicode = false
 [help]
   autocorrect = 1
 [merge]
