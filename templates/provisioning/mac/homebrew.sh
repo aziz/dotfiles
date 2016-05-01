@@ -14,5 +14,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "==> Tapping extra sources"
 while read in; do brew tap "$in"; done < "$HOME"/.templates/dependencies/taps
 
+echo "==> Disabling analytics"
+git config --file="$(brew --repository)/.git/config" --replace-all homebrew.analyticsdisabled true
+
 echo "==> Pouring homebrew formulas"
 while read in; do brew install $in; done < "$HOME"/.templates/dependencies/brew
