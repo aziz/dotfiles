@@ -8,6 +8,7 @@ if pkgutil --pkg-info=com.apple.pkg.CLTools_Executables > /dev/null 2>&1; then
 else
   echo "==> Installing Command-Line Tools"
   xcode-select --install
+  sudo xcodebuild -license accept
 fi
 
 source "$HOME"/.templates/provisioning/mac/homebrew.sh
