@@ -33,10 +33,13 @@ export PLATFORM="$MACHINE-$OS-$OSVERSION"
 # Disabling Analytics for homebrew
 export HOMEBREW_NO_ANALYTICS=1
 
+# Disabling some shell-check errors
+export SHELLCHECK_OPTS="-e SC1090"
+
 # Adding Support for other OSes
-PREVIEW="less"
-[ -s /usr/bin/gloobus-preview ] && PREVIEW="gloobus-preview"
-[ -s /Applications/Preview.app ] && PREVIEW="/Applications/Preview.app"
+export PREVIEW="less"
+[ -s /usr/bin/gloobus-preview ] && export PREVIEW="gloobus-preview"
+[ -s /Applications/Preview.app ] && export PREVIEW="/Applications/Preview.app"
 
 # Path to the bash it configuration
 export BASH="$HOME/.bash"
