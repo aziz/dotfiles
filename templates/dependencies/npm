@@ -20,6 +20,7 @@ node-gyp
 node-inspector
 node-sass
 postcss
+postcss-cssnext
 psi
 sass-lint
 speed-test
