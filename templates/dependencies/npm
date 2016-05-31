@@ -19,6 +19,7 @@ marked
 node-gyp
 node-inspector
 node-sass
+npm-check
 postcss
 postcss-cssnext
 psi
