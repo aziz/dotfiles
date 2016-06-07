@@ -13,6 +13,7 @@ outdated() {
   printf "\n${background_purple} Atom Packages %$(($(tput cols)-15))s${normal}"
   apm outdated
   atom_save_packages
+  vscode_save_packages
   printf "\n${background_purple}  App Store   %$(($(tput cols)-15))s${normal}"
   softwareupdate -l
 }

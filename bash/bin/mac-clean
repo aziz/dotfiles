@@ -35,7 +35,7 @@ sudo find /Users /opt /Library -iregex '.*\.lproj' | \
 perl -wnE 'say for /.+(?<!English)(?<!en)(?<!en_US)(?<!Base)\.lproj/g' > "$macCleanList"
 echo "found `cat $macCleanList | wc -l`"
 echo "deleting..."
-while read in; do sudo rm -Rf "$in"; done < "$macCleanList"
+while read -r in; do sudo rm -Rf "$in"; done < "$macCleanList"
 
 # -------------------------------------------------------------
 # Chrome

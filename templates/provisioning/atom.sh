@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Installing Atom Packages"
+echo "====================================="
+
 atom_packages_file="$HOME/.templates/dependencies/atom"
 atom_dotfiles_dir="$HOME/.templates/atom"
 target="$HOME/.atom"
