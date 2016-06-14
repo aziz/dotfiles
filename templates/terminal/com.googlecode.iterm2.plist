@@ -4643,13 +4643,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>59 311 606 456 0 0 1280 777 </string>
+	<string>2725 1519 606 456 2560 800 1920 1177 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>359 1766 400 129 -721 800 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1579 1568 620 392 609 800 2560 1417 </string>
+	<string>3210 1388 620 392 2560 800 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1889 800 1280 1417 609 800 2560 1417 </string>
+	<string>0 44 1280 733 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4_selection</key>
@@ -6901,6 +6901,12 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
 	<key>NoSyncInstallationId</key>
 	<string>6A82B262-E3B8-438D-AAC4-90E1D712D343</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -6977,7 +6983,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-30T17:05:52Z</date>
+	<date>2016-06-08T12:11:41Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -6989,7 +6995,7 @@
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -10170,7 +10176,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160426</string>
+	<string>3.0.1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
