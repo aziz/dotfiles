@@ -60,7 +60,7 @@
   changed   = red
   untracked = blue
 [color "diff"]
-  meta        = yellow
+  meta        = blue
   commit      = green
   frag        = magenta
   old         = red
