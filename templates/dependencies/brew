@@ -12,6 +12,7 @@ distribution
 findutils --with-default-names
 flow
 git
+git-cal
 git-extras
 gnu-sed --with-default-names
 gnu-tar --with-default-names
