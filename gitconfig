@@ -44,10 +44,6 @@
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 [color]
-  diff   = auto
-  status = auto
-  branch = auto
-  interactive = auto
   ui     = auto
 [color "branch"]
   current = "yellow reverse"
@@ -77,6 +73,12 @@
   cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [diff]
   tool = Kaleidoscope
+  # Detect copies as well as renames
+  renames = copies
+  # (git 2.9+) Set this option to `true` to enable an experimental heuristic that
+  # shifts the hunk boundary in an attempt to make the resulting
+  # patch easier to read.
+  compactionHeuristic = true
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f

@@ -22,7 +22,7 @@ source "$HOME"/.templates/provisioning/sublime.sh
 source "$HOME"/.templates/provisioning/atom.sh
 source "$HOME"/.templates/provisioning/vscode.sh
 source "$HOME"/.templates/provisioning/mac/security.sh
-source "$HOME"/.templates/provisioning/mac/osx.sh
+source "$HOME"/.templates/provisioning/mac/macos.sh
 
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
