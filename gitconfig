@@ -6,7 +6,6 @@
 [alias]
   co        = checkout
   unstage   = reset HEAD
-  undo      = reset --soft HEAD^
   lg        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lol       = log --pretty=oneline --abbrev-commit --graph --decorate
   conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
@@ -14,12 +13,6 @@
   unpushed  = cherry -v
   upstream  = rev-parse --symbolic-full-name --abbrev-ref HEAD@{upstream}
   amend     = commit --amend
-  branch-cleanup = !sh -c 'git branch --merged | grep -v master | xargs git branch -d && git remote prune origin'
-  # Interactive rebase with the given number of latest commits
-  reb = "!r() { git rebase -i HEAD~$1; }; r"
-  # Remove branches that have already been merged with master
-  # a.k.a. ‘delete merged’
-  dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 [core]
   excludesfile = ~/.gitignore
   editor       = subl -wn
@@ -79,6 +72,7 @@
   # shifts the hunk boundary in an attempt to make the resulting
   # patch easier to read.
   compactionHeuristic = true
+  algorithm = histogram
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
