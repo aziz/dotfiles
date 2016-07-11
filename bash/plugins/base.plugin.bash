@@ -14,6 +14,8 @@ outdated() {
   apm outdated
   atom_save_packages
   vscode_save_packages
+  brew cleanup -s --force
+  brew cask cleanup
   printf "\n${background_purple}  App Store   %$(($(tput cols)-15))s${normal}"
   softwareupdate -l
 }

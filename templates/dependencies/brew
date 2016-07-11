@@ -3,6 +3,7 @@ autojump
 awscli
 bash
 bash-completion
+caddy
 cask
 cloc
 coreutils
@@ -36,6 +37,7 @@ homebrew/dupes/rsync
 hub
 jq
 man2html
+mas
 mongodb
 node
 nvm
