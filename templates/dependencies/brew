@@ -6,7 +6,7 @@ bash-completion
 caddy
 cask
 cloc
-coreutils
+coreutils --with-gmp
 curl
 direnv
 distribution

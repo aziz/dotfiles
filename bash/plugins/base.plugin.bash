@@ -3,7 +3,10 @@
 # Generic functions:
 outdated() {
   printf "\n${background_purple} Homebrew      %$(($(tput cols)-15))s${normal}"
-  brew update && brew outdated
+  brew cleanup -s --force
+  brew cask cleanup
+  brew update
+  brew outdated
   printf "\n${background_purple} Cask apps     %$(($(tput cols)-15))s${normal}"
   cask_report
   printf "\n${background_purple} npm Packages  %$(($(tput cols)-15))s${normal}"
@@ -12,12 +15,11 @@ outdated() {
   gem outdated
   printf "\n${background_purple} Atom Packages %$(($(tput cols)-15))s${normal}"
   apm outdated
-  atom_save_packages
-  vscode_save_packages
-  brew cleanup -s --force
-  brew cask cleanup
   printf "\n${background_purple}  App Store   %$(($(tput cols)-15))s${normal}"
   softwareupdate -l
+
+  atom_save_packages
+  vscode_save_packages
 }
 
 genpass() {
