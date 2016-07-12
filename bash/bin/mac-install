@@ -15,6 +15,7 @@ source "$HOME"/.templates/provisioning/mac/homebrew.sh
 source "$HOME"/.templates/provisioning/ruby.sh
 source "$HOME"/.templates/provisioning/npm.sh
 source "$HOME"/.templates/provisioning/mac/mac-apps.sh
+source "$HOME"/.templates/provisioning/mac/appstore.sh
 source "$HOME"/.templates/provisioning/mac/fonts.sh
 source "$HOME"/.templates/provisioning/vim.sh
 source "$HOME"/.templates/provisioning/emacs.sh
