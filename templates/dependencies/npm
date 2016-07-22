@@ -2,6 +2,7 @@ babel-cli
 babel-eslint
 coffee-script
 coffeelint
+create-react-app
 depcheck
 diff-so-fancy
 eslint
