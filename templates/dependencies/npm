@@ -25,6 +25,7 @@ psi
 sass-lint
 speed-test
 spoof
+stylefmt
 stylelint
 stylelint-config-standard
 svgo
