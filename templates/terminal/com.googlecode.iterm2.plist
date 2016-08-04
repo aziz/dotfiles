@@ -4641,10 +4641,12 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>518 209 513 347 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 122 796 473 0 0 1280 778 </string>
+	<string>269 94 918 495 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>165 272 570 452 0 0 1280 778 </string>
+	<string>-1919 328 1279 763 -2560 0 2560 1418 </string>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4_selection</key>
@@ -4936,7 +4938,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1</real>
+			<real>0.90000000000000002</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -5244,7 +5246,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 14</string>
+			<string>SFMono-Light 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -5435,7 +5437,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.013619065284729</real>
+			<real>1</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -6898,12 +6900,29 @@
 	</array>
 	<key>NoSyncInstallationId</key>
 	<string>E4BDBA3A-22DE-4BBB-8633-B53BC1826C2F</string>
+	<key>NoSyncLastTipTime</key>
+	<real>491611042.63270402</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>490443915.282408</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -6972,7 +6991,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-17T10:27:15Z</date>
+	<date>2016-08-04T15:36:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
