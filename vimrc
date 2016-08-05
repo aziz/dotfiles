@@ -26,7 +26,6 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'elentok/plaintasks.vim'
-"Plugin 'sjl/vitality.vim'
 " languages
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
@@ -39,11 +38,9 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 " themes
-"Plugin 'chriskempson/vim-tomorrow-theme'
-"Plugin 'chriskempson/base16-vim'
-"Plugin 'tomasr/molokai'
-"Plugin 'reedes/vim-thematic'
 Plugin 'gertjanreynaert/cobalt2-vim-theme'
+Plugin 'YorickPeterse/happy_hacking.vim'
+Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'vim-scripts/ScrollColors'
 
 call vundle#end()            " required
