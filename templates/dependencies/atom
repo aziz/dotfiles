@@ -18,16 +18,13 @@ git-control
 git-log
 git-projects
 git-time-machine
-haskell-grammar
 highlight-selected
 js-hyperclick
 language-babel
 language-ini
 language-javascript-jsx
 language-svg
-language-thrift
 line-jumper
-lines
 linter-eslint
 linter-rubocop
 linter-shellcheck
