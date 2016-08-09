@@ -13,6 +13,7 @@ coffee-compile
 color-picker
 file-icons
 fold-comments
+font-viewer
 git-blame
 git-control
 git-log
