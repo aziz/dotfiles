@@ -39,7 +39,6 @@
       "linter-shellcheck"
       "tool-bar"
       "exception-reporting"
-      "nuclide"
     ]
   editor:
     fontFamily: "consolas"

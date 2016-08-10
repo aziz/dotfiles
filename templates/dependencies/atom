@@ -13,6 +13,7 @@ coffee-compile
 color-picker
 file-icons
 fold-comments
+font-viewer
 git-blame
 git-control
 git-log
@@ -36,7 +37,6 @@ markdown-preview-plus
 markdown-table-formatter
 merge-conflicts
 native-ui
-nuclide
 pigments
 plastic-code-wrap-syntax
 preview-inline

@@ -43,6 +43,7 @@ node
 nvm
 openssl
 p7zip
+phplint
 postgresql
 python
 python3
