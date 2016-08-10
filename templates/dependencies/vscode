@@ -4,10 +4,12 @@ EditorConfig.EditorConfig
 HookyQR.beautify
 HvyIndustries.crane
 Kasik96.format-indent
+PeterJausovec.vscode-docker
 Shan.code-settings-sync
 TwentyChung.jsx
 akamud.vscode-theme-onedark
 alefragnani.project-manager
+christian-kohler.path-intellisense
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 dbankier.vscode-instant-markdown
