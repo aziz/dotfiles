@@ -32,13 +32,13 @@
       "js-hyperclick"
       "tree-view-autoresize"
       "angularjs"
-      "atom-jasmine"
       "clean-context-menu"
       "ruby-test"
-      "language-ocaml"
       "linter-shellcheck"
       "tool-bar"
       "exception-reporting"
+      "tree-view"
+      "atom-jasmine"
     ]
   editor:
     fontFamily: "consolas"
