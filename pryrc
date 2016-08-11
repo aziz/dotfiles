@@ -305,8 +305,8 @@ alias :l :load
 #           2,
 #           3,
 #          ]
-if RUBY_PLATFORM =~ /darwin/i # OSX only.
-  # The pbcopy manual page for Mac OS X
+if RUBY_PLATFORM =~ /darwin/i # macOS only.
+  # The pbcopy manual page for macOS
   # http://goo.gl/o3nGsr
   def pbcopy(str, opts = {})
     IO.popen('pbcopy', 'r+') { |io| io.print str }

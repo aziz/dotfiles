@@ -4,7 +4,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 if pkgutil --pkg-info=com.apple.pkg.CLTools_Executables > /dev/null 2>&1; then
-  echo "==> Mac OSX Command-Line Tools are installed."
+  echo "==> macOS Command-Line Tools are installed."
 else
   echo "==> Installing Command-Line Tools"
   xcode-select --install

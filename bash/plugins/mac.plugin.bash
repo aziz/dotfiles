@@ -18,12 +18,16 @@ mac-who-runs-shit-without-my-command () {
   #   /System/Library/StartupItems
   #   crontab -l 2> /dev/null
   #   login items
+  #
+  # Ignored ones (system is protected?)
+  #   /System/Library/LaunchAgents
+  #   /System/Library/LaunchDaemons
+  #   /System/Library/StartupItems
 
   locations="$HOME/Library/LaunchAgents \
              /Library/LaunchAgents \
              /Library/LaunchDaemons \
-             /Library/StartupItems \
-             /System/Library/StartupItems"
+             /Library/StartupItems"
   for loc in $locations; do
     echo "${background_green}$loc${normal}"
     ls -1 "$loc" | awk '{ gsub(/.plist/, ""); print }'

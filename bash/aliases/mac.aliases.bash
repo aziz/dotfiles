@@ -10,7 +10,7 @@ if [ "$(uname)" = "Darwin" ]; then
   alias f="open -a Finder "
   alias ql="qlmanage -p"
 
-  # Lock OSX
+  # Lock macOS
   alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
   # Empty the Trash on all mounted volumes and the main HDD

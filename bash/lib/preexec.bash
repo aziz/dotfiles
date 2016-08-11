@@ -114,7 +114,7 @@ function preexec_install () {
 
     # *BOTH* of these options need to be set for the DEBUG trap to be invoked
     # in ( ) subshells.  This smells like a bug in bash to me.  The null stderr
-    # redirections are to quiet errors on bash2.05 (i.e. OSX's default shell)
+    # redirections are to quiet errors on bash2.05 (i.e. macOS's default shell)
     # where the options can't be set, and it's impossible to inherit the trap
     # into subshells.
 

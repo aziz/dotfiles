@@ -17,7 +17,7 @@ tar -xzv --strip-components 1; \
 ```
 
 ## Provisioning
-#### Mac OSX
+#### MacOS
 `mac-install`
 
 #### Ubuntu
