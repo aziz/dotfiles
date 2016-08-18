@@ -23,7 +23,6 @@ npm-check
 postcss
 postcss-cssnext
 psi
-sass-lint
 speed-test
 spoof
 stylefmt
