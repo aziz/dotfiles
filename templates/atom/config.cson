@@ -94,6 +94,8 @@
     markerType: "square-dot"
     sortPaletteColors: "by color"
   react: {}
+  "svg-preview":
+    openPreviewAutomatically: true
   term3:
     fontSize: "15"
   "tool-bar":
