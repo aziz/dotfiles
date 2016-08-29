@@ -23,6 +23,7 @@ npm-check
 postcss
 postcss-cssnext
 psi
+slow-deps
 speed-test
 spoof
 stylefmt
