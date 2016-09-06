@@ -11,6 +11,7 @@ caniuse
 clean-context-menu
 coffee-compile
 color-picker
+compatibility-reporter
 file-icons
 fold-comments
 font-viewer
