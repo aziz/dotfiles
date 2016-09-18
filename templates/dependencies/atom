@@ -21,6 +21,7 @@ git-log
 git-projects
 git-time-machine
 highlight-selected
+inline-markdown-images
 js-hyperclick
 language-babel
 language-ini
