@@ -18,4 +18,4 @@ echo "==> Disabling analytics"
 git config --file="$(brew --repository)/.git/config" --replace-all homebrew.analyticsdisabled true
 
 echo "==> Pouring homebrew formulas"
-while read -r in; do brew install "$in"; done < "$HOME"/.templates/dependencies/brew
+while read -r in; do brew install $in; done < "$HOME"/.templates/dependencies/brew
