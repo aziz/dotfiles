@@ -1,13 +1,17 @@
+AravindKumar.gherkin-indent
 DavidAnson.vscode-markdownlint
 EditorConfig.EditorConfig
 HookyQR.beautify
 HvyIndustries.crane
+JerryHong.autofilename
 Kasik96.format-indent
 Shan.code-settings-sync
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 dbankier.vscode-instant-markdown
+donjayamanne.githistory
 donjayamanne.python
+eamodio.gitlens
 eg2.tslint
 felixfbecker.php-debug
 hoovercj.ruby-linter
@@ -19,6 +23,9 @@ rebornix.Ruby
 robertohuertasm.vscode-icons
 robinbentley.sass-indented
 saviorisdead.RustyCode
+spoonscen.es6-mocha-snippets
+stevejpurves.cucumber
 tht13.python
 vsmobile.vscode-react-native
+wmaurer.change-case
 xabikos.ReactSnippets
