@@ -40,6 +40,7 @@
       "tree-view"
       "atom-jasmine"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "consolas"
     fontSize: 17
