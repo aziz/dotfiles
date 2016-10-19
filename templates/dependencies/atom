@@ -12,6 +12,7 @@ clean-context-menu
 coffee-compile
 color-picker
 compatibility-reporter
+document-outline
 file-icons
 fold-comments
 font-viewer
