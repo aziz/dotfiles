@@ -2,6 +2,7 @@ advanced-open-file
 aligner
 angularjs
 atom-beautify
+atom-commander
 atom-jasmine
 atom-tt
 atom-typescript
