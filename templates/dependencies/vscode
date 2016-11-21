@@ -5,6 +5,11 @@ HookyQR.beautify
 HvyIndustries.crane
 JerryHong.autofilename
 Kasik96.format-indent
+PeterJausovec.vscode-docker
+TwentyChung.jsx
+Zignd.html-css-class-completion
+abusaidm.html-snippets
+alefragnani.project-manager
 be5invis.vscode-icontheme-nomo-dark
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
@@ -24,6 +29,7 @@ hoovercj.ruby-linter
 humao.rest-client
 ikappas.phpcs
 joaompinto.asciidoctor-vscode
+kamranmackey.cobalt2-Theme
 lukehoban.Go
 misogi.ruby-rubocop
 mohsen1.prettify-json
@@ -31,6 +37,7 @@ mrmlnc.vscode-scss
 mrmlnc.vscode-stylefmt
 ms-vscode.Theme-MaterialKit
 ms-vscode.cpptools
+ms-vscode.latex
 ms-vscode.sublime-keybindings
 msjsdiag.debugger-for-chrome
 polymer.polymer-ide
@@ -38,6 +45,7 @@ rebornix.Ruby
 ricard.PostCSS
 robinbentley.sass-indented
 sandy081.todotasks
+saviorisdead.RustyCode
 shinnn.stylelint
 silverbulleters.gherkin-autocomplete
 spoonscen.es6-mocha-snippets
@@ -45,4 +53,5 @@ stevejpurves.cucumber
 allenbargi.theme-plasticcodewrap
 vsmobile.vscode-react-native
 wmaurer.change-case
+xabikos.JavaScriptSnippets
 xabikos.ReactSnippets
