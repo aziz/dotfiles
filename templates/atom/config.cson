@@ -42,10 +42,9 @@
     ]
     useCustomTitleBar: true
   editor:
-    fontFamily: "consolas"
-    fontSize: 17
+    fontFamily: "SF Mono"
+    fontSize: 15
     invisibles: {}
-    lineHeight: 1.4
     preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
