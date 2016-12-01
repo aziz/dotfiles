@@ -29,16 +29,15 @@
       "coffee-compile"
       "textual-velocity"
       "atom-wallaby"
-      "js-hyperclick"
       "tree-view-autoresize"
       "angularjs"
       "clean-context-menu"
       "ruby-test"
       "linter-shellcheck"
-      "tool-bar"
       "exception-reporting"
-      "tree-view"
       "atom-jasmine"
+      "atom-tt"
+      "qolor"
     ]
     useCustomTitleBar: true
   editor:
