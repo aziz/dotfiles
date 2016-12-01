@@ -23,7 +23,7 @@ def report(type)
             else
               `git log | head -20 | /usr/bin/tail -r | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
             end
-  latest_sha = `git log | head -1 | ansifilter`.scan(/([a-z0-9]{7})\s.+/)[0][0]
+  latest_sha = `git log | head -1 | ansifilter`.scan(/([a-z0-9]{7,})\s.+/)[0][0]
 
   installed_casks = `brew cask ls`.split("\n")
   changes = `git diff --name-status #{old_sha} | grep Casks/ | ansifilter`.split("\n")
