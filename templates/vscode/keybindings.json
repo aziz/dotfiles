@@ -1,3 +1,4 @@
 [
-    { "key": "cmd+shift+\\", "command": "workbench.action.files.revealActiveFileInWindows" },
-]
+    { "key": "cmd+shift+\\",   "command": "workbench.action.files.revealActiveFileInWindows" },
+    { "key": "ctrl+cmd+alt+]", "command": "extension.align", "when": "editorTextFocus" }
+] 

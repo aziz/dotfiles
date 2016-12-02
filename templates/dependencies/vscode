@@ -1,6 +1,7 @@
 AravindKumar.gherkin-indent
 DavidAnson.vscode-markdownlint
 EditorConfig.EditorConfig
+GrapeCity.gc-excelviewer
 HookyQR.beautify
 HvyIndustries.crane
 JerryHong.autofilename
@@ -25,6 +26,7 @@ humao.rest-client
 ikappas.phpcs
 lukehoban.Go
 misogi.ruby-rubocop
+mrmlnc.vscode-lebab
 mrmlnc.vscode-scss
 mrmlnc.vscode-stylefmt
 ms-vscode.sublime-keybindings
@@ -39,8 +41,10 @@ saviorisdead.RustyCode
 shinnn.stylelint
 silverbulleters.gherkin-autocomplete
 spoonscen.es6-mocha-snippets
+steve8708.Align
 stevejpurves.cucumber
 vsmobile.vscode-react-native
 wmaurer.change-case
+wmaurer.join-lines
 xabikos.JavaScriptSnippets
 xabikos.ReactSnippets
