@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-if [ "$(uname)" = "Darwin" ]; then
-  if [ "$(docker-machine 2> /dev/null)" ]; then
-    if [ "$(docker-machine status)" = "Running" ]; then
-      echo "configuring docker machine"
-      eval "$(docker-machine env default)"
-    fi
-  fi
-fi
+# if [ "$(uname)" = "Darwin" ]; then
+#   if [ "$(docker-machine 2> /dev/null)" ]; then
+#     if [ "$(docker-machine status)" = "Running" ]; then
+#       echo "configuring docker machine"
+#       eval "$(docker-machine env default)"
+#     fi
+#   fi
+# fi
 
 # Kill all running containers.
 alias dockerkillall='docker kill $(docker ps -q)'

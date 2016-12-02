@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "SF Mono, vazir code",
+    "editor.fontSize": 15,
+    "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": false,
+    "editor.selectionHighlight": false,
+    "explorer.openEditors.visible": 0,
+    "git.confirmSync": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
+}
