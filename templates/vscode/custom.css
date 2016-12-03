@@ -1,0 +1,14 @@
+/* statusbar */
+.monaco-workbench > .part.statusbar {
+  background: #333;
+}
+
+/* feedback icon */
+.monaco-shell .statusbar-item > .dropdown.send-feedback {
+  display: none;
+}
+
+/* indent guides */
+.monaco-editor.vs-dark .lines-content .cigr {
+  background: #333;
+}
