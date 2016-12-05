@@ -23,10 +23,11 @@ cd "$ST_DIR/Packages" && rm -Rf PlainTasks && git clone git@github.com:aziz/Plai
 cd "$ST_DIR/Packages" && rm -Rf PlainNotes && git clone git@github.com:aziz/PlainNotes.git
 cd "$ST_DIR/Packages" && rm -Rf FileBrowser && git clone git@github.com:aziz/SublimeFileBrowser.git FileBrowser
 cd "$ST_DIR/Packages" && rm -Rf "Theme - Default" && git clone git@github.com:aziz/SublimeTheme.git "Theme - Default"
-cd "$ST_DIR/Packages" && rm -Rf "SyncedSidebarBg" && git clone git@github.com:aziz/SublimeSyncedSidebarBg.git "SyncedSidebarBg"
+cd "$ST_DIR/Packages" && rm -Rf SyncedSidebarBg && git clone git@github.com:aziz/SublimeSyncedSidebarBg.git SyncedSidebarBg
 cd "$ST_DIR/Packages" && rm -Rf BetterFindBuffer && git clone git@github.com:aziz/BetterFindBuffer.git
 cd "$ST_DIR/Packages" && rm -Rf DistractionFreeWindow && git clone git@github.com:aziz/DistractionFreeWindow.git
 cd "$ST_DIR/Packages" && rm -Rf ANSIescape && git clone git@github.com:aziz/SublimeANSI.git ANSIescape
+cd "$ST_DIR/Packages" && rm -Rf HyperClick && git clone git@github.com:aziz/SublimeHyperClick.git HyperClick
 
 # installing subl cli command
 if [ "$(uname)" = "Darwin" ]; then
