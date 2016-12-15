@@ -1,16 +1,20 @@
 {
+    "diffEditor.renderIndicators": false,
     "diffEditor.renderSideBySide": false,
     "editor.fontFamily": "SF Mono, Vazir Code",
     "editor.fontSize": 15,
     "editor.lineHeight": 22,
     "editor.renderIndentGuides": true,
-    "editor.renderLineHighlight": false,
+    "editor.renderLineHighlight": "gutter",
     "editor.selectionHighlight": false,
     "explorer.openEditors.visible": 0,
+    "files.insertFinalNewline": true,
     "git.confirmSync": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
-    "vscode_custom_css.imports": ["file:///Users/allen/Dropbox/dotfiles/templates/vscode/custom.css"]
+    "vscode_custom_css.imports": ["file:///Users/allen/Dropbox/dotfiles/templates/vscode/custom.css"],
+    "workbench.activityBar.visible": true,
+    "workbench.editor.showTabCloseButton": false
 }
