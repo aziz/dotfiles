@@ -9,6 +9,8 @@ font-ubuntu-mono-powerline
 
 # Persian
 font-gandom
+font-iranian-sans
+font-iranian-serif
 font-lalezar
 font-nika
 font-noto-naskh-arabic
@@ -16,6 +18,7 @@ font-parastoo
 font-samim
 font-shabnam
 font-vazir
+font-vazir-code
 
 # Other
 font-fira-sans
