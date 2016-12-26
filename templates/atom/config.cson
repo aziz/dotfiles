@@ -41,6 +41,7 @@
       "tree-view"
       "vim-mode"
       "welcome"
+      "audio-recorder"
     ]
     useCustomTitleBar: true
   editor:

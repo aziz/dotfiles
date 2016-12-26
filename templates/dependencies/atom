@@ -8,6 +8,7 @@ atom-tt
 atom-typescript
 atom-wallaby
 atom-wine-syntax
+audio-recorder
 caniuse
 clean-context-menu
 coffee-compile
@@ -25,6 +26,7 @@ git-time-machine
 highlight-selected
 inline-markdown-images
 js-hyperclick
+json-level-color
 language-babel
 language-ini
 language-javascript-jsx
