@@ -38,8 +38,8 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 " themes
-Plugin 'gertjanreynaert/cobalt2-vim-theme'
 Plugin 'YorickPeterse/happy_hacking.vim'
+Plugin 'afgomez/better-cobalt.vim'
 Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'vim-scripts/ScrollColors'
 
@@ -129,7 +129,7 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 
 set t_Co=256
 syntax on
-:silent! colorscheme cobalt2
+:silent! colorscheme better-cobalt
 
 " Set split separator to Unicode box drawing character
 set fillchars+=vert:│
