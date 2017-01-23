@@ -57,7 +57,7 @@ the_silver_searcher
 tmux
 tree
 unrar
-vim --override-system-vi
+vim --with-override-system-vi
 watch
 watchman
 wget --with-iri
