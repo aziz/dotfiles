@@ -16,6 +16,7 @@ be5invis.vscode-custom-css
 be5invis.vscode-icontheme-nomo-dark
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
+clinyong.vscode-css-modules
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 donjayamanne.python
@@ -47,6 +48,7 @@ ryu1kn.annotator
 sandy081.todotasks
 saviorisdead.RustyCode
 shinnn.stylelint
+shuworks.vscode-table-formatter
 silverbulleters.gherkin-autocomplete
 spoonscen.es6-mocha-snippets
 steve8708.Align
