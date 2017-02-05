@@ -1,14 +1,75 @@
-/* statusbar */
-.monaco-workbench > .part.statusbar {
-  background: #333;
-}
-
 /* feedback icon */
 .monaco-shell .statusbar-item > .dropdown.send-feedback {
   display: none;
 }
 
-/* indent guides */
-.monaco-editor.vs-dark .lines-content .cigr {
-  background: #333;
+/* shell empty window */
+.monaco-shell.vs-dark {
+  background-color: hsla(191, 100%, 5%, 1);
+}
+
+/* statusbar */
+.monaco-workbench > .part.statusbar {
+  background-color: hsla(191, 100%, 3%, 1);
+}
+
+/* title bar */
+.vs-dark .monaco-workbench > .part.titlebar {
+  background-color: hsla(191, 100%, 3%, 1);
+}
+
+/* sidebar bg */
+.vs-dark .monaco-workbench {
+  background-color: hsla(191, 100%, 8%, 1);
+}
+
+/* toolbar */
+.vs-dark .monaco-workbench > .activitybar > .content {
+  background-color: hsla(191, 100%, 10%, 1);
+}
+
+/* tab bar bg */
+.vs-dark .monaco-workbench > .part.editor > .content > .one-editor-silo > .container > .title.tabs.shows-tabs {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* inactive tab */
+.vs-dark .monaco-workbench > .part.editor > .content > .one-editor-silo > .container > .title .tabs-container > .tab:not(.active) {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* tab */
+.vs-dark .monaco-workbench > .part.editor > .content > .one-editor-silo > .container > .title .tabs-container > .tab {
+  border-left-color: hsla(191, 100%, 5%, 1);
+}
+
+.vs-dark .monaco-workbench > .sidebar > .title > .title-actions {
+  background-color: hsla(191, 100%, 8%, 1);
+}
+
+/* sidebar item hover */
+.vs-dark .monaco-tree .monaco-tree-row:hover:not(.highlighted):not(.selected):not(.focused) {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* .vs-dark .monaco-tree .monaco-tree-row.selected:not(.highlighted) {} */
+
+/* line numbers */
+.monaco-editor.vs-dark .line-numbers {
+  color: rgba(90, 112, 117, 0.5);
+}
+
+/* diffbar */
+.monaco-diff-editor.vs-dark .diffOverview {
+  background: hsla(191, 100%, 8%, 1);
+}
+
+/*
+.vs-dark .monaco-workbench {
+  --input-bgcolor: #fff;
+}
+*/
+
+.monaco-shell {
+  font-family: "SF Mono", -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif
 }
