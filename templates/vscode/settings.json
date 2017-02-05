@@ -19,5 +19,6 @@
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
     "vscode_custom_css.imports": ["file:///Users/allen/Dropbox/dotfiles/templates/vscode/custom.css"],
     "workbench.activityBar.visible": true,
-    "workbench.sideBar.location": "left"
+    "workbench.sideBar.location": "left",
+    "workbench.welcome.enabled": true
 }

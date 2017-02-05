@@ -70,6 +70,23 @@
 }
 */
 
-.monaco-shell {
-  font-family: "SF Mono", -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif
+.monaco-shell,
+button,
+input,
+textarea {
+  font-family: "SF Mono", "Vazir Code", -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, HelveticaNeue-Light, Ubuntu, Droid Sans, sans-serif;
+}
+
+.vs-dark .monaco-workbench > .editor > .content.vertical-layout > .one-editor-silo.editor-three,
+.vs-dark .monaco-workbench > .editor > .content.vertical-layout > .one-editor-silo.editor-two {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Welcome Pgae */
+.vs-dark .monaco-workbench > .part.editor > .content .welcomePage .commands li button {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.vs-dark .monaco-workbench > .part.editor > .content .welcomePage .commands li button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
