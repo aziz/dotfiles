@@ -5,7 +5,7 @@
 
 /* shell empty window */
 .monaco-shell.vs-dark {
-  background-color: hsla(191, 100%, 5%, 1);
+  background-color: rgba(0, 22, 27, 1);
 }
 
 /* statusbar */
@@ -25,7 +25,7 @@
 
 /* toolbar */
 .vs-dark .monaco-workbench > .activitybar > .content {
-  background-color: hsla(191, 100%, 10%, 1);
+  background-color: hsla(191, 100%, 11%, 1);
 }
 
 /* tab bar bg */
@@ -40,7 +40,7 @@
 
 /* tab */
 .vs-dark .monaco-workbench > .part.editor > .content > .one-editor-silo > .container > .title .tabs-container > .tab {
-  border-left-color: hsla(191, 100%, 5%, 1);
+  border-left-color: rgba(0, 22, 27, 1);
 }
 
 .vs-dark .monaco-workbench > .sidebar > .title > .title-actions {
@@ -64,12 +64,6 @@
   background: hsla(191, 100%, 8%, 1);
 }
 
-/*
-.vs-dark .monaco-workbench {
-  --input-bgcolor: #fff;
-}
-*/
-
 .monaco-shell,
 button,
 input,
@@ -90,3 +84,31 @@ textarea {
 .vs-dark .monaco-workbench > .part.editor > .content .welcomePage .commands li button:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
+
+.extensions-viewlet > .extensions .extension .description,
+.extensions-viewlet > .extensions .extension > .details > .header-container > .header > .ratings {
+  display: none;
+}
+
+.vs-dark .quick-open-widget {
+  background-color: hsla(191, 100%, 8%, 1);
+  box-shadow: 0 5px 8px hsla(191, 100%, 3%, 1);
+  top: 55px !important;
+  border-radius: 3px;
+}
+
+.vs-dark input {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: hsla(191, 100%, 5%, 0.5) !important;
+}
+
+.vs-dark .synthetic-focus input {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  color: hsla(191, 100%, 5%, 1) !important;
+}
+
+/*
+.vs-dark .monaco-workbench {
+  --input-bgcolor: #fff;
+}
+*/
