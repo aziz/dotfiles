@@ -112,3 +112,12 @@ textarea {
   --input-bgcolor: #fff;
 }
 */
+
+.monaco-editor.vs-dark .monaco-editor-hover {
+  background-color: hsla(191, 100%, 8%, 1);
+  border-color: hsla(191, 100%, 3%, 1);
+}
+
+.monaco-editor .margin-view-overlays .folding.collapsed {
+  /* background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' …oke='%236b6b6b' stroke-miterlimit='10' d='M10 7.5H5M7.5 5v5'/%3E%3C/svg%3E); */
+}

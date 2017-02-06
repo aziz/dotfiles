@@ -2,6 +2,7 @@
     "diffEditor.renderIndicators": false,
     "diffEditor.renderSideBySide": false,
     "editor.fontFamily": "SF Mono, Vazir Code",
+    "editor.fontLigatures": true,
     "editor.fontSize": 15,
     "editor.hideCursorInOverviewRuler": true,
     "editor.lineHeight": 22,
