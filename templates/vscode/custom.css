@@ -64,6 +64,7 @@
   background: hsla(191, 100%, 8%, 1);
 }
 
+/* UI font */
 .monaco-shell,
 button,
 input,
@@ -71,6 +72,7 @@ textarea {
   font-family: "SF Mono", "Vazir Code", -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, HelveticaNeue-Light, Ubuntu, Droid Sans, sans-serif;
 }
 
+/* pane separators */
 .vs-dark .monaco-workbench > .editor > .content.vertical-layout > .one-editor-silo.editor-three,
 .vs-dark .monaco-workbench > .editor > .content.vertical-layout > .one-editor-silo.editor-two {
   border-left: 1px solid rgba(255, 255, 255, 0.12);
@@ -81,15 +83,24 @@ textarea {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
+/* welcome page buttons hover */
 .vs-dark .monaco-workbench > .part.editor > .content .welcomePage .commands li button:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* hiding extra stuff on extensions sidebar */
 .extensions-viewlet > .extensions .extension .description,
 .extensions-viewlet > .extensions .extension > .details > .header-container > .header > .ratings {
   display: none;
 }
 
+/* disabled extensions */
+.extension.disabled img.icon {
+  filter: grayscale(100%);
+  opacity: 0.33 !important;
+}
+
+/* command palette */
 .vs-dark .quick-open-widget {
   background-color: hsla(191, 100%, 8%, 1);
   box-shadow: 0 5px 8px hsla(191, 100%, 3%, 1);
@@ -97,27 +108,47 @@ textarea {
   border-radius: 3px;
 }
 
-.vs-dark input {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  color: hsla(191, 100%, 5%, 0.5) !important;
+/* command palette separators */
+.vs-dark .quick-open-widget .quick-open-tree .results-group-separator {
+  border-top-color: rgba(255, 255, 255, 0.15);
 }
 
-.vs-dark .synthetic-focus input {
-  background-color: rgba(255, 255, 255, 0.6) !important;
-  color: hsla(191, 100%, 5%, 1) !important;
+/* input fields */
+.vs-dark input,
+.vs-dark textarea {
+  background-color: rgba(255, 255, 255, 0.15) !important;
 }
 
-/*
-.vs-dark .monaco-workbench {
-  --input-bgcolor: #fff;
+/* search input fileds */
+.vs-dark .search-viewlet .file-types .monaco-inputbox,
+.vs-dark .search-viewlet .input-box {
+  background-color: rgba(255, 255, 255, 0.15) !important;
 }
-*/
 
+/* search input fileds */
+.vs-dark .search-viewlet .file-types .monaco-inputbox input,
+.vs-dark .search-viewlet .input-box input {
+  background-color: transparent !important;
+}
+
+/* UI tooltip boxes */
 .monaco-editor.vs-dark .monaco-editor-hover {
   background-color: hsla(191, 100%, 8%, 1);
   border-color: hsla(191, 100%, 3%, 1);
 }
 
-.monaco-editor .margin-view-overlays .folding.collapsed {
-  /* background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' …oke='%236b6b6b' stroke-miterlimit='10' d='M10 7.5H5M7.5 5v5'/%3E%3C/svg%3E); */
+.vs-dark .monaco-button:not(.disabled):hover {
+  background-color: rgba(0, 22, 27, 1);
 }
+
+/*
+.monaco-editor .margin-view-overlays .folding.collapsed {
+   background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' …oke='%236b6b6b' stroke-miterlimit='10' d='M10 7.5H5M7.5 5v5'/%3E%3C/svg%3E);
+}
+*/
+
+/*
+.monaco-workbench > .part.panel {
+  background-color: hsla(191, 100%, 3%, 1) !important;
+}
+*/
