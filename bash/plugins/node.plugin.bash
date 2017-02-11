@@ -8,7 +8,7 @@ export NVM_DIR="$HOME/.nvm"
 source "$(brew --prefix nvm)"/nvm.sh
 
 if [ -n "$(type -t nvm)" ] && [ "$(type -t nvm)" = function ]; then 
-  nvm use system >/dev/null;
+  nvm alias default system >/dev/null;
 fi
 
 npmls() {
