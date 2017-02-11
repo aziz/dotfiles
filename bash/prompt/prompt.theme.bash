@@ -26,8 +26,8 @@ rvmrc_version_prompt () {
 nvmrc_version_prompt () {
   if [ -f .nvmrc ]; then
     if type nvm &> /dev/null; then
-      rvm=`nvm current`
-      clean=${rvm//v/}
+      nvm=`nvm current`
+      clean=${nvm//v/}
       echo -e "$NVM_THEME_PROMPT_PREFIX$clean$NVM_THEME_PROMPT_SUFFIX"
     fi
   fi

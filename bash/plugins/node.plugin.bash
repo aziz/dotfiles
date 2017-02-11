@@ -7,6 +7,10 @@ export NODE_REPL_HISTORY_SIZE='32768'
 export NVM_DIR="$HOME/.nvm"
 source "$(brew --prefix nvm)"/nvm.sh
 
+if [ -n "$(type -t nvm)" ] && [ "$(type -t nvm)" = function ]; then 
+  nvm use system >/dev/null;
+fi
+
 npmls() {
   npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
 }

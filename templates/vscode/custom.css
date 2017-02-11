@@ -100,6 +100,11 @@ textarea {
   opacity: 0.33 !important;
 }
 
+/* extension content header */
+.extension-editor > .header {
+  background-color: transparent;
+}
+
 /* command palette */
 .vs-dark .quick-open-widget {
   background-color: hsla(191, 100%, 8%, 1);
@@ -138,6 +143,11 @@ textarea {
 }
 
 .vs-dark .monaco-button:not(.disabled):hover {
+  background-color: rgba(0, 22, 27, 1);
+}
+
+/* find widget */
+.monaco-editor.vs-dark .find-widget {
   background-color: rgba(0, 22, 27, 1);
 }
 
