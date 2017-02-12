@@ -138,8 +138,8 @@ textarea {
 
 /* UI tooltip boxes */
 .monaco-editor.vs-dark .monaco-editor-hover {
-  background-color: hsla(191, 100%, 8%, 1);
-  border-color: hsla(191, 100%, 3%, 1);
+  background-color: #002d38;
+  border-color: #99abaf;
 }
 
 .vs-dark .monaco-button:not(.disabled):hover {
@@ -162,3 +162,20 @@ textarea {
   background-color: hsla(191, 100%, 3%, 1) !important;
 }
 */
+
+
+.monaco-editor.vs-dark .tm-inspect-widget {
+  background-color: #002d38;
+  border-color: #99abaf;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.monaco-editor.vs-dark .tm-inspect-widget  hr {
+  border: 0;
+  border-top: 1px solid;
+}
+
+.tm-token, .tm-metadata-value, .tm-theme-selector {
+  font-family: inherit;
+}
