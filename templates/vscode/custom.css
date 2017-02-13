@@ -136,6 +136,23 @@ textarea {
   background-color: transparent !important;
 }
 
+/* find input fields */
+.monaco-editor .find-widget > .find-part .monaco-inputbox > .wrapper > .input,
+.monaco-editor .find-widget > .replace-part .monaco-inputbox > .wrapper > .input {
+  background-color: transparent !important;
+}
+
+/* find input feilds container */
+.monaco-editor.vs-dark .find-widget .monaco-findInput,
+.monaco-editor.vs-dark .find-widget .replace-input {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* find widget */
+.monaco-editor.vs-dark .find-widget {
+  background-color: #002d38;
+}
+
 /* UI tooltip boxes */
 .monaco-editor.vs-dark .monaco-editor-hover {
   background-color: #002d38;
@@ -143,11 +160,6 @@ textarea {
 }
 
 .vs-dark .monaco-button:not(.disabled):hover {
-  background-color: rgba(0, 22, 27, 1);
-}
-
-/* find widget */
-.monaco-editor.vs-dark .find-widget {
   background-color: rgba(0, 22, 27, 1);
 }
 
@@ -163,7 +175,6 @@ textarea {
 }
 */
 
-
 .monaco-editor.vs-dark .tm-inspect-widget {
   background-color: #002d38;
   border-color: #99abaf;
@@ -171,11 +182,13 @@ textarea {
   padding-bottom: 0;
 }
 
-.monaco-editor.vs-dark .tm-inspect-widget  hr {
+.monaco-editor.vs-dark .tm-inspect-widget hr {
   border: 0;
   border-top: 1px solid;
 }
 
-.tm-token, .tm-metadata-value, .tm-theme-selector {
+.tm-token,
+.tm-metadata-value,
+.tm-theme-selector {
   font-family: inherit;
 }
