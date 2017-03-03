@@ -20,5 +20,7 @@
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
     "vscode_custom_css.imports": ["file:///Users/allen/Dropbox/dotfiles/templates/vscode/custom.css"],
     "workbench.welcome.enabled": true,
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "PlasticAB",
+    "workbench.iconTheme": "vs-nomo-dark"
 }
