@@ -23,6 +23,8 @@ dbaeumer.vscode-eslint
 donjayamanne.python
 dzannotti.vscode-babel-coloring
 eg2.tslint
+eriklynd.json-tools
+fabianlauer.vs-code-xml-format
 felixfbecker.php-debug
 felixfbecker.php-intellisense
 formulahendry.auto-close-tag
@@ -30,7 +32,9 @@ formulahendry.auto-rename-tag
 gcazaciuc.vscode-flow-ide
 ikappas.phpcs
 jock.svg
+kisstkondoros.vscode-codemetrics
 mauve.terraform
+michelemelluso.code-beautifier
 misogi.ruby-rubocop
 mrmlnc.vscode-duplicate
 mrmlnc.vscode-lebab
