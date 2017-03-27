@@ -9,6 +9,8 @@
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "gutter",
     "editor.selectionHighlight": false,
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onSave",
     "explorer.openEditors.visible": 0,
     "files.insertFinalNewline": true,
     "git.confirmSync": false,
@@ -19,8 +21,8 @@
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
     "vscode_custom_css.imports": ["file:///Users/allen/Dropbox/dotfiles/templates/vscode/custom.css"],
-    "workbench.welcome.enabled": true,
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "PlasticAB",
-    "workbench.iconTheme": "vs-nomo-dark"
+    "workbench.iconTheme": "vs-nomo-dark",
+    "workbench.welcome.enabled": true
 }
