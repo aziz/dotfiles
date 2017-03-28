@@ -2,6 +2,7 @@ AravindKumar.gherkin-indent
 DavidAnson.vscode-markdownlint
 EditorConfig.EditorConfig
 GrapeCity.gc-excelviewer
+HookyQR.CreateModule
 HookyQR.beautify
 HvyIndustries.crane
 JerryHong.autofilename
@@ -47,6 +48,7 @@ polymer.polymer-ide
 pprice.better-merge
 rebornix.Ruby
 ricard.PostCSS
+ryanluker.vscode-coverage-gutters
 ryu1kn.annotator
 ryu1kn.partial-diff
 sandy081.todotasks
