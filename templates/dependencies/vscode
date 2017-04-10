@@ -10,13 +10,13 @@ Kasik96.format-indent
 Orta.vscode-jest
 Pendrica.Chef
 PeterJausovec.vscode-docker
+Aaronphy.SCSS-Scan
 abusaidm.html-snippets
 alexkrechik.cucumberautocomplete
 allenbar.theme-plastic-ab
 auiworks.amvim
 be5invis.vscode-custom-css
 be5invis.vscode-icontheme-nomo-dark
-beeblebrox3.behat-checker
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 clinyong.vscode-css-modules
@@ -34,6 +34,7 @@ formulahendry.auto-rename-tag
 gcazaciuc.vscode-flow-ide
 ikappas.phpcs
 jock.svg
+joshpeng.sublime-babel-vscode
 kisstkondoros.vscode-codemetrics
 mauve.terraform
 michelemelluso.code-beautifier
