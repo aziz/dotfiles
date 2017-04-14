@@ -9,6 +9,7 @@ atom-typescript
 atom-wallaby
 atom-wine-syntax
 audio-recorder
+busy-signal
 caniuse
 clean-context-menu
 coffee-compile
@@ -25,6 +26,7 @@ git-projects
 git-time-machine
 highlight-selected
 inline-markdown-images
+intentions
 js-hyperclick
 json-level-color
 language-babel
@@ -35,6 +37,7 @@ line-jumper
 linter-eslint
 linter-rubocop
 linter-shellcheck
+linter-ui-default
 linter
 markdown-deluxe
 markdown-format

@@ -43,7 +43,7 @@
       "welcome"
       "audio-recorder"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     fontFamily: "SF Mono"
     fontSize: 15
@@ -58,11 +58,7 @@
     coloured: false
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
-  linter:
-    lintOnFly: false
-    showErrorPanel: false
-    showErrorTabProject: false
-    statusIconScope: "File"
+  linter: {}
   "linter-eslint":
     eslintrcPath: "/Users/allen/.eslintrc"
     globalNodePath: "/Users/allen/.npm-packages"

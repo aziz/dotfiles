@@ -1,5 +1,5 @@
+AndrsDC.base16-themes
 AravindKumar.gherkin-indent
-Compulim.compulim-vscode-closetag
 DavidAnson.vscode-markdownlint
 EditorConfig.EditorConfig
 GrapeCity.gc-excelviewer
@@ -11,7 +11,7 @@ Kasik96.format-indent
 Orta.vscode-jest
 Pendrica.Chef
 PeterJausovec.vscode-docker
-Zarel.sublime-commands
+Aaronphy.SCSS-Scan
 abusaidm.html-snippets
 alexkrechik.cucumberautocomplete
 allenbar.theme-plastic-ab
@@ -36,6 +36,7 @@ formulahendry.auto-rename-tag
 gcazaciuc.vscode-flow-ide
 ikappas.phpcs
 jock.svg
+joshpeng.sublime-babel-vscode
 kisstkondoros.vscode-codemetrics
 mauve.terraform
 michelemelluso.code-beautifier
@@ -61,9 +62,7 @@ shuworks.vscode-table-formatter
 silverbulleters.gherkin-autocomplete
 steve8708.Align
 stevejpurves.cucumber
-vittorioromeo.expand-selection-to-scope
 vsmobile.vscode-react-native
-waderyan.sublime-text-pack
 wmaurer.change-case
 xabikos.JavaScriptSnippets
 xabikos.ReactSnippets
