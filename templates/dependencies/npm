@@ -1,9 +1,6 @@
 babel-cli
 babel-eslint
-coffee-script
-coffeelint
 create-react-app
-depcheck
 diff-so-fancy
 eslint
 eslint-find-rules
@@ -13,7 +10,6 @@ eslint-plugin-react
 firebase-tools
 generator-code
 generator-electrode
-gulp-cli
 hotel
 js-beautify
 jscs
