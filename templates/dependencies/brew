@@ -16,6 +16,7 @@ flow
 geckodriver
 git
 git-cal
+git-crypt
 git-extras
 gnu-sed --with-default-names
 gnu-tar --with-default-names
