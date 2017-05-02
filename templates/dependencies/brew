@@ -5,6 +5,7 @@ bash
 bash-completion
 caddy
 cask
+chromedriver
 cloc
 coreutils --with-gmp
 curl
@@ -12,6 +13,7 @@ direnv
 distribution
 findutils --with-default-names
 flow
+geckodriver
 git
 git-cal
 git-extras
@@ -53,6 +55,7 @@ rmtrash
 shellcheck
 sqlite
 ssh-copy-id
+terraform
 the_silver_searcher
 tmux
 tree
@@ -61,3 +64,4 @@ vim --with-override-system-vi
 watch
 watchman
 wget --with-iri
+youtube-dl
