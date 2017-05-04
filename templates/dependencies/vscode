@@ -8,10 +8,11 @@ HookyQR.beautify
 HvyIndustries.crane
 JerryHong.autofilename
 Kasik96.format-indent
+Kasik96.swift
 Orta.vscode-jest
 Pendrica.Chef
 PeterJausovec.vscode-docker
-aaronphy.scss-scan
+Aaronphy.SCSS-Scan
 abusaidm.html-snippets
 alexkrechik.cucumberautocomplete
 allenbar.theme-plastic-ab
@@ -59,6 +60,7 @@ ryu1kn.partial-diff
 sandy081.todotasks
 saviorisdead.RustyCode
 shinnn.stylelint
+shinnn.swiftlint
 shuworks.vscode-table-formatter
 silverbulleters.gherkin-autocomplete
 steve8708.Align
