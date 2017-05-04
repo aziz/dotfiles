@@ -54,8 +54,10 @@ redis
 rename
 rmtrash
 shellcheck
+sourcekitten
 sqlite
 ssh-copy-id
+swiftlint
 terraform
 the_silver_searcher
 tmux

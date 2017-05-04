@@ -24,5 +24,6 @@
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "PlasticAB",
     "workbench.iconTheme": "vs-nomo-dark",
-    "workbench.welcome.enabled": true
+    "workbench.welcome.enabled": true,
+    "swiftlint.enable": true
 }
