@@ -1,6 +1,7 @@
 all
 rule 'MD029', :style => 'ordered'
 exclude_rule 'MD012' # Multiple consecutive blank lines
+exclude_rule 'MD013' # Line Length
 exclude_rule 'MD022' # Headers should be surrounded by blank lines
 exclude_rule 'MD025' # Multiple top level headers
 exclude_rule 'MD026' # Trailing punctuation in header
