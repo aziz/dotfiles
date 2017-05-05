@@ -3,89 +3,12 @@
   display: none;
 }
 
-/* shell empty window */
-.monaco-shell.vs-dark {
-  background-color: rgba(0, 22, 27, 1);
-}
-
-/* statusbar */
-.monaco-workbench > .part.statusbar {
-  background-color: hsla(191, 100%, 3%, 1);
-}
-
-/* title bar */
-.vs-dark .monaco-workbench > .part.titlebar {
-  background-color: hsla(191, 100%, 3%, 1);
-}
-
-/* sidebar bg */
-.vs-dark .monaco-workbench {
-  background-color: hsla(191, 100%, 8%, 1);
-}
-
-/* toolbar */
-.vs-dark .monaco-workbench > .activitybar > .content {
-  background-color: hsla(191, 100%, 11%, 1);
-}
-
-/* tab bar bg */
-.vs-dark .monaco-workbench > .part.editor > .content > .one-editor-silo > .container > .title.tabs.shows-tabs {
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-/* inactive tab */
-.vs-dark .monaco-workbench > .part.editor > .content > .one-editor-silo > .container > .title .tabs-container > .tab:not(.active) {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-/* tab */
-.vs-dark .monaco-workbench > .part.editor > .content > .one-editor-silo > .container > .title .tabs-container > .tab {
-  border-left-color: rgba(0, 22, 27, 1);
-}
-
-.vs-dark .monaco-workbench > .sidebar > .title > .title-actions {
-  background-color: hsla(191, 100%, 8%, 1);
-}
-
-/* sidebar item hover */
-.vs-dark .monaco-tree .monaco-tree-row:hover:not(.highlighted):not(.selected):not(.focused) {
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-/* .vs-dark .monaco-tree .monaco-tree-row.selected:not(.highlighted) {} */
-
-/* line numbers */
-.monaco-editor.vs-dark .line-numbers {
-  color: rgba(90, 112, 117, 0.5);
-}
-
-/* diffbar */
-.monaco-diff-editor.vs-dark .diffOverview {
-  background: hsla(191, 100%, 8%, 1);
-}
-
 /* UI font */
 .monaco-shell,
 button,
 input,
 textarea {
   font-family: "SF Mono", "Vazir Code", -apple-system, BlinkMacSystemFont, Segoe WPC, Segoe UI, HelveticaNeue-Light, Ubuntu, Droid Sans, sans-serif;
-}
-
-/* pane separators */
-.vs-dark .monaco-workbench > .editor > .content.vertical-layout > .one-editor-silo.editor-three,
-.vs-dark .monaco-workbench > .editor > .content.vertical-layout > .one-editor-silo.editor-two {
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-/* Welcome Pgae */
-.vs-dark .monaco-workbench > .part.editor > .content .welcomePage .commands li button {
-  background-color: rgba(255, 255, 255, 0.08);
-}
-
-/* welcome page buttons hover */
-.vs-dark .monaco-workbench > .part.editor > .content .welcomePage .commands li button:hover {
-  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* hiding extra stuff on extensions sidebar */
@@ -104,76 +27,6 @@ textarea {
 .extension-editor > .header {
   background-color: transparent;
 }
-
-/* command palette */
-.vs-dark .quick-open-widget {
-  background-color: hsla(191, 100%, 8%, 1);
-  box-shadow: 0 5px 8px hsla(191, 100%, 3%, 1);
-  top: 55px !important;
-  border-radius: 3px;
-}
-
-/* command palette separators */
-.vs-dark .quick-open-widget .quick-open-tree .results-group-separator {
-  border-top-color: rgba(255, 255, 255, 0.15);
-}
-
-/* input fields */
-.vs-dark input,
-.vs-dark textarea {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-}
-
-/* search input fileds */
-.vs-dark .search-viewlet .file-types .monaco-inputbox,
-.vs-dark .search-viewlet .input-box {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-}
-
-/* search input fileds */
-.vs-dark .search-viewlet .file-types .monaco-inputbox input,
-.vs-dark .search-viewlet .input-box input {
-  background-color: transparent !important;
-}
-
-/* find input fields */
-.monaco-editor .find-widget > .find-part .monaco-inputbox > .wrapper > .input,
-.monaco-editor .find-widget > .replace-part .monaco-inputbox > .wrapper > .input {
-  background-color: transparent !important;
-}
-
-/* find input feilds container */
-.monaco-editor.vs-dark .find-widget .monaco-findInput,
-.monaco-editor.vs-dark .find-widget .replace-input {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* find widget */
-.monaco-editor.vs-dark .find-widget {
-  background-color: #002d38;
-}
-
-/* UI tooltip boxes */
-.monaco-editor.vs-dark .monaco-editor-hover {
-  background-color: #002d38;
-  border-color: #99abaf;
-}
-
-.vs-dark .monaco-button:not(.disabled):hover {
-  background-color: rgba(0, 22, 27, 1);
-}
-
-/*
-.monaco-editor .margin-view-overlays .folding.collapsed {
-   background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' …oke='%236b6b6b' stroke-miterlimit='10' d='M10 7.5H5M7.5 5v5'/%3E%3C/svg%3E);
-}
-*/
-
-/*
-.monaco-workbench > .part.panel {
-  background-color: hsla(191, 100%, 3%, 1) !important;
-}
-*/
 
 .monaco-editor.vs-dark .tm-inspect-widget {
   background-color: #002d38;
