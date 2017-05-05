@@ -14,6 +14,8 @@
     "explorer.openEditors.visible": 0,
     "files.insertFinalNewline": true,
     "git.confirmSync": false,
+    "javascript.implicitProjectConfig.checkJs": true,
+    "swiftlint.enable": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.external.osxExec": "iTerm.app",
@@ -25,5 +27,5 @@
     "workbench.colorTheme": "PlasticAB",
     "workbench.iconTheme": "vs-nomo-dark",
     "workbench.welcome.enabled": true,
-    "swiftlint.enable": true
+    "window.titleBarStyle": "native"
 }
