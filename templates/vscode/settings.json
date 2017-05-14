@@ -27,5 +27,8 @@
     "workbench.colorTheme": "PlasticAB",
     "workbench.iconTheme": "vs-nomo-dark",
     "workbench.welcome.enabled": true,
-    "window.titleBarStyle": "native"
+    "window.titleBarStyle": "native",
+    "files.associations": {
+        "*.note": "markdown"
+    }
 }
