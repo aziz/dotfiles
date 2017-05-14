@@ -5,5 +5,16 @@
     { "key": "cmd+1", "command": "workbench.view.explorer" },
     { "key": "cmd+3", "command": "workbench.view.git" },
     { "key": "cmd+4", "command": "workbench.view.debug" },
-    { "key": "cmd+5", "command": "workbench.view.extensions" }
+    {
+        "key": "cmd+5",
+        "command": "workbench.view.extensions"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    }
 ] 

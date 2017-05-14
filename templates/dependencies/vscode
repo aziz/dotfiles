@@ -27,7 +27,6 @@ clinyong.vscode-css-modules
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 donjayamanne.python
-dzannotti.vscode-babel-coloring
 eg2.tslint
 eriklynd.json-tools
 fabianlauer.vs-code-xml-format
@@ -38,7 +37,6 @@ formulahendry.auto-rename-tag
 gcazaciuc.vscode-flow-ide
 ikappas.phpcs
 jock.svg
-joshpeng.sublime-babel-vscode
 kisstkondoros.vscode-codemetrics
 mauve.terraform
 michelemelluso.code-beautifier
