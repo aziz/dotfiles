@@ -1,0 +1,62 @@
+#!/usr/bin/env ruby -W0
+require 'awesome_print'
+require 'colorize'
+
+# ========================================================
+
+live = `brew leaves | sort`.split("\n")
+template = `cat ~/.templates/dependencies/brew | sort`.split("\n").map do |i|
+  i.gsub!('homebrew/completions/', '')
+  i.gsub!('homebrew/dupes/', '')
+  i.gsub!(/\s--.+/, '')
+  i
+end
+
+puts "#{'HOMEBREW'.colorize(:light_blue)}"
+puts "#{'Not in template'.colorize(:light_magenta)}\n"
+ap live - template
+puts "#{'Not installed'.colorize(:light_magenta)}\n"
+ap template - live
+
+# ========================================================
+
+puts "#{'HOMEBREW CASK'.colorize(:light_blue)}"
+live = `brew cask list | sort`.split("\n")
+template_apps = `cat ~/.templates/dependencies/apps | sort`.split("\n")
+template_fonts =  `cat ~/.templates/dependencies/fonts | sort`.split("\n").reject do |i|
+  i.length == 0 || i[0] === '#'
+end
+
+template = template_apps + template_fonts
+puts "#{'Not in template'.colorize(:light_magenta)}\n"
+ap live - template
+puts "#{'Not installed'.colorize(:light_magenta)}\n"
+ap template - live
+
+# ========================================================
+
+puts "#{'GEMS'.colorize(:light_blue)}"
+live = `gem list --no-details --no-version`.split("\n")
+template = `cat ~/.templates/dependencies/gem`.split("\n")
+
+puts "#{'Not in template'.colorize(:light_magenta)}\n"
+ap live - template
+puts "#{'Not installed'.colorize(:light_magenta)}\n"
+ap template - live
+
+# ========================================================
+
+puts "#{'NPM'.colorize(:light_blue)}"
+live = `npm list -g --depth=0`.split("\n").map do |i|
+  i.gsub!(/^\W+/, '')
+  i.gsub!(/@.+/, '')
+  i
+end.reject do |i|
+  i == 'usr/local/lib' || i == 'npm'
+end
+template = `cat ~/.templates/dependencies/npm`.split("\n")
+
+puts "#{'Not in template'.colorize(:light_magenta)}\n"
+ap live - template
+puts "#{'Not installed'.colorize(:light_magenta)}\n"
+ap template - live

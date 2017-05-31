@@ -7,10 +7,8 @@ export NODE_REPL_HISTORY_SIZE='32768'
 export NVM_DIR="$HOME/.nvm"
 source "$(brew --prefix nvm)"/nvm.sh
 
-if [ -n "$(type -t nvm)" ] && [ "$(type -t nvm)" = function ]; then 
+if [ -n "$(type -t nvm)" ] && [ "$(type -t nvm)" = function ]; then
   nvm alias default system >/dev/null;
 fi
 
-npmls() {
-  npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
-}
+alias npmls="npm list --depth=0"
