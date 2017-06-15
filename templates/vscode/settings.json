@@ -30,5 +30,6 @@
     "window.titleBarStyle": "native",
     "files.associations": {
         "*.note": "markdown"
-    }
+    },
+    "extensions.autoUpdate": false
 }

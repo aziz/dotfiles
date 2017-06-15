@@ -12,6 +12,8 @@ Orta.vscode-jest
 Pendrica.Chef
 PeterJausovec.vscode-docker
 abusaidm.html-snippets
+adamvoss.vscode-languagetool
+adamvoss.vscode-languagetool-en
 alexkrechik.cucumberautocomplete
 allenbar.theme-plastic-ab
 auiworks.amvim
@@ -24,6 +26,7 @@ christian-kohler.path-intellisense
 clinyong.vscode-css-modules
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
+discountry.react-redux-react-router-snippets
 donjayamanne.python
 eg2.tslint
 eriklynd.json-tools
@@ -32,11 +35,13 @@ felixfbecker.php-debug
 felixfbecker.php-intellisense
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+formulahendry.docker-explorer
 gcazaciuc.vscode-flow-ide
 ikappas.phpcs
 jock.svg
 kisstkondoros.vscode-codemetrics
 mauve.terraform
+mgmcdermott.vscode-language-babel
 michelemelluso.code-beautifier
 misogi.ruby-rubocop
 mrmlnc.vscode-duplicate
@@ -47,7 +52,6 @@ ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 msjsdiag.debugger-for-chrome
 polymer.polymer-ide
-pprice.better-merge
 rebornix.Ruby
 ricard.PostCSS
 ryanluker.vscode-coverage-gutters
