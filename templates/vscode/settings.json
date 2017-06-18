@@ -31,5 +31,7 @@
     "files.associations": {
         "*.note": "markdown"
     },
-    "extensions.autoUpdate": false
+    "extensions.autoUpdate": false,
+    "flow.useNPMPackagedFlow": true,
+    "editor.minimap.enabled": false
 }
