@@ -11,6 +11,7 @@ Kasik96.swift
 Orta.vscode-jest
 Pendrica.Chef
 PeterJausovec.vscode-docker
+Rubymaniac.vscode-paste-and-indent
 abusaidm.html-snippets
 adamvoss.vscode-languagetool
 adamvoss.vscode-languagetool-en
@@ -37,7 +38,6 @@ flowtype.flow-for-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 formulahendry.docker-explorer
-gcazaciuc.vscode-flow-ide
 ikappas.phpcs
 jock.svg
 kisstkondoros.vscode-codemetrics
