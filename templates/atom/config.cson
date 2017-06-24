@@ -94,7 +94,6 @@
       "language-ocaml"
       "language-rust"
       "tree-view"
-      "nuclide"
       "nuclide-format-js"
       "set-syntax"
       "svg-preview"

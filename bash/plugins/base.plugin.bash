@@ -10,7 +10,7 @@ outdated() {
   printf "\n${background_purple} Cask apps     %$(($(tput cols)-15))s${normal}"
   cask_report
   printf "\n${background_purple} npm Packages  %$(($(tput cols)-15))s${normal}"
-  npm -g outdated --depth=0
+  npm-check --global --no-emoji
   printf "\n${background_purple} Ruby Gems     %$(($(tput cols)-15))s${normal}"
   gem outdated
   printf "\n${background_purple} Atom Packages %$(($(tput cols)-15))s${normal}"
