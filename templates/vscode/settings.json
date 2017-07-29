@@ -32,7 +32,7 @@
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "PlasticAB",
     "workbench.iconTheme": "vs-nomo-dark",
-    "workbench.welcome.enabled": true
+    "extensions.ignoreRecommendations": true,
     // "swiftlint.enable": true,
     // "vscode_custom_css.imports": ["file:///Users/allen/cloud/dotfiles/templates/vscode/custom.css"],
 }

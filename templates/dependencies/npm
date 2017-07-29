@@ -21,11 +21,13 @@ node-gyp
 node-inspector
 node-sass
 npm-check
+pkg
 postcss
 postcss-cssnext
 psi
 serverless
 slow-deps
+snyk
 speed-test
 spoof
 stylefmt
