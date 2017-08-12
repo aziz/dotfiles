@@ -5,6 +5,7 @@ aligner
 angularjs
 atom-beautify
 atom-commander
+atom-ide-ui
 atom-jasmine
 atom-tt
 atom-typescript
@@ -28,6 +29,7 @@ git-projects
 git-time-machine
 haskell-grammar
 highlight-selected
+ide-flowtype
 inline-markdown-images
 intentions
 js-hyperclick

@@ -101,10 +101,7 @@
       "language-swift"
       "language-thrift"
       "nuclide"
-    ]
-    themes: [
-      "acode-ui"
-      "acode-syntax"
+      "atom-ide-ui"
     ]
     titleBar: "custom"
   editor:

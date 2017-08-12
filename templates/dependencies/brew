@@ -3,17 +3,18 @@ autojump
 awscli
 bash
 bash-completion
+brew-cask-completion
+bundler-completion
 caddy
-cask
 chromedriver
 cloc
 coreutils --with-gmp
 curl
+diffutils
 direnv
 distribution
 findutils --with-default-names
-flow
-geckodriver
+gem-completion
 git
 git-cal
 git-crypt
@@ -21,23 +22,10 @@ git-extras
 gnu-sed --with-default-names
 gnu-tar --with-default-names
 go
+grep --with-default-names
+grunt-completion
+gzip
 heroku-toolbelt
-homebrew/completions/brew-cask-completion
-homebrew/completions/bundler-completion
-homebrew/completions/gem-completion
-homebrew/completions/grunt-completion
-homebrew/completions/pip-completion
-homebrew/completions/rails-completion
-homebrew/completions/rake-completion
-homebrew/completions/ruby-completion
-homebrew/completions/tmuxinator-completion
-homebrew/completions/vagrant-completion
-homebrew/dupes/diffutils
-homebrew/dupes/grep --with-default-names
-homebrew/dupes/gzip
-homebrew/dupes/openssh
-homebrew/dupes/rsync
-https://raw.githubusercontent.com/BurntSushi/ripgrep/master/pkg/brew/ripgrep.rb
 hub
 jq
 man2html
@@ -45,14 +33,21 @@ mas
 mongodb
 node
 nvm
+openssh
 openssl
 p7zip
+pip-completion
 postgresql
 python
 python3
+rails-completion
+rake-completion
 redis
 rename
+ripgrep
 rmtrash
+rsync
+ruby-completion
 shellcheck
 sourcekitten
 sqlite
@@ -61,10 +56,12 @@ swiftlint
 terraform
 the_silver_searcher
 tmux
+tmuxinator-completion
 tree
 unrar
+vagrant-completion
 vim --with-override-system-vi
 watch
 watchman
-wget --with-iri
+wget
 youtube-dl

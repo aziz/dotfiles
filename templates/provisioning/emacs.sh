@@ -2,5 +2,5 @@
 
 echo "Configuring Emacs Packages"
 echo "==========================="
-cd "$HOME"/.emacs.d
+cd "$HOME"/.emacs.d || exit
 cask install

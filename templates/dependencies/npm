@@ -9,6 +9,7 @@ eslint-plugin-jsx-a11y
 eslint-plugin-react
 express-generator
 firebase-tools
+flow-bin
 flow-typed
 generator-code
 generator-electrode
@@ -37,7 +38,6 @@ svgo
 tldr
 trash
 typescript
-typings
 vsce
 yarn
 yo
