@@ -5,6 +5,8 @@
     general:
       _analyticsUserId: "c420f183-e8a7-4273-889d-49bb4829c627"
       analytics: false
+  "atom-package-deps":
+    ignored: []
   core:
     audioBeep: false
     customFileTypes:
@@ -20,88 +22,11 @@
         "BUCK"
       ]
     disabledPackages: [
-      "angularjs"
-      "atom-jasmine"
-      "atom-tt"
-      "atom-typescript"
-      "atom-wallaby"
-      "clean-context-menu"
-      "coffee-compile"
       "exception-reporting"
-      "js-hyperclick"
-      "linter-shellcheck"
-      "markdown-deluxe"
       "metrics"
       "org"
-      "qolor"
-      "ruby-test"
-      "textual-velocity"
-      "tool-bar"
-      "tree-view-autoresize"
-      "vim-mode"
       "welcome"
-      "audio-recorder"
-      "advanced-open-file"
-      "aligner"
-      "atom-beautify"
-      "atom-commander"
-      "busy-signal"
-      "caniuse"
-      "color-picker"
-      "compatibility-reporter"
-      "document-outline"
-      "file-icons"
-      "fold-comments"
-      "font-viewer"
-      "git-blame"
-      "git-control"
-      "git-log"
-      "git-projects"
-      "git-time-machine"
-      "highlight-selected"
-      "inline-markdown-images"
-      "intentions"
-      "json-level-color"
-      "language-babel"
-      "language-ini"
-      "language-javascript-jsx"
-      "line-jumper"
-      "linter"
-      "linter-eslint"
-      "linter-rubocop"
-      "linter-ui-default"
-      "markdown-format"
-      "markdown-lists"
-      "markdown-preview-plus"
-      "markdown-table-formatter"
-      "merge-conflicts"
-      "organized"
-      "pigments"
-      "preview-inline"
-      "remember-file-positions"
-      "show-in-system"
-      "term3"
-      "tasks"
-      "tablr"
-      "table-editor"
-      "synced-sidebar"
-      "sort-lines"
-      "Zen"
-      "MagicPython"
-      "haskell-grammar"
-      "language-graphql"
-      "language-lua"
-      "language-ocaml"
-      "language-rust"
-      "nuclide-format-js"
-      "set-syntax"
-      "svg-preview"
-      "svgo"
-      "language-svg"
-      "language-swift"
-      "language-thrift"
-      "nuclide"
-      "atom-ide-ui"
+      "tree-view"
     ]
     titleBar: "custom"
   editor:
@@ -125,8 +50,7 @@
     useGlobalEslint: true
   "linter-shellcheck":
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   nuclide:
     installRecommendedPackages: true
     "nuclide-blame-provider-hg": {}
@@ -150,9 +74,9 @@
       "nuclide-hhvm-toolbar": false
       "nuclide-language-hack": false
       "nuclide-ocaml": false
+  "one-dark-ui": {}
   pigments:
     groupPaletteColors: "by file"
-    markerType: "square-dot"
     sortPaletteColors: "by color"
   react: {}
   "svg-preview":

@@ -14,8 +14,6 @@ flow-typed
 generator-code
 generator-electrode
 hotel
-js-beautify
-jscs
 lebab
 marked
 node-gyp
@@ -25,13 +23,13 @@ npm-check
 pkg
 postcss
 postcss-cssnext
+prettier
 psi
 serverless
 slow-deps
 snyk
 speed-test
 spoof
-stylefmt
 stylelint
 stylelint-config-standard
 svgo
