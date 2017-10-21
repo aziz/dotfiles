@@ -39,6 +39,7 @@ mrmlnc.vscode-duplicate
 mrmlnc.vscode-lebab
 mrmlnc.vscode-scss
 mrmlnc.vscode-stylefmt
+ms-vscode.node-debug2
 ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 msjsdiag.debugger-for-chrome
