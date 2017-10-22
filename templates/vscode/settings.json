@@ -34,7 +34,11 @@
     "window.titleBarStyle": "native",
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "PlasticAB",
-    "workbench.iconTheme": "vs-nomo-dark"
+    "workbench.iconTheme": "vs-nomo-dark",
+    "prettier.printWidth": 100,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5",
+    "prettier.jsxBracketSameLine": true
     // "swiftlint.enable": true,
     // "vscode_custom_css.imports": ["file:///Users/allen/cloud/dotfiles/templates/vscode/custom.css"],
 }
