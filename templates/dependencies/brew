@@ -23,9 +23,8 @@ gnu-sed --with-default-names
 gnu-tar --with-default-names
 go
 grep --with-default-names
-grunt-completion
 gzip
-heroku-toolbelt
+heroku
 hub
 jq
 man2html
