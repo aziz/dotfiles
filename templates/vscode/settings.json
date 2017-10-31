@@ -5,9 +5,11 @@
     "editor.fontFamily": "SF Mono, Vazir Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
     "editor.hideCursorInOverviewRuler": true,
     "editor.lineHeight": 20,
     "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "gutter",
     "editor.selectionHighlight": false,
@@ -29,6 +31,7 @@
     "prettier.printWidth": 100,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
+    "sublimeTextKeymap.promptV3Features": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.external.osxExec": "iTerm.app",
@@ -40,6 +43,5 @@
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "PlasticAB",
     "workbench.iconTheme": "vs-nomo-dark"
-    // "swiftlint.enable": true,
     // "vscode_custom_css.imports": ["file:///Users/allen/cloud/dotfiles/templates/vscode/custom.css"],
 }
