@@ -1,17 +1,12 @@
-AndrsDC.base16-themes
 DavidAnson.vscode-markdownlint
 EditorConfig.EditorConfig
 GrapeCity.gc-excelviewer
-HookyQR.beautify
 Orta.vscode-jest
-Pendrica.Chef
 PeterJausovec.vscode-docker
 abusaidm.html-snippets
 adamvoss.vscode-languagetool
 adamvoss.vscode-languagetool-en
-alexkrechik.cucumberautocomplete
 allenbar.theme-plastic-ab
-auiworks.amvim
 be5invis.vscode-custom-css
 be5invis.vscode-icontheme-nomo-dark
 christian-kohler.npm-intellisense
@@ -33,7 +28,6 @@ freebroccolo.reasonml
 jock.svg
 kisstkondoros.vscode-codemetrics
 mauve.terraform
-mgmcdermott.vscode-language-babel
 misogi.ruby-rubocop
 mrmlnc.vscode-duplicate
 mrmlnc.vscode-lebab
@@ -43,8 +37,8 @@ ms-vscode.node-debug2
 ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 msjsdiag.debugger-for-chrome
+patrys.vscode-code-outline
 paulmolluzzo.convert-css-in-js
-polymer.polymer-ide
 rebornix.Ruby
 rust-lang.rust
 ryanluker.vscode-coverage-gutters
@@ -53,9 +47,7 @@ ryu1kn.partial-diff
 sandy081.todotasks
 shinnn.stylelint
 shuworks.vscode-table-formatter
-silverbulleters.gherkin-autocomplete
 steve8708.Align
-stevejpurves.cucumber
 vsmobile.vscode-react-native
 wix.vscode-import-cost
 wmaurer.change-case

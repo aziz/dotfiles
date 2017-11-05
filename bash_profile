@@ -77,6 +77,6 @@ shopt -s histappend
 # $ echo kern.maxfilesperproc=65536 | sudo tee -a /etc/sysctl.conf
 # $ sudo sysctl -w kern.maxfiles=65536
 # $ sudo sysctl -w kern.maxfilesperproc=65536
-ulimit -n 65536 65536
+# ulimit -n 65536 65536
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
