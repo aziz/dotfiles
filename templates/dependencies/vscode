@@ -15,7 +15,6 @@ clinyong.vscode-css-modules
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 discountry.react-redux-react-router-snippets
-donjayamanne.python
 eg2.tslint
 esbenp.prettier-vscode
 fabianlauer.vs-code-xml-format
@@ -33,6 +32,7 @@ mrmlnc.vscode-duplicate
 mrmlnc.vscode-lebab
 mrmlnc.vscode-scss
 mrmlnc.vscode-stylefmt
+ms-python.python
 ms-vscode.node-debug2
 ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
