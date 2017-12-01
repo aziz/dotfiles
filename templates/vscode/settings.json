@@ -40,6 +40,16 @@
   "workbench.colorTheme": "PlasticAB",
   "workbench.iconTheme": "vs-nomo-dark",
   "javascript.validate.enable": false,
-  "workbench.panel.location": "bottom"
+  "workbench.editor.enablePreview": false,
+  "workbench.panel.location": "bottom",
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "typescript": "jsx",
+    "typescriptreact": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "explorer.confirmDragAndDrop": false
   // "vscode_custom_css.imports": ["file:///Users/allen/cloud/dotfiles/templates/vscode/custom.css"],
 }
