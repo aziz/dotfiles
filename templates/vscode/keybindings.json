@@ -1,9 +1,8 @@
 [
     { "key": "cmd+shift+\\", "command": "workbench.action.files.revealActiveFileInWindows" },
     { "key": "cmd+\\", "command": "workbench.files.action.showActiveFileInExplorer" },
-    { "key": "ctrl+cmd+alt+]", "command": "extension.align", "when": "editorTextFocus" },
     { "key": "cmd+1", "command": "workbench.view.explorer" },
-    { "key": "cmd+3", "command": "workbench.view.git" },
+    { "key": "cmd+3", "command": "workbench.view.scm" },
     { "key": "cmd+4", "command": "workbench.view.debug" },
     {
         "key": "cmd+5",
@@ -16,5 +15,15 @@
     {
         "key": "ctrl+-",
         "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.findInFiles",
+        "when": "!editorFocus && !searchInputBoxFocus"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.action.findInFiles",
+        "when": "!editorFocus && !searchInputBoxFocus"
     }
 ]
