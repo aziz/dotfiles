@@ -51,5 +51,4 @@
     "javascript": "javascriptreact"
   },
   "explorer.confirmDragAndDrop": false
-  // "vscode_custom_css.imports": ["file:///Users/allen/cloud/dotfiles/templates/vscode/custom.css"],
 }
