@@ -17,6 +17,7 @@
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
+  "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": true,
@@ -36,12 +37,11 @@
   "terminal.integrated.shell.osx": "/usr/local/bin/bash",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.titleBarStyle": "native",
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "PlasticAB",
   "workbench.iconTheme": "vs-nomo-dark",
-  "javascript.validate.enable": false,
+  "workbench.editor.tabSizing": "shrink",
   "workbench.editor.enablePreview": false,
-  "workbench.panel.location": "bottom",
   "emmet.syntaxProfiles": {
     "javascript": "jsx",
     "typescript": "jsx",
@@ -50,5 +50,6 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "explorer.confirmDragAndDrop": false
+  "angular-template-formatter.indentWidth": 2,
+  "workbench.editor.showTabs": true,
 }
