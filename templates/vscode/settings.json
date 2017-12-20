@@ -17,6 +17,7 @@
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
+  "html.format.wrapAttributes": "force",
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": false,
@@ -49,7 +50,5 @@
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  },
-  "angular-template-formatter.indentWidth": 2,
-  "workbench.editor.showTabs": true,
+  }
 }

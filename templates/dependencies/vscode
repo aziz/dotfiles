@@ -8,6 +8,7 @@ capaj.vscode-exports-autocomplete
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
+eg2.tslint
 esbenp.prettier-vscode
 fabiospampinato.vscode-todo-plus
 formulahendry.auto-close-tag
@@ -17,7 +18,8 @@ ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 natewallace.angular2-inline
 paulmolluzzo.convert-css-in-js
-stringham.angular-template-formatter
+plievone.vscode-template-literal-editor
+ryu1kn.annotator
 timothymclane.react-redux-es6-snippets
 wmaurer.change-case
 xabikos.ReactSnippets
