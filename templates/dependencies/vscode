@@ -1,4 +1,5 @@
 Orta.vscode-jest
+Retsam19.typescript-types-view
 allenbar.theme-plastic-ab
 angryobject.react-pure-to-class-vscode
 annsk.alignment
@@ -19,6 +20,7 @@ ms-vscode.typescript-javascript-grammar
 natewallace.angular2-inline
 paulmolluzzo.convert-css-in-js
 plievone.vscode-template-literal-editor
+ryanluker.vscode-coverage-gutters
 ryu1kn.annotator
 timothymclane.react-redux-es6-snippets
 wmaurer.change-case

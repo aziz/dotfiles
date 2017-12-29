@@ -50,5 +50,6 @@
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  }
+  },
+  "coverage-gutters.showLineCoverage": true,
 }
