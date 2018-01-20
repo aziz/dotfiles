@@ -3,6 +3,7 @@ Retsam19.typescript-types-view
 allenbar.theme-plastic-ab
 angryobject.react-pure-to-class-vscode
 annsk.alignment
+be5invis.toml
 be5invis.vscode-icontheme-nomo-dark
 bibhasdn.unique-lines
 capaj.vscode-exports-autocomplete
@@ -20,8 +21,11 @@ ms-vscode.typescript-javascript-grammar
 natewallace.angular2-inline
 paulmolluzzo.convert-css-in-js
 plievone.vscode-template-literal-editor
+rust-lang.rust
 ryanluker.vscode-coverage-gutters
 ryu1kn.annotator
 timothymclane.react-redux-es6-snippets
+vadimcn.vscode-lldb
+webfreak.debug
 wmaurer.change-case
 xabikos.ReactSnippets

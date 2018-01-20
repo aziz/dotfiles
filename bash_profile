@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:$HOME/.rvm/bin:$HOME/.npm-packages/bin:$HOME/.bash/bin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:$HOME/.rvm/bin:$HOME/.npm-packages/bin:$HOME/.bash/bin:$PATH:$HOME/.cargo/bin"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 export TERM="xterm-256color"
