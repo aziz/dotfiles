@@ -50,5 +50,9 @@
         "key": "shift+f12",
         "command": "-editor.action.referenceSearch.trigger",
         "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+alt+cmd+6",
+        "command": "editor.action.inspectTMScopes"
     }
 ]
