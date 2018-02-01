@@ -23,7 +23,8 @@
   "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "*.note": "markdown"
+    "*.note": "markdown",
+    ".env": "shellscript"
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
