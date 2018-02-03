@@ -37,11 +37,6 @@
         "when": "!editorFocus && !searchInputBoxFocus"
     },
     {
-        "key": "shift+cmd+f",
-        "command": "-workbench.action.findInFiles",
-        "when": "!editorFocus && !searchInputBoxFocus"
-    },
-    {
         "key": "ctrl+alt+cmd+down",
         "command": "editor.action.referenceSearch.trigger",
         "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
@@ -54,5 +49,52 @@
     {
         "key": "ctrl+alt+cmd+6",
         "command": "editor.action.inspectTMScopes"
-    }
+    },
+    {
+        "key": "cmd+k cmd+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "cmd+k cmd+k",
+        "command": "workbench.action.focusSideBar",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "o",
+        "command": "list.toggleExpand",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "g",
+        "command": "list.focusFirst",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "shift+g",
+        "command": "list.focusLast",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "cmd+k cmd+j",
+        "command": "workbench.action.decreaseViewSize"
+    },
 ]
