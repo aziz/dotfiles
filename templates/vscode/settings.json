@@ -52,5 +52,5 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "coverage-gutters.showLineCoverage": true,
+  "workbench.statusBar.feedback.visible": false,
 }
