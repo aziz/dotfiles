@@ -1,6 +1,7 @@
 {
   "diffEditor.renderIndicators": false,
   "diffEditor.renderSideBySide": false,
+  "docker.showExplorer": false,
   "editor.cursorBlinking": "solid",
   "editor.fontFamily": "SF Mono, Vazir Code",
   "editor.fontLigatures": true,
@@ -17,7 +18,6 @@
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "html.format.wrapAttributes": "force",
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": false,
@@ -29,8 +29,8 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.confirmSync": false,
+  "html.format.wrapAttributes": "force",
   "javascript.implicitProjectConfig.checkJs": true,
-  "sublimeTextKeymap.promptV3Features": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.external.osxExec": "iTerm.app",
@@ -41,16 +41,18 @@
   "window.titleBarStyle": "native",
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "PlasticAB",
-  "workbench.iconTheme": "vs-nomo-dark",
-  "workbench.editor.tabSizing": "shrink",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "vs-nomo-dark",
+  "workbench.statusBar.feedback.visible": false,
+  // Extensions
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
   "emmet.syntaxProfiles": {
     "javascript": "jsx",
     "typescript": "jsx",
     "typescriptreact": "jsx"
   },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "workbench.statusBar.feedback.visible": false,
+  "sublimeTextKeymap.promptV3Features": true,
 }

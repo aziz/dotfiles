@@ -1,4 +1,5 @@
 Orta.vscode-jest
+PeterJausovec.vscode-docker
 allenbar.theme-plastic-ab
 angryobject.react-pure-to-class-vscode
 annsk.alignment
@@ -18,10 +19,12 @@ mrmlnc.vscode-lebab
 ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 natewallace.angular2-inline
+octref.vetur
 paulmolluzzo.convert-css-in-js
 plievone.vscode-template-literal-editor
 ryanluker.vscode-coverage-gutters
 ryu1kn.annotator
 timothymclane.react-redux-es6-snippets
+wesbos.theme-cobalt2
 wmaurer.change-case
 xabikos.ReactSnippets
