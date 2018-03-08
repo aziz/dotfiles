@@ -22,6 +22,7 @@
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
   "files.associations": {
     "*.note": "markdown",
     ".env": "shellscript"
