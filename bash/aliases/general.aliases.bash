@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 alias d="cd ~/Desktop"
-alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 
 # Reload the shell (i.e. invoke as a login shell)

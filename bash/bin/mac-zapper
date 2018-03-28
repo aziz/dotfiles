@@ -9,7 +9,6 @@ class Zapper
     '/usr/local/Cellar',
     '/usr/local/Library',
     '$HOME/Library/Application Support/Google/Chrome/Default/Extensions',
-    '$HOME/Dropbox',
     '$HOME/.vim',
     '$HOME/.npm'
   ]
