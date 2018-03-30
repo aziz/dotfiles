@@ -12,6 +12,7 @@
   "editor.lineHeight": 21,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.overviewRulerBorder": false,
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "gutter",
   "editor.selectionHighlight": false,
