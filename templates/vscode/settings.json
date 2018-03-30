@@ -56,4 +56,7 @@
     "typescriptreact": "jsx"
   },
   "sublimeTextKeymap.promptV3Features": true,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+  }
 }
