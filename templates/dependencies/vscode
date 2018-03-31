@@ -14,6 +14,7 @@ christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
+eamodio.gitlens
 eg2.tslint
 esbenp.prettier-vscode
 fabiospampinato.vscode-todo-plus
@@ -29,12 +30,16 @@ octref.vetur
 paulmolluzzo.convert-css-in-js
 plievone.vscode-template-literal-editor
 pnp.polacode
+redhat.java
 richie5um2.vscode-sort-json
 ryanluker.vscode-coverage-gutters
-ryu1kn.annotator
 sburg.vscode-javascript-booster
 shd101wyy.markdown-preview-enhanced
 timothymclane.react-redux-es6-snippets
+vscjava.vscode-java-debug
+vscjava.vscode-java-pack
+vscjava.vscode-java-test
+vscjava.vscode-maven
 wesbos.theme-cobalt2
 wmaurer.change-case
 xabikos.ReactSnippets

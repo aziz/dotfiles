@@ -47,6 +47,9 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.statusBar.feedback.visible": false,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+  },
   // Extensions
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -57,7 +60,26 @@
     "typescriptreact": "jsx"
   },
   "sublimeTextKeymap.promptV3Features": true,
-  "[markdown]": {
-    "editor.wordWrap": "on",
+  "gitlens.gitExplorer.files.layout": "auto",
+  "gitlens.gitExplorer.branches.layout": "list",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.blame.avatars": false,
+  "gitlens.blame.highlight.locations": [
+    "gutter",
+    "overview"
+  ],
+  "gitlens.statusBar.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
   }
 }
