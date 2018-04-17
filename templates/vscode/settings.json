@@ -81,5 +81,8 @@
     "suppressNoRepositoryWarning": false,
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
-  }
+  },
+  "[typescript]": {
+    "editor.foldingStrategy": "indentation"
+  },
 }
