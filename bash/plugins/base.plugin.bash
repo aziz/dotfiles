@@ -11,14 +11,11 @@ outdated() {
   cask_report
   printf "\n${background_purple} npm Packages  %$(($(tput cols)-15))s${normal}"
   npm-check --global --no-emoji
-  printf "\n${background_purple} Ruby Gems     %$(($(tput cols)-15))s${normal}"
-  gem outdated
-  printf "\n${background_purple} Atom Packages %$(($(tput cols)-15))s${normal}"
-  apm outdated
+  # printf "\n${background_purple} Ruby Gems     %$(($(tput cols)-15))s${normal}"
+  # gem outdated
   printf "\n${background_purple}  App Store   %$(($(tput cols)-15))s${normal}"
   softwareupdate -l
 
-  atom_save_packages
   vscode_save_packages
 }
 

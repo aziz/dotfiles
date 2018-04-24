@@ -24,7 +24,6 @@ source "$HOME"/.templates/provisioning/vim.sh
 # source "$HOME"/.templates/provisioning/php.sh
 # source "$HOME"/.templates/provisioning/emacs.sh
 source "$HOME"/.templates/provisioning/sublime.sh
-source "$HOME"/.templates/provisioning/atom.sh
 source "$HOME"/.templates/provisioning/vscode.sh
 source "$HOME"/.templates/provisioning/mac/security.sh
 source "$HOME"/.templates/provisioning/mac/macos.sh
