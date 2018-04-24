@@ -1,6 +1,7 @@
 babel-cli
 babel-eslint
 create-react-app
+create-react-library
 diff-so-fancy
 eslint
 eslint-find-rules
@@ -30,8 +31,6 @@ slow-deps
 snyk
 speed-test
 spoof
-stylelint
-stylelint-config-standard
 svgo
 tldr
 trash
