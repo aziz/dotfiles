@@ -49,6 +49,7 @@
   "workbench.statusBar.feedback.visible": false,
   "[markdown]": {
     "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": false
   },
   // Extensions
   "emmet.includeLanguages": {
