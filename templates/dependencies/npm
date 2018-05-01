@@ -21,6 +21,7 @@ node-gyp
 node-inspector
 node-sass
 npm-check
+osx-learn
 pkg
 postcss
 postcss-cssnext
