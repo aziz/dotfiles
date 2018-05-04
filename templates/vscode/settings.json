@@ -19,6 +19,9 @@
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
+  // "editor.codeActionsOnSave": {
+  //   "source.organizeImports": true
+  // },
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": false,
