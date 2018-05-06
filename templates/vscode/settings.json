@@ -63,7 +63,6 @@
     "typescript": "jsx",
     "typescriptreact": "jsx"
   },
-  "sublimeTextKeymap.promptV3Features": true,
   "gitlens.gitExplorer.files.layout": "auto",
   "gitlens.gitExplorer.branches.layout": "list",
   "gitlens.codeLens.enabled": false,
@@ -89,4 +88,5 @@
   "[typescript]": {
     "editor.foldingStrategy": "indentation"
   },
+  // "yaml.format.enable": true,
 }
