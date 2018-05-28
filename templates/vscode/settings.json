@@ -44,7 +44,7 @@
   "terminal.integrated.shell.osx": "/usr/local/bin/bash",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.titleBarStyle": "native",
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",

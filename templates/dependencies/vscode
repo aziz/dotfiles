@@ -25,6 +25,7 @@ formulahendry.auto-rename-tag
 jinsihou.diff-tool
 kumar-harsh.graphql-for-vscode
 mrmlnc.vscode-lebab
+ms-kubernetes-tools.vscode-kubernetes-tools
 ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 natewallace.angular2-inline
@@ -37,7 +38,6 @@ richie5um2.vscode-sort-json
 ryanluker.vscode-coverage-gutters
 sburg.vscode-javascript-booster
 shd101wyy.markdown-preview-enhanced
-stepanog.angular1-inline
 timothymclane.react-redux-es6-snippets
 wesbos.theme-cobalt2
 wmaurer.change-case

@@ -8,7 +8,7 @@ require 'colorize'
 
 def report(type)
   latest_sha_file = "#{Dir.home}/.homebrew-#{type}-latest-sha"
-  cask_repo = "/usr/local/Homebrew/Library/Taps/caskroom/homebrew-#{type}"
+  cask_repo = "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-#{type}"
   version_regex  = /^[+-]\s*version\s+['"]?(.+?)['"]?$/
   homepage_regex = /^\s+homepage\s+["'](.+)["']\s*$/
   updated = []
@@ -75,4 +75,4 @@ def report(type)
 end
 
 report('cask')
-report('fonts')
+report('cask-fonts')
