@@ -2,6 +2,7 @@ BriteSnow.vscode-toggle-quotes
 DeepScan.vscode-deepscan
 Orta.vscode-jest
 PeterJausovec.vscode-docker
+QassimFarid.ejs-language-support
 Tobermory.es6-string-html
 allenbar.theme-plastic-ab
 angryobject.react-pure-to-class-vscode
@@ -38,7 +39,9 @@ richie5um2.vscode-sort-json
 ryanluker.vscode-coverage-gutters
 sburg.vscode-javascript-booster
 shd101wyy.markdown-preview-enhanced
+stringham.move-ts
 timothymclane.react-redux-es6-snippets
 wesbos.theme-cobalt2
 wmaurer.change-case
+wmaurer.html2jade
 xabikos.ReactSnippets

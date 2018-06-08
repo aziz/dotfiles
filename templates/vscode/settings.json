@@ -19,9 +19,6 @@
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  // "editor.codeActionsOnSave": {
-  //   "source.organizeImports": true
-  // },
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": false,
@@ -63,18 +60,19 @@
     "typescript": "jsx",
     "typescriptreact": "jsx"
   },
-  "gitlens.gitExplorer.files.layout": "auto",
-  "gitlens.gitExplorer.branches.layout": "list",
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
   "gitlens.blame.avatars": false,
   "gitlens.blame.highlight.locations": [
     "gutter",
     "overview"
   ],
-  "gitlens.statusBar.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.gitExplorer.branches.layout": "list",
+  "gitlens.gitExplorer.files.layout": "auto",
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.hovers.currentLine.over": "line",
   "gitlens.hovers.enabled": false,
+  "gitlens.statusBar.enabled": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -85,8 +83,11 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "[typescript]": {
-    "editor.foldingStrategy": "indentation"
-  },
+  // "[typescript]": {
+  //   "editor.foldingStrategy": "indentation"
+  // },
+  // "editor.codeActionsOnSave": {
+  //   "source.organizeImports": true
+  // },
   // "yaml.format.enable": true,
 }
