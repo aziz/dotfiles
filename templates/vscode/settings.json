@@ -83,9 +83,9 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  // "[typescript]": {
-  //   "editor.foldingStrategy": "indentation"
-  // },
+  "[typescript]": {
+    "editor.foldingStrategy": "indentation"
+  },
   // "editor.codeActionsOnSave": {
   //   "source.organizeImports": true
   // },
