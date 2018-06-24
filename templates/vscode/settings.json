@@ -86,6 +86,7 @@
   "[typescript]": {
     "editor.foldingStrategy": "indentation"
   },
+  "typescript.updateImportsOnFileMove.enabled": "always",
   // "editor.codeActionsOnSave": {
   //   "source.organizeImports": true
   // },

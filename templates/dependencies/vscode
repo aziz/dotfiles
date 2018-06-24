@@ -1,7 +1,7 @@
 BriteSnow.vscode-toggle-quotes
-DigitalBrainstem.javascript-ejs-support
 Orta.vscode-jest
 PeterJausovec.vscode-docker
+QassimFarid.ejs-language-support
 Tobermory.es6-string-html
 allenbar.theme-plastic-ab
 angryobject.react-pure-to-class-vscode
@@ -24,6 +24,9 @@ fabiospampinato.vscode-todo-plus
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 jinsihou.diff-tool
+jsaulou.theme-by-language
+kisstkondoros.vscode-codemetrics
+krizzdewizz.vscode-typescript-ast-explorer
 kumar-harsh.graphql-for-vscode
 malkomalko.searchy
 mrmlnc.vscode-lebab
