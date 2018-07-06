@@ -1,11 +1,13 @@
 BriteSnow.vscode-toggle-quotes
-DigitalBrainstem.javascript-ejs-support
 Orta.vscode-jest
 PeterJausovec.vscode-docker
+QassimFarid.ejs-language-support
 Tobermory.es6-string-html
+ajhyndman.vscode-svgo
 allenbar.theme-plastic-ab
 angryobject.react-pure-to-class-vscode
 annsk.alignment
+ban.spellright
 be5invis.vscode-icontheme-nomo-dark
 bibhasdn.unique-lines
 bierner.emojisense
@@ -38,6 +40,7 @@ octref.vetur
 paulmolluzzo.convert-css-in-js
 plievone.vscode-template-literal-editor
 pnp.polacode
+redhat.java
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
 ryanluker.vscode-coverage-gutters
