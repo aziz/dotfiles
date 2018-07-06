@@ -46,7 +46,24 @@ prompt_left () {
   echo -e "${LEFT_PROMPT}"
 }
 
+nvmrc_auto_switch() {
+  if [[ $PWD == $PREV_PWD ]]; then
+      return
+  fi
+
+  PREV_PWD=$PWD
+  if [[ -f ".nvmrc" ]]; then
+      nvm use
+      NVM_DIRTY=true
+  elif [[ $NVM_DIRTY = true ]]; then
+      nvm use system
+      NVM_DIRTY=false
+  fi
+}
+
+
 prompt () {
+  nvmrc_auto_switch
   [ -n "$TERM_PROGRAM" ] && __iterm_tab_title
   PS2="\[${yellow}\]‣\[${normal}\]\[${reset_color}\] "
   PS1="$(prompt_left)\n${PS2}"
