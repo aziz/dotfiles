@@ -1,7 +1,6 @@
 BriteSnow.vscode-toggle-quotes
 Orta.vscode-jest
 PeterJausovec.vscode-docker
-QassimFarid.ejs-language-support
 Tobermory.es6-string-html
 ajhyndman.vscode-svgo
 allenbar.theme-plastic-ab
@@ -20,7 +19,6 @@ cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 DeepScan.vscode-deepscan
 eamodio.gitlens
-eg2.tslint
 esbenp.prettier-vscode
 fabiospampinato.vscode-todo-plus
 formulahendry.auto-close-tag
@@ -30,7 +28,6 @@ jsaulou.theme-by-language
 kisstkondoros.vscode-codemetrics
 krizzdewizz.vscode-typescript-ast-explorer
 kumar-harsh.graphql-for-vscode
-malkomalko.searchy
 mrmlnc.vscode-lebab
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-vscode.sublime-keybindings
@@ -40,6 +37,7 @@ octref.vetur
 paulmolluzzo.convert-css-in-js
 plievone.vscode-template-literal-editor
 pnp.polacode
+QassimFarid.ejs-language-support
 redhat.java
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
