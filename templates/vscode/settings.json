@@ -40,7 +40,6 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.shell.osx": "/usr/local/bin/bash",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.titleBarStyle": "native",
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
@@ -87,6 +86,8 @@
     "editor.foldingStrategy": "indentation"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.nativeTabs": true,
+  "window.titleBarStyle": "native",
   // "editor.codeActionsOnSave": {
   //   "source.organizeImports": true
   // },

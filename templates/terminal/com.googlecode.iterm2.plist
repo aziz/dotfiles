@@ -4622,6 +4622,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>MinCompactTabWidth</key>
+	<integer>100</integer>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
@@ -4669,17 +4671,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>557 543 513 228 0 0 1280 778 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>290 127 700 622 0 0 1280 778 </string>
+	<string>290 126 700 622 0 0 1280 777 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-1780 427 606 469 -2560 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>151 249 796 486 0 0 1280 778 </string>
+	<string>239 230 796 486 0 0 1280 777 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame com.apple.typography_panel_SFMono-Light</key>
 	<string>-2081 728 260 42 -2560 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 303 740 475 0 0 1280 778 </string>
+	<string>0 43 1280 734 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4_selection</key>
@@ -7094,7 +7096,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-07T00:16:10Z</date>
+	<date>2018-07-11T19:45:46Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -7120,7 +7122,7 @@
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
 	<key>TabStyle</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>TabViewType</key>
 	<integer>1</integer>
 	<key>TerminalMargin</key>
@@ -7164,7 +7166,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.0beta3</string>
+	<string>3.2.0beta6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

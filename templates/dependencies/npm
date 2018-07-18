@@ -7,6 +7,7 @@ firebase-tools
 generator-code
 generator-electrode
 hotel
+link-status
 node-gyp
 now
 npm-check
