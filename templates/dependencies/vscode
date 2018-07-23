@@ -18,6 +18,7 @@ christian-kohler.path-intellisense
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 DeepScan.vscode-deepscan
+DigitalBrainstem.javascript-ejs-support
 eamodio.gitlens
 esbenp.prettier-vscode
 fabiospampinato.vscode-todo-plus
@@ -37,7 +38,6 @@ octref.vetur
 paulmolluzzo.convert-css-in-js
 plievone.vscode-template-literal-editor
 pnp.polacode
-QassimFarid.ejs-language-support
 redhat.java
 redhat.vscode-yaml
 richie5um2.vscode-sort-json

@@ -8,6 +8,7 @@ generator-code
 generator-electrode
 hotel
 link-status
+ndb
 node-gyp
 now
 npm-check
