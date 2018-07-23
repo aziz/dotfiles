@@ -20,6 +20,7 @@ dbaeumer.vscode-eslint
 DeepScan.vscode-deepscan
 DigitalBrainstem.javascript-ejs-support
 eamodio.gitlens
+eg2.tslint
 esbenp.prettier-vscode
 fabiospampinato.vscode-todo-plus
 formulahendry.auto-close-tag
@@ -37,10 +38,10 @@ natewallace.angular2-inline
 octref.vetur
 paulmolluzzo.convert-css-in-js
 plievone.vscode-template-literal-editor
-pnp.polacode
 redhat.java
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
+rust-lang.rust
 ryanluker.vscode-coverage-gutters
 sburg.vscode-javascript-booster
 shd101wyy.markdown-preview-enhanced
