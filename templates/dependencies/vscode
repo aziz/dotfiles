@@ -1,6 +1,4 @@
 BriteSnow.vscode-toggle-quotes
-Orta.vscode-jest
-PeterJausovec.vscode-docker
 Tobermory.es6-string-html
 ajhyndman.vscode-svgo
 allenbar.theme-plastic-ab
@@ -25,7 +23,9 @@ esbenp.prettier-vscode
 fabiospampinato.vscode-todo-plus
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+Gruntfuggly.todo-tree
 jinsihou.diff-tool
+jock.svg
 jsaulou.theme-by-language
 kisstkondoros.vscode-codemetrics
 krizzdewizz.vscode-typescript-ast-explorer
@@ -36,7 +36,9 @@ ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 natewallace.angular2-inline
 octref.vetur
+Orta.vscode-jest
 paulmolluzzo.convert-css-in-js
+PeterJausovec.vscode-docker
 plievone.vscode-template-literal-editor
 redhat.java
 redhat.vscode-yaml
