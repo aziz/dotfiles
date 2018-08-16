@@ -1,5 +1,4 @@
 BriteSnow.vscode-toggle-quotes
-Tobermory.es6-string-html
 ajhyndman.vscode-svgo
 allenbar.theme-plastic-ab
 angryobject.react-pure-to-class-vscode
@@ -10,6 +9,7 @@ bibhasdn.unique-lines
 bierner.emojisense
 bierner.markdown-preview-github-styles
 blairleduc.touch-bar-display
+burkeholland.simple-react-snippets
 capaj.vscode-exports-autocomplete
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
@@ -49,6 +49,7 @@ sburg.vscode-javascript-booster
 shd101wyy.markdown-preview-enhanced
 stringham.move-ts
 timothymclane.react-redux-es6-snippets
+Tobermory.es6-string-html
 wesbos.theme-cobalt2
 wmaurer.change-case
 wmaurer.html2jade

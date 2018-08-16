@@ -8,6 +8,7 @@
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
+  // "editor.occurrencesHighlight": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 21,
   "editor.minimap.enabled": false,
@@ -60,10 +61,7 @@
     "typescriptreact": "jsx"
   },
   "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": [
-    "gutter",
-    "overview"
-  ],
+  "gitlens.blame.highlight.locations": ["gutter", "overview"],
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.gitExplorer.branches.layout": "list",
@@ -88,6 +86,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.nativeTabs": true,
   "window.titleBarStyle": "native",
+  "breadcrumbs.enabled": true
   // "editor.codeActionsOnSave": {
   //   "source.organizeImports": true
   // },
