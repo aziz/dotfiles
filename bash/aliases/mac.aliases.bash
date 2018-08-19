@@ -40,4 +40,7 @@ if [ "$(uname)" = "Darwin" ]; then
 
   alias mac-mac-address-wired="ifconfig en0 | grep ether"
   alias mac-mac-address-wireless="ifconfig en1 | grep ether"
+
+  alias mac-screenshot-no-shadow-enable="defaults write com.apple.screencapture disable-shadow -bool true && killall SystemUIServer"
+  alias mac-screenshot-no-shadow-disable="defaults write com.apple.screencapture disable-shadow -bool false && killall SystemUIServer"
 fi
