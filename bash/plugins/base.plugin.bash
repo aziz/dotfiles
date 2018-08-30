@@ -3,8 +3,7 @@
 # Generic functions:
 outdated() {
   printf "\n${background_purple} Homebrew      %$(($(tput cols)-15))s${normal}"
-  brew cleanup -s --force
-  brew cask cleanup
+  brew cleanup -s
   brew update
   brew outdated
   printf "\n${background_purple} Cask apps     %$(($(tput cols)-15))s${normal}"
