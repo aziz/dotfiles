@@ -3,6 +3,7 @@ autojump
 awscli
 bash
 bash-completion
+bat
 brew-cask-completion
 bundler-completion
 caddy
@@ -13,7 +14,9 @@ curl
 diffutils
 direnv
 distribution
+fd
 findutils --with-default-names
+fzf
 gem-completion
 git
 git-cal
@@ -30,6 +33,7 @@ jq
 man2html
 mas
 mongodb
+ncdu
 node
 nvm
 openssh

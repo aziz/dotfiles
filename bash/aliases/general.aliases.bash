@@ -52,3 +52,7 @@ alias cls='clear'
 alias w='which'
 alias q="exit"
 alias h='history'
+
+# Better than built-in tools
+alias cat='bat'
+alias du="ncdu --color dark -rr -x"
