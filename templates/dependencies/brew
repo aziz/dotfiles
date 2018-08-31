@@ -62,6 +62,7 @@ terraform
 the_silver_searcher
 tmux
 tmuxinator-completion
+tokei
 tree
 unrar
 vagrant-completion

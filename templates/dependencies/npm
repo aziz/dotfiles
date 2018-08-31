@@ -2,6 +2,7 @@ cost-of-modules
 create-react-app
 create-react-library
 diff-so-fancy
+diff2html-cli
 express-generator
 firebase-tools
 generator-code
