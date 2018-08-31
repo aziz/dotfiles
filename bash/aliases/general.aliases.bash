@@ -54,5 +54,4 @@ alias q="exit"
 alias h='history'
 
 # Better than built-in tools
-alias cat='bat'
-alias du="ncdu --color dark -rr -x"
+alias ddd="ncdu --color dark -rr -x"
