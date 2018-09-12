@@ -34,6 +34,7 @@ jsaulou.theme-by-language
 kisstkondoros.vscode-codemetrics
 krizzdewizz.vscode-typescript-ast-explorer
 kumar-harsh.graphql-for-vscode
+mrmlnc.vscode-duplicate
 mrmlnc.vscode-lebab
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-vscode.sublime-keybindings
@@ -44,7 +45,6 @@ Orta.vscode-jest
 paulmolluzzo.convert-css-in-js
 PeterJausovec.vscode-docker
 plievone.vscode-template-literal-editor
-rafapaulin.try-material-icon-theme
 redhat.java
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
