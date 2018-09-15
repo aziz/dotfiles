@@ -65,7 +65,6 @@ tmuxinator-completion
 tokei
 tree
 unrar
-vagrant-completion
 vim --with-override-system-vi
 watch
 watchman
