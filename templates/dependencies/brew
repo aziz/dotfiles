@@ -7,10 +7,10 @@ bat
 brew-cask-completion
 bundler-completion
 caddy
-ctop
 chromedriver
 cloc
 coreutils --with-gmp
+ctop
 curl
 diffutils
 direnv
@@ -32,6 +32,7 @@ gzip
 heroku
 hub
 jq
+m-cli
 man2html
 mas
 mongodb
