@@ -1,13 +1,4 @@
 {
-  "[markdown]": {
-    "editor.wordWrap": "on",
-    "files.trimTrailingWhitespace": false
-  },
-  "[typescript]": {
-    "editor.foldingStrategy": "indentation"
-  },
-  "breadcrumbs.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "diffEditor.renderSideBySide": false,
   "docker.showExplorer": false,
@@ -17,6 +8,7 @@
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
+  // "editor.occurrencesHighlight": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 21,
   "editor.minimap.enabled": false,
@@ -27,16 +19,7 @@
   "editor.selectionHighlight": false,
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
-  "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx",
-    "typescript": "jsx",
-    "typescriptreact": "jsx"
-  },
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": false,
@@ -49,23 +32,33 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.confirmSync": false,
-  "github.hosts": [
-    {
-      "host": "https://github.com",
-      "token": "system",
-      "username": "oauth"
-    }
-  ],
-  "githubPullRequests.telemetry.enabled": false,
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
+  "html.format.wrapAttributes": "force",
+  "javascript.implicitProjectConfig.checkJs": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.osx": "/usr/local/bin/bash",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "PlasticAB",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "vs-nomo-dark",
+  "workbench.statusBar.feedback.visible": false,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": false
+  },
+  // Extensions
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "typescript": "jsx",
+    "typescriptreact": "jsx"
   },
   "gitlens.blame.avatars": false,
   "gitlens.blame.highlight.locations": ["gutter", "overview"],
@@ -77,35 +70,51 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.hovers.enabled": false,
   "gitlens.statusBar.enabled": false,
-  "html.format.wrapAttributes": "force",
-  "javascript.implicitProjectConfig.checkJs": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "spellright.addToSystemDictionary": true,
-  "spellright.configurationScope": "user",
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.shell.osx": "/usr/local/bin/bash",
-  "todo-tree.customHighlight": {
-    "FIXME": {},
-    "TODO": {}
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
   },
+  "[typescript]": {
+    "editor.foldingStrategy": "indentation"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.nativeTabs": true,
+  "window.titleBarStyle": "native",
+  "breadcrumbs.enabled": true,
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
   "todo-tree.defaultHighlight": {
     "foreground": "green",
     "type": "none"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.nativeTabs": true,
-  "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.titleBarStyle": "native",
-  "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "PlasticAB",
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "vs-nomo-dark",
-  "workbench.settings.enableNaturalLanguageSearch": false,
+  "todo-tree.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
   "workbench.startupEditor": "welcomePage",
-  "workbench.statusBar.feedback.visible": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.zoomLevel": 0,
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "update.enableWindowsBackgroundUpdates": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.tabCompletion": "on",
+  "spellright.addToSystemDictionary": true,
+  "spellright.configurationScope": "user",
+  "githubPullRequests.telemetry.enabled": false,
+  // "editor.codeActionsOnSave": {
+  //   "source.organizeImports": true
+  // },
+  // "yaml.format.enable": true,
 }
