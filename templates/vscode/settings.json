@@ -107,7 +107,6 @@
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
-  "workbench.editor.showTabs": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
