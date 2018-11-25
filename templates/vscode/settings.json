@@ -49,6 +49,13 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.confirmSync": false,
+  "githubPullRequests.hosts": [
+    {
+      "host": "https://github.com",
+      "token": "system",
+      "username": "oauth"
+    }
+  ],
   "githubPullRequests.telemetry.enabled": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -75,6 +82,9 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "spellright.addToSystemDictionary": true,
   "spellright.configurationScope": "user",
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  "spellright.language": ["en"],
+  "spellright.suggestionsInHints": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.external.osxExec": "iTerm.app",
@@ -90,25 +100,17 @@
     "type": "none"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsnotes.defaultNotePath": "/Users/allen/Library/Mobile Documents/com~apple~CloudDocs/VSNOTES",
+  "vsnotes.defaultNoteTitle": "{title}.{ext}",
   "window.title": "",
-  // "window.nativeTabs": true,
-  // "window.titleBarStyle": "native",
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.startupEditor": "welcomePage",
-  "workbench.statusBar.feedback.visible": false,
-  "githubPullRequests.hosts": [
-    {
-      "host": "https://github.com",
-      "token": "system",
-      "username": "oauth"
-    }
-  ],
-  "spellright.language": ["en"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
-  "window.zoomLevel": 0
+  "workbench.statusBar.feedback.visible": false
 }
