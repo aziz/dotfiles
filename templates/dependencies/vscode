@@ -2,7 +2,6 @@ BriteSnow.vscode-toggle-quotes
 ahmadawais.shades-of-purple
 ajhyndman.vscode-svgo
 allenbar.theme-plastic-ab
-angryobject.react-pure-to-class-vscode
 annsk.alignment
 apollographql.vscode-apollo
 ban.spellright
@@ -26,6 +25,7 @@ formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 GitHub.vscode-pull-request-github
 Gruntfuggly.todo-tree
+hbenl.vscode-test-explorer
 henoc.svgeditor
 jinsihou.diff-tool
 jock.svg
@@ -51,6 +51,7 @@ qcz.text-power-tools
 redhat.java
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
+rtbenfield.vscode-jest-test-adapter
 rust-lang.rust
 ryanluker.vscode-coverage-gutters
 sburg.vscode-javascript-booster
@@ -59,6 +60,7 @@ silvenon.mdx
 stringham.move-ts
 Tobermory.es6-string-html
 tomoki1207.pdf
+tomsaunders.vscode-workspace-explorer
 wesbos.theme-cobalt2
 wix.glean
 wmaurer.change-case
