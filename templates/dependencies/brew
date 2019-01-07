@@ -35,9 +35,11 @@ jq
 m-cli
 man2html
 mas
+mkcert
 mongodb
 ncdu
 node
+nss
 nvm
 openssh
 openssl
