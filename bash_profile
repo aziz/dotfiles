@@ -32,6 +32,7 @@ export PLATFORM="$MACHINE-$OS-$OSVERSION"
 
 # Disabling Analytics for homebrew
 export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_INSTALL_CLEANUP=1
 
 # Disabling some shell-check errors
 export SHELLCHECK_OPTS="-e SC1090"
