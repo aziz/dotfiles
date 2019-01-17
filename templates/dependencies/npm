@@ -29,4 +29,5 @@ trash
 vsce
 vue-cli
 yarn
+yarn-check
 yo

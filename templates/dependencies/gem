@@ -1,7 +1,7 @@
-asciidoctor
 awesome_print
 bundler
 colorize
+git-up
 hirb-unicode
 pry
 rubocop
