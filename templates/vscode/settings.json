@@ -76,8 +76,13 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "spellright.addToSystemDictionary": true,
   "spellright.configurationScope": "user",
-  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
-  "spellright.language": ["en"],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex"
+  ],
+  "spellright.language": [
+    "en"
+  ],
   "spellright.suggestionsInHints": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,

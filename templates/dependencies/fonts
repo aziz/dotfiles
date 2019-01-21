@@ -1,20 +1,29 @@
 # Monospace
+font-camingocode
+font-codenewroman-nerd-font-mono
 font-fira-mono
 font-hack
-font-kawkab-mono
+font-noto-mono
+font-office-code-pro
 font-roboto-mono
 font-source-code-pro
+
+# Monospace Persian
+font-kawkab-mono
+font-vazir-code
 
 # Persian
 font-gandom
 font-iranian-sans
 font-iranian-serif
 font-lalezar
+font-nika
 font-noto-naskh-arabic
+font-noto-sans-arabic
+font-parastoo
 font-samim
 font-shabnam
 font-vazir
-font-vazir-code
 
 # Other
 font-et-book
