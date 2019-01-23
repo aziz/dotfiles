@@ -93,7 +93,6 @@ colors_custom () {
   echo "${custom_orange}${block}\${custom_orange}"
   echo "${custom_purple}${block}\${custom_purple}"
   echo "${custom_red}${block}\${custom_red}"
-  echo "${custom_dark_red}${block}\${custom_dark_red}"
   echo "${custom_violet}${block}\${custom_violet}"
   echo "${custom_yellow}${block}\${custom_yellow}"
   echo "${custom_white}${block}\${custom_white}"

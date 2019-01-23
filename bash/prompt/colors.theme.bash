@@ -55,5 +55,4 @@ if tput setaf 1 &> /dev/null; then
   custom_yellow=$(tput   setaf $((16#d6))) || $yellow
   custom_white=$(tput    setaf $((16#ff))) || $white
   custom_gray=$(tput     setaf $((16#f0))) || $white
-  custom_dark_red=$(tput setaf $((16#34))) || $red
 fi
