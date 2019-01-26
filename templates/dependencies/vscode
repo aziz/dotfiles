@@ -27,6 +27,7 @@ esbenp.prettier-vscode
 fabiospampinato.vscode-todo-plus
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+formulahendry.github-actions
 GitHub.vscode-pull-request-github
 Gruntfuggly.todo-tree
 hbenl.vscode-test-explorer

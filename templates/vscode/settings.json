@@ -142,5 +142,6 @@
       "remote": true,
       "stash": true
     }
-  }
+  },
+  "cSpell.allowCompoundWords": true,
 }
