@@ -5,5 +5,4 @@ git-up
 hirb-unicode
 pry
 rubocop
-sqlint
 tmuxinator
