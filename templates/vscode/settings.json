@@ -144,4 +144,18 @@
     }
   },
   "cSpell.allowCompoundWords": true,
+  "cSpell.enabledLanguageIds": [
+    "css",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "markdown",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
 }
