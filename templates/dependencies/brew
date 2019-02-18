@@ -4,12 +4,9 @@ awscli
 bash
 bash-completion
 bat
-brew-cask-completion
-bundler-completion
 caddy
-chromedriver
 cloc
-coreutils --with-gmp
+coreutils
 ctop
 curl
 diffutils
@@ -17,19 +14,16 @@ direnv
 distribution
 entr
 fd
-findutils --with-default-names
+findutils
 fzf
-gem-completion
 git
 git-cal
-git-crypt
 git-extras
-gnu-sed --with-default-names
-gnu-tar --with-default-names
+gnu-sed
+gnu-tar
 go
-grep --with-default-names
+grep
 gzip
-heroku
 hub
 jq
 m-cli
@@ -44,31 +38,22 @@ nvm
 openssh
 openssl
 p7zip
-pip-completion
 postgresql
-python
 python3
-rails-completion
-rake-completion
 redis
 rename
 ripgrep
 rmtrash
 rsync
-ruby-completion
 shellcheck
-sourcekitten
 sqlite
 ssh-copy-id
-swiftlint
-terraform
 the_silver_searcher
 tmux
-tmuxinator-completion
 tokei
 tree
 unrar
-vim --with-override-system-vi
+vim
 watch
 watchman
 wget
