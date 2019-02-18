@@ -22,7 +22,6 @@ dbaeumer.vscode-eslint
 DigitalBrainstem.javascript-ejs-support
 dline.CobaltNext
 eamodio.gitlens
-eg2.tslint
 esbenp.prettier-vscode
 fabiospampinato.vscode-todo-plus
 formulahendry.auto-close-tag
@@ -32,6 +31,7 @@ GitHub.vscode-pull-request-github
 Gruntfuggly.todo-tree
 hbenl.vscode-test-explorer
 henoc.svgeditor
+ivory-lab.jenkinsfile-support
 jinsihou.diff-tool
 jock.svg
 jolaleye.horizon-theme-vscode
