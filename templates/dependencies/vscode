@@ -46,6 +46,7 @@ mauve.terraform
 mrmlnc.vscode-duplicate
 mrmlnc.vscode-lebab
 ms-kubernetes-tools.vscode-kubernetes-tools
+ms-ossdata.vscode-postgresql
 ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 ms-vsliveshare.vsliveshare
