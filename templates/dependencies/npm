@@ -1,13 +1,18 @@
+@storybook/cli
 cost-of-modules
 create-react-app
 create-react-library
 diff-so-fancy
 diff2html-cli
+electron-forge
 express-generator
 firebase-tools
 gatsby-cli
 generator-code
 generator-electrode
+generator-express-no-stress
+generator-express-no-stress-typescript
+git-recent
 hotel
 link-status
 ndb
@@ -16,6 +21,7 @@ now
 npm-check
 osx-learn
 pkg
+polymer-cli
 prettier
 psi
 serve
@@ -25,8 +31,10 @@ slow-deps
 speed-test
 spoof
 svgo
+tagui
 tldr
 trash
+typescript
 vsce
 vue-cli
 yarn
