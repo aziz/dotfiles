@@ -5,6 +5,7 @@ allenbar.theme-plastic-ab
 amazonwebservices.aws-toolkit-vscode
 annsk.alignment
 apollographql.vscode-apollo
+atlassian.atlascode
 ban.spellright
 be5invis.vscode-icontheme-nomo-dark
 bibhasdn.unique-lines
@@ -52,14 +53,12 @@ ms-vscode.sublime-keybindings
 ms-vscode.typescript-javascript-grammar
 ms-vsliveshare.vsliveshare
 natewallace.angular2-inline
-octref.vetur
 Orta.vscode-jest
 patricklee.vsnotes
 paulmolluzzo.convert-css-in-js
 PeterJausovec.vscode-docker
 plievone.vscode-template-literal-editor
 qcz.text-power-tools
-redhat.java
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
 rtbenfield.vscode-jest-test-adapter
@@ -69,11 +68,11 @@ sburg.vscode-javascript-booster
 shd101wyy.markdown-preview-enhanced
 silvenon.mdx
 streetsidesoftware.code-spell-checker
-stringham.move-ts
 Tobermory.es6-string-html
 tomoki1207.pdf
 tomsaunders.vscode-workspace-explorer
 travisthieman.better-search
+vitaliymaz.vscode-svg-previewer
 wesbos.theme-cobalt2
 wix.glean
 wmaurer.change-case

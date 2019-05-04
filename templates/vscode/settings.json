@@ -4,7 +4,8 @@
     "files.trimTrailingWhitespace": false
   },
   "[typescript]": {
-    "editor.foldingStrategy": "indentation"
+    "editor.foldingStrategy": "indentation",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -16,7 +17,6 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 21,
   "editor.minimap.enabled": false,
@@ -172,6 +172,10 @@
       "value": "#007fff"
     },
     {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
       "name": "Gatsby Purple",
       "value": "#639"
     },
@@ -218,5 +222,11 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "atlascode.jira.workingSite": {
+    "baseUrlSuffix": "atlassian.net"
+  },
+  "yaml.schemas": {
+    "file:///Users/abargi/.vscode/extensions/atlassian.atlascode-1.2.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
 }
