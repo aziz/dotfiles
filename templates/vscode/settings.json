@@ -180,6 +180,10 @@
       "value": "#639"
     },
     {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
       "name": "JavaScript Yellow",
       "value": "#f9e64f"
     },
@@ -227,6 +231,6 @@
     "baseUrlSuffix": "atlassian.net"
   },
   "yaml.schemas": {
-    "file:///Users/abargi/.vscode/extensions/atlassian.atlascode-1.2.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/abargi/.vscode/extensions/atlassian.atlascode-1.4.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
 }
