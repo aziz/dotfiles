@@ -146,16 +146,22 @@
   "cSpell.allowCompoundWords": true,
   "cSpell.enabledLanguageIds": [
     "css",
+    "git-commit",
+    "git-rebase",
     "html",
     "jade",
     "javascript",
     "javascriptreact",
     "json",
     "markdown",
+    "plaintext",
     "scss",
+    "sql",
     "text",
     "typescript",
     "typescriptreact",
+    "xml",
+    "yaml",
     "yml"
   ],
   "peacock.favoriteColors": [
@@ -231,6 +237,9 @@
     "baseUrlSuffix": "atlassian.net"
   },
   "yaml.schemas": {
-    "file:///Users/abargi/.vscode/extensions/atlassian.atlascode-1.4.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/abargi/.vscode/extensions/atlassian.atlascode-1.4.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
