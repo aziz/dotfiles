@@ -15,6 +15,7 @@ generator-express-no-stress-typescript
 git-recent
 hotel
 link-status
+local-web-server
 ndb
 node-gyp
 now
@@ -24,7 +25,6 @@ pkg
 polymer-cli
 prettier
 psi
-serve
 serverless
 sitespeed.io
 slow-deps
