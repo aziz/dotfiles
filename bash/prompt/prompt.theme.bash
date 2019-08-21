@@ -44,7 +44,7 @@ aws_saml_prompt () {
 prompt_left () {
   # \[\$(aws_saml_prompt)\]
   # \[\$(rvmrc_version_prompt)\]
-  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w\[\$(nvmrc_version_prompt)\]\[${custom_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${custom_gray}\]\[$(date "+%_I:%M:%S %P")\]"
+  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w\[\$(nvmrc_version_prompt)\]\[${custom_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${custom_gray}\]\[$(date "+%H:%M:%S")\]"
   echo -e "${LEFT_PROMPT}"
 }
 

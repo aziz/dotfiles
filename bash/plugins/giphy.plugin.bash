@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 function giphy {
   tag="$(echo "$*" | sed 's/ /+/')"
   random_api_url="http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=$tag"
