@@ -143,5 +143,6 @@
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.startupEditor": "welcomePage",
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "sync.gist": "e6eca381152e29826b8f8cf6b3684a53"
 }
