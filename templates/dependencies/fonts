@@ -1,41 +1,12 @@
-# Monospace
-font-camingocode
-font-codenewroman-nerd-font-mono
-font-fira-mono
-font-hack
 font-noto-mono
-font-office-code-pro
-font-roboto-mono
-font-source-code-pro
-
-# Monospace Persian
-font-kawkab-mono
-font-vazir-code
-
-# Persian
-font-gandom
-font-iranian-sans
-font-iranian-serif
-font-lalezar
-font-nika
 font-noto-naskh-arabic
 font-noto-sans-arabic
-font-parastoo
-font-samim
-font-shabnam
-font-vazir
 
-# Other
-font-et-book
-font-fira-sans
-font-inter-ui
-font-merriweather
-font-merriweather-sans
-font-open-sans
-font-open-sans-condensed
-font-roboto
-font-roboto-condensed
-font-roboto-slab
-font-source-sans-pro
-font-source-serif-pro
-font-ubuntu
+# Persian
+# ---font-vazir-code
+# ---font-gandom
+# ---font-lalezar
+# ---font-parastoo
+# ---font-samim
+# ---font-shabnam
+# ---font-vazir

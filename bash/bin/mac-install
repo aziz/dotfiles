@@ -3,6 +3,7 @@
 echo "install Xcode first!"
 
 sudo -v
+
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 if pkgutil --pkg-info=com.apple.pkg.CLTools_Executables > /dev/null 2>&1; then
@@ -18,15 +19,15 @@ source "$HOME"/.templates/provisioning/npm.sh
 source "$HOME"/.templates/provisioning/mac/mac-apps.sh
 source "$HOME"/.templates/provisioning/mac/appstore.sh
 source "$HOME"/.templates/provisioning/mac/fonts.sh
+source "$HOME"/.templates/provisioning/vscode.sh
+source "$HOME"/.templates/provisioning/mac/security.sh
+source "$HOME"/.templates/provisioning/mac/macos.sh
 # source "$HOME"/.templates/provisioning/python.sh
 # source "$HOME"/.templates/provisioning/ruby.sh
 # source "$HOME"/.templates/provisioning/php.sh
 # source "$HOME"/.templates/provisioning/emacs.sh
-source "$HOME"/.templates/provisioning/vim.sh
-source "$HOME"/.templates/provisioning/vscode.sh
-source "$HOME"/.templates/provisioning/sublime.sh
-source "$HOME"/.templates/provisioning/mac/security.sh
-source "$HOME"/.templates/provisioning/mac/macos.sh
+# source "$HOME"/.templates/provisioning/vim.sh
+# source "$HOME"/.templates/provisioning/sublime.sh
 
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash

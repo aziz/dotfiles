@@ -44,6 +44,7 @@ export PREVIEW="less"
 
 # Path to the bash it configuration
 export BASH="$HOME/.bash"
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Load Bash It
 source "$BASH"/bash_it.sh

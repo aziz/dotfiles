@@ -4,4 +4,4 @@ echo "Installing Mac AppSore Apps"
 echo "==========================="
 while read -r in; do
   mas install "$in"
-done < <(sed -E 's/#.+//g' templates/dependencies/appstore-apps)
+done < <(gsed -E 's/#.+//g' "$HOME"/.templates/dependencies/appstore-apps)
