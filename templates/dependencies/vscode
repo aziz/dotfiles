@@ -1,4 +1,3 @@
-BriteSnow.vscode-toggle-quotes
 ahmadawais.shades-of-purple
 ajhyndman.vscode-svgo
 allenbar.theme-plastic-ab
@@ -15,6 +14,7 @@ bierner.markdown-checkbox
 bierner.markdown-emoji
 bierner.markdown-preview-github-styles
 bierner.markdown-yaml-preamble
+BriteSnow.vscode-toggle-quotes
 capaj.vscode-exports-autocomplete
 ChirtleLovesDolls.nebula-theme
 christian-kohler.npm-intellisense
@@ -36,12 +36,10 @@ henoc.svgeditor
 ivory-lab.jenkinsfile-support
 jinsihou.diff-tool
 jock.svg
-jolaleye.horizon-theme-vscode
 jsaulou.theme-by-language
 Kelvin.vscode-sshfs
 kisstkondoros.vscode-codemetrics
 krizzdewizz.vscode-typescript-ast-explorer
-kruemelkatze.vscode-dashboard
 kumar-harsh.graphql-for-vscode
 mauve.terraform
 mrmlnc.vscode-duplicate
@@ -59,7 +57,6 @@ qcz.text-power-tools
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
 rtbenfield.vscode-jest-test-adapter
-rust-lang.rust
 ryanluker.vscode-coverage-gutters
 sburg.vscode-javascript-booster
 Shan.code-settings-sync

@@ -39,9 +39,9 @@ print_results('HOMEBREW CASK:', live, template)
 
 # ========================================================
 
-live = `gem list --no-details --no-version`.split("\n")
-template = `cat ~/.templates/dependencies/gem`.split("\n")
-print_results('GEMS:', live, template)
+# live = `gem list --no-details --no-version`.split("\n")
+# template = `cat ~/.templates/dependencies/gem`.split("\n")
+# print_results('GEMS:', live, template)
 
 # ========================================================
 
