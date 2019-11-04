@@ -14,6 +14,7 @@ bierner.markdown-checkbox
 bierner.markdown-emoji
 bierner.markdown-preview-github-styles
 bierner.markdown-yaml-preamble
+blanu.vscode-styled-jsx
 BriteSnow.vscode-toggle-quotes
 capaj.vscode-exports-autocomplete
 ChirtleLovesDolls.nebula-theme
@@ -41,6 +42,7 @@ Kelvin.vscode-sshfs
 kisstkondoros.vscode-codemetrics
 krizzdewizz.vscode-typescript-ast-explorer
 kumar-harsh.graphql-for-vscode
+MariusAlchimavicius.json-to-ts
 mauve.terraform
 mrmlnc.vscode-duplicate
 mrmlnc.vscode-lebab
@@ -59,7 +61,6 @@ richie5um2.vscode-sort-json
 rtbenfield.vscode-jest-test-adapter
 ryanluker.vscode-coverage-gutters
 sburg.vscode-javascript-booster
-Shan.code-settings-sync
 shd101wyy.markdown-preview-enhanced
 silvenon.mdx
 streetsidesoftware.code-spell-checker
