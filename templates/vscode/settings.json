@@ -25,12 +25,29 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "breadcrumbs.enabled": true,
+  "colorInfo.languages": [
+    {
+      "colors": "css",
+      "selector": "css"
+    },
+    {
+      "colors": "css",
+      "selector": "javascriptreact"
+    },
+    {
+      "colors": "css",
+      "selector": "javascript"
+    }
+  ],
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "diffEditor.renderSideBySide": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "SF Mono, Vazir Code",
+  "editor.fontFamily": "SF Mono, Vazir Code WOL",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
@@ -42,8 +59,8 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "gutter",
   "editor.selectionHighlight": false,
+  "editor.semanticHighlighting.enabled": true,
   "editor.smoothScrolling": true,
-  "editor.snippetSuggestions": "top",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
@@ -79,10 +96,7 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": [
-    "gutter",
-    "overview"
-  ],
+  "gitlens.blame.highlight.locations": ["gutter", "overview"],
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
@@ -127,14 +141,17 @@
   "html.format.wrapAttributes": "force",
   "javascript.implicitProjectConfig.checkJs": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "svg.preview.mode": "svg",
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.shell.osx": "/usr/local/bin/bash",
+  "todo-tree.tree.showScanModeButton": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.title": "",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.title": "${rootName}",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "PlasticAB",
@@ -143,6 +160,5 @@
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.startupEditor": "welcomePage",
-  "workbench.tree.renderIndentGuides": "none",
-  "sync.gist": "e6eca381152e29826b8f8cf6b3684a53"
+  "workbench.tree.renderIndentGuides": "none"
 }
