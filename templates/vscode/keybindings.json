@@ -123,5 +123,9 @@
   {
     "key": "cmd+numpad0",
     "command": "-workbench.action.zoomReset"
+  },
+  {
+    "key": "ctrl+alt+cmd+f",
+    "command": "search.action.openNewEditor"
   }
 ]

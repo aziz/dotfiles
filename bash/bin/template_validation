@@ -29,7 +29,7 @@ print_results('HOMEBREW:', live, template)
 
 # ========================================================
 
-live = `brew cask list | sort`.split("\n")
+live = `brew list --cask | sort`.split("\n")
 template_apps = `cat ~/.templates/dependencies/apps | sort`.split("\n")
 template_fonts =  `cat ~/.templates/dependencies/fonts | sort`.split("\n").reject do |i|
   i.length == 0 || i[0] === '#'

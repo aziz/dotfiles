@@ -25,7 +25,7 @@ def report(type)
             end
   latest_sha = `git log | head -1 | ansifilter`.scan(/([a-z0-9]{7,})\s.+/)[0][0]
 
-  installed_casks = `brew cask ls`.split("\n")
+  installed_casks = `brew list --cask`.split("\n")
   changes = `git diff --name-status #{old_sha} | grep Casks/ | ansifilter`.split("\n")
 
   apps = changes.map do |c|
