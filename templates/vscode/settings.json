@@ -168,5 +168,6 @@
   "ACReactComponentGenerator.mainFile.extension": "tsx",
   "ACReactComponentGenerator.styleFile.suffix": "",
   "ACReactComponentGenerator.styleFile.type": "standard (.css)",
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "left",
+  "cSpell.allowCompoundWords": true
 }
