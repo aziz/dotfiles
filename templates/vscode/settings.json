@@ -167,5 +167,6 @@
   "ACReactComponentGenerator.indexFile.create": false,
   "ACReactComponentGenerator.mainFile.extension": "tsx",
   "ACReactComponentGenerator.styleFile.suffix": "",
-  "ACReactComponentGenerator.styleFile.type": "standard (.css)"
+  "ACReactComponentGenerator.styleFile.type": "standard (.css)",
+  "workbench.sideBar.location": "left"
 }

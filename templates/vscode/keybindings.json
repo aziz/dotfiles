@@ -127,5 +127,13 @@
   {
     "key": "ctrl+alt+cmd+f",
     "command": "search.action.openNewEditor"
+  },
+  {
+    "key": "ctrl+shift+up ctrl+shift+up",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "shift+cmd+m",
+    "command": "-workbench.actions.view.problems"
   }
 ]

@@ -14,6 +14,7 @@ entr
 fd
 findutils
 fzf
+gh
 git
 git-cal
 git-extras
@@ -21,7 +22,6 @@ gnu-sed
 gnu-tar
 grep
 gzip
-hub
 jq
 m-cli
 man2html
@@ -29,7 +29,6 @@ mas
 mkcert
 ncdu
 node
-nss
 nvm
 openssh
 openssl
@@ -38,14 +37,11 @@ rename
 ripgrep
 rmtrash
 rsync
-shellcheck
 ssh-copy-id
 the_silver_searcher
 tmux
 tokei
-tree
 unrar
-watch
 watchman
 wget
 youtube-dl
