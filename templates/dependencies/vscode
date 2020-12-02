@@ -21,6 +21,8 @@ dendron.dendron
 dendron.dendron-markdown-notes
 dendron.dendron-markdown-preview-enhanced
 dendron.dendron-snippet-maker
+DigitalBrainstem.javascript-ejs-support
+DotJoshJohnson.xml
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
 esbenp.prettier-vscode
@@ -37,9 +39,11 @@ jock.svg
 jolaleye.horizon-theme-vscode
 jpoissonnier.vscode-styled-components
 jsaulou.theme-by-language
+Kelvin.vscode-sshfs
 kisstkondoros.vscode-codemetrics
 krizzdewizz.vscode-typescript-ast-explorer
 kumar-harsh.graphql-for-vscode
+mechatroner.rainbow-csv
 mrmlnc.vscode-lebab
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
@@ -56,6 +60,7 @@ rtbenfield.vscode-jest-test-adapter
 shd101wyy.markdown-preview-enhanced
 silvenon.mdx
 streetsidesoftware.code-spell-checker
+Theran.ejs-snippets
 tomoki1207.pdf
 wix.glean
 wmaurer.change-case
