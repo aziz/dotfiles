@@ -1,5 +1,5 @@
 # do not bell on tab-completion
-set bell-style bell
+# set bell-style bell
 set expand-tilde off
 # Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
 set input-meta on
