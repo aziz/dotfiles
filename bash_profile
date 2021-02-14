@@ -54,13 +54,6 @@ eval "$(direnv hook bash)"
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
-# Enable some Bash 4 features when possible:
-# * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
-# * Recursive globbing, e.g. `echo **/*.txt`
-for option in autocd globstar; do
-  shopt -s "$option" 2> /dev/null
-done
-
 # Check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -73,10 +66,3 @@ shopt -s cdspell
 
 # append to bash_history if Terminal.app quits
 shopt -s histappend
-
-# TODO: move this to provistioning
-# $ echo kern.maxfiles=65536 | sudo tee -a /etc/sysctl.conf
-# $ echo kern.maxfilesperproc=65536 | sudo tee -a /etc/sysctl.conf
-# $ sudo sysctl -w kern.maxfiles=65536
-# $ sudo sysctl -w kern.maxfilesperproc=65536
-# ulimit -n 65536 65536

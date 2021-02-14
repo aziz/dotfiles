@@ -8,11 +8,11 @@ for dir in $bash_dirs; do
   done
 done
 
-# Load Privates
-PRIVATES="${BASH}/../private/*.bash"
-for config_file in $PRIVATES; do
-  source "$config_file"
-done
+# # Load Privates
+# PRIVATES="${BASH}/../private/*.bash"
+# for config_file in $PRIVATES; do
+#   source "$config_file"
+# done
 
-unset config_file
-unset bash_dirs
+# unset config_file
+# unset bash_dirs
