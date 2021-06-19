@@ -2,7 +2,6 @@
 appcleaner
 beamer
 daisydisk
-docker
 file-juicer
 firefox
 firefox-developer-edition
@@ -17,8 +16,9 @@ notion
 pixel-picker
 postico
 prince
-slack
-spectacle
+quicklook-csv
+rectangle
+safari-technology-preview
 sublime-text-dev
 tableplus
 telegram
@@ -28,5 +28,3 @@ visual-studio-code
 visual-studio-code-insiders
 vlc
 whatsapp
-safari-technology-preview
-quicklook-csv

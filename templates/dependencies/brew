@@ -14,7 +14,6 @@ entr
 fd
 findutils
 fzf
-gh
 git
 git-cal
 git-extras
@@ -31,13 +30,11 @@ ncdu
 node
 nvm
 openssh
-openssl
 p7zip
 rename
 ripgrep
 rmtrash
 rsync
-ssh-copy-id
 the_silver_searcher
 tmux
 tokei
