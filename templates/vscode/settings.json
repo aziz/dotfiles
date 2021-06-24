@@ -178,4 +178,5 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
   "workbench.tree.renderIndentGuides": "none",
+  "editor.linkedEditing": true,
 }
