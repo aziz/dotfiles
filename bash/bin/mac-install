@@ -19,7 +19,6 @@ source "$HOME"/.templates/provisioning/npm.sh
 source "$HOME"/.templates/provisioning/mac/mac-apps.sh
 source "$HOME"/.templates/provisioning/mac/appstore.sh
 source "$HOME"/.templates/provisioning/mac/fonts.sh
-source "$HOME"/.templates/provisioning/vscode.sh
 source "$HOME"/.templates/provisioning/mac/security.sh
 source "$HOME"/.templates/provisioning/mac/macos.sh
 # source "$HOME"/.templates/provisioning/python.sh

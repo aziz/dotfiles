@@ -16,7 +16,6 @@ outdated() {
   softwareupdate -l
 
   template_validation
-  vscode_save_packages
 }
 
 genpass() {
