@@ -14,5 +14,5 @@ done
 #   source "$config_file"
 # done
 
-# unset config_file
-# unset bash_dirs
+unset config_file
+unset bash_dirs
