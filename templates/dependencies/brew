@@ -36,6 +36,7 @@ rename
 ripgrep
 rmtrash
 rsync
+ssh-copy-id
 the_silver_searcher
 tmux
 tokei
