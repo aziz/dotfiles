@@ -53,7 +53,7 @@
   "diffEditor.renderIndicators": false,
   "diffEditor.renderSideBySide": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "SF Mono, Vazir Code WOL",
+  "editor.fontFamily": "SF Mono, Vazir Code WOL, Menlo",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,

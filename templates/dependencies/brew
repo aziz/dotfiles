@@ -34,13 +34,12 @@ openssh
 p7zip
 rename
 ripgrep
-rmtrash
+trash
 rsync
 ssh-copy-id
 the_silver_searcher
 tmux
 tokei
-unrar
 watchman
 wget
 youtube-dl

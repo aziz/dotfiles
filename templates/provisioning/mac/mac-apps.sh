@@ -2,4 +2,4 @@
 
 echo "Installing Apps"
 echo "==============="
-while read -r in; do brew install --cask --force "$in"; done < "$HOME"/.templates/dependencies/apps
+brew install --cask --force $(cat "$HOME"/.templates/dependencies/apps|grep -v "#")
