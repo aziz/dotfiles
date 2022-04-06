@@ -51,7 +51,7 @@ live = `npm list -g --depth=0`.split("\n").map do |i|
   i.gsub!(/@\d.+/, '')
   i
 end.reject do |i|
-  i == '/usr/local/lib' || i == 'npm'
+  i == '/opt/homebrew/lib' || i == 'npm'
 end
 template = `cat ~/.templates/dependencies/npm`.split("\n")
 
