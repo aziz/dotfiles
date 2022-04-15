@@ -144,17 +144,17 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 #   0 = off
 #   1 = on for specific sevices
 #   2 = on for essential services
-sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 2
+#sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 2
 
 # Enable stealth mode
 # Source: https://support.apple.com/kb/PH18642
-sudo defaults write /Library/Preferences/com.apple.alf stealthenabled -int 1
+#sudo defaults write /Library/Preferences/com.apple.alf stealthenabled -int 1
 
 # Enable firewall logging
 #sudo defaults write /Library/Preferences/com.apple.alf loggingenabled -int 1
 
 # Do not automatically allow signed software to receive incoming connections
-sudo defaults write /Library/Preferences/com.apple.alf allowsignedenabled -bool false
+#sudo defaults write /Library/Preferences/com.apple.alf allowsignedenabled -bool false
 
 # Log firewall events for 90 days
 sudo perl -p -i -e 's/rotate=seq compress file_max=5M all_max=50M/rotate=utc compress file_max=5M ttl=90/g' "/etc/asl.conf"
@@ -169,11 +169,6 @@ sudo perl -p -i -e 's/appfirewall.log file_max=5M all_max=50M/appfirewall.log ro
 
 # Disable IR remote control
 sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEnabled -bool false
-
-# Turn Bluetooth off completely
-#sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 0
-#sudo launchctl unload /System/Library/LaunchDaemons/com.apple.blued.plist
-#sudo launchctl load /System/Library/LaunchDaemons/com.apple.blued.plist
 
 # Disable wifi captive portal
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
@@ -204,7 +199,7 @@ sudo systemsetup -setwakeonnetworkaccess off
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
 # Automatically lock the login keychain for inactivity after 6 hours
-security set-keychain-settings -t 21600 -l ~/Library/Keychains/login.keychain
+# security set-keychain-settings -t 21600 -l ~/Library/Keychains/login.keychain
 
 # Destroy FileVault key when going into standby mode, forcing a re-auth.
 # Source: https://web.archive.org/web/20160114141929/http://training.apple.com/pdf/WP_FileVault2.pdf
