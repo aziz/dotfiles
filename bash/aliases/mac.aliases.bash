@@ -44,5 +44,5 @@ if [ "$(uname)" = "Darwin" ]; then
   alias mac-screenshot-no-shadow-enable="defaults write com.apple.screencapture disable-shadow -bool true && killall SystemUIServer"
   alias mac-screenshot-no-shadow-disable="defaults write com.apple.screencapture disable-shadow -bool false && killall SystemUIServer"
 
-  alias electron-apps="find /Applications/ -type d -name *Electron* | sed -E 's/\/Applications\///g' | sed -E 's/\.app.+//g'"
+  alias mac-electron-apps="find /Applications/ -type d -name *Electron* | sed -E 's/\/Applications\///g' | sed -E 's/\.app.+//g'"
 fi

@@ -23,6 +23,10 @@
     "editor.wordWrap": "on",
     "files.trimTrailingWhitespace": false
   },
+  "[mdx]": {
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": false
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.foldingStrategy": "indentation"
@@ -62,7 +66,6 @@
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.overviewRulerBorder": false,
-  "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "gutter",
   "editor.selectionHighlight": false,
   "editor.semanticHighlighting.enabled": true,
@@ -171,7 +174,6 @@
   "window.title": "${rootName}",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.settings.enableNaturalLanguageSearch": false,
@@ -179,5 +181,6 @@
   "workbench.tree.renderIndentGuides": "none",
   "editor.linkedEditing": true,
   "hediet.vscode-drawio.theme": "automatic",
-  "workbench.iconTheme": "vs-nomo-dark"
+  "workbench.iconTheme": "vs-nomo-dark",
+  "editor.guides.indentation": true
 }
