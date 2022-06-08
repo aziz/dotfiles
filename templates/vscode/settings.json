@@ -21,7 +21,8 @@
   },
   "[markdown]": {
     "editor.wordWrap": "on",
-    "files.trimTrailingWhitespace": false
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[mdx]": {
     "editor.wordWrap": "on",
@@ -99,13 +100,10 @@
     "suppressFileNotUnderSourceControlWarning": false,
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
+    "suppressNoRepositoryWarning": false
   },
   "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": [
-    "gutter",
-    "overview"
-  ],
+  "gitlens.blame.highlight.locations": ["gutter", "overview"],
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
@@ -173,7 +171,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${rootName}",
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": true,
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.settings.enableNaturalLanguageSearch": false,
@@ -182,5 +179,17 @@
   "editor.linkedEditing": true,
   "hediet.vscode-drawio.theme": "automatic",
   "workbench.iconTheme": "vs-nomo-dark",
-  "editor.guides.indentation": true
+  "editor.guides.indentation": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.mode.active": "zen",
+  "workbench.colorTheme": "PlasticAB",
+  "editor.formatOnSave": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  }
 }

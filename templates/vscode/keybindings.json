@@ -113,10 +113,6 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
-    "key": "ctrl+alt+cmd+\\",
-    "command": "workbench.action.toggleActivityBarVisibility"
-  },
-  {
     "key": "shift+cmd+0",
     "command": "workbench.action.zoomReset"
   },
@@ -129,11 +125,15 @@
     "command": "search.action.openNewEditor"
   },
   {
-    "key": "ctrl+shift+up ctrl+shift+up",
+    "key": "ctrl+alt+cmd+m",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
     "key": "shift+cmd+m",
     "command": "-workbench.actions.view.problems"
+  },
+  {
+    "key": "ctrl+alt+cmd+\\",
+    "command": "revealInExplorer"
   }
 ]

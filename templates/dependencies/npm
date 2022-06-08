@@ -13,6 +13,7 @@ local-web-server
 ndb
 node-gyp
 npm-check
+npm-why
 osx-learn
 prettier
 psi
@@ -24,3 +25,4 @@ trash
 typescript
 vsce
 yarn
+yarn-check
