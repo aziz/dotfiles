@@ -1,9 +1,7 @@
 {
-  "ACReactComponentGenerator.global.lifecycleType": "reactv16",
-  "ACReactComponentGenerator.indexFile.create": false,
-  "ACReactComponentGenerator.mainFile.extension": "tsx",
-  "ACReactComponentGenerator.styleFile.suffix": "",
-  "ACReactComponentGenerator.styleFile.type": "standard (.css)",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -20,9 +18,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.wordWrap": "on",
-    "files.trimTrailingWhitespace": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "files.trimTrailingWhitespace": false
   },
   "[mdx]": {
     "editor.wordWrap": "on",
@@ -57,13 +55,19 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "diffEditor.renderSideBySide": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "editor.cursorBlinking": "solid",
   "editor.fontFamily": "SF Mono, Vazir Code WOL",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.guides.indentation": true,
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 21,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.overviewRulerBorder": false,
@@ -140,10 +144,12 @@
       "stash": true
     }
   },
+  "gitlens.mode.active": "zen",
   "gitlens.statusBar.enabled": false,
   "gitlens.views.repositories.branches.layout": "list",
   "gitlens.views.repositories.files.layout": "list",
   "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7Y2xpcGFydDthdGxhc3NpYW47aW9zO21vY2t1cHM7c2l0ZW1hcDthd3M0O2F3czNkO2F6dXJlMjttc2NhZTtvZmZpY2U7YXJjaGltYXRlMztsZWFuX21hcHBpbmc7d2ViaWNvbnM7c2lnbnNcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIkYwRjBGMFwiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjgyNyxcImhlaWdodFwiOjExNjl9LFwic2VhcmNoXCI6dHJ1ZSxcInNob3dTdGFydFNjcmVlblwiOnRydWUsXCJncmlkQ29sb3JcIjpcIiNkMGQwZDBcIixcImRhcmtHcmlkQ29sb3JcIjpcIiM2ZTZlNmVcIixcImF1dG9zYXZlXCI6dHJ1ZSxcInJlc2l6ZUltYWdlc1wiOm51bGwsXCJvcGVuQ291bnRlclwiOjAsXCJ2ZXJzaW9uXCI6MTgsXCJ1bml0XCI6MSxcImlzUnVsZXJPblwiOmZhbHNlLFwidWlcIjpcIlwifSJ9",
+  "hediet.vscode-drawio.theme": "automatic",
   "html.format.wrapAttributes": "force",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.checkJs": true,
@@ -155,15 +161,13 @@
       "username": "pi"
     },
     {
-      "name": "pi4",
-      "username": "pi",
       "host": "10.10.1.201",
-      "privateKeyPath": "/Users/allen/Library/Mobile Documents/com~apple~CloudDocs/dotfiles/ssh/id_rsa"
+      "name": "pi4",
+      "privateKeyPath": "/Users/allen/Library/Mobile Documents/com~apple~CloudDocs/dotfiles/ssh/id_rsa",
+      "username": "pi"
     }
   ],
-  "svg.preview.mode": "svg",
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 14,
@@ -171,25 +175,11 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${rootName}",
   "window.zoomLevel": 0,
+  "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
-  "workbench.tree.renderIndentGuides": "none",
-  "editor.linkedEditing": true,
-  "hediet.vscode-drawio.theme": "automatic",
-  "workbench.iconTheme": "vs-nomo-dark",
-  "editor.guides.indentation": true,
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "gitlens.mode.active": "zen",
-  "workbench.colorTheme": "PlasticAB",
-  "editor.formatOnSave": true,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false
-  }
+  "workbench.tree.renderIndentGuides": "none"
 }
