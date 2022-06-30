@@ -3,7 +3,7 @@
 refactor_large_files () {
   # Usage:
   # refactor_large_files [path] [file-type]
-  find "$1" -name "$2"  -not -path "./node_modules/*" -not -path "./.next/*" | xargs wc -l | sort -nr | head -n50
+  find "$1" -name "$2"  -not -path "./node_modules/*" -not -path "./.next/*" | tr \\n \\0  | xargs -0 wc -l | sort -nr | head -n50
 }
 
 

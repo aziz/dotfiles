@@ -181,5 +181,6 @@
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "settingsSync.ignoredSettings": []
 }
