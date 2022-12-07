@@ -144,7 +144,7 @@
       "stash": true
     }
   },
-  "gitlens.mode.active": "zen",
+  "gitlens.mode.active": "review",
   "gitlens.statusBar.enabled": false,
   "gitlens.views.repositories.branches.layout": "list",
   "gitlens.views.repositories.files.layout": "list",
@@ -174,13 +174,16 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${rootName}",
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
   "workbench.tree.renderIndentGuides": "none",
-  "settingsSync.ignoredSettings": []
+  "settingsSync.ignoredSettings": [],
+  "workbench.colorTheme": "PlasticAB",
+  "window.commandCenter": true,
+  "editor.stickyScroll.enabled": true,
+  "cSpell.language": "en,lorem",
+  "cSpell.ignoreWords": ["CDSID", "Prefs", "msal"]
 }

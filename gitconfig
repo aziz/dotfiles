@@ -24,6 +24,9 @@
   autocorrect = 1
 [merge]
   log = true
+  tool = code
+[mergetool "code"]
+  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [apply]
   whitespace = fix
 [push]
