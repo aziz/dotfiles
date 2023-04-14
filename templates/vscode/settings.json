@@ -26,6 +26,9 @@
     "editor.wordWrap": "on",
     "files.trimTrailingWhitespace": false
   },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.foldingStrategy": "indentation"
@@ -37,7 +40,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": true,
-  "cSpell.allowCompoundWords": true,
   "colorInfo.languages": [
     {
       "colors": "css",
@@ -75,6 +77,7 @@
   "editor.selectionHighlight": false,
   "editor.semanticHighlighting.enabled": true,
   "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -149,24 +152,14 @@
   "gitlens.views.repositories.branches.layout": "list",
   "gitlens.views.repositories.files.layout": "list",
   "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7Y2xpcGFydDthdGxhc3NpYW47aW9zO21vY2t1cHM7c2l0ZW1hcDthd3M0O2F3czNkO2F6dXJlMjttc2NhZTtvZmZpY2U7YXJjaGltYXRlMztsZWFuX21hcHBpbmc7d2ViaWNvbnM7c2lnbnNcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIkYwRjBGMFwiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjgyNyxcImhlaWdodFwiOjExNjl9LFwic2VhcmNoXCI6dHJ1ZSxcInNob3dTdGFydFNjcmVlblwiOnRydWUsXCJncmlkQ29sb3JcIjpcIiNkMGQwZDBcIixcImRhcmtHcmlkQ29sb3JcIjpcIiM2ZTZlNmVcIixcImF1dG9zYXZlXCI6dHJ1ZSxcInJlc2l6ZUltYWdlc1wiOm51bGwsXCJvcGVuQ291bnRlclwiOjAsXCJ2ZXJzaW9uXCI6MTgsXCJ1bml0XCI6MSxcImlzUnVsZXJPblwiOmZhbHNlLFwidWlcIjpcIlwifSJ9",
+  "hediet.vscode-drawio.resizeImages": null,
   "hediet.vscode-drawio.theme": "automatic",
   "html.format.wrapAttributes": "force",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.checkJs": true,
-  "sshfs.configs": [
-    {
-      "host": "10.10.1.202",
-      "name": "pi",
-      "privateKeyPath": "/Users/allen/Library/Mobile Documents/com~apple~CloudDocs/dotfiles/ssh/id_rsa",
-      "username": "pi"
-    },
-    {
-      "host": "10.10.1.201",
-      "name": "pi4",
-      "privateKeyPath": "/Users/allen/Library/Mobile Documents/com~apple~CloudDocs/dotfiles/ssh/id_rsa",
-      "username": "pi"
-    }
-  ],
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredSettings": [],
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorStyle": "line",
@@ -174,16 +167,11 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${rootName}",
+  "workbench.colorTheme": "Default Dark+ Experimental",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
-  "workbench.tree.renderIndentGuides": "none",
-  "settingsSync.ignoredSettings": [],
-  "workbench.colorTheme": "PlasticAB",
-  "window.commandCenter": true,
-  "editor.stickyScroll.enabled": true,
-  "cSpell.language": "en,lorem",
-  "cSpell.ignoreWords": ["CDSID", "Prefs", "msal"]
+  "workbench.tree.renderIndentGuides": "none"
 }
