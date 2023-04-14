@@ -9,7 +9,6 @@ coreutils
 curl
 diffutils
 direnv
-distribution
 entr
 fd
 findutils
