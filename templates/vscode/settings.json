@@ -167,7 +167,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${rootName}",
-  "workbench.colorTheme": "Default Dark+ Experimental",
+  "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vs-nomo-dark",
