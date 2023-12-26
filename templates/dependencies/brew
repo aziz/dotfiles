@@ -1,3 +1,4 @@
+1password-cli
 ansifilter
 autojump
 bash
@@ -33,10 +34,10 @@ openssh
 p7zip
 rename
 ripgrep
-trash
 rsync
 the_silver_searcher
 tmux
 tokei
+trash
 wget
 youtube-dl

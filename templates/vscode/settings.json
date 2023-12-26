@@ -58,7 +58,7 @@
   "diffEditor.renderIndicators": false,
   "diffEditor.renderSideBySide": false,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
   "editor.cursorBlinking": "solid",
   "editor.fontFamily": "SF Mono, Vazir Code WOL",
@@ -167,11 +167,14 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${rootName}",
-  "workbench.colorTheme": "PlasticAB",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "typescriptExplorer.typeTree.view.icons.colors.enable": false,
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "PlasticAB Dark",
+  "window.commandCenter": false
 }
