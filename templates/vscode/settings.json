@@ -176,5 +176,13 @@
   "typescriptExplorer.typeTree.view.icons.colors.enable": false,
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "PlasticAB Dark",
-  "window.commandCenter": false
+  "window.commandCenter": false,
+  "sshfs.configs": [
+    {
+      "name": "piw",
+      "host": "10.10.1.128",
+      "username": "pi",
+      "privateKeyPath": "~/.ssh/id_rsa"
+    }
+  ]
 }
