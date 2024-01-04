@@ -184,5 +184,8 @@
       "username": "pi",
       "privateKeyPath": "~/.ssh/id_rsa"
     }
-  ]
+  ],
+  "github.copilot.enable": {
+    "markdown": "true"
+  }
 }
