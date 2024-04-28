@@ -8,7 +8,7 @@ firefox
 firefox-developer-edition
 fork
 google-chrome
-google-chrome-canary
+google-chrome@canary
 iterm2
 keka
 macupdater
@@ -20,7 +20,6 @@ quicklook-csv
 rectangle
 safari-technology-preview
 slack
-sublime-text-dev
 tableplus
 topnotch
 transmission
@@ -28,3 +27,4 @@ visual-studio-code
 visual-studio-code-insiders
 vlc
 xcodes
+zed
