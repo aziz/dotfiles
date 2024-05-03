@@ -5,11 +5,11 @@ charles
 daisydisk
 file-juicer
 firefox
-firefox-developer-edition
+firefox@developer-edition
 fork
 google-chrome
 google-chrome@canary
-iterm2
+iterm2@beta
 keka
 macupdater
 notion
@@ -24,7 +24,7 @@ tableplus
 topnotch
 transmission
 visual-studio-code
-visual-studio-code-insiders
+visual-studio-code@insiders
 vlc
 xcodes
 zed
