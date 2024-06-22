@@ -9,6 +9,8 @@ coreutils
 curl
 diffutils
 direnv
+docker
+docker-compose
 entr
 fd
 findutils
@@ -21,6 +23,7 @@ gnu-sed
 gnu-tar
 grep
 gzip
+httrack
 jq
 m-cli
 man2html
@@ -30,6 +33,7 @@ ncdu
 node
 nvm
 openssh
+oven-sh/bun/bun
 p7zip
 rename
 ripgrep

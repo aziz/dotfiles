@@ -188,5 +188,8 @@
   "github.copilot.enable": {
     "markdown": "true"
   },
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false
 }

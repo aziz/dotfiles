@@ -2,13 +2,10 @@
 1password-cli
 appcleaner
 charles
+choosy
 daisydisk
 file-juicer
-firefox
-firefox@developer-edition
 fork
-google-chrome
-google-chrome@canary
 iterm2@beta
 keka
 macupdater
@@ -18,7 +15,6 @@ postico
 prince
 quicklook-csv
 rectangle
-safari-technology-preview
 slack
 tableplus
 topnotch
@@ -26,5 +22,6 @@ transmission
 visual-studio-code
 visual-studio-code@insiders
 vlc
+vmware-fusion
 xcodes
 zed
