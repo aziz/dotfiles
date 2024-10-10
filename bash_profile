@@ -49,6 +49,8 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Load Bash It
 source "$BASH"/bash_it.sh
 
+source "$BASH"/../private/private.env.bash
+
 eval "$(direnv hook bash)"
 
 # Don't check mail when opening terminal.

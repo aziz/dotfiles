@@ -54,7 +54,7 @@
       "selector": "javascript"
     }
   ],
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderIndicators": false,
   "diffEditor.renderSideBySide": false,
   "editor.codeActionsOnSave": {
@@ -102,12 +102,7 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false
+    "suppressIntegrationRequestTimedOutWarning": true
   },
   "gitlens.blame.avatars": false,
   "gitlens.blame.highlight.locations": ["gutter", "overview"],
@@ -175,7 +170,7 @@
   "workbench.tree.renderIndentGuides": "none",
   "typescriptExplorer.typeTree.view.icons.colors.enable": false,
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "PlasticAB Dark",
+  "workbench.colorTheme": "PlasticAB",
   "window.commandCenter": false,
   "sshfs.configs": [
     {
@@ -191,5 +186,8 @@
   "editor.accessibilitySupport": "off",
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false
+  "gitlens.codeLens.recentChange.enabled": false,
+  "workbench.experimental.enableNewProfilesUI": true,
+  "scm.experimental.showHistoryGraph": true,
+  "bundleSize.cautionColor": "#eeaa0022"
 }

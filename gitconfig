@@ -13,7 +13,7 @@
   unpushed  = cherry -v
   upstream  = rev-parse --symbolic-full-name --abbrev-ref HEAD@{upstream}
   amend     = commit --amend
-  # up        = pull --rebase --autostash
+  up        = pull --rebase --autostash
 [core]
   excludesfile = ~/.gitignore
   editor       = subl -wn

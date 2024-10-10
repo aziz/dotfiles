@@ -2,7 +2,6 @@
 echo "setting bash as default shell"
 chsh -s /bin/bash
 
-echo "install Xcode first!"
 sudo -v
 
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
