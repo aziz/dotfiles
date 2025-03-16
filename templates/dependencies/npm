@@ -1,5 +1,4 @@
 @slidev/cli
-create-react-app
 create-react-library
 diff-so-fancy
 diff2html-cli
@@ -10,6 +9,7 @@ generator-express-no-stress
 generator-express-no-stress-typescript
 hotel
 local-web-server
+npkill
 npm-check
 npm-why
 osx-learn

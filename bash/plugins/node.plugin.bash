@@ -6,9 +6,7 @@ export NODE_REPL_HISTORY_SIZE='32768'
 
 export NVM_DIR="$HOME/.nvm"
 
-if [ -n "$(type -t nvm)" ] && [ "$(type -t nvm)" = function ]; then  
-  source "$(brew --prefix nvm)"/nvm.sh
-  nvm alias default system >/dev/null;
-fi
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias npmls="npm list --depth=0"

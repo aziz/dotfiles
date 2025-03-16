@@ -164,20 +164,24 @@
   "window.title": "${rootName}",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "vs-nomo-dark",
+  "workbench.iconTheme": "symbols",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
   "workbench.tree.renderIndentGuides": "none",
   "typescriptExplorer.typeTree.view.icons.colors.enable": false,
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "PlasticAB",
-  "window.commandCenter": false,
   "sshfs.configs": [
     {
       "name": "piw",
       "host": "10.10.1.128",
       "username": "pi",
       "privateKeyPath": "~/.ssh/id_rsa"
+    },
+    {
+      "name": "PI4",
+      "username": "pi",
+      "privateKeyPath": "/Users/ABARGI/.ssh/id_rsa"
     }
   ],
   "github.copilot.enable": {
@@ -189,5 +193,8 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "workbench.experimental.enableNewProfilesUI": true,
   "scm.experimental.showHistoryGraph": true,
-  "bundleSize.cautionColor": "#eeaa0022"
+  "bundleSize.cautionColor": "#eeaa0022",
+  "dbcode.connections": [],
+  "geminicodeassist.project": "",
+  "window.commandCenter": false
 }
