@@ -135,5 +135,13 @@
   {
     "key": "ctrl+alt+cmd+\\",
     "command": "revealInExplorer"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "composerMode.chat"
+  },
+  {
+    "key": "ctrl+alt+cmd+i",
+    "command": "composerMode.edit"
   }
 ]

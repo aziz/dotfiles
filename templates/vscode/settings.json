@@ -40,6 +40,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": true,
+  "bundleSize.cautionColor": "#eeaa0022",
   "colorInfo.languages": [
     {
       "colors": "css",
@@ -54,14 +55,29 @@
       "selector": "javascript"
     }
   ],
+  "dbcode.connections": [
+    {
+      "color": "#FFC54F",
+      "connectionId": "-0BLGkpE0CYh8ubxjhMqa",
+      "connectionType": "socket",
+      "driver": "sqlite",
+      "driverOptions": {
+        "extensions": []
+      },
+      "name": "Lexin",
+      "readOnly": false,
+      "socket": "/Users/ABARGI/Desktop/lexin.db"
+    }
+  ],
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderIndicators": false,
   "diffEditor.renderSideBySide": false,
+  "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "SF Mono, Vazir Code WOL",
+  "editor.fontFamily": "SF Mono, SF Arabic",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
@@ -99,14 +115,20 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "geminicodeassist.project": "",
   "git.autofetch": true,
   "git.confirmSync": false,
+  "github.copilot.enable": {
+    "markdown": "true"
+  },
   "gitlens.advanced.messages": {
     "suppressIntegrationRequestTimedOutWarning": true
   },
   "gitlens.blame.avatars": false,
   "gitlens.blame.highlight.locations": ["gutter", "overview"],
+  "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.hovers.enabled": false,
@@ -143,6 +165,7 @@
     }
   },
   "gitlens.mode.active": "review",
+  "gitlens.showWelcomeOnInstall": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.views.repositories.branches.layout": "list",
   "gitlens.views.repositories.files.layout": "list",
@@ -153,48 +176,42 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.checkJs": true,
   "redhat.telemetry.enabled": false,
+  "scm.experimental.showHistoryGraph": true,
   "security.workspace.trust.untrustedFiles": "open",
   "settingsSync.ignoredSettings": [],
+  "sshfs.configs": [
+    {
+      "host": "10.10.1.128",
+      "name": "piw",
+      "privateKeyPath": "~/.ssh/id_rsa",
+      "username": "pi"
+    },
+    {
+      "name": "PI4",
+      "privateKeyPath": "/Users/ABARGI/.ssh/id_rsa",
+      "username": "pi"
+    }
+  ],
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 14,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescriptExplorer.typeTree.view.icons.colors.enable": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.commandCenter": false,
   "window.title": "${rootName}",
+  "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#FFC54F",
+    "tab.unfocusedActiveBorder": "#ff000000"
+  },
+  "workbench.colorTheme": "PlasticAB Dark",
   "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
+  "workbench.experimental.enableNewProfilesUI": true,
   "workbench.iconTheme": "symbols",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
-  "workbench.tree.renderIndentGuides": "none",
-  "typescriptExplorer.typeTree.view.icons.colors.enable": false,
-  "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "PlasticAB",
-  "sshfs.configs": [
-    {
-      "name": "piw",
-      "host": "10.10.1.128",
-      "username": "pi",
-      "privateKeyPath": "~/.ssh/id_rsa"
-    },
-    {
-      "name": "PI4",
-      "username": "pi",
-      "privateKeyPath": "/Users/ABARGI/.ssh/id_rsa"
-    }
-  ],
-  "github.copilot.enable": {
-    "markdown": "true"
-  },
-  "editor.accessibilitySupport": "off",
-  "gitlens.showWelcomeOnInstall": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "workbench.experimental.enableNewProfilesUI": true,
-  "scm.experimental.showHistoryGraph": true,
-  "bundleSize.cautionColor": "#eeaa0022",
-  "dbcode.connections": [],
-  "geminicodeassist.project": "",
-  "window.commandCenter": false
+  "workbench.tree.renderIndentGuides": "none"
 }
