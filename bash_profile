@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:$HOME/.rvm/bin:$HOME/.npm-packages/bin:$HOME/.bash/bin:$(python3 -m site --user-base)/bin:$HOME/.cargo/bin:$HOME/.lmstudio/bin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/.codeium/windsurf/bin:$HOME/go/bin:$HOME/.rvm/bin:$HOME/.npm-packages/bin:$HOME/.bash/bin:$(python3 -m site --user-base)/bin:$HOME/.cargo/bin:$HOME/.lmstudio/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 export TERM="xterm-256color"
@@ -33,6 +33,7 @@ export PLATFORM="$MACHINE-$OS-$OSVERSION"
 # Disabling Analytics for homebrew
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_INSTALL_CLEANUP=1
+export CREATE_CLOUDFLARE_TELEMETRY_DISABLED=1
 
 # Disabling some shell-check errors
 export SHELLCHECK_OPTS="-e SC1090"

@@ -143,5 +143,20 @@
   {
     "key": "ctrl+alt+cmd+i",
     "command": "composerMode.edit"
+  },
+  {
+    "key": "cmd+t cmd+l",
+    "command": "editor.action.transformToLowercase",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k cmd+l",
+    "command": "-editor.action.transformToLowercase",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+cmd+t",
+    "command": "workbench.action.createTerminalEditor",
+    "when": "terminalProcessSupported"
   }
 ]

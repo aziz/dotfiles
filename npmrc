@@ -1,8 +1,5 @@
-email=${email}
-username=${npm_username}
 init-author-email=${email}
 init-author-name=${name}
-init-author-url=https://github.com/${github_username}
 loglevel=warn
 viewer=browser
 progress=false
