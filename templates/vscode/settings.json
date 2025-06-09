@@ -172,5 +172,10 @@
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.stickyScroll.enabled": true,
   "terminal.integrated.enableImages": true,
-  "dbcode.ai.inlineCompletion": false
+  "dbcode.ai.inlineCompletion": false,
+  "tailwind-fold.autoFold": false,
+  "git.blame.editorDecoration.enabled": true,
+  "inlineChat.enableV2": true,
+  "inlineChat.hideOnRequest": true,
+  "workbench.secondarySideBar.defaultVisibility": "visibleInWorkspace"
 }
