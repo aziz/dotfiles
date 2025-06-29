@@ -1,4 +1,8 @@
+@anthropic-ai/claude-code
+@google/gemini-cli
+@openai/codex
 @slidev/cli
+cloudflare
 create-react-library
 diff-so-fancy
 diff2html-cli
@@ -11,6 +15,7 @@ hotel
 local-web-server
 npkill
 npm-check
+npm-check-updates
 npm-why
 osx-learn
 prettier
