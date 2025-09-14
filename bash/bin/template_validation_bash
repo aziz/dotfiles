@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+
+print_results() {
+  local section="$1"
+  local -n live_ref=$2
+  local -n template_ref=$3
+  echo -e "\033[94m${section}\033[0m"
+  local not_in_template=()
+  local item t found
+  for item in "${live_ref[@]}"; do
+    found=0
+    for t in "${template_ref[@]}"; do
+      [[ "$item" == "$t" ]] && { found=1; break; }
+    done
+    if ((found == 0)); then
+      not_in_template+=("$item")
+    fi
+  done
+  if ((${#not_in_template[@]} > 0)); then
+    echo -e "\033[95mNot in template\033[0m\n"
+    printf '%s\n' "${not_in_template[@]}"
+  fi
+
+  local not_installed=()
+  for item in "${template_ref[@]}"; do
+    found=0
+    for t in "${live_ref[@]}"; do
+      [[ "$item" == "$t" ]] && { found=1; break; }
+    done
+    if ((found == 0)); then
+      not_installed+=("$item")
+    fi
+  done
+  if ((${#not_installed[@]} > 0)); then
+    echo -e "\033[95mNot installed\033[0m\n"
+    printf '%s\n' "${not_installed[@]}"
+  fi
+}
+
+# ========================================================
+
+mapfile -t live < <(brew leaves | sort)
+mapfile -t template < <(cat ~/.templates/dependencies/brew | sort | while read -r i; do
+  i="${i//homebrew/completions\/}"
+  i="${i//homebrew/dupes\/}"
+  i="${i%% --*}"
+  printf '%s\n' "$i"
+done)
+
+print_results 'HOMEBREW:' live template
+
+# ========================================================
+
+mapfile -t live < <(brew list --cask | sort)
+mapfile -t template_apps < <(cat ~/.templates/dependencies/apps | sort)
+mapfile -t template_apps_browsers < <(cat ~/.templates/dependencies/apps_browsers | sort)
+mapfile -t template_fonts < <(cat ~/.templates/dependencies/fonts | sort | while read -r i; do
+  if [[ ${#i} -eq 0 || ${i:0:1} == '#' ]]; then
+    continue
+  fi
+  printf '%s\n' "$i"
+done)
+template=("${template_apps[@]}" "${template_apps_browsers[@]}" "${template_fonts[@]}")
+print_results 'HOMEBREW CASK:' live template
+
+# ========================================================
+
+mapfile -t live < <(npm list -g --depth=0 | while read -r i; do
+  i="${i//├/}"
+  i="${i//└/}"
+  i="${i//─/}"
+  i="${i#${i%%[![:space:]]*}}"
+  i="${i%%@*}"
+  if [[ "$i" != '/opt/homebrew/lib' && "$i" != 'npm' ]]; then
+    printf '%s\n' "$i"
+  fi
+done)
+mapfile -t template < <(cat ~/.templates/dependencies/npm)
+
+print_results 'NPM:' live template

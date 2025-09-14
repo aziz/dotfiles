@@ -1,0 +1,57 @@
+#!/usr/bin/env node
+
+const { execSync } = require('child_process');
+
+function printResults(section, live, template) {
+  console.log(`\x1b[94m${section}\x1b[0m`);
+  if (live.filter(i => !template.includes(i)).length > 0) {
+    console.log(`\x1b[95mNot in template\x1b[0m\n`);
+    console.log(live.filter(i => !template.includes(i)));
+  }
+
+  if (template.filter(i => !live.includes(i)).length > 0) {
+    console.log(`\x1b[95mNot installed\x1b[0m\n`);
+    console.log(template.filter(i => !live.includes(i)));
+  }
+}
+
+// ========================================================
+
+let live = execSync('brew leaves | sort', { encoding: 'utf8' }).split('\\n');
+let template = execSync('cat ~/.templates/dependencies/brew | sort', { encoding: 'utf8' })
+  .split('\\n').map(i => {
+    i = i.replace('homebrew/completions/', '');
+    i = i.replace('homebrew/dupes/', '');
+    i = i.replace(/\\s--.+/, '');
+    return i;
+  });
+
+printResults('HOMEBREW:', live, template);
+
+// ========================================================
+
+live = execSync('brew list --cask | sort', { encoding: 'utf8' }).split('\\n');
+const template_apps = execSync('cat ~/.templates/dependencies/apps | sort', { encoding: 'utf8' }).split('\\n');
+const template_apps_browsers = execSync('cat ~/.templates/dependencies/apps_browsers | sort', { encoding: 'utf8' }).split('\\n');
+const template_fonts = execSync('cat ~/.templates/dependencies/fonts | sort', { encoding: 'utf8' })
+  .split('\\n').filter(i => !(i.length === 0 || i[0] === '#'));
+template = template_apps.concat(template_apps_browsers, template_fonts);
+printResults('HOMEBREW CASK:', live, template);
+
+// ========================================================
+
+// live = `gem list --no-details --no-version`.split("\\n")
+// template = `cat ~/.templates/dependencies/gem`.split("\\n")
+// print_results('GEMS:', live, template)
+
+// ========================================================
+
+live = execSync('npm list -g --depth=0', { encoding: 'utf8' }).split('\\n').map(i => {
+  i = i.replace(/[├──└─]+/g, '');
+  i = i.replace(/^\\s+/, '');
+  i = i.replace(/@\\d.+/, '');
+  return i;
+}).filter(i => !(i === '/opt/homebrew/lib' || i === 'npm'));
+template = execSync('cat ~/.templates/dependencies/npm', { encoding: 'utf8' }).split('\\n');
+
+printResults('NPM:', live, template);
