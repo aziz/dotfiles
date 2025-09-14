@@ -25,5 +25,5 @@ tar -xzv --strip-components 1; \
 
 ---
 ##### Credit
-Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans,
+Inspired and borrowed from Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans,
 Mathias Bynens and Mislav Marohnić dotfile repos.

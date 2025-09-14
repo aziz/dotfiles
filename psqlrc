@@ -33,7 +33,7 @@
 \set PROMPT2 ''
 
 \set PAGER OFF
-\set HISTFILE ~/.psql_history- :HOST - :DBNAME
+\set HISTFILE ~/.psql_history-:HOST-:DBNAME
 \set HISTSIZE 5000
 \set HISTCONTROL ignoredups
 \set ECHO_HIDDEN ON
@@ -55,7 +55,7 @@
 \echo '\t:conninfo\t-- Server connections'
 \echo '\t:activity\t-- Server activity'
 \echo '\t:locks\t\t-- Lock info'
-\echo '\t:waits\t\t-- Waiting queires'
+\echo '\t:waits\t\t-- Waiting queries'
 \echo '\t:dbsize\t\t-- Database Size'
 \echo '\t:tablesize\t-- Tables Size'
 \echo '\t:uselesscol\t-- Useless columns'
