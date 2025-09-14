@@ -1,0 +1,110 @@
+#!/usr/bin/env node
+// Dependencies: tail, head, grep, cat, git, ansifilter
+// TODO
+// 1. argument to prevent sha update
+
+const fs = require('fs');
+const os = require('os');
+const { execSync } = require('child_process');
+
+function color(code, str) {
+  return `\u001b[${code}m${str}\u001b[0m`;
+}
+
+function report(type) {
+  const latestShaFile = `${os.homedir()}/.homebrew-${type}-latest-sha`;
+  const caskRepo = `/opt/homebrew/Library/Taps/homebrew/homebrew-${type}`;
+  const versionRegex = /^[+-]\s*version\s+['"]?(.+?)['"]?$/;
+  const homepageRegex = /^\s+homepage\s+["'](.+)["']\s*$/;
+  const updated = [];
+  const added = [];
+  const removed = [];
+  const updateAvailable = [];
+
+  process.chdir(caskRepo);
+
+  let oldSha;
+  if (fs.existsSync(latestShaFile)) {
+    oldSha = fs.readFileSync(latestShaFile, 'utf8').trim();
+  } else {
+    const output = execSync('git log | head -20 | /usr/bin/tail -r | head -1 | ansifilter', { encoding: 'utf8' });
+    const m = output.match(/([a-z0-9]{7})\s.+/);
+    oldSha = m ? m[1] : '';
+  }
+  const latestShaOutput = execSync('git log | head -1 | ansifilter', { encoding: 'utf8' });
+  const latestShaMatch = latestShaOutput.match(/([a-z0-9]{7,})\s.+/);
+  const latestSha = latestShaMatch ? latestShaMatch[1] : '';
+
+  const installedCasks = execSync('brew list --cask', { encoding: 'utf8' }).trim().split('\n');
+  const changes = execSync(`git diff --name-status ${oldSha} | grep Casks/ | ansifilter`, { encoding: 'utf8' }).trim().split('\n');
+
+  const apps = changes.map(c => {
+    const [status, path] = c.split('\t');
+    const m = path.match(/^Casks\/(.+)\.rb$/);
+    return m ? { status, name: m[1] } : null;
+  }).filter(Boolean);
+
+  apps.forEach(a => {
+    if (a.status === 'D') {
+      removed.push(color('94', a.name));
+    } else {
+      const h = execSync(`cat Casks/${a.name}.rb | grep -E '^\\s+homepage'`, { encoding: 'utf8' });
+      const homepageMatch = h.match(homepageRegex);
+      const homepage = homepageMatch ? homepageMatch[1] : '';
+      if (a.status === 'A') {
+        added.push(`${color('94', a.name)} [${color('92', homepage)}]`);
+      } else if (a.status === 'M') {
+        let versionDiff = '';
+        try {
+          versionDiff = execSync(`git diff ${oldSha} Casks/${a.name}.rb | grep -E '^[+-]\\s+version'`, { encoding: 'utf8' });
+        } catch {}
+        let lastVersion, currentVersion;
+        if (versionDiff) {
+          [lastVersion, currentVersion] = versionDiff.split('\n');
+          if (lastVersion) {
+            const lm = lastVersion.match(versionRegex);
+            lastVersion = lm ? lm[1] : undefined;
+          }
+          if (currentVersion) {
+            const cm = currentVersion.match(versionRegex);
+            currentVersion = cm ? cm[1] : undefined;
+          }
+        }
+        let needsUpdate = false;
+        if (versionDiff && installedCasks.includes(a.name)) {
+          needsUpdate = true;
+          updateAvailable.push(`✨  ${color('32', a.name)}`);
+        }
+        updated.push([
+          color('94', a.name),
+          needsUpdate ? '✨' : '',
+          ` [${color('92', homepage)}]`,
+          versionDiff ? ` ${lastVersion} ${color('33', '<')} ${currentVersion}` : ''
+        ].join(''));
+      }
+    }
+  });
+
+  console.log(`\n${color('35', '🔮  ' + type.toUpperCase())}`);
+  if (updated.length) {
+    console.log(color('95', 'UPDATED'));
+    console.log(updated.join('\n'));
+  }
+  if (added.length) {
+    console.log(color('95', 'ADDED'));
+    console.log(added.join('\n'));
+  }
+  if (removed.length) {
+    console.log(color('95', 'REMOVED'));
+    console.log(removed.join('\n'));
+  }
+  if (updateAvailable.length) {
+    console.log(color('95', 'OUTDATED'));
+    console.log(updateAvailable.join('\n'));
+  }
+  console.log(color('90', `Old SHA: ${oldSha}  New SHA: ${latestSha}`));
+
+  fs.writeFileSync(latestShaFile, latestSha);
+}
+
+report('cask');
