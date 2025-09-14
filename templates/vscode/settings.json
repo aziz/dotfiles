@@ -177,5 +177,6 @@
   "git.blame.editorDecoration.enabled": true,
   "inlineChat.enableV2": true,
   "inlineChat.hideOnRequest": true,
-  "workbench.secondarySideBar.defaultVisibility": "visibleInWorkspace"
+  "workbench.secondarySideBar.defaultVisibility": "visibleInWorkspace",
+  "workbench.panel.showLabels": false
 }

@@ -1,4 +1,3 @@
-arc
 brave-browser
 firefox
 firefox@developer-edition
@@ -7,6 +6,7 @@ google-chrome@canary
 microsoft-edge
 opera
 orion
-safari-technology-preview
+safari@technology-preview
 sigmaos
+vivaldi
 zen-browser
