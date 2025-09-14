@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+# Dependencies: tail, head, grep, cat, git, ansifilter
+# TODO
+# 1. argument to prevent sha update
+
+report() {
+  local type="$1"
+  local latest_sha_file="$HOME/.homebrew-${type}-latest-sha"
+  local cask_repo="/opt/homebrew/Library/Taps/homebrew/homebrew-${type}"
+  local version_regex='^[+-]\s*version\s+["\'""']?(.+?)["\'""']?$'
+  local homepage_regex='^\s+homepage\s+["\'""'](.+)["\'""']\s*$'
+  local -a updated added removed update_available
+
+  cd "$cask_repo" || return 1
+
+  local old_sha
+  if [[ -f "$latest_sha_file" ]]; then
+    old_sha=$(<"$latest_sha_file")
+  else
+    old_sha=$(git log | head -20 | /usr/bin/tail -r | head -1 | ansifilter | sed -nE 's/([a-z0-9]{7})\s.+/\1/p')
+  fi
+  local latest_sha
+  latest_sha=$(git log | head -1 | ansifilter | sed -nE 's/([a-z0-9]{7,})\s.+/\1/p')
+
+  mapfile -t installed_casks < <(brew list --cask)
+  local changes
+  changes=$(git diff --name-status "$old_sha" | grep Casks/ | ansifilter)
+
+  while IFS=$'\t' read -r status path; do
+    [[ -z "$path" ]] && continue
+    local app
+    app=$(sed -nE 's/^Casks\/(.+)\.rb$/\1/p' <<<"$path")
+    [[ -z "$app" ]] && continue
+
+    if [[ "$status" == 'D' ]]; then
+      removed+=("\033[94m${app}\033[0m")
+    else
+      local h homepage
+      h=$(cat "Casks/${app}.rb" | grep -E '^\s+homepage')
+      if [[ -z "$h" ]]; then
+        homepage=""
+      else
+        homepage=$(sed -nE "${homepage_regex}" <<<"$h" | sed -nE 's/'"$homepage_regex"'/\1/p')
+      fi
+      if [[ "$status" == 'A' ]]; then
+        added+=("\033[94m${app}\033[0m [\033[92m${homepage}\033[0m]")
+      elif [[ "$status" == 'M' ]]; then
+        local version_diff last_version current_version
+        version_diff=$(git diff "$old_sha" "Casks/${app}.rb" | grep -E '^[+-]\s+version')
+        if [[ -n "$version_diff" ]]; then
+          last_version=$(sed -n 1p <<<"$version_diff" | sed -nE 's/'"$version_regex"'/\1/p')
+          current_version=$(sed -n 2p <<<"$version_diff" | sed -nE 's/'"$version_regex"'/\1/p')
+        fi
+        local needs_update=""
+        if [[ -n "$version_diff" ]]; then
+          if printf '%s\n' "${installed_casks[@]}" | grep -qx "$app"; then
+            needs_update=1
+            update_available+=("✨  \033[32m${app}\033[0m")
+          fi
+        fi
+        updated+=("\033[94m${app}\033[0m${needs_update:+✨} [\033[92m${homepage}\033[0m]${version_diff:+ \${last_version} \033[33m<\033[0m \${current_version}}")
+      fi
+    fi
+  done <<<"$changes"
+
+  echo -e "\n\033[35m🔮  ${type^^}\033[0m"
+  if ((${#updated[@]})); then
+    echo -e "\033[95mUPDATED\033[0m"
+    printf '%s\n' "${updated[@]}"
+  fi
+  if ((${#added[@]})); then
+    echo -e "\033[95mADDED\033[0m"
+    printf '%s\n' "${added[@]}"
+  fi
+  if ((${#removed[@]})); then
+    echo -e "\033[95mREMOVED\033[0m"
+    printf '%s\n' "${removed[@]}"
+  fi
+  if ((${#update_available[@]})); then
+    echo -e "\033[95mOUTDATED\033[0m"
+    printf '%s\n' "${update_available[@]}"
+  fi
+  echo -e "\033[90mOld SHA: ${old_sha}  New SHA: ${latest_sha}\033[0m"
+
+  printf '%s' "$latest_sha" >"$latest_sha_file"
+}
+
+report cask
