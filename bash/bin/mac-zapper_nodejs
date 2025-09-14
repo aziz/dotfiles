@@ -1,0 +1,77 @@
+#!/usr/bin/env node
+
+const { execSync } = require('child_process');
+const readline = require('readline');
+
+const SEARCH_PATHS = '/Users /Library /Applications /opt /var /usr';
+const EXCLUDES = [
+  '/Library/Dictionaries',
+  '/Library/Caches/Homebrew',
+  '/usr/local/.dscage',
+  '/usr/local/Cellar',
+  '/usr/local/Library',
+  `${process.env.HOME}/Library/Application Support/Google/Chrome/Default/Extensions`,
+  `${process.env.HOME}/.vim`,
+  `${process.env.HOME}/.npm`
+];
+
+class Zapper {
+  constructor(app) {
+    let exCmd = '';
+    EXCLUDES.forEach(ex => { exCmd += `-not -path "${ex}/*" `; });
+    const cmd = `sudo find ${SEARCH_PATHS} ${exCmd}-iregex '.*${app}.*' -prune`;
+    const results = execSync(cmd, { encoding: 'utf8' });
+    this.resArray = results.split('\n').filter(Boolean);
+    this.excludeOrZap();
+  }
+
+  excludeOrZap() {
+    this.resArray.forEach((res, i) => {
+      console.log(`[${i + 1}] ${res}`);
+    });
+    const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+    rl.question('==> zap or exclude? [z/e/q] ', (action) => {
+      rl.close();
+      action = action.trim();
+      switch (action) {
+        case 'z':
+          this.zap();
+          break;
+        case 'e':
+          this.exclude();
+          break;
+        case 'q':
+          process.exit(0);
+        default:
+          this.excludeOrZap();
+      }
+    });
+  }
+
+  zap() {
+    const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+    rl.question('==> zapping, are you sure? [y/n]\n', (action) => {
+      rl.close();
+      if (action.trim() === 'y') {
+        this.resArray.forEach(z => {
+          const cmd = `sudo rm -Rf "${z}"`;
+          execSync(cmd, { stdio: 'inherit' });
+        });
+      }
+    });
+  }
+
+  exclude() {
+    const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+    rl.question('==> Exlude [enter indexed separated with ,]\n', (indexList) => {
+      rl.close();
+      const indexArray = indexList.split(',').map(i => parseInt(i.trim(), 10));
+      const delArr = [];
+      indexArray.forEach(i => { delArr.push(this.resArray[i - 1]); });
+      this.resArray = this.resArray.filter(res => !delArr.includes(res));
+      this.excludeOrZap();
+    });
+  }
+}
+
+new Zapper(process.argv[2]);

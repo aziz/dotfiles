@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+
+SEARCH_PATHS='/Users /Library /Applications /opt /var /usr'
+EXCLUDES=(
+  '/Library/Dictionaries'
+  '/Library/Caches/Homebrew'
+  '/usr/local/.dscage'
+  '/usr/local/Cellar'
+  '/usr/local/Library'
+  "$HOME/Library/Application Support/Google/Chrome/Default/Extensions"
+  "$HOME/.vim"
+  "$HOME/.npm"
+)
+
+res_array=()
+
+initialize() {
+  local app="$1"
+  local ex_cmd=''
+  for ex in "${EXCLUDES[@]}"; do
+    ex_cmd+="-not -path \"${ex}/*\" "
+  done
+  local cmd="sudo find ${SEARCH_PATHS} ${ex_cmd}-iregex '.*${app}.*' -prune"
+  mapfile -t res_array < <(eval "$cmd")
+  exclude_or_zap
+}
+
+exclude_or_zap() {
+  local i res action
+  for i in "${!res_array[@]}"; do
+    res="${res_array[i]}"
+    printf '[%d] %s\n' "$((i + 1))" "$res"
+  done
+  read -rp '==> zap or exclude? [z/e/q] ' action
+  case "$action" in
+    z) zap ;;
+    e) exclude ;;
+    q) exit ;;
+    *) exclude_or_zap ;;
+  esac
+}
+
+zap() {
+  echo '==> zapping, are you sure? [y/n]'
+  read -r action
+  if [[ "$action" == 'y' ]]; then
+    local z cmd
+    for z in "${res_array[@]}"; do
+      cmd="sudo rm -Rf \"${z}\""
+      eval "$cmd"
+    done
+  fi
+}
+
+exclude() {
+  echo '==> Exlude [enter indexed separated with ,]'
+  read -r index_list
+  IFS=',' read -ra index_array <<< "$index_list"
+  local del_arr=() idx
+  for idx in "${index_array[@]}"; do
+    idx="${idx// /}"
+    del_arr+=("${res_array[idx-1]}")
+  done
+  local del i
+  for del in "${del_arr[@]}"; do
+    for i in "${!res_array[@]}"; do
+      if [[ "${res_array[i]}" == "$del" ]]; then
+        unset 'res_array[i]'
+      fi
+    done
+  done
+  res_array=("${res_array[@]}")
+  exclude_or_zap
+}
+
+initialize "$1"
