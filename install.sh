@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 clear
 echo "      _       _    __ _ _             "
