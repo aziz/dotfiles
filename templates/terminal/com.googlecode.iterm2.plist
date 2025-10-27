@@ -4648,6 +4648,10 @@
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_3FD59DD8-94C6-4467-9AED-9C521A1988A4_selection</key>
 	<integer>0</integer>
+	<key>NeverWarnAboutShortLivedSessions_E8F9D42D-C978-48F3-8E24-FB445BC508F2</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_E8F9D42D-C978-48F3-8E24-FB445BC508F2_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -6943,7 +6947,7 @@
 	<key>TabStyle</key>
 	<integer>2</integer>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>1</integer>
+	<integer>3</integer>
 	<key>TabViewType</key>
 	<integer>1</integer>
 	<key>TerminalMargin</key>

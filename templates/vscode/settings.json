@@ -178,5 +178,6 @@
   "inlineChat.enableV2": true,
   "inlineChat.hideOnRequest": true,
   "workbench.secondarySideBar.defaultVisibility": "visibleInWorkspace",
-  "workbench.panel.showLabels": false
+  "workbench.panel.showLabels": false,
+  "chat.mcp.gallery.enabled": true
 }
