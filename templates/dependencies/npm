@@ -1,5 +1,6 @@
 @anthropic-ai/claude-code
 @google/gemini-cli
+@kilocode/cli
 @openai/codex
 @slidev/cli
 cloudflare
