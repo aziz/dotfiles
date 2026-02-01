@@ -17,6 +17,10 @@ backup_dir=".backup_old_dot_files"
 user_info_dir="$PWD/user.info"
 user_info="$user_info_dir/user.info.yml"
 
+if [ ! -d "$HOME/$user_info_dir" ]; then
+  mkdir -p "$HOME/$user_info_dir"
+fi
+
 for name in *; do
 
   target="$HOME/.$name"
