@@ -12,7 +12,8 @@ echo
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "==> Tapping extra sources"
-while read -r in; do brew tap "$in"; done < "$HOME"/.templates/dependencies/taps
+brew tap homebrew/cask --force
+
 
 echo "==> Disabling analytics"
 git config --file="$(brew --repository)/.git/config" --replace-all homebrew.analyticsdisabled true
